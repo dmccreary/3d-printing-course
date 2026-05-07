@@ -1,0 +1,2867 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/3d-printing-course/learning-graph/taxonomy-distribution/">
+      
+      
+        <link rel="prev" href="../quality-metrics/">
+      
+      
+        <link rel="next" href="../../sims/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Taxonomy Distribution - Introduction to 3D Printing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#taxonomy-distribution-report" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction to 3D Printing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Taxonomy Distribution
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introduction to 3D Printing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Description
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapters
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Graph
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learning Graph
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3d-printing-orgs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3D Printing Organizations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course-description-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Description Assessment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concept Enumeration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-taxonomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concept Taxonomy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quality-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Graph Quality Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Taxonomy Distribution
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Taxonomy Distribution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribution-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distribution Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visual Distribution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balance-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balance Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Balance Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-over-represented-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ No Over-Represented Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-under-represented-categories-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ℹ️ Under-Represented Categories (&lt;3%)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#category-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Category Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Category Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printer-hardware-and-modern-tech-hard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printer Hardware And Modern Tech (HARD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slicing-and-toolpaths-slic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slicing And Toolpaths (SLIC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#materials-science-mat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materials Science (MAT)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-in-additive-manufacturing-aiam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI In Additive Manufacturing (AIAM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#am-process-families-proc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AM Process Families (PROC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-for-am-and-metrology-dfam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design For AM And Metrology (DFAM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cad-software-and-modeling-cad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CAD Software And Modeling (CAD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-and-post-processing-trob" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting And Post-Processing (TROB)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engineering-design-process-and-capstone-edp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Engineering Design Process And Capstone (EDP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety-ethics-and-sustainability-safe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety Ethics And Sustainability (SAFE)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-workflows-and-careers-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digital Workflows And Careers (WORK)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#history-and-context-hist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        History And Context (HIST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-and-terminology-stnd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standards And Terminology (STND)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resin-printer-operation-resn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resin Printer Operation (RESN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesh-and-file-formats-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mesh And File Formats (FILE)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foundation-concepts-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foundation Concepts (FOUND)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#educational-use-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Educational Use Recommendations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MicroSims
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribution-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distribution Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visual Distribution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balance-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balance Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Balance Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-over-represented-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ No Over-Represented Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-under-represented-categories-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ℹ️ Under-Represented Categories (&lt;3%)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#category-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Category Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Category Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printer-hardware-and-modern-tech-hard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printer Hardware And Modern Tech (HARD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slicing-and-toolpaths-slic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slicing And Toolpaths (SLIC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#materials-science-mat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materials Science (MAT)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-in-additive-manufacturing-aiam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI In Additive Manufacturing (AIAM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#am-process-families-proc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AM Process Families (PROC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-for-am-and-metrology-dfam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design For AM And Metrology (DFAM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cad-software-and-modeling-cad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CAD Software And Modeling (CAD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-and-post-processing-trob" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting And Post-Processing (TROB)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engineering-design-process-and-capstone-edp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Engineering Design Process And Capstone (EDP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety-ethics-and-sustainability-safe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety Ethics And Sustainability (SAFE)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-workflows-and-careers-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digital Workflows And Careers (WORK)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#history-and-context-hist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        History And Context (HIST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-and-terminology-stnd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standards And Terminology (STND)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resin-printer-operation-resn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resin Printer Operation (RESN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesh-and-file-formats-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mesh And File Formats (FILE)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foundation-concepts-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foundation Concepts (FOUND)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#educational-use-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Educational Use Recommendations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/learning-graph/taxonomy-distribution.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="taxonomy-distribution-report">Taxonomy Distribution Report<a class="headerlink" href="#taxonomy-distribution-report" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Total Concepts</strong>: 292</li>
+<li><strong>Number of Taxonomies</strong>: 16</li>
+<li><strong>Average Concepts per Taxonomy</strong>: 18.2</li>
+</ul>
+<h2 id="distribution-summary">Distribution Summary<a class="headerlink" href="#distribution-summary" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>TaxonomyID</th>
+<th>Count</th>
+<th>Percentage</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Printer Hardware And Modern Tech</td>
+<td>HARD</td>
+<td>52</td>
+<td>17.8%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Slicing And Toolpaths</td>
+<td>SLIC</td>
+<td>29</td>
+<td>9.9%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Materials Science</td>
+<td>MAT</td>
+<td>24</td>
+<td>8.2%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>AI In Additive Manufacturing</td>
+<td>AIAM</td>
+<td>21</td>
+<td>7.2%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>AM Process Families</td>
+<td>PROC</td>
+<td>20</td>
+<td>6.8%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Design For AM And Metrology</td>
+<td>DFAM</td>
+<td>20</td>
+<td>6.8%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>CAD Software And Modeling</td>
+<td>CAD</td>
+<td>19</td>
+<td>6.5%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Troubleshooting And Post-Processing</td>
+<td>TROB</td>
+<td>19</td>
+<td>6.5%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Engineering Design Process And Capstone</td>
+<td>EDP</td>
+<td>16</td>
+<td>5.5%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Safety Ethics And Sustainability</td>
+<td>SAFE</td>
+<td>13</td>
+<td>4.5%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Digital Workflows And Careers</td>
+<td>WORK</td>
+<td>12</td>
+<td>4.1%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>History And Context</td>
+<td>HIST</td>
+<td>10</td>
+<td>3.4%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Standards And Terminology</td>
+<td>STND</td>
+<td>10</td>
+<td>3.4%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Resin Printer Operation</td>
+<td>RESN</td>
+<td>10</td>
+<td>3.4%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Mesh And File Formats</td>
+<td>FILE</td>
+<td>9</td>
+<td>3.1%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Foundation Concepts</td>
+<td>FOUND</td>
+<td>8</td>
+<td>2.7%</td>
+<td>ℹ️ Under</td>
+</tr>
+</tbody>
+</table>
+<h2 id="visual-distribution">Visual Distribution<a class="headerlink" href="#visual-distribution" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Printer Hardware And Mode ████████  52 ( 17.8%)
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Slicing And Toolpaths     ████  29 (  9.9%)
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Materials Science         ████  24 (  8.2%)
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>AI In Additive Manufactur ███  21 (  7.2%)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>AM Process Families       ███  20 (  6.8%)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Design For AM And Metrolo ███  20 (  6.8%)
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>CAD Software And Modeling ███  19 (  6.5%)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Troubleshooting And Post- ███  19 (  6.5%)
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Engineering Design Proces ██  16 (  5.5%)
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Safety Ethics And Sustain ██  13 (  4.5%)
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>Digital Workflows And Car ██  12 (  4.1%)
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>History And Context       █  10 (  3.4%)
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Standards And Terminology █  10 (  3.4%)
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>Resin Printer Operation   █  10 (  3.4%)
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>Mesh And File Formats     █   9 (  3.1%)
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>Foundation Concepts       █   8 (  2.7%)
+</span></code></pre></div>
+<h2 id="balance-analysis">Balance Analysis<a class="headerlink" href="#balance-analysis" title="Permanent link">&para;</a></h2>
+<h3 id="no-over-represented-categories">✅ No Over-Represented Categories<a class="headerlink" href="#no-over-represented-categories" title="Permanent link">&para;</a></h3>
+<p>All categories are under the 30% threshold. Good balance!</p>
+<h3 id="i-under-represented-categories-3">ℹ️ Under-Represented Categories (&lt;3%)<a class="headerlink" href="#i-under-represented-categories-3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Foundation Concepts</strong> (FOUND): 8 concepts (2.7%)</li>
+<li><em>Note</em>: Small categories are acceptable for specialized topics</li>
+</ul>
+<h2 id="category-details">Category Details<a class="headerlink" href="#category-details" title="Permanent link">&para;</a></h2>
+<h3 id="printer-hardware-and-modern-tech-hard">Printer Hardware And Modern Tech (HARD)<a class="headerlink" href="#printer-hardware-and-modern-tech-hard" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 52 concepts (17.8%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>FDM Printer Anatomy</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Nozzle</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Hotend</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Heat Break</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Bowden Vs Direct Drive</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Extruder Mechanism</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Stepper Motors</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Belts And Pulleys</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Lead Screws</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Linear Bearings</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Motherboard Firmware</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Build Surface Types</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Auto Bed Leveling</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Manual Bed Leveling</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Z Offset Calibration</li>
+</ol>
+</li>
+<li><em>...and 37 more</em></li>
+</ul>
+<h3 id="slicing-and-toolpaths-slic">Slicing And Toolpaths (SLIC)<a class="headerlink" href="#slicing-and-toolpaths-slic" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 29 concepts (9.9%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>Slicer Software</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>G-code Basics</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>G-code Reading</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Layer Height</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>First Layer Settings</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Wall Count</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Infill Density</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Infill Patterns</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Print Speed</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Travel Moves</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Retraction Settings</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Print Temperature</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Bed Temperature</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Cooling Fan Settings</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Adhesion Type</li>
+</ol>
+</li>
+<li><em>...and 14 more</em></li>
+</ul>
+<h3 id="materials-science-mat">Materials Science (MAT)<a class="headerlink" href="#materials-science-mat" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 24 concepts (8.2%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>Polymer Basics</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Thermoplastics</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Glass Transition Temperature</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Tensile Strength</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Elongation At Break</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Material Data Sheet</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>PLA Filament</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>PETG Filament</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>ABS Filament</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>ASA Filament</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>TPU Filament</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Nylon Filament</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Polycarbonate Filament</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Composite Filaments</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Filament Storage And Drying</li>
+</ol>
+</li>
+<li><em>...and 9 more</em></li>
+</ul>
+<h3 id="ai-in-additive-manufacturing-aiam">AI In Additive Manufacturing (AIAM)<a class="headerlink" href="#ai-in-additive-manufacturing-aiam" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 21 concepts (7.2%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>AI In Additive Manufacturing</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Computer Vision Basics</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Machine Learning Basics</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Neural Networks Overview</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>First-Layer Vision Check</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Spaghetti Detection</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Obico Open Monitoring</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Bambu Lab AI Inspection</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Time-Lapse Print Capture</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Defect Classification Models</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Automatic Print Pause</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Predictive Maintenance ML</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>AI Slicer Optimization</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Text-To-CAD Generation</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>AI Material Recommender</li>
+</ol>
+</li>
+<li><em>...and 6 more</em></li>
+</ul>
+<h3 id="am-process-families-proc">AM Process Families (PROC)<a class="headerlink" href="#am-process-families-proc" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 20 concepts (6.8%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>Material Extrusion</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Vat Photopolymerization</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Powder Bed Fusion</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Material Jetting</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Binder Jetting</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Directed Energy Deposition</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Sheet Lamination</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>FDM FFF Process</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>SLA Process</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>MSLA Process</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>DLP Process</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>SLS Process</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>MJF Process</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>DMLS Process</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>EBM Process</li>
+</ol>
+</li>
+<li><em>...and 5 more</em></li>
+</ul>
+<h3 id="design-for-am-and-metrology-dfam">Design For AM And Metrology (DFAM)<a class="headerlink" href="#design-for-am-and-metrology-dfam" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 20 concepts (6.8%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>DfAM Principles</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Overhangs</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Bridging</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Part Orientation Strategy</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Support Minimization</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Wall Thickness Rules</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Hole And Slot Tolerances</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Tolerance Allowances</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Self-Supporting Angles</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Lattice Structures</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Topology Optimization</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Generative Design</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Lightweighting</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Dimensional Accuracy</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Calipers</li>
+</ol>
+</li>
+<li><em>...and 5 more</em></li>
+</ul>
+<h3 id="cad-software-and-modeling-cad">CAD Software And Modeling (CAD)<a class="headerlink" href="#cad-software-and-modeling-cad" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 19 concepts (6.5%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>CAD Software Overview</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>2D Sketching</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Sketch Constraints</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Parametric Modeling</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Feature-Based Modeling</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Extrude Feature</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Revolve Feature</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Sweep And Loft</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Fillet And Chamfer</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Shell Feature</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Pattern Features</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Boolean Operations</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Reference Geometry</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Assemblies</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Mate Constraints</li>
+</ol>
+</li>
+<li><em>...and 4 more</em></li>
+</ul>
+<h3 id="troubleshooting-and-post-processing-trob">Troubleshooting And Post-Processing (TROB)<a class="headerlink" href="#troubleshooting-and-post-processing-trob" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 19 concepts (6.5%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>Troubleshooting Workflow</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Warping</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>First-Layer Failures</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Stringing</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Under-Extrusion</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Over-Extrusion</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Layer Separation</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Elephants Foot</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Ringing And Ghosting</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Clogged Nozzle</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Failed Adhesion</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Resin Print Failures</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Support Removal</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Sanding And Finishing</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Painting And Priming</li>
+</ol>
+</li>
+<li><em>...and 4 more</em></li>
+</ul>
+<h3 id="engineering-design-process-and-capstone-edp">Engineering Design Process And Capstone (EDP)<a class="headerlink" href="#engineering-design-process-and-capstone-edp" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 16 concepts (5.5%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>PLTW Design Process</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Problem Definition</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Research Phase</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Ideation And Sketching</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Design Specifications</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Concept Selection</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Prototyping</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Iteration Cycle</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Testing And Validation</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Engineering Communication</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Engineering Notebook</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Portfolio Development</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Capstone Project Planning</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Functional Prototype Design</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Design Documentation</li>
+</ol>
+</li>
+<li><em>...and 1 more</em></li>
+</ul>
+<h3 id="safety-ethics-and-sustainability-safe">Safety Ethics And Sustainability (SAFE)<a class="headerlink" href="#safety-ethics-and-sustainability-safe" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 13 concepts (4.5%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>Workshop Safety</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>VOC And UFP Exposure</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Ventilation Requirements</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Fire Safety</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Resin Disposal</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Filament Recycling</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Sustainability In AM</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Intellectual Property</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Open-Source Licenses</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Creative Commons For 3D</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Ethical Use Of AM</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Restricted Designs</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Multi-Material Waste</li>
+</ol>
+</li>
+</ul>
+<h3 id="digital-workflows-and-careers-work">Digital Workflows And Careers (WORK)<a class="headerlink" href="#digital-workflows-and-careers-work" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 12 concepts (4.1%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>File Naming Conventions</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Version Control For CAD</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Print Farm Concepts</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Print Queue Management</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Manufacturing Career Clusters</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>SME Education Foundation</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>NC3 Certifications</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>NIMS Certifications</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Community College Pathways</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Dual Credit Programs</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>ABET Outcomes Alignment</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Apprenticeship Pathways</li>
+</ol>
+</li>
+</ul>
+<h3 id="history-and-context-hist">History And Context (HIST)<a class="headerlink" href="#history-and-context-hist" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 10 concepts (3.4%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>Industrial Revolution</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Subtractive Manufacturing</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Additive Manufacturing</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Stereolithography Invention</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>FDM Patent Expiration</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Desktop Printer Revolution</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>RepRap Project</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>America Makes Institute</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>AM Innovation Institutes</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Maker Movement</li>
+</ol>
+</li>
+</ul>
+<h3 id="standards-and-terminology-stnd">Standards And Terminology (STND)<a class="headerlink" href="#standards-and-terminology-stnd" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 10 concepts (3.4%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>ISO Standards Body</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>ASTM International</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>ISO ASTM 52900 Standard</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>AM Process Categories</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>AM Vocabulary Glossary</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Layer-By-Layer Principle</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Build Volume</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Build Plate</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Z Axis Direction</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Anisotropy</li>
+</ol>
+</li>
+</ul>
+<h3 id="resin-printer-operation-resn">Resin Printer Operation (RESN)<a class="headerlink" href="#resin-printer-operation-resn" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 10 concepts (3.4%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>Resin Printer Anatomy</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>LCD And Light Source</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Resin Vat And FEP</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Exposure Settings</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Resin Supports</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Wash And Cure Workflow</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>IPA Handling</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Resin PPE</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Mono LCD Resolution</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Large-Format Resin</li>
+</ol>
+</li>
+</ul>
+<h3 id="mesh-and-file-formats-file">Mesh And File Formats (FILE)<a class="headerlink" href="#mesh-and-file-formats-file" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 9 concepts (3.1%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>STL File Format</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>3MF File Format</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>OBJ File Format</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Mesh Geometry</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Triangle Resolution</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Mesh Repair</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Manifold Geometry</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Non Manifold Errors</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>STL Export Settings</li>
+</ol>
+</li>
+</ul>
+<h3 id="foundation-concepts-found">Foundation Concepts (FOUND)<a class="headerlink" href="#foundation-concepts-found" title="Permanent link">&para;</a></h3>
+<p><strong>Count</strong>: 8 concepts (2.7%)</p>
+<p><strong>Concepts</strong>:</p>
+<ul>
+<li>
+<ol>
+<li>Algebra Basics</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Geometry Basics</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Units And Measurement</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Computer File Management</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Mouse And 3D Navigation</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Basic Physics Concepts</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Mass And Density</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Force And Pressure</li>
+</ol>
+</li>
+</ul>
+<h2 id="recommendations">Recommendations<a class="headerlink" href="#recommendations" title="Permanent link">&para;</a></h2>
+<ul>
+<li>✅ <strong>Good balance</strong>: Categories are reasonably distributed (spread: 15.1%)</li>
+<li>✅ <strong>MISC category minimal</strong>: Good categorization specificity</li>
+</ul>
+<h3 id="educational-use-recommendations">Educational Use Recommendations<a class="headerlink" href="#educational-use-recommendations" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use taxonomy categories for color-coding in graph visualizations</li>
+<li>Design curriculum modules based on taxonomy groupings</li>
+<li>Create filtered views for focused learning paths</li>
+<li>Use categories for assessment organization</li>
+<li>Enable navigation by topic area in interactive tools</li>
+</ul>
+<hr />
+<p><em>Report generated by learning-graph-reports/taxonomy_distribution.py</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../quality-metrics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Graph Quality Analysis">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Graph Quality Analysis
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../sims/" class="md-footer__link md-footer__link--next" aria-label="Next: List of MicroSims">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                List of MicroSims
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

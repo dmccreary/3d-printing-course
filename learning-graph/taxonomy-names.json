@@ -1,0 +1,18 @@
+{
+  "FOUND": "Foundation Concepts",
+  "HIST": "History And Context",
+  "STND": "Standards And Terminology",
+  "PROC": "AM Process Families",
+  "EDP": "Engineering Design Process And Capstone",
+  "CAD": "CAD Software And Modeling",
+  "FILE": "Mesh And File Formats",
+  "SLIC": "Slicing And Toolpaths",
+  "HARD": "Printer Hardware And Modern Tech",
+  "MAT": "Materials Science",
+  "RESN": "Resin Printer Operation",
+  "DFAM": "Design For AM And Metrology",
+  "TROB": "Troubleshooting And Post-Processing",
+  "SAFE": "Safety Ethics And Sustainability",
+  "WORK": "Digital Workflows And Careers",
+  "AIAM": "AI In Additive Manufacturing"
+}
