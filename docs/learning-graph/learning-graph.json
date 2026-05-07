@@ -1,0 +1,3482 @@
+{
+  "metadata": {
+    "title": "Introduction to 3D Printing",
+    "description": "A high-school introductory course in additive manufacturing anchored to PLTW engineering pedagogy, ASTM/ISO 52900 terminology, America Makes workforce competencies, and community-college articulation pathways. Covers CAD, slicing, FDM and resin printer operation, materials science, Design for Additive Manufacturing, troubleshooting, safety, and modern sub-$5K printer technology including multi-color/multi-material, CoreXY motion, Klipper firmware, and AI failure detection.",
+    "creator": "Dan McCreary",
+    "date": "2026-05-07",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "HIST": {
+      "classifierName": "History And Context",
+      "color": "DarkSlateBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "STND": {
+      "classifierName": "Standards And Terminology",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    },
+    "PROC": {
+      "classifierName": "AM Process Families",
+      "color": "DarkGreen",
+      "font": {
+        "color": "white"
+      }
+    },
+    "EDP": {
+      "classifierName": "Engineering Design Process And Capstone",
+      "color": "MediumPurple",
+      "font": {
+        "color": "white"
+      }
+    },
+    "CAD": {
+      "classifierName": "CAD Software And Modeling",
+      "color": "DodgerBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "FILE": {
+      "classifierName": "Mesh And File Formats",
+      "color": "LightSkyBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SLIC": {
+      "classifierName": "Slicing And Toolpaths",
+      "color": "Gold",
+      "font": {
+        "color": "black"
+      }
+    },
+    "HARD": {
+      "classifierName": "Printer Hardware And Modern Tech",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    },
+    "MAT": {
+      "classifierName": "Materials Science",
+      "color": "DarkGoldenrod",
+      "font": {
+        "color": "white"
+      }
+    },
+    "RESN": {
+      "classifierName": "Resin Printer Operation",
+      "color": "DarkOrchid",
+      "font": {
+        "color": "white"
+      }
+    },
+    "DFAM": {
+      "classifierName": "Design For AM And Metrology",
+      "color": "LimeGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TROB": {
+      "classifierName": "Troubleshooting And Post-Processing",
+      "color": "Tomato",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SAFE": {
+      "classifierName": "Safety Ethics And Sustainability",
+      "color": "DarkRed",
+      "font": {
+        "color": "white"
+      }
+    },
+    "WORK": {
+      "classifierName": "Digital Workflows And Careers",
+      "color": "Orange",
+      "font": {
+        "color": "black"
+      }
+    },
+    "AIAM": {
+      "classifierName": "AI In Additive Manufacturing",
+      "color": "Coral",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Algebra Basics",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Geometry Basics",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 3,
+      "label": "Units And Measurement",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 4,
+      "label": "Computer File Management",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 5,
+      "label": "Mouse And 3D Navigation",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 6,
+      "label": "Basic Physics Concepts",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 7,
+      "label": "Mass And Density",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Force And Pressure",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Industrial Revolution",
+      "group": "HIST",
+      "shape": "box"
+    },
+    {
+      "id": 10,
+      "label": "Subtractive Manufacturing",
+      "group": "HIST"
+    },
+    {
+      "id": 11,
+      "label": "Additive Manufacturing",
+      "group": "HIST"
+    },
+    {
+      "id": 12,
+      "label": "Stereolithography Invention",
+      "group": "HIST"
+    },
+    {
+      "id": 13,
+      "label": "FDM Patent Expiration",
+      "group": "HIST"
+    },
+    {
+      "id": 14,
+      "label": "Desktop Printer Revolution",
+      "group": "HIST"
+    },
+    {
+      "id": 15,
+      "label": "RepRap Project",
+      "group": "HIST"
+    },
+    {
+      "id": 16,
+      "label": "America Makes Institute",
+      "group": "HIST"
+    },
+    {
+      "id": 17,
+      "label": "AM Innovation Institutes",
+      "group": "HIST"
+    },
+    {
+      "id": 18,
+      "label": "Maker Movement",
+      "group": "HIST"
+    },
+    {
+      "id": 19,
+      "label": "ISO Standards Body",
+      "group": "STND",
+      "shape": "box"
+    },
+    {
+      "id": 20,
+      "label": "ASTM International",
+      "group": "STND",
+      "shape": "box"
+    },
+    {
+      "id": 21,
+      "label": "ISO ASTM 52900 Standard",
+      "group": "STND"
+    },
+    {
+      "id": 22,
+      "label": "AM Process Categories",
+      "group": "STND"
+    },
+    {
+      "id": 23,
+      "label": "AM Vocabulary Glossary",
+      "group": "STND"
+    },
+    {
+      "id": 24,
+      "label": "Layer-By-Layer Principle",
+      "group": "STND"
+    },
+    {
+      "id": 25,
+      "label": "Build Volume",
+      "group": "STND"
+    },
+    {
+      "id": 26,
+      "label": "Build Plate",
+      "group": "STND"
+    },
+    {
+      "id": 27,
+      "label": "Z Axis Direction",
+      "group": "STND"
+    },
+    {
+      "id": 28,
+      "label": "Anisotropy",
+      "group": "STND"
+    },
+    {
+      "id": 29,
+      "label": "Material Extrusion",
+      "group": "PROC"
+    },
+    {
+      "id": 30,
+      "label": "Vat Photopolymerization",
+      "group": "PROC"
+    },
+    {
+      "id": 31,
+      "label": "Powder Bed Fusion",
+      "group": "PROC"
+    },
+    {
+      "id": 32,
+      "label": "Material Jetting",
+      "group": "PROC"
+    },
+    {
+      "id": 33,
+      "label": "Binder Jetting",
+      "group": "PROC"
+    },
+    {
+      "id": 34,
+      "label": "Directed Energy Deposition",
+      "group": "PROC"
+    },
+    {
+      "id": 35,
+      "label": "Sheet Lamination",
+      "group": "PROC"
+    },
+    {
+      "id": 36,
+      "label": "FDM FFF Process",
+      "group": "PROC"
+    },
+    {
+      "id": 37,
+      "label": "SLA Process",
+      "group": "PROC"
+    },
+    {
+      "id": 38,
+      "label": "MSLA Process",
+      "group": "PROC"
+    },
+    {
+      "id": 39,
+      "label": "DLP Process",
+      "group": "PROC"
+    },
+    {
+      "id": 40,
+      "label": "SLS Process",
+      "group": "PROC"
+    },
+    {
+      "id": 41,
+      "label": "MJF Process",
+      "group": "PROC"
+    },
+    {
+      "id": 42,
+      "label": "DMLS Process",
+      "group": "PROC"
+    },
+    {
+      "id": 43,
+      "label": "EBM Process",
+      "group": "PROC"
+    },
+    {
+      "id": 44,
+      "label": "PLTW Design Process",
+      "group": "EDP",
+      "shape": "box"
+    },
+    {
+      "id": 45,
+      "label": "Problem Definition",
+      "group": "EDP"
+    },
+    {
+      "id": 46,
+      "label": "Research Phase",
+      "group": "EDP"
+    },
+    {
+      "id": 47,
+      "label": "Ideation And Sketching",
+      "group": "EDP"
+    },
+    {
+      "id": 48,
+      "label": "Design Specifications",
+      "group": "EDP"
+    },
+    {
+      "id": 49,
+      "label": "Concept Selection",
+      "group": "EDP"
+    },
+    {
+      "id": 50,
+      "label": "Prototyping",
+      "group": "EDP"
+    },
+    {
+      "id": 51,
+      "label": "Iteration Cycle",
+      "group": "EDP"
+    },
+    {
+      "id": 52,
+      "label": "Testing And Validation",
+      "group": "EDP"
+    },
+    {
+      "id": 53,
+      "label": "Engineering Communication",
+      "group": "EDP"
+    },
+    {
+      "id": 54,
+      "label": "Engineering Notebook",
+      "group": "EDP"
+    },
+    {
+      "id": 55,
+      "label": "Portfolio Development",
+      "group": "EDP"
+    },
+    {
+      "id": 56,
+      "label": "CAD Software Overview",
+      "group": "CAD"
+    },
+    {
+      "id": 57,
+      "label": "2D Sketching",
+      "group": "CAD"
+    },
+    {
+      "id": 58,
+      "label": "Sketch Constraints",
+      "group": "CAD"
+    },
+    {
+      "id": 59,
+      "label": "Parametric Modeling",
+      "group": "CAD"
+    },
+    {
+      "id": 60,
+      "label": "Feature-Based Modeling",
+      "group": "CAD"
+    },
+    {
+      "id": 61,
+      "label": "Extrude Feature",
+      "group": "CAD"
+    },
+    {
+      "id": 62,
+      "label": "Revolve Feature",
+      "group": "CAD"
+    },
+    {
+      "id": 63,
+      "label": "Sweep And Loft",
+      "group": "CAD"
+    },
+    {
+      "id": 64,
+      "label": "Fillet And Chamfer",
+      "group": "CAD"
+    },
+    {
+      "id": 65,
+      "label": "Shell Feature",
+      "group": "CAD"
+    },
+    {
+      "id": 66,
+      "label": "Pattern Features",
+      "group": "CAD"
+    },
+    {
+      "id": 67,
+      "label": "Boolean Operations",
+      "group": "CAD"
+    },
+    {
+      "id": 68,
+      "label": "Reference Geometry",
+      "group": "CAD"
+    },
+    {
+      "id": 69,
+      "label": "Assemblies",
+      "group": "CAD"
+    },
+    {
+      "id": 70,
+      "label": "Mate Constraints",
+      "group": "CAD"
+    },
+    {
+      "id": 71,
+      "label": "Onshape Workflow",
+      "group": "CAD"
+    },
+    {
+      "id": 72,
+      "label": "Fusion 360 Workflow",
+      "group": "CAD"
+    },
+    {
+      "id": 73,
+      "label": "FreeCAD Workflow",
+      "group": "CAD"
+    },
+    {
+      "id": 74,
+      "label": "STL File Format",
+      "group": "FILE"
+    },
+    {
+      "id": 75,
+      "label": "3MF File Format",
+      "group": "FILE"
+    },
+    {
+      "id": 76,
+      "label": "OBJ File Format",
+      "group": "FILE"
+    },
+    {
+      "id": 77,
+      "label": "Mesh Geometry",
+      "group": "FILE"
+    },
+    {
+      "id": 78,
+      "label": "Triangle Resolution",
+      "group": "FILE"
+    },
+    {
+      "id": 79,
+      "label": "Mesh Repair",
+      "group": "FILE"
+    },
+    {
+      "id": 80,
+      "label": "Manifold Geometry",
+      "group": "FILE"
+    },
+    {
+      "id": 81,
+      "label": "Non Manifold Errors",
+      "group": "FILE"
+    },
+    {
+      "id": 82,
+      "label": "STL Export Settings",
+      "group": "FILE"
+    },
+    {
+      "id": 83,
+      "label": "Slicer Software",
+      "group": "SLIC"
+    },
+    {
+      "id": 84,
+      "label": "G-code Basics",
+      "group": "SLIC"
+    },
+    {
+      "id": 85,
+      "label": "G-code Reading",
+      "group": "SLIC"
+    },
+    {
+      "id": 86,
+      "label": "Layer Height",
+      "group": "SLIC"
+    },
+    {
+      "id": 87,
+      "label": "First Layer Settings",
+      "group": "SLIC"
+    },
+    {
+      "id": 88,
+      "label": "Wall Count",
+      "group": "SLIC"
+    },
+    {
+      "id": 89,
+      "label": "Infill Density",
+      "group": "SLIC"
+    },
+    {
+      "id": 90,
+      "label": "Infill Patterns",
+      "group": "SLIC"
+    },
+    {
+      "id": 91,
+      "label": "Print Speed",
+      "group": "SLIC"
+    },
+    {
+      "id": 92,
+      "label": "Travel Moves",
+      "group": "SLIC"
+    },
+    {
+      "id": 93,
+      "label": "Retraction Settings",
+      "group": "SLIC"
+    },
+    {
+      "id": 94,
+      "label": "Print Temperature",
+      "group": "SLIC"
+    },
+    {
+      "id": 95,
+      "label": "Bed Temperature",
+      "group": "SLIC"
+    },
+    {
+      "id": 96,
+      "label": "Cooling Fan Settings",
+      "group": "SLIC"
+    },
+    {
+      "id": 97,
+      "label": "Adhesion Type",
+      "group": "SLIC"
+    },
+    {
+      "id": 98,
+      "label": "Skirt Brim Raft",
+      "group": "SLIC"
+    },
+    {
+      "id": 99,
+      "label": "Support Structures",
+      "group": "SLIC"
+    },
+    {
+      "id": 100,
+      "label": "Tree Supports",
+      "group": "SLIC"
+    },
+    {
+      "id": 101,
+      "label": "Support Interface",
+      "group": "SLIC"
+    },
+    {
+      "id": 102,
+      "label": "Slicer Profiles",
+      "group": "SLIC"
+    },
+    {
+      "id": 103,
+      "label": "FDM Printer Anatomy",
+      "group": "HARD"
+    },
+    {
+      "id": 104,
+      "label": "Nozzle",
+      "group": "HARD"
+    },
+    {
+      "id": 105,
+      "label": "Hotend",
+      "group": "HARD"
+    },
+    {
+      "id": 106,
+      "label": "Heat Break",
+      "group": "HARD"
+    },
+    {
+      "id": 107,
+      "label": "Bowden Vs Direct Drive",
+      "group": "HARD"
+    },
+    {
+      "id": 108,
+      "label": "Extruder Mechanism",
+      "group": "HARD"
+    },
+    {
+      "id": 109,
+      "label": "Stepper Motors",
+      "group": "HARD"
+    },
+    {
+      "id": 110,
+      "label": "Belts And Pulleys",
+      "group": "HARD"
+    },
+    {
+      "id": 111,
+      "label": "Lead Screws",
+      "group": "HARD"
+    },
+    {
+      "id": 112,
+      "label": "Linear Bearings",
+      "group": "HARD"
+    },
+    {
+      "id": 113,
+      "label": "Motherboard Firmware",
+      "group": "HARD"
+    },
+    {
+      "id": 114,
+      "label": "Build Surface Types",
+      "group": "HARD"
+    },
+    {
+      "id": 115,
+      "label": "Auto Bed Leveling",
+      "group": "HARD"
+    },
+    {
+      "id": 116,
+      "label": "Manual Bed Leveling",
+      "group": "HARD"
+    },
+    {
+      "id": 117,
+      "label": "Z Offset Calibration",
+      "group": "HARD"
+    },
+    {
+      "id": 118,
+      "label": "Filament Loading",
+      "group": "HARD"
+    },
+    {
+      "id": 119,
+      "label": "Nozzle Change",
+      "group": "HARD"
+    },
+    {
+      "id": 120,
+      "label": "Routine Maintenance",
+      "group": "HARD"
+    },
+    {
+      "id": 121,
+      "label": "Polymer Basics",
+      "group": "MAT"
+    },
+    {
+      "id": 122,
+      "label": "Thermoplastics",
+      "group": "MAT"
+    },
+    {
+      "id": 123,
+      "label": "Glass Transition Temperature",
+      "group": "MAT"
+    },
+    {
+      "id": 124,
+      "label": "Tensile Strength",
+      "group": "MAT"
+    },
+    {
+      "id": 125,
+      "label": "Elongation At Break",
+      "group": "MAT"
+    },
+    {
+      "id": 126,
+      "label": "Material Data Sheet",
+      "group": "MAT"
+    },
+    {
+      "id": 127,
+      "label": "PLA Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 128,
+      "label": "PETG Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 129,
+      "label": "ABS Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 130,
+      "label": "ASA Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 131,
+      "label": "TPU Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 132,
+      "label": "Nylon Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 133,
+      "label": "Polycarbonate Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 134,
+      "label": "Composite Filaments",
+      "group": "MAT"
+    },
+    {
+      "id": 135,
+      "label": "Filament Storage And Drying",
+      "group": "MAT"
+    },
+    {
+      "id": 136,
+      "label": "Photopolymer Resins",
+      "group": "MAT"
+    },
+    {
+      "id": 137,
+      "label": "Standard Resin",
+      "group": "MAT"
+    },
+    {
+      "id": 138,
+      "label": "Tough And Flexible Resins",
+      "group": "MAT"
+    },
+    {
+      "id": 139,
+      "label": "Engineering Resins",
+      "group": "MAT"
+    },
+    {
+      "id": 140,
+      "label": "Bio-Based Filaments",
+      "group": "MAT"
+    },
+    {
+      "id": 141,
+      "label": "Recycled Filaments",
+      "group": "MAT"
+    },
+    {
+      "id": 142,
+      "label": "Resin Printer Anatomy",
+      "group": "RESN"
+    },
+    {
+      "id": 143,
+      "label": "LCD And Light Source",
+      "group": "RESN"
+    },
+    {
+      "id": 144,
+      "label": "Resin Vat And FEP",
+      "group": "RESN"
+    },
+    {
+      "id": 145,
+      "label": "Exposure Settings",
+      "group": "RESN"
+    },
+    {
+      "id": 146,
+      "label": "Resin Supports",
+      "group": "RESN"
+    },
+    {
+      "id": 147,
+      "label": "Wash And Cure Workflow",
+      "group": "RESN"
+    },
+    {
+      "id": 148,
+      "label": "IPA Handling",
+      "group": "RESN"
+    },
+    {
+      "id": 149,
+      "label": "Resin PPE",
+      "group": "RESN"
+    },
+    {
+      "id": 150,
+      "label": "Industrial Vs Hobby Systems",
+      "group": "PROC"
+    },
+    {
+      "id": 151,
+      "label": "Production AM Workflow",
+      "group": "PROC"
+    },
+    {
+      "id": 152,
+      "label": "Metal AM Overview",
+      "group": "PROC"
+    },
+    {
+      "id": 153,
+      "label": "Build Chamber Atmosphere",
+      "group": "PROC"
+    },
+    {
+      "id": 154,
+      "label": "Post-Build Heat Treatment",
+      "group": "PROC"
+    },
+    {
+      "id": 155,
+      "label": "DfAM Principles",
+      "group": "DFAM"
+    },
+    {
+      "id": 156,
+      "label": "Overhangs",
+      "group": "DFAM"
+    },
+    {
+      "id": 157,
+      "label": "Bridging",
+      "group": "DFAM"
+    },
+    {
+      "id": 158,
+      "label": "Part Orientation Strategy",
+      "group": "DFAM"
+    },
+    {
+      "id": 159,
+      "label": "Support Minimization",
+      "group": "DFAM"
+    },
+    {
+      "id": 160,
+      "label": "Wall Thickness Rules",
+      "group": "DFAM"
+    },
+    {
+      "id": 161,
+      "label": "Hole And Slot Tolerances",
+      "group": "DFAM"
+    },
+    {
+      "id": 162,
+      "label": "Tolerance Allowances",
+      "group": "DFAM"
+    },
+    {
+      "id": 163,
+      "label": "Self-Supporting Angles",
+      "group": "DFAM"
+    },
+    {
+      "id": 164,
+      "label": "Lattice Structures",
+      "group": "DFAM"
+    },
+    {
+      "id": 165,
+      "label": "Topology Optimization",
+      "group": "DFAM"
+    },
+    {
+      "id": 166,
+      "label": "Generative Design",
+      "group": "DFAM"
+    },
+    {
+      "id": 167,
+      "label": "Lightweighting",
+      "group": "DFAM"
+    },
+    {
+      "id": 168,
+      "label": "Dimensional Accuracy",
+      "group": "DFAM"
+    },
+    {
+      "id": 169,
+      "label": "Calipers",
+      "group": "DFAM"
+    },
+    {
+      "id": 170,
+      "label": "Micrometers",
+      "group": "DFAM"
+    },
+    {
+      "id": 171,
+      "label": "GD&T Basics",
+      "group": "DFAM"
+    },
+    {
+      "id": 172,
+      "label": "Calibration Cube",
+      "group": "DFAM"
+    },
+    {
+      "id": 173,
+      "label": "Quality Control Procedures",
+      "group": "DFAM"
+    },
+    {
+      "id": 174,
+      "label": "Repeatability And Reproducibility",
+      "group": "DFAM"
+    },
+    {
+      "id": 175,
+      "label": "Troubleshooting Workflow",
+      "group": "TROB"
+    },
+    {
+      "id": 176,
+      "label": "Warping",
+      "group": "TROB"
+    },
+    {
+      "id": 177,
+      "label": "First-Layer Failures",
+      "group": "TROB"
+    },
+    {
+      "id": 178,
+      "label": "Stringing",
+      "group": "TROB"
+    },
+    {
+      "id": 179,
+      "label": "Under-Extrusion",
+      "group": "TROB"
+    },
+    {
+      "id": 180,
+      "label": "Over-Extrusion",
+      "group": "TROB"
+    },
+    {
+      "id": 181,
+      "label": "Layer Separation",
+      "group": "TROB"
+    },
+    {
+      "id": 182,
+      "label": "Elephants Foot",
+      "group": "TROB"
+    },
+    {
+      "id": 183,
+      "label": "Ringing And Ghosting",
+      "group": "TROB"
+    },
+    {
+      "id": 184,
+      "label": "Clogged Nozzle",
+      "group": "TROB"
+    },
+    {
+      "id": 185,
+      "label": "Failed Adhesion",
+      "group": "TROB"
+    },
+    {
+      "id": 186,
+      "label": "Resin Print Failures",
+      "group": "TROB"
+    },
+    {
+      "id": 187,
+      "label": "Support Removal",
+      "group": "TROB"
+    },
+    {
+      "id": 188,
+      "label": "Sanding And Finishing",
+      "group": "TROB"
+    },
+    {
+      "id": 189,
+      "label": "Painting And Priming",
+      "group": "TROB"
+    },
+    {
+      "id": 190,
+      "label": "Annealing",
+      "group": "TROB"
+    },
+    {
+      "id": 191,
+      "label": "Chemical Smoothing",
+      "group": "TROB"
+    },
+    {
+      "id": 192,
+      "label": "UV Post-Curing",
+      "group": "TROB"
+    },
+    {
+      "id": 193,
+      "label": "Joining Printed Parts",
+      "group": "TROB"
+    },
+    {
+      "id": 194,
+      "label": "Workshop Safety",
+      "group": "SAFE",
+      "shape": "box"
+    },
+    {
+      "id": 195,
+      "label": "VOC And UFP Exposure",
+      "group": "SAFE"
+    },
+    {
+      "id": 196,
+      "label": "Ventilation Requirements",
+      "group": "SAFE"
+    },
+    {
+      "id": 197,
+      "label": "Fire Safety",
+      "group": "SAFE"
+    },
+    {
+      "id": 198,
+      "label": "Resin Disposal",
+      "group": "SAFE"
+    },
+    {
+      "id": 199,
+      "label": "Filament Recycling",
+      "group": "SAFE"
+    },
+    {
+      "id": 200,
+      "label": "Sustainability In AM",
+      "group": "SAFE"
+    },
+    {
+      "id": 201,
+      "label": "Intellectual Property",
+      "group": "SAFE",
+      "shape": "box"
+    },
+    {
+      "id": 202,
+      "label": "Open-Source Licenses",
+      "group": "SAFE"
+    },
+    {
+      "id": 203,
+      "label": "Creative Commons For 3D",
+      "group": "SAFE"
+    },
+    {
+      "id": 204,
+      "label": "Ethical Use Of AM",
+      "group": "SAFE"
+    },
+    {
+      "id": 205,
+      "label": "Restricted Designs",
+      "group": "SAFE"
+    },
+    {
+      "id": 206,
+      "label": "File Naming Conventions",
+      "group": "WORK"
+    },
+    {
+      "id": 207,
+      "label": "Version Control For CAD",
+      "group": "WORK"
+    },
+    {
+      "id": 208,
+      "label": "Print Farm Concepts",
+      "group": "WORK"
+    },
+    {
+      "id": 209,
+      "label": "Print Queue Management",
+      "group": "WORK"
+    },
+    {
+      "id": 210,
+      "label": "AI-Assisted CAD",
+      "group": "CAD"
+    },
+    {
+      "id": 211,
+      "label": "Cloud Slicing",
+      "group": "SLIC"
+    },
+    {
+      "id": 212,
+      "label": "Manufacturing Career Clusters",
+      "group": "WORK"
+    },
+    {
+      "id": 213,
+      "label": "SME Education Foundation",
+      "group": "WORK"
+    },
+    {
+      "id": 214,
+      "label": "NC3 Certifications",
+      "group": "WORK"
+    },
+    {
+      "id": 215,
+      "label": "NIMS Certifications",
+      "group": "WORK"
+    },
+    {
+      "id": 216,
+      "label": "Community College Pathways",
+      "group": "WORK"
+    },
+    {
+      "id": 217,
+      "label": "Dual Credit Programs",
+      "group": "WORK"
+    },
+    {
+      "id": 218,
+      "label": "ABET Outcomes Alignment",
+      "group": "WORK"
+    },
+    {
+      "id": 219,
+      "label": "Apprenticeship Pathways",
+      "group": "WORK"
+    },
+    {
+      "id": 220,
+      "label": "Capstone Project Planning",
+      "group": "EDP"
+    },
+    {
+      "id": 221,
+      "label": "Functional Prototype Design",
+      "group": "EDP"
+    },
+    {
+      "id": 222,
+      "label": "Design Documentation",
+      "group": "EDP"
+    },
+    {
+      "id": 223,
+      "label": "Technical Presentation",
+      "group": "EDP"
+    },
+    {
+      "id": 224,
+      "label": "Multi-Material Printing",
+      "group": "HARD"
+    },
+    {
+      "id": 225,
+      "label": "Multi-Color Printing",
+      "group": "HARD"
+    },
+    {
+      "id": 226,
+      "label": "AMS Material System",
+      "group": "HARD"
+    },
+    {
+      "id": 227,
+      "label": "Prusa MMU Unit",
+      "group": "HARD"
+    },
+    {
+      "id": 228,
+      "label": "IDEX Dual Extrusion",
+      "group": "HARD"
+    },
+    {
+      "id": 229,
+      "label": "Toolchanger Printers",
+      "group": "HARD"
+    },
+    {
+      "id": 230,
+      "label": "Filament Splicing",
+      "group": "HARD"
+    },
+    {
+      "id": 231,
+      "label": "Multi-Material Waste",
+      "group": "SAFE"
+    },
+    {
+      "id": 232,
+      "label": "CoreXY Motion System",
+      "group": "HARD"
+    },
+    {
+      "id": 233,
+      "label": "Bed Slinger Design",
+      "group": "HARD"
+    },
+    {
+      "id": 234,
+      "label": "Klipper Firmware",
+      "group": "HARD"
+    },
+    {
+      "id": 235,
+      "label": "Input Shaping",
+      "group": "HARD"
+    },
+    {
+      "id": 236,
+      "label": "Pressure Advance",
+      "group": "HARD"
+    },
+    {
+      "id": 237,
+      "label": "High-Speed Printing",
+      "group": "HARD"
+    },
+    {
+      "id": 238,
+      "label": "Linear Rails",
+      "group": "HARD"
+    },
+    {
+      "id": 239,
+      "label": "All-Metal Hotend",
+      "group": "HARD"
+    },
+    {
+      "id": 240,
+      "label": "High-Flow Hotend",
+      "group": "HARD"
+    },
+    {
+      "id": 241,
+      "label": "Hardened Nozzle",
+      "group": "HARD"
+    },
+    {
+      "id": 242,
+      "label": "PEI Flex Plate",
+      "group": "HARD"
+    },
+    {
+      "id": 243,
+      "label": "Spring Steel Sheet",
+      "group": "HARD"
+    },
+    {
+      "id": 244,
+      "label": "BLTouch Sensor",
+      "group": "HARD"
+    },
+    {
+      "id": 245,
+      "label": "Inductive Probe",
+      "group": "HARD"
+    },
+    {
+      "id": 246,
+      "label": "Strain Gauge Leveling",
+      "group": "HARD"
+    },
+    {
+      "id": 247,
+      "label": "Mono LCD Resolution",
+      "group": "RESN"
+    },
+    {
+      "id": 248,
+      "label": "Large-Format Resin",
+      "group": "RESN"
+    },
+    {
+      "id": 249,
+      "label": "PrusaSlicer",
+      "group": "SLIC"
+    },
+    {
+      "id": 250,
+      "label": "OrcaSlicer",
+      "group": "SLIC"
+    },
+    {
+      "id": 251,
+      "label": "Bambu Studio",
+      "group": "SLIC"
+    },
+    {
+      "id": 252,
+      "label": "Cura Slicer",
+      "group": "SLIC"
+    },
+    {
+      "id": 253,
+      "label": "Variable Layer Height",
+      "group": "SLIC"
+    },
+    {
+      "id": 254,
+      "label": "Adaptive Layer Height",
+      "group": "SLIC"
+    },
+    {
+      "id": 255,
+      "label": "Wi-Fi Connected Printer",
+      "group": "HARD"
+    },
+    {
+      "id": 256,
+      "label": "Print Camera Monitoring",
+      "group": "HARD"
+    },
+    {
+      "id": 257,
+      "label": "AI Failure Detection",
+      "group": "HARD"
+    },
+    {
+      "id": 258,
+      "label": "OctoPrint Server",
+      "group": "HARD"
+    },
+    {
+      "id": 259,
+      "label": "Mainsail Web Interface",
+      "group": "HARD"
+    },
+    {
+      "id": 260,
+      "label": "Heated Chamber",
+      "group": "HARD"
+    },
+    {
+      "id": 261,
+      "label": "Enclosed Printer",
+      "group": "HARD"
+    },
+    {
+      "id": 262,
+      "label": "Bambu Lab Printers",
+      "group": "HARD"
+    },
+    {
+      "id": 263,
+      "label": "Prusa Printers",
+      "group": "HARD"
+    },
+    {
+      "id": 264,
+      "label": "Creality Printers",
+      "group": "HARD"
+    },
+    {
+      "id": 265,
+      "label": "Elegoo Printers",
+      "group": "HARD"
+    },
+    {
+      "id": 266,
+      "label": "Carbon Fiber Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 267,
+      "label": "Wood Fill Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 268,
+      "label": "Metal Fill Filament",
+      "group": "MAT"
+    },
+    {
+      "id": 269,
+      "label": "Vase Mode",
+      "group": "SLIC"
+    },
+    {
+      "id": 270,
+      "label": "Fuzzy Skin",
+      "group": "SLIC"
+    },
+    {
+      "id": 271,
+      "label": "AI In Additive Manufacturing",
+      "group": "AIAM"
+    },
+    {
+      "id": 272,
+      "label": "Computer Vision Basics",
+      "group": "AIAM"
+    },
+    {
+      "id": 273,
+      "label": "Machine Learning Basics",
+      "group": "AIAM"
+    },
+    {
+      "id": 274,
+      "label": "Neural Networks Overview",
+      "group": "AIAM"
+    },
+    {
+      "id": 275,
+      "label": "First-Layer Vision Check",
+      "group": "AIAM"
+    },
+    {
+      "id": 276,
+      "label": "Spaghetti Detection",
+      "group": "AIAM"
+    },
+    {
+      "id": 277,
+      "label": "Obico Open Monitoring",
+      "group": "AIAM"
+    },
+    {
+      "id": 278,
+      "label": "Bambu Lab AI Inspection",
+      "group": "AIAM"
+    },
+    {
+      "id": 279,
+      "label": "Time-Lapse Print Capture",
+      "group": "AIAM"
+    },
+    {
+      "id": 280,
+      "label": "Defect Classification Models",
+      "group": "AIAM"
+    },
+    {
+      "id": 281,
+      "label": "Automatic Print Pause",
+      "group": "AIAM"
+    },
+    {
+      "id": 282,
+      "label": "Predictive Maintenance ML",
+      "group": "AIAM"
+    },
+    {
+      "id": 283,
+      "label": "AI Slicer Optimization",
+      "group": "AIAM"
+    },
+    {
+      "id": 284,
+      "label": "Text-To-CAD Generation",
+      "group": "AIAM"
+    },
+    {
+      "id": 285,
+      "label": "AI Material Recommender",
+      "group": "AIAM"
+    },
+    {
+      "id": 286,
+      "label": "AI Troubleshooting Assistant",
+      "group": "AIAM"
+    },
+    {
+      "id": 287,
+      "label": "LLM Tutoring For Students",
+      "group": "AIAM"
+    },
+    {
+      "id": 288,
+      "label": "Synthetic Training Data",
+      "group": "AIAM"
+    },
+    {
+      "id": 289,
+      "label": "Edge AI On Printers",
+      "group": "AIAM"
+    },
+    {
+      "id": 290,
+      "label": "AI Ethics In Manufacturing",
+      "group": "AIAM"
+    },
+    {
+      "id": 291,
+      "label": "AI Hallucination Risks",
+      "group": "AIAM"
+    },
+    {
+      "id": 292,
+      "label": "Snapmaker Printers",
+      "group": "HARD"
+    }
+  ],
+  "edges": [
+    {
+      "from": 7,
+      "to": 3
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 3
+    },
+    {
+      "from": 8,
+      "to": 6
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 11
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 16,
+      "to": 11
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 14
+    },
+    {
+      "from": 18,
+      "to": 15
+    },
+    {
+      "from": 21,
+      "to": 11
+    },
+    {
+      "from": 21,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 21
+    },
+    {
+      "from": 24,
+      "to": 11
+    },
+    {
+      "from": 25,
+      "to": 2
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 26,
+      "to": 24
+    },
+    {
+      "from": 27,
+      "to": 2
+    },
+    {
+      "from": 27,
+      "to": 24
+    },
+    {
+      "from": 28,
+      "to": 24
+    },
+    {
+      "from": 29,
+      "to": 22
+    },
+    {
+      "from": 29,
+      "to": 24
+    },
+    {
+      "from": 30,
+      "to": 22
+    },
+    {
+      "from": 30,
+      "to": 24
+    },
+    {
+      "from": 31,
+      "to": 22
+    },
+    {
+      "from": 31,
+      "to": 24
+    },
+    {
+      "from": 32,
+      "to": 22
+    },
+    {
+      "from": 32,
+      "to": 24
+    },
+    {
+      "from": 33,
+      "to": 22
+    },
+    {
+      "from": 33,
+      "to": 24
+    },
+    {
+      "from": 34,
+      "to": 22
+    },
+    {
+      "from": 34,
+      "to": 24
+    },
+    {
+      "from": 35,
+      "to": 22
+    },
+    {
+      "from": 35,
+      "to": 24
+    },
+    {
+      "from": 36,
+      "to": 29
+    },
+    {
+      "from": 36,
+      "to": 122
+    },
+    {
+      "from": 37,
+      "to": 30
+    },
+    {
+      "from": 37,
+      "to": 136
+    },
+    {
+      "from": 38,
+      "to": 30
+    },
+    {
+      "from": 38,
+      "to": 136
+    },
+    {
+      "from": 39,
+      "to": 30
+    },
+    {
+      "from": 39,
+      "to": 136
+    },
+    {
+      "from": 40,
+      "to": 31
+    },
+    {
+      "from": 41,
+      "to": 31
+    },
+    {
+      "from": 42,
+      "to": 31
+    },
+    {
+      "from": 43,
+      "to": 31
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 45
+    },
+    {
+      "from": 47,
+      "to": 44
+    },
+    {
+      "from": 47,
+      "to": 45
+    },
+    {
+      "from": 48,
+      "to": 44
+    },
+    {
+      "from": 48,
+      "to": 45
+    },
+    {
+      "from": 49,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 11
+    },
+    {
+      "from": 50,
+      "to": 44
+    },
+    {
+      "from": 51,
+      "to": 44
+    },
+    {
+      "from": 51,
+      "to": 50
+    },
+    {
+      "from": 52,
+      "to": 50
+    },
+    {
+      "from": 53,
+      "to": 44
+    },
+    {
+      "from": 54,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 54
+    },
+    {
+      "from": 56,
+      "to": 4
+    },
+    {
+      "from": 56,
+      "to": 5
+    },
+    {
+      "from": 57,
+      "to": 2
+    },
+    {
+      "from": 57,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 59,
+      "to": 56
+    },
+    {
+      "from": 59,
+      "to": 58
+    },
+    {
+      "from": 60,
+      "to": 59
+    },
+    {
+      "from": 61,
+      "to": 57
+    },
+    {
+      "from": 61,
+      "to": 60
+    },
+    {
+      "from": 62,
+      "to": 57
+    },
+    {
+      "from": 62,
+      "to": 60
+    },
+    {
+      "from": 63,
+      "to": 57
+    },
+    {
+      "from": 63,
+      "to": 60
+    },
+    {
+      "from": 64,
+      "to": 60
+    },
+    {
+      "from": 65,
+      "to": 60
+    },
+    {
+      "from": 66,
+      "to": 60
+    },
+    {
+      "from": 67,
+      "to": 60
+    },
+    {
+      "from": 68,
+      "to": 56
+    },
+    {
+      "from": 69,
+      "to": 60
+    },
+    {
+      "from": 70,
+      "to": 58
+    },
+    {
+      "from": 70,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 59
+    },
+    {
+      "from": 72,
+      "to": 59
+    },
+    {
+      "from": 73,
+      "to": 59
+    },
+    {
+      "from": 74,
+      "to": 4
+    },
+    {
+      "from": 74,
+      "to": 56
+    },
+    {
+      "from": 75,
+      "to": 4
+    },
+    {
+      "from": 75,
+      "to": 56
+    },
+    {
+      "from": 76,
+      "to": 4
+    },
+    {
+      "from": 76,
+      "to": 56
+    },
+    {
+      "from": 77,
+      "to": 2
+    },
+    {
+      "from": 78,
+      "to": 74
+    },
+    {
+      "from": 78,
+      "to": 77
+    },
+    {
+      "from": 79,
+      "to": 77
+    },
+    {
+      "from": 79,
+      "to": 80
+    },
+    {
+      "from": 80,
+      "to": 77
+    },
+    {
+      "from": 81,
+      "to": 80
+    },
+    {
+      "from": 82,
+      "to": 74
+    },
+    {
+      "from": 82,
+      "to": 78
+    },
+    {
+      "from": 83,
+      "to": 56
+    },
+    {
+      "from": 83,
+      "to": 74
+    },
+    {
+      "from": 84,
+      "to": 83
+    },
+    {
+      "from": 85,
+      "to": 84
+    },
+    {
+      "from": 86,
+      "to": 24
+    },
+    {
+      "from": 86,
+      "to": 83
+    },
+    {
+      "from": 87,
+      "to": 83
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 83
+    },
+    {
+      "from": 89,
+      "to": 83
+    },
+    {
+      "from": 90,
+      "to": 89
+    },
+    {
+      "from": 91,
+      "to": 83
+    },
+    {
+      "from": 92,
+      "to": 83
+    },
+    {
+      "from": 92,
+      "to": 84
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 94,
+      "to": 83
+    },
+    {
+      "from": 94,
+      "to": 122
+    },
+    {
+      "from": 95,
+      "to": 83
+    },
+    {
+      "from": 96,
+      "to": 83
+    },
+    {
+      "from": 96,
+      "to": 122
+    },
+    {
+      "from": 97,
+      "to": 83
+    },
+    {
+      "from": 97,
+      "to": 87
+    },
+    {
+      "from": 98,
+      "to": 97
+    },
+    {
+      "from": 99,
+      "to": 83
+    },
+    {
+      "from": 99,
+      "to": 156
+    },
+    {
+      "from": 100,
+      "to": 99
+    },
+    {
+      "from": 101,
+      "to": 99
+    },
+    {
+      "from": 102,
+      "to": 83
+    },
+    {
+      "from": 102,
+      "to": 86
+    },
+    {
+      "from": 102,
+      "to": 89
+    },
+    {
+      "from": 102,
+      "to": 94
+    },
+    {
+      "from": 103,
+      "to": 36
+    },
+    {
+      "from": 104,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 106,
+      "to": 105
+    },
+    {
+      "from": 107,
+      "to": 108
+    },
+    {
+      "from": 108,
+      "to": 103
+    },
+    {
+      "from": 109,
+      "to": 103
+    },
+    {
+      "from": 110,
+      "to": 109
+    },
+    {
+      "from": 111,
+      "to": 109
+    },
+    {
+      "from": 112,
+      "to": 103
+    },
+    {
+      "from": 113,
+      "to": 84
+    },
+    {
+      "from": 113,
+      "to": 103
+    },
+    {
+      "from": 114,
+      "to": 26
+    },
+    {
+      "from": 114,
+      "to": 103
+    },
+    {
+      "from": 115,
+      "to": 116
+    },
+    {
+      "from": 116,
+      "to": 26
+    },
+    {
+      "from": 116,
+      "to": 87
+    },
+    {
+      "from": 116,
+      "to": 114
+    },
+    {
+      "from": 117,
+      "to": 87
+    },
+    {
+      "from": 117,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 105
+    },
+    {
+      "from": 118,
+      "to": 108
+    },
+    {
+      "from": 119,
+      "to": 104
+    },
+    {
+      "from": 120,
+      "to": 103
+    },
+    {
+      "from": 120,
+      "to": 118
+    },
+    {
+      "from": 120,
+      "to": 119
+    },
+    {
+      "from": 121,
+      "to": 6
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 122
+    },
+    {
+      "from": 124,
+      "to": 8
+    },
+    {
+      "from": 125,
+      "to": 8
+    },
+    {
+      "from": 126,
+      "to": 123
+    },
+    {
+      "from": 126,
+      "to": 124
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 122
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 122
+    },
+    {
+      "from": 128,
+      "to": 126
+    },
+    {
+      "from": 129,
+      "to": 122
+    },
+    {
+      "from": 129,
+      "to": 126
+    },
+    {
+      "from": 130,
+      "to": 122
+    },
+    {
+      "from": 130,
+      "to": 126
+    },
+    {
+      "from": 131,
+      "to": 122
+    },
+    {
+      "from": 131,
+      "to": 126
+    },
+    {
+      "from": 132,
+      "to": 122
+    },
+    {
+      "from": 132,
+      "to": 126
+    },
+    {
+      "from": 133,
+      "to": 122
+    },
+    {
+      "from": 133,
+      "to": 126
+    },
+    {
+      "from": 134,
+      "to": 122
+    },
+    {
+      "from": 134,
+      "to": 126
+    },
+    {
+      "from": 135,
+      "to": 122
+    },
+    {
+      "from": 136,
+      "to": 121
+    },
+    {
+      "from": 137,
+      "to": 126
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 126
+    },
+    {
+      "from": 138,
+      "to": 136
+    },
+    {
+      "from": 139,
+      "to": 126
+    },
+    {
+      "from": 139,
+      "to": 136
+    },
+    {
+      "from": 140,
+      "to": 122
+    },
+    {
+      "from": 140,
+      "to": 200
+    },
+    {
+      "from": 141,
+      "to": 122
+    },
+    {
+      "from": 141,
+      "to": 199
+    },
+    {
+      "from": 142,
+      "to": 37
+    },
+    {
+      "from": 142,
+      "to": 38
+    },
+    {
+      "from": 143,
+      "to": 142
+    },
+    {
+      "from": 144,
+      "to": 142
+    },
+    {
+      "from": 145,
+      "to": 136
+    },
+    {
+      "from": 145,
+      "to": 142
+    },
+    {
+      "from": 146,
+      "to": 99
+    },
+    {
+      "from": 146,
+      "to": 142
+    },
+    {
+      "from": 147,
+      "to": 136
+    },
+    {
+      "from": 147,
+      "to": 142
+    },
+    {
+      "from": 148,
+      "to": 147
+    },
+    {
+      "from": 149,
+      "to": 136
+    },
+    {
+      "from": 149,
+      "to": 194
+    },
+    {
+      "from": 150,
+      "to": 11
+    },
+    {
+      "from": 151,
+      "to": 51
+    },
+    {
+      "from": 151,
+      "to": 150
+    },
+    {
+      "from": 152,
+      "to": 42
+    },
+    {
+      "from": 152,
+      "to": 43
+    },
+    {
+      "from": 152,
+      "to": 150
+    },
+    {
+      "from": 153,
+      "to": 31
+    },
+    {
+      "from": 153,
+      "to": 152
+    },
+    {
+      "from": 154,
+      "to": 152
+    },
+    {
+      "from": 155,
+      "to": 11
+    },
+    {
+      "from": 155,
+      "to": 24
+    },
+    {
+      "from": 155,
+      "to": 28
+    },
+    {
+      "from": 156,
+      "to": 27
+    },
+    {
+      "from": 156,
+      "to": 155
+    },
+    {
+      "from": 157,
+      "to": 155
+    },
+    {
+      "from": 158,
+      "to": 27
+    },
+    {
+      "from": 158,
+      "to": 28
+    },
+    {
+      "from": 158,
+      "to": 155
+    },
+    {
+      "from": 159,
+      "to": 156
+    },
+    {
+      "from": 159,
+      "to": 158
+    },
+    {
+      "from": 160,
+      "to": 88
+    },
+    {
+      "from": 160,
+      "to": 155
+    },
+    {
+      "from": 161,
+      "to": 155
+    },
+    {
+      "from": 161,
+      "to": 168
+    },
+    {
+      "from": 162,
+      "to": 1
+    },
+    {
+      "from": 162,
+      "to": 155
+    },
+    {
+      "from": 162,
+      "to": 168
+    },
+    {
+      "from": 163,
+      "to": 156
+    },
+    {
+      "from": 164,
+      "to": 60
+    },
+    {
+      "from": 164,
+      "to": 155
+    },
+    {
+      "from": 165,
+      "to": 155
+    },
+    {
+      "from": 165,
+      "to": 167
+    },
+    {
+      "from": 166,
+      "to": 165
+    },
+    {
+      "from": 166,
+      "to": 210
+    },
+    {
+      "from": 167,
+      "to": 89
+    },
+    {
+      "from": 167,
+      "to": 155
+    },
+    {
+      "from": 168,
+      "to": 3
+    },
+    {
+      "from": 169,
+      "to": 168
+    },
+    {
+      "from": 170,
+      "to": 168
+    },
+    {
+      "from": 171,
+      "to": 162
+    },
+    {
+      "from": 171,
+      "to": 168
+    },
+    {
+      "from": 172,
+      "to": 117
+    },
+    {
+      "from": 172,
+      "to": 168
+    },
+    {
+      "from": 173,
+      "to": 168
+    },
+    {
+      "from": 173,
+      "to": 169
+    },
+    {
+      "from": 173,
+      "to": 170
+    },
+    {
+      "from": 173,
+      "to": 171
+    },
+    {
+      "from": 174,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 36
+    },
+    {
+      "from": 176,
+      "to": 95
+    },
+    {
+      "from": 176,
+      "to": 97
+    },
+    {
+      "from": 176,
+      "to": 175
+    },
+    {
+      "from": 177,
+      "to": 87
+    },
+    {
+      "from": 177,
+      "to": 117
+    },
+    {
+      "from": 177,
+      "to": 175
+    },
+    {
+      "from": 178,
+      "to": 93
+    },
+    {
+      "from": 178,
+      "to": 94
+    },
+    {
+      "from": 178,
+      "to": 175
+    },
+    {
+      "from": 179,
+      "to": 94
+    },
+    {
+      "from": 179,
+      "to": 108
+    },
+    {
+      "from": 179,
+      "to": 175
+    },
+    {
+      "from": 180,
+      "to": 94
+    },
+    {
+      "from": 180,
+      "to": 175
+    },
+    {
+      "from": 181,
+      "to": 28
+    },
+    {
+      "from": 181,
+      "to": 94
+    },
+    {
+      "from": 181,
+      "to": 175
+    },
+    {
+      "from": 182,
+      "to": 87
+    },
+    {
+      "from": 182,
+      "to": 95
+    },
+    {
+      "from": 182,
+      "to": 175
+    },
+    {
+      "from": 183,
+      "to": 91
+    },
+    {
+      "from": 183,
+      "to": 110
+    },
+    {
+      "from": 183,
+      "to": 175
+    },
+    {
+      "from": 184,
+      "to": 104
+    },
+    {
+      "from": 184,
+      "to": 105
+    },
+    {
+      "from": 184,
+      "to": 175
+    },
+    {
+      "from": 185,
+      "to": 95
+    },
+    {
+      "from": 185,
+      "to": 97
+    },
+    {
+      "from": 185,
+      "to": 175
+    },
+    {
+      "from": 186,
+      "to": 145
+    },
+    {
+      "from": 186,
+      "to": 146
+    },
+    {
+      "from": 186,
+      "to": 175
+    },
+    {
+      "from": 187,
+      "to": 99
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 122
+    },
+    {
+      "from": 190,
+      "to": 123
+    },
+    {
+      "from": 191,
+      "to": 129
+    },
+    {
+      "from": 191,
+      "to": 188
+    },
+    {
+      "from": 192,
+      "to": 147
+    },
+    {
+      "from": 193,
+      "to": 187
+    },
+    {
+      "from": 195,
+      "to": 122
+    },
+    {
+      "from": 195,
+      "to": 194
+    },
+    {
+      "from": 196,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 105
+    },
+    {
+      "from": 197,
+      "to": 194
+    },
+    {
+      "from": 198,
+      "to": 136
+    },
+    {
+      "from": 198,
+      "to": 194
+    },
+    {
+      "from": 199,
+      "to": 122
+    },
+    {
+      "from": 199,
+      "to": 200
+    },
+    {
+      "from": 200,
+      "to": 11
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 203,
+      "to": 74
+    },
+    {
+      "from": 203,
+      "to": 202
+    },
+    {
+      "from": 204,
+      "to": 11
+    },
+    {
+      "from": 204,
+      "to": 201
+    },
+    {
+      "from": 205,
+      "to": 204
+    },
+    {
+      "from": 206,
+      "to": 4
+    },
+    {
+      "from": 207,
+      "to": 4
+    },
+    {
+      "from": 207,
+      "to": 56
+    },
+    {
+      "from": 207,
+      "to": 206
+    },
+    {
+      "from": 208,
+      "to": 36
+    },
+    {
+      "from": 209,
+      "to": 208
+    },
+    {
+      "from": 210,
+      "to": 56
+    },
+    {
+      "from": 211,
+      "to": 83
+    },
+    {
+      "from": 212,
+      "to": 11
+    },
+    {
+      "from": 213,
+      "to": 212
+    },
+    {
+      "from": 214,
+      "to": 212
+    },
+    {
+      "from": 215,
+      "to": 212
+    },
+    {
+      "from": 216,
+      "to": 212
+    },
+    {
+      "from": 217,
+      "to": 216
+    },
+    {
+      "from": 218,
+      "to": 53
+    },
+    {
+      "from": 218,
+      "to": 216
+    },
+    {
+      "from": 219,
+      "to": 212
+    },
+    {
+      "from": 220,
+      "to": 44
+    },
+    {
+      "from": 220,
+      "to": 45
+    },
+    {
+      "from": 220,
+      "to": 48
+    },
+    {
+      "from": 220,
+      "to": 51
+    },
+    {
+      "from": 221,
+      "to": 60
+    },
+    {
+      "from": 221,
+      "to": 155
+    },
+    {
+      "from": 221,
+      "to": 220
+    },
+    {
+      "from": 222,
+      "to": 54
+    },
+    {
+      "from": 222,
+      "to": 55
+    },
+    {
+      "from": 222,
+      "to": 220
+    },
+    {
+      "from": 223,
+      "to": 53
+    },
+    {
+      "from": 223,
+      "to": 222
+    },
+    {
+      "from": 224,
+      "to": 36
+    },
+    {
+      "from": 224,
+      "to": 108
+    },
+    {
+      "from": 225,
+      "to": 36
+    },
+    {
+      "from": 225,
+      "to": 224
+    },
+    {
+      "from": 226,
+      "to": 224
+    },
+    {
+      "from": 226,
+      "to": 225
+    },
+    {
+      "from": 227,
+      "to": 224
+    },
+    {
+      "from": 227,
+      "to": 225
+    },
+    {
+      "from": 228,
+      "to": 108
+    },
+    {
+      "from": 228,
+      "to": 224
+    },
+    {
+      "from": 229,
+      "to": 108
+    },
+    {
+      "from": 229,
+      "to": 224
+    },
+    {
+      "from": 230,
+      "to": 224
+    },
+    {
+      "from": 231,
+      "to": 200
+    },
+    {
+      "from": 231,
+      "to": 224
+    },
+    {
+      "from": 232,
+      "to": 109
+    },
+    {
+      "from": 232,
+      "to": 110
+    },
+    {
+      "from": 233,
+      "to": 109
+    },
+    {
+      "from": 233,
+      "to": 110
+    },
+    {
+      "from": 234,
+      "to": 113
+    },
+    {
+      "from": 235,
+      "to": 183
+    },
+    {
+      "from": 235,
+      "to": 234
+    },
+    {
+      "from": 236,
+      "to": 93
+    },
+    {
+      "from": 236,
+      "to": 234
+    },
+    {
+      "from": 237,
+      "to": 91
+    },
+    {
+      "from": 237,
+      "to": 234
+    },
+    {
+      "from": 237,
+      "to": 235
+    },
+    {
+      "from": 237,
+      "to": 236
+    },
+    {
+      "from": 238,
+      "to": 112
+    },
+    {
+      "from": 239,
+      "to": 105
+    },
+    {
+      "from": 240,
+      "to": 105
+    },
+    {
+      "from": 240,
+      "to": 237
+    },
+    {
+      "from": 241,
+      "to": 104
+    },
+    {
+      "from": 241,
+      "to": 266
+    },
+    {
+      "from": 242,
+      "to": 114
+    },
+    {
+      "from": 243,
+      "to": 114
+    },
+    {
+      "from": 243,
+      "to": 242
+    },
+    {
+      "from": 244,
+      "to": 115
+    },
+    {
+      "from": 245,
+      "to": 115
+    },
+    {
+      "from": 246,
+      "to": 115
+    },
+    {
+      "from": 247,
+      "to": 143
+    },
+    {
+      "from": 248,
+      "to": 25
+    },
+    {
+      "from": 248,
+      "to": 142
+    },
+    {
+      "from": 249,
+      "to": 83
+    },
+    {
+      "from": 249,
+      "to": 263
+    },
+    {
+      "from": 250,
+      "to": 83
+    },
+    {
+      "from": 251,
+      "to": 83
+    },
+    {
+      "from": 251,
+      "to": 262
+    },
+    {
+      "from": 252,
+      "to": 83
+    },
+    {
+      "from": 253,
+      "to": 86
+    },
+    {
+      "from": 254,
+      "to": 253
+    },
+    {
+      "from": 255,
+      "to": 113
+    },
+    {
+      "from": 256,
+      "to": 255
+    },
+    {
+      "from": 257,
+      "to": 210
+    },
+    {
+      "from": 257,
+      "to": 256
+    },
+    {
+      "from": 258,
+      "to": 113
+    },
+    {
+      "from": 258,
+      "to": 255
+    },
+    {
+      "from": 259,
+      "to": 234
+    },
+    {
+      "from": 259,
+      "to": 255
+    },
+    {
+      "from": 260,
+      "to": 95
+    },
+    {
+      "from": 260,
+      "to": 122
+    },
+    {
+      "from": 261,
+      "to": 197
+    },
+    {
+      "from": 261,
+      "to": 260
+    },
+    {
+      "from": 262,
+      "to": 36
+    },
+    {
+      "from": 262,
+      "to": 226
+    },
+    {
+      "from": 262,
+      "to": 232
+    },
+    {
+      "from": 262,
+      "to": 234
+    },
+    {
+      "from": 263,
+      "to": 36
+    },
+    {
+      "from": 263,
+      "to": 14
+    },
+    {
+      "from": 263,
+      "to": 227
+    },
+    {
+      "from": 264,
+      "to": 36
+    },
+    {
+      "from": 264,
+      "to": 233
+    },
+    {
+      "from": 265,
+      "to": 36
+    },
+    {
+      "from": 265,
+      "to": 142
+    },
+    {
+      "from": 266,
+      "to": 134
+    },
+    {
+      "from": 267,
+      "to": 134
+    },
+    {
+      "from": 268,
+      "to": 134
+    },
+    {
+      "from": 269,
+      "to": 88
+    },
+    {
+      "from": 270,
+      "to": 88
+    },
+    {
+      "from": 271,
+      "to": 11
+    },
+    {
+      "from": 272,
+      "to": 273
+    },
+    {
+      "from": 273,
+      "to": 1
+    },
+    {
+      "from": 274,
+      "to": 273
+    },
+    {
+      "from": 275,
+      "to": 87
+    },
+    {
+      "from": 275,
+      "to": 256
+    },
+    {
+      "from": 275,
+      "to": 272
+    },
+    {
+      "from": 276,
+      "to": 257
+    },
+    {
+      "from": 276,
+      "to": 274
+    },
+    {
+      "from": 277,
+      "to": 258
+    },
+    {
+      "from": 277,
+      "to": 276
+    },
+    {
+      "from": 278,
+      "to": 257
+    },
+    {
+      "from": 278,
+      "to": 262
+    },
+    {
+      "from": 278,
+      "to": 275
+    },
+    {
+      "from": 279,
+      "to": 256
+    },
+    {
+      "from": 280,
+      "to": 173
+    },
+    {
+      "from": 280,
+      "to": 274
+    },
+    {
+      "from": 281,
+      "to": 113
+    },
+    {
+      "from": 281,
+      "to": 257
+    },
+    {
+      "from": 282,
+      "to": 120
+    },
+    {
+      "from": 282,
+      "to": 273
+    },
+    {
+      "from": 283,
+      "to": 102
+    },
+    {
+      "from": 283,
+      "to": 273
+    },
+    {
+      "from": 284,
+      "to": 210
+    },
+    {
+      "from": 284,
+      "to": 271
+    },
+    {
+      "from": 285,
+      "to": 126
+    },
+    {
+      "from": 285,
+      "to": 273
+    },
+    {
+      "from": 286,
+      "to": 175
+    },
+    {
+      "from": 286,
+      "to": 271
+    },
+    {
+      "from": 287,
+      "to": 271
+    },
+    {
+      "from": 288,
+      "to": 273
+    },
+    {
+      "from": 289,
+      "to": 113
+    },
+    {
+      "from": 289,
+      "to": 271
+    },
+    {
+      "from": 290,
+      "to": 204
+    },
+    {
+      "from": 290,
+      "to": 271
+    },
+    {
+      "from": 291,
+      "to": 287
+    },
+    {
+      "from": 291,
+      "to": 290
+    },
+    {
+      "from": 292,
+      "to": 11
+    },
+    {
+      "from": 292,
+      "to": 36
+    }
+  ]
+}

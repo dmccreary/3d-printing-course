@@ -1,0 +1,10 @@
+{
+  "title": "Introduction to 3D Printing",
+  "description": "A high-school introductory course in additive manufacturing anchored to PLTW engineering pedagogy, ASTM/ISO 52900 terminology, America Makes workforce competencies, and community-college articulation pathways. Covers CAD, slicing, FDM and resin printer operation, materials science, Design for Additive Manufacturing, troubleshooting, safety, and modern sub-$5K printer technology including multi-color/multi-material, CoreXY motion, Klipper firmware, and AI failure detection.",
+  "creator": "Dan McCreary",
+  "date": "2026-05-07",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

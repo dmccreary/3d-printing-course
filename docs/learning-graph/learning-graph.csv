@@ -1,0 +1,293 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Algebra Basics,,FOUND
+2,Geometry Basics,,FOUND
+3,Units And Measurement,,FOUND
+4,Computer File Management,,FOUND
+5,Mouse And 3D Navigation,,FOUND
+6,Basic Physics Concepts,,FOUND
+7,Mass And Density,3|6,FOUND
+8,Force And Pressure,3|6,FOUND
+9,Industrial Revolution,,HIST
+10,Subtractive Manufacturing,9,HIST
+11,Additive Manufacturing,10,HIST
+12,Stereolithography Invention,11,HIST
+13,FDM Patent Expiration,11,HIST
+14,Desktop Printer Revolution,13,HIST
+15,RepRap Project,14,HIST
+16,America Makes Institute,11,HIST
+17,AM Innovation Institutes,16,HIST
+18,Maker Movement,14|15,HIST
+19,ISO Standards Body,,STND
+20,ASTM International,,STND
+21,ISO ASTM 52900 Standard,11|19|20,STND
+22,AM Process Categories,21,STND
+23,AM Vocabulary Glossary,21,STND
+24,Layer-By-Layer Principle,11,STND
+25,Build Volume,2|24,STND
+26,Build Plate,24,STND
+27,Z Axis Direction,2|24,STND
+28,Anisotropy,24,STND
+29,Material Extrusion,22|24,PROC
+30,Vat Photopolymerization,22|24,PROC
+31,Powder Bed Fusion,22|24,PROC
+32,Material Jetting,22|24,PROC
+33,Binder Jetting,22|24,PROC
+34,Directed Energy Deposition,22|24,PROC
+35,Sheet Lamination,22|24,PROC
+36,FDM FFF Process,29|122,PROC
+37,SLA Process,30|136,PROC
+38,MSLA Process,30|136,PROC
+39,DLP Process,30|136,PROC
+40,SLS Process,31,PROC
+41,MJF Process,31,PROC
+42,DMLS Process,31,PROC
+43,EBM Process,31,PROC
+44,PLTW Design Process,,EDP
+45,Problem Definition,44,EDP
+46,Research Phase,44|45,EDP
+47,Ideation And Sketching,44|45,EDP
+48,Design Specifications,44|45,EDP
+49,Concept Selection,47|48,EDP
+50,Prototyping,11|44,EDP
+51,Iteration Cycle,44|50,EDP
+52,Testing And Validation,50,EDP
+53,Engineering Communication,44,EDP
+54,Engineering Notebook,53,EDP
+55,Portfolio Development,53|54,EDP
+56,CAD Software Overview,4|5,CAD
+57,2D Sketching,2|56,CAD
+58,Sketch Constraints,57,CAD
+59,Parametric Modeling,56|58,CAD
+60,Feature-Based Modeling,59,CAD
+61,Extrude Feature,57|60,CAD
+62,Revolve Feature,57|60,CAD
+63,Sweep And Loft,57|60,CAD
+64,Fillet And Chamfer,60,CAD
+65,Shell Feature,60,CAD
+66,Pattern Features,60,CAD
+67,Boolean Operations,60,CAD
+68,Reference Geometry,56,CAD
+69,Assemblies,60,CAD
+70,Mate Constraints,58|69,CAD
+71,Onshape Workflow,59,CAD
+72,Fusion 360 Workflow,59,CAD
+73,FreeCAD Workflow,59,CAD
+74,STL File Format,4|56,FILE
+75,3MF File Format,4|56,FILE
+76,OBJ File Format,4|56,FILE
+77,Mesh Geometry,2,FILE
+78,Triangle Resolution,74|77,FILE
+79,Mesh Repair,77|80,FILE
+80,Manifold Geometry,77,FILE
+81,Non Manifold Errors,80,FILE
+82,STL Export Settings,74|78,FILE
+83,Slicer Software,56|74,SLIC
+84,G-code Basics,83,SLIC
+85,G-code Reading,84,SLIC
+86,Layer Height,24|83,SLIC
+87,First Layer Settings,83|86,SLIC
+88,Wall Count,83,SLIC
+89,Infill Density,83,SLIC
+90,Infill Patterns,89,SLIC
+91,Print Speed,83,SLIC
+92,Travel Moves,83|84,SLIC
+93,Retraction Settings,92,SLIC
+94,Print Temperature,83|122,SLIC
+95,Bed Temperature,83,SLIC
+96,Cooling Fan Settings,83|122,SLIC
+97,Adhesion Type,83|87,SLIC
+98,Skirt Brim Raft,97,SLIC
+99,Support Structures,83|156,SLIC
+100,Tree Supports,99,SLIC
+101,Support Interface,99,SLIC
+102,Slicer Profiles,83|86|89|94,SLIC
+103,FDM Printer Anatomy,36,HARD
+104,Nozzle,103,HARD
+105,Hotend,103|104,HARD
+106,Heat Break,105,HARD
+107,Bowden Vs Direct Drive,108,HARD
+108,Extruder Mechanism,103,HARD
+109,Stepper Motors,103,HARD
+110,Belts And Pulleys,109,HARD
+111,Lead Screws,109,HARD
+112,Linear Bearings,103,HARD
+113,Motherboard Firmware,84|103,HARD
+114,Build Surface Types,26|103,HARD
+115,Auto Bed Leveling,116,HARD
+116,Manual Bed Leveling,26|87|114,HARD
+117,Z Offset Calibration,87|116,HARD
+118,Filament Loading,105|108,HARD
+119,Nozzle Change,104,HARD
+120,Routine Maintenance,103|118|119,HARD
+121,Polymer Basics,6,MAT
+122,Thermoplastics,121,MAT
+123,Glass Transition Temperature,122,MAT
+124,Tensile Strength,8,MAT
+125,Elongation At Break,8,MAT
+126,Material Data Sheet,123|124|125,MAT
+127,PLA Filament,122|126,MAT
+128,PETG Filament,122|126,MAT
+129,ABS Filament,122|126,MAT
+130,ASA Filament,122|126,MAT
+131,TPU Filament,122|126,MAT
+132,Nylon Filament,122|126,MAT
+133,Polycarbonate Filament,122|126,MAT
+134,Composite Filaments,122|126,MAT
+135,Filament Storage And Drying,122,MAT
+136,Photopolymer Resins,121,MAT
+137,Standard Resin,126|136,MAT
+138,Tough And Flexible Resins,126|136,MAT
+139,Engineering Resins,126|136,MAT
+140,Bio-Based Filaments,122|200,MAT
+141,Recycled Filaments,122|199,MAT
+142,Resin Printer Anatomy,37|38,RESN
+143,LCD And Light Source,142,RESN
+144,Resin Vat And FEP,142,RESN
+145,Exposure Settings,136|142,RESN
+146,Resin Supports,99|142,RESN
+147,Wash And Cure Workflow,136|142,RESN
+148,IPA Handling,147,RESN
+149,Resin PPE,136|194,RESN
+150,Industrial Vs Hobby Systems,11,PROC
+151,Production AM Workflow,51|150,PROC
+152,Metal AM Overview,42|43|150,PROC
+153,Build Chamber Atmosphere,31|152,PROC
+154,Post-Build Heat Treatment,152,PROC
+155,DfAM Principles,11|24|28,DFAM
+156,Overhangs,27|155,DFAM
+157,Bridging,155,DFAM
+158,Part Orientation Strategy,27|28|155,DFAM
+159,Support Minimization,156|158,DFAM
+160,Wall Thickness Rules,88|155,DFAM
+161,Hole And Slot Tolerances,155|168,DFAM
+162,Tolerance Allowances,1|155|168,DFAM
+163,Self-Supporting Angles,156,DFAM
+164,Lattice Structures,60|155,DFAM
+165,Topology Optimization,155|167,DFAM
+166,Generative Design,165|210,DFAM
+167,Lightweighting,89|155,DFAM
+168,Dimensional Accuracy,3,DFAM
+169,Calipers,168,DFAM
+170,Micrometers,168,DFAM
+171,GD&T Basics,162|168,DFAM
+172,Calibration Cube,117|168,DFAM
+173,Quality Control Procedures,168|169|170|171,DFAM
+174,Repeatability And Reproducibility,173,DFAM
+175,Troubleshooting Workflow,36,TROB
+176,Warping,95|97|175,TROB
+177,First-Layer Failures,87|117|175,TROB
+178,Stringing,93|94|175,TROB
+179,Under-Extrusion,94|108|175,TROB
+180,Over-Extrusion,94|175,TROB
+181,Layer Separation,28|94|175,TROB
+182,Elephants Foot,87|95|175,TROB
+183,Ringing And Ghosting,91|110|175,TROB
+184,Clogged Nozzle,104|105|175,TROB
+185,Failed Adhesion,95|97|175,TROB
+186,Resin Print Failures,145|146|175,TROB
+187,Support Removal,99,TROB
+188,Sanding And Finishing,187,TROB
+189,Painting And Priming,188,TROB
+190,Annealing,122|123,TROB
+191,Chemical Smoothing,129|188,TROB
+192,UV Post-Curing,147,TROB
+193,Joining Printed Parts,187,TROB
+194,Workshop Safety,,SAFE
+195,VOC And UFP Exposure,122|194,SAFE
+196,Ventilation Requirements,195,SAFE
+197,Fire Safety,105|194,SAFE
+198,Resin Disposal,136|194,SAFE
+199,Filament Recycling,122|200,SAFE
+200,Sustainability In AM,11,SAFE
+201,Intellectual Property,,SAFE
+202,Open-Source Licenses,201,SAFE
+203,Creative Commons For 3D,74|202,SAFE
+204,Ethical Use Of AM,11|201,SAFE
+205,Restricted Designs,204,SAFE
+206,File Naming Conventions,4,WORK
+207,Version Control For CAD,4|56|206,WORK
+208,Print Farm Concepts,36,WORK
+209,Print Queue Management,208,WORK
+210,AI-Assisted CAD,56,CAD
+211,Cloud Slicing,83,SLIC
+212,Manufacturing Career Clusters,11,WORK
+213,SME Education Foundation,212,WORK
+214,NC3 Certifications,212,WORK
+215,NIMS Certifications,212,WORK
+216,Community College Pathways,212,WORK
+217,Dual Credit Programs,216,WORK
+218,ABET Outcomes Alignment,53|216,WORK
+219,Apprenticeship Pathways,212,WORK
+220,Capstone Project Planning,44|45|48|51,EDP
+221,Functional Prototype Design,60|155|220,EDP
+222,Design Documentation,54|55|220,EDP
+223,Technical Presentation,53|222,EDP
+224,Multi-Material Printing,36|108,HARD
+225,Multi-Color Printing,36|224,HARD
+226,AMS Material System,224|225,HARD
+227,Prusa MMU Unit,224|225,HARD
+228,IDEX Dual Extrusion,108|224,HARD
+229,Toolchanger Printers,108|224,HARD
+230,Filament Splicing,224,HARD
+231,Multi-Material Waste,200|224,SAFE
+232,CoreXY Motion System,109|110,HARD
+233,Bed Slinger Design,109|110,HARD
+234,Klipper Firmware,113,HARD
+235,Input Shaping,183|234,HARD
+236,Pressure Advance,93|234,HARD
+237,High-Speed Printing,91|234|235|236,HARD
+238,Linear Rails,112,HARD
+239,All-Metal Hotend,105,HARD
+240,High-Flow Hotend,105|237,HARD
+241,Hardened Nozzle,104|266,HARD
+242,PEI Flex Plate,114,HARD
+243,Spring Steel Sheet,114|242,HARD
+244,BLTouch Sensor,115,HARD
+245,Inductive Probe,115,HARD
+246,Strain Gauge Leveling,115,HARD
+247,Mono LCD Resolution,143,RESN
+248,Large-Format Resin,25|142,RESN
+249,PrusaSlicer,83|263,SLIC
+250,OrcaSlicer,83,SLIC
+251,Bambu Studio,83|262,SLIC
+252,Cura Slicer,83,SLIC
+253,Variable Layer Height,86,SLIC
+254,Adaptive Layer Height,253,SLIC
+255,Wi-Fi Connected Printer,113,HARD
+256,Print Camera Monitoring,255,HARD
+257,AI Failure Detection,210|256,HARD
+258,OctoPrint Server,113|255,HARD
+259,Mainsail Web Interface,234|255,HARD
+260,Heated Chamber,95|122,HARD
+261,Enclosed Printer,197|260,HARD
+262,Bambu Lab Printers,36|226|232|234,HARD
+263,Prusa Printers,36|14|227,HARD
+264,Creality Printers,36|233,HARD
+265,Elegoo Printers,36|142,HARD
+266,Carbon Fiber Filament,134,MAT
+267,Wood Fill Filament,134,MAT
+268,Metal Fill Filament,134,MAT
+269,Vase Mode,88,SLIC
+270,Fuzzy Skin,88,SLIC
+271,AI In Additive Manufacturing,11,AIAM
+272,Computer Vision Basics,273,AIAM
+273,Machine Learning Basics,1,AIAM
+274,Neural Networks Overview,273,AIAM
+275,First-Layer Vision Check,87|256|272,AIAM
+276,Spaghetti Detection,257|274,AIAM
+277,Obico Open Monitoring,258|276,AIAM
+278,Bambu Lab AI Inspection,257|262|275,AIAM
+279,Time-Lapse Print Capture,256,AIAM
+280,Defect Classification Models,173|274,AIAM
+281,Automatic Print Pause,113|257,AIAM
+282,Predictive Maintenance ML,120|273,AIAM
+283,AI Slicer Optimization,102|273,AIAM
+284,Text-To-CAD Generation,210|271,AIAM
+285,AI Material Recommender,126|273,AIAM
+286,AI Troubleshooting Assistant,175|271,AIAM
+287,LLM Tutoring For Students,271,AIAM
+288,Synthetic Training Data,273,AIAM
+289,Edge AI On Printers,113|271,AIAM
+290,AI Ethics In Manufacturing,204|271,AIAM
+291,AI Hallucination Risks,287|290,AIAM
+292,Snapmaker Printers,11|36,HARD
