@@ -1,9 +1,9 @@
 ---
 title: Ideation Sketch Canvas
-description: Apply ideation principles by generating multiple distinct design concepts for a given constraint set (Bloom L3: apply, practice, demonstrate).
-status: scaffold
+description: "Apply ideation principles by generating multiple distinct design concepts for a given constraint set (Bloom L3: apply, practice, demonstrate)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Apply
 ---
 
 # Ideation Sketch Canvas
@@ -22,7 +22,7 @@ Apply ideation principles by generating multiple distinct design concepts for a 
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
