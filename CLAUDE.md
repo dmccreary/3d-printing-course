@@ -162,6 +162,129 @@ into chapter-specific content. Never repeat the self-introduction.
 
 ---
 
+## Writing Style Guide
+
+### Overall Tone
+
+The book is **positive, optimistic, and fun to read** — while being honest
+about the real challenges of 3D printing. The authorial voice is that of an
+enthusiastic teacher who has been in the maker trenches: someone who has
+watched a twelve-hour print fail at hour eleven, laughed about it, figured
+out why, and come back the next day excited to try again.
+
+**Core tone commitments:**
+
+- **Celebrate the craft.** 3D printing is genuinely remarkable. A machine
+  in a classroom can produce objects that would have required a factory
+  fifty years ago. Let that wonder come through in the prose.
+- **Be honest about frustration.** Warped prints, clogged nozzles, and
+  slicer settings that make no sense are real. Acknowledge them directly —
+  students feel validated when the textbook admits the thing is hard
+  sometimes, rather than pretending everything always works perfectly.
+- **Frame every failure as information.** A failed print is not a setback;
+  it is a data point. The book consistently uses language like "when your
+  print warps" (not "if"), and treats troubleshooting as a normal, even
+  satisfying, part of the process.
+- **The rewards are worth the effort.** After acknowledging difficulty,
+  always follow through to the payoff: the part that fits perfectly, the
+  mechanism that moves, the prototype that solves a real problem. Remind
+  students what they are working toward.
+
+### Sentence-Level Style
+
+- Write in **second person** ("you will," "your slicer," "when your print")
+  to put the student inside the process, not watching it from the outside.
+- Use **active voice** as the default. "The extruder pushes filament" beats
+  "filament is pushed by the extruder."
+- Vary sentence rhythm. Short punchy sentences land key points. Longer
+  sentences carry the reader through a process or build an argument.
+  Alternating between them keeps reading from feeling monotonous.
+- **Contractions are fine** in body prose and in Benchy's voice. "You'll,"
+  "it's," "that's" — they make the text feel like a knowledgeable person
+  talking, not a legal document.
+- **Analogies over jargon.** When introducing a concept, reach for an
+  everyday comparison first, then layer in the technical term. "Think of
+  the hotend like a glue gun that has been given very precise instructions"
+  works better than leading with "the thermoplastic extrusion assembly."
+
+### Humor Guidelines
+
+Occasional, well-placed humor makes the book more enjoyable and helps
+students push through difficult sections. Follow these rules:
+
+- **One joke or light moment per major section** at most. Humor is seasoning,
+  not the main course.
+- **Self-deprecating and observational** — jokes about the quirks of 3D
+  printing itself, not at the expense of students. ("The 3D printing
+  community has produced a surprising number of creative names for the same
+  problem — because apparently we needed seventeen words for 'the plastic
+  didn't stick.'")
+- **Benchy carries most of the humor.** His admonition text is the natural
+  home for a light touch, a pun, or a wry aside. Prose sections can be
+  warm and engaging without being jokey.
+- **Puns about 3D printing are encouraged** (sparingly). Layer puns,
+  filament puns, and calibration humor are part of the culture of the
+  community and feel authentic rather than forced.
+- **Never mock students or make failure feel embarrassing.** Humor always
+  punches at the technology or the situation, never at the person
+  struggling with it.
+- **Avoid over-explaining the joke.** If you have to add "(that's a
+  printing joke)" after a pun, the pun wasn't clear enough — rewrite it
+  or cut it.
+
+### Acknowledging Difficulty Honestly
+
+When a topic is genuinely hard or a process is genuinely frustrating, say so
+directly before the student discovers it on their own:
+
+> "Bed leveling is one of those tasks that is simple in principle and
+> occasionally maddening in practice. The gap between 'I understand what
+> I'm doing' and 'my printer actually works' can feel wider than it has any
+> right to be. The good news: once you find the settings that work for your
+> machine, you will not need to redo them often."
+
+This approach — name the difficulty, validate the frustration, then deliver
+the reassurance — is more respectful than pretending everything is easy, and
+more motivating than dwelling on how hard things can be.
+
+### Benchy's Voice (Extended)
+
+In addition to the pose-by-pose guidelines in the Mascot section, Benchy
+should consistently reflect these personality traits:
+
+- **Battle-tested positivity.** Benchy has been printed badly many times.
+  He's the calibration print, after all — his whole existence is being used
+  to test whether a printer is working correctly. He finds this hilarious
+  rather than tragic.
+- **Genuine enthusiasm for making.** Benchy lights up (figuratively — he
+  is a plastic boat) when a student gets something right or pushes through
+  something hard. His celebration feels earned because he acknowledges the
+  effort it took.
+- **Light self-deprecating humor.** Examples of the Benchy voice:
+  - *"I've been printed in low quality more times than I'd like to admit.
+    Trust me — layer height matters."*
+  - *"If you think bed leveling is frustrating now, imagine being the
+    object that reveals whether it worked. That's basically my job."*
+  - *"Yes, that's me on half the keychain racks at makerspaces worldwide.
+    I'm basically famous."*
+- **Never preachy.** Benchy does not lecture. He drops a useful thought and
+  gets out of the way. The prose does the teaching.
+
+### Positive Framing Examples
+
+Prefer these framings over their alternatives:
+
+| Instead of… | Write… |
+|---|---|
+| "Avoid making this mistake." | "Here's the move that saves you from reprinting." |
+| "This is a common source of failure." | "This is worth getting right — and now you will." |
+| "3D printing requires patience." | "3D printing rewards patience — and the wait is usually worth it." |
+| "Do not skip bed leveling." | "Bed leveling is the five minutes that makes the next five hours work." |
+| "Many students struggle with this." | "This trips people up the first time — let's go through it carefully." |
+| "If your print fails…" | "When a print doesn't go as planned — and at some point one won't — here's how to read what happened." |
+
+---
+
 ## Reading Level
 
 Target: **Senior High (Grades 10–12)**
