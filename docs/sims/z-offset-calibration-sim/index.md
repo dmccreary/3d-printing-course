@@ -1,16 +1,12 @@
 ---
 title: Z-Offset Calibration MicroSim
 description: Students practice adjusting the Z offset and observe the resulting first-layer cross-section to develop intuition for the correct gap.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Apply (L3)
 ---
 
 # Z-Offset Calibration MicroSim
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students practice adjusting the Z offset and observe the resulting first-layer c
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="542" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
