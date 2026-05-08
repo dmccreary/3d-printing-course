@@ -1,0 +1,14 @@
+{
+  "sim_id": "input-shaping-demo",
+  "diagram_name": "Input Shaping and Speed Comparison",
+  "chapter_number": 13,
+  "chapter_title": "Modern Hardware — Multi-Material, Motion, and Speed",
+  "chapter_dir": "13-modern-hardware",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students explain how input shaping cancels resonance artifacts by comparing simulated surface quality at different print speeds with and without resonance compensation.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: microsim\n**sim-id:** input-shaping-demo<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Understand (L2)\nBloom Verb: Explain\nLearning Objective: Students explain how input shaping cancels resonance artifacts by comparing simulated surface quality at different print speeds with and without resonance compensation.\n\nCanvas layout:\n- Left panel (200px): Controls — speed slider (50–600 mm/s), toggle \"Input Shaping On/Off\", toggle \"Pressure Advance On/Off\"\n- Center panel (350px): Simulation of a top-down view of a square being printed, showing the actual deposited path vs. the commanded path. Without input shaping at high speeds, the deposited path shows oscillating error. With input shaping, it matches the command.\n- Right panel (150px): \"Surface Quality Score\" (0–100) calculated from the simulated path deviation, plus indicators for \"Ringing visible: Yes/No\" and \"Corner quality: Poor/Good/Excellent\"\n\nData Visibility:\n- At 60 mm/s without input shaping: path deviation <0.05 mm, no visible ringing\n- At 300 mm/s without input shaping: ringing oscillations ±0.5 mm visible on straight walls after corners\n- At 300 mm/s with input shaping: path deviation <0.08 mm, no visible ringing\n- At 600 mm/s with input shaping: path deviation <0.15 mm, minor corner rounding visible\n- With pressure advance off at corners: small blob visible at corner endpoint, gap at start of new wall\n\nStep-through mode: \"Step Through a Corner\" button shows one corner being printed frame by frame, with annotations showing when pressure advance fires relative to the head position change.\n\nInstructional Rationale: Step-through with data visibility appropriate for Understand level. Students need to see the deviation between commanded and actual path to understand why input shaping matters — prose alone cannot convey the magnitude of the correction.\n\nResponsive: panels reflow vertically on screens below 600px."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "dfam-rules-explorer",
+  "diagram_name": "DfAM Rules Explorer",
+  "chapter_number": 11,
+  "chapter_title": "Design for Additive Manufacturing and Metrology",
+  "chapter_dir": "11-dfam-and-metrology",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students explain the key DfAM design rules — overhang angle, bridging, wall thickness, hole tolerance, and self-supporting geometry — by examining cross-section diagrams and reading hover explanations.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: infographic\n**sim-id:** dfam-rules-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Understand (L2)\nBloom Verb: Explain\nLearning Objective: Students explain the key DfAM design rules — overhang angle, bridging, wall thickness, hole tolerance, and self-supporting geometry — by examining cross-section diagrams and reading hover explanations.\n\nLayout:\n- Grid of 6 rule cards arranged 3×2:\n  1. Overhang Angle (shows cross-sections at 30°, 45°, 60° with quality indicators)\n  2. Bridging (shows successful short bridge vs. sagging long bridge)\n  3. Wall Thickness (shows walls from 0.4 mm to 2.4 mm with printability indicators)\n  4. Hole Tolerance (shows designed vs. actual hole size with offset annotation)\n  5. Self-Supporting Arch (teardrop technique vs. flat-ceiling hole)\n  6. Support Minimization (chamfer replaces horizontal shelf)\n\nInteractive elements:\n- Click any card: Expand to full-screen view with detailed cross-section diagram and explanatory text\n- Hover any element within a card: Show tooltip with the rule name and one-sentence rationale\n- Toggle \"FDM / Resin\" button: Updates each card to show how the rule differs between process types\n- \"Design Quiz\" button: Presents a simplified cross-section of a part and asks \"Does this need support?\" with Yes/No buttons and feedback\n\nVisual style:\n- Each card has a header color coded to difficulty (green = easy to achieve, yellow = moderate, red = requires careful planning)\n- Cross-section diagrams use: blue = desired geometry, orange = problematic zone, green = well-designed outcome\n\nResponsive: 3×2 grid collapses to 2×3 then 1×6 on narrow screens."
+}

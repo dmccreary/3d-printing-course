@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal AM Build-to-Part Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Metal AM Build-to-Part Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> metal-am-workflow</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> TBD</p>
+            <p><strong>Learning Objective:</strong> Recall and sequence the steps from metal powder to finished metal part in industrial AM (Bloom L1–L2: recall, sequence, summarize).</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: interactive-infographic
+    **sim-id:** metal-am-workflow<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    **Learning objective:** Recall and sequence the steps from metal powder to finished metal part in industrial AM (Bloom L1–L2: recall, sequence, summarize).
+    
+    **Description:** A horizontal left-to-right workflow diagram using vis-network showing the complete production sequence for a DMLS metal part. Seven sequential nodes connected by directional arrows:
+    
+    1. **Powder Preparation** — Sieving, moisture control, recycling assessment
+    2. **Build Setup** — Support design, orientation, slicing, atmosphere purge
+    3. **DMLS Build** — Layer-by-layer laser melting in inert atmosphere
+    4. **Build Plate Removal** — Wire EDM or band saw separation
+    5. **Stress Relief** — Furnace anneal cycle with temperature/time profile
+    6. **Support Removal + Machining** — CNC finishing of critical surfaces
+    7. **Quality Inspection** — CT scanning, dimensional metrology, surface roughness
+    
+    **Interactions:** Clicking any node opens a detail panel showing:
+    - Step name and description (2–3 sentences)
+    - Typical equipment used
+    - Key quality control check at this step
+    - Typical duration or processing time
+    - "What goes wrong here?" — one common failure mode and its remedy
+    
+    Hovering any arrow shows a tooltip describing what changes between the two steps (e.g., "Part separates from build plate but residual stress remains").
+    
+    **Layout:** Horizontal chain with nodes at equal spacing; detail panel appears below the diagram.
+    **Canvas:** 750 × 200 px for diagram + 200 px for detail panel = 400 px total height, responsive.
+    **Colors:** Each step node in a sequential warm-to-cool gradient (orange → yellow → green → teal → blue → indigo → violet) to reinforce the concept of progression.
+    -->
+</body>
+</html>

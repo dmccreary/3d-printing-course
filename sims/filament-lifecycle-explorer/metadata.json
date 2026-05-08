@@ -1,0 +1,21 @@
+{
+  "title": "Filament Lifecycle Explorer",
+  "description": "Students examine the full lifecycle of a 3D-printed filament part — from raw material to end-of-life — and identify where waste and environmental impact occur.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "filament-lifecycle-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Examine",
+  "completion_status": "scaffold",
+  "chapter_number": 9,
+  "chapter_title": "Safety, Ethics, and Sustainability in 3D Printing",
+  "chapter_dir": "09-safety-ethics-sustainability"
+}

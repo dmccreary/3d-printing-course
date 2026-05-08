@@ -1,0 +1,14 @@
+{
+  "sim_id": "assembly-mate-visualizer",
+  "diagram_name": "Assembly Mate Constraints Visualizer",
+  "chapter_number": 4,
+  "chapter_title": "Computer-Aided Design and Modeling",
+  "chapter_dir": "04-cad-and-modeling",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Identify common mate constraint types, explain what degrees of freedom each removes, and analyze how combinations of mates fully constrain a part in an assembly (Bloom L1–L4: identify, explain, analyze).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: interactive-infographic\n**sim-id:** assembly-mate-visualizer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Identify common mate constraint types, explain what degrees of freedom each removes, and analyze how combinations of mates fully constrain a part in an assembly (Bloom L1–L4: identify, explain, analyze).\n\n**Description:** An interactive p5.js diagram showing two simple block-shaped parts in isometric view. The student selects mates from a palette and applies them between the parts, watching the DOF counter decrease and the parts snap into their constrained positions.\n\n**Canvas layout (700 × 480 px, responsive):**\n- Center: Isometric view of two parts — a base block (fixed, gray) and a movable block (blue, starts floating off to the side)\n- Top bar: \"Degrees of Freedom Remaining: 6\" counter (updates with each mate added)\n- Right panel: Mate palette with six mate buttons (Coincident, Concentric, Distance, Angle, Parallel, Fixed), each with a tooltip describing what it does and how many DOF it removes\n- Below mate palette: Applied mates list (numbered, with delete button)\n- Bottom: \"Assembly Status\" badge — UNDER-CONSTRAINED / FULLY CONSTRAINED / OVER-CONSTRAINED\n\n**Interactions:**\n- Clicking a mate button applies it between the selected faces of the two parts (clicking a face on either part highlights it as the selection)\n- The movable part animates to its new position after each mate is applied\n- DOF counter decrements appropriately\n- At 0 DOF, the badge turns green: \"FULLY CONSTRAINED — Part is locked in place\"\n- Adding one more mate turns the badge red: \"OVER-CONSTRAINED — One constraint is redundant or conflicting\"\n- Clicking a mate in the applied list highlights the constrained faces on the 3D view\n- \"Reset\" button clears all mates\n\n**Responsive behavior:** Scales to container width; DOF counter and status badge remain prominent at all sizes."
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Infill Pattern Explorer",
+  "description": "Students can compare infill patterns by their visual structure and predict which pattern is most appropriate for a given application based on strength profile and material use.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "infill-pattern-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Compare",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Slicing, G-code, and Toolpaths",
+  "chapter_dir": "07-slicing-and-toolpaths"
+}

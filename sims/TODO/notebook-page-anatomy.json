@@ -1,0 +1,14 @@
+{
+  "sim_id": "notebook-page-anatomy",
+  "diagram_name": "Engineering Notebook Page Anatomy",
+  "chapter_number": 3,
+  "chapter_title": "The Engineering Design Process",
+  "chapter_dir": "03-engineering-design-process",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Identify the required elements of a proper engineering notebook entry and explain why each element matters (Bloom L1–L2: identify, explain).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: interactive-infographic\n**sim-id:** notebook-page-anatomy<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Identify the required elements of a proper engineering notebook entry and explain why each element matters (Bloom L1–L2: identify, explain).\n\n**Description:** An interactive p5.js rendering of a sample engineering notebook page spread (left and right pages). Labeled callout arrows point to each key element of good notebook practice. Clicking a callout opens an explanation panel.\n\n**Canvas layout (700 × 480 px, responsive):**\n- Background: Cream/off-white grid-paper texture filling both pages\n- Left page sample content (rendered as faint \"handwriting-style\" text and sketches):\n  - Date and time at top\n  - Project name and page number\n  - A hand-drawn sketch of a phone stand bracket with dimension annotations\n  - A short prose entry describing the design decision made that day\n  - A paste-in label area (gray rectangle) with \"Photo: v2 print, front view\"\n  - Author initials at bottom right\n- Right page sample content:\n  - Test data table (load vs. deflection)\n  - A short \"Next Steps\" bullet list\n  - A second sketch showing a proposed revision\n- Callout markers (numbered circles in orange) pointing to: date, project name, sketch with dimensions, prose rationale, paste-in label, initials, data table, revision sketch, next steps\n\n**Interactions:** Clicking any numbered callout circle opens a side panel (or modal overlay) with:\n- Element name\n- Why it's required (1–2 sentences)\n- Common mistake to avoid\n- Example of good vs. poor practice for this element\n- \"Got it\" button to dismiss\n\nA \"Quiz Me\" button at bottom cycles through the callout markers in random order, hiding the labels and asking the student to click the correct element when given its name.\n\n**Responsive behavior:** On narrow screens, both pages render in a single-column scroll; callouts appear as expandable accordion items below the illustration."
+}

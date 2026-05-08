@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slicer Pipeline Overview</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Slicer Pipeline Overview</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> slicer-pipeline-overview</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students can describe what happens at each stage of the digital-to-physical pipeline from CAD model to printed part, including the role of the slicer, the G-code file, and the printer firmware.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** slicer-pipeline-overview<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Level: Understand (L2)
+    Bloom Verb: Explain
+    Learning Objective: Students can describe what happens at each stage of the digital-to-physical pipeline from CAD model to printed part, including the role of the slicer, the G-code file, and the printer firmware.
+    
+    Layout:
+    - Horizontal pipeline with five stages connected by labeled arrows
+    - Each stage is a rounded rectangle with an icon and a short label
+    - Arrows between stages show the data format moving between them
+    - A detail panel (right side or below) populates when a stage is clicked
+    
+    Stages and detail content:
+    
+    1. **CAD Model** (icon: cube wireframe)
+       Arrow label: "STL / 3MF"
+       Detail: "A mathematical description of a closed 3D surface — triangles in STL, richer geometry in 3MF. The model has no layer information, no toolpath, and no material settings. It is just a shape."
+    
+    2. **Slicer Software** (icon: horizontal slices through a cube)
+       Arrow label: "G-code (.gcode)"
+       Detail: "The slicer cuts the model into layers, fills each layer with perimeters and infill, adds supports and adhesion features, and applies all temperature and speed settings. Output is a G-code text file."
+    
+    3. **G-code File** (icon: text document with command lines)
+       Arrow label: "Serial / USB / SD / WiFi"
+       Detail: "A plain text file of sequential machine commands: movements, temperatures, fan speeds, and extrusion amounts. Typically 1 MB to 50 MB depending on part complexity."
+    
+    4. **Printer Firmware** (icon: circuit board with microcontroller)
+       Arrow label: "Stepper pulses / heater signals"
+       Detail: "Firmware (Marlin, Klipper, RepRapFirmware) interprets G-code commands and converts them into stepper motor pulses, heater PWM signals, and fan control signals in real time."
+    
+    5. **Printed Part** (icon: 3D printed object)
+       Detail: "The physical result: layers of fused thermoplastic (or cured resin) forming the geometry defined in the original CAD model, subject to the print parameters chosen in the slicer."
+    
+    Arrow interactions:
+    - Hovering the "STL / 3MF" arrow reveals: "STL encodes only triangle geometry. 3MF adds color, materials, and print settings in one package."
+    - Hovering the "G-code" arrow reveals: "G-code is a decades-old NC machining standard adapted for 3D printing. The same format drives CNC mills and lathes."
+    - Hovering the "Serial / USB / SD / WiFi" arrow reveals: "G-code can be sent via USB cable, copied to a SD card, or transferred over WiFi — the printer firmware doesn't care which method."
+    
+    Default state: Stage 2 "Slicer Software" is selected and its detail panel is visible.
+    
+    Color scheme: Cool blue gradient left-to-right indicating digital-to-physical transformation; the selected stage highlights in a warm amber.
+    
+    Responsive: Scales to fill iframe width; on narrow screens the pipeline renders vertically instead of horizontally.
+    -->
+</body>
+</html>

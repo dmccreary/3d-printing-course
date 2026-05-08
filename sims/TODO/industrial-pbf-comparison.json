@@ -1,0 +1,14 @@
+{
+  "sim_id": "industrial-pbf-comparison",
+  "diagram_name": "Industrial PBF Process Comparison",
+  "chapter_number": 2,
+  "chapter_title": "AM Standards, Process Families, and Industrial AM",
+  "chapter_dir": "02-standards-and-process-families",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Compare SLS, MJF, DMLS, and EBM on energy source, material, atmosphere, and application (Bloom L4: differentiate, compare, contrast).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: interactive-infographic\n**sim-id:** industrial-pbf-comparison<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Compare SLS, MJF, DMLS, and EBM on energy source, material, atmosphere, and application (Bloom L4: differentiate, compare, contrast).\n\n**Description:** A 2 × 2 interactive grid displaying SLS, MJF, DMLS, and EBM as four equal quadrant panels. Each panel shows:\n- Process acronym (large, bold) and full name (smaller)\n- Energy source icon (laser = yellow beam, IR lamp array = orange wave, electron beam = blue lightning)\n- Material icon (polymer powder = yellow granules, metal powder = gray granules)\n- Atmosphere icon (inert gas = cloud, vacuum = empty ring)\n- One key application example (text)\n\n**Canvas size:** 700 × 480 px, responsive (2 × 2 on wide screens, stacked 1-column on narrow screens).\n\n**Interactions:**\n- Clicking any quadrant panel expands it to full-width detail view showing:\n  - Full process description (3–4 sentences)\n  - Energy source with wattage range\n  - Typical materials (bulleted list)\n  - Atmosphere requirement\n  - Build volume range (example machine)\n  - Key advantage and key limitation\n  - Representative end-use applications\n  - \"Back\" button to return to grid\n- A \"Compare Mode\" toggle at top: when active, clicking a second panel places both detail views side-by-side for direct comparison.\n- Hovering any panel highlights it with a bright border and shows a tooltip with the process's one-sentence definition.\n\n**Color coding:** SLS = green-toned, MJF = blue-toned, DMLS = orange-toned, EBM = purple-toned."
+}

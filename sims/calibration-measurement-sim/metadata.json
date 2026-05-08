@@ -1,0 +1,21 @@
+{
+  "title": "Calibration and Measurement MicroSim",
+  "description": "Students apply caliper measurement technique by reading simulated caliper displays and calculating the dimensional error and required calibration correction for a printed calibration cube.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "calibration-measurement-sim",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "Calculate",
+  "completion_status": "scaffold",
+  "chapter_number": 11,
+  "chapter_title": "Design for Additive Manufacturing and Metrology",
+  "chapter_dir": "11-dfam-and-metrology"
+}

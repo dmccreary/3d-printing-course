@@ -1,0 +1,14 @@
+{
+  "sim_id": "infill-pattern-explorer",
+  "diagram_name": "Infill Pattern Explorer",
+  "chapter_number": 7,
+  "chapter_title": "Slicing, G-code, and Toolpaths",
+  "chapter_dir": "07-slicing-and-toolpaths",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students can compare infill patterns by their visual structure and predict which pattern is most appropriate for a given application based on strength profile and material use.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: microsim\n**sim-id:** infill-pattern-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Analyze (L4)\nBloom Verb: Compare\nLearning Objective: Students can compare infill patterns by their visual structure and predict which pattern is most appropriate for a given application based on strength profile and material use.\n\nInstructional Rationale: A pattern explorer that renders patterns in real time is appropriate for Analyze-level because students need to visually distinguish patterns and make comparative judgments — not just remember names. Interactive density adjustment builds intuition about the infill density parameter before students use it in a real slicer.\n\nCanvas layout:\n- Left panel (65% width): Top-down view of a 100 mm × 100 mm square cross-section showing the selected infill pattern at the chosen density, with a solid perimeter wall (2 layers) visible around the edge.\n- Right panel (35% width): Pattern selector (clickable buttons for: Lines, Grid, Honeycomb, Gyroid, Cubic, Lightning) + density slider (5%–100%, step 5%) + readout showing: selected pattern name, density %, estimated material coverage per layer (%).\n\nPattern rendering (2D approximations):\n- Lines: Parallel horizontal lines spaced inversely proportional to density\n- Grid: Two sets of perpendicular lines\n- Honeycomb: Hexagonal grid, cell size inversely proportional to density\n- Gyroid: Sinusoidal wave pattern in X offset by sinusoidal in Y (2D approximation of 3D gyroid cross-section)\n- Cubic: 45° diagonal lines in alternating directions per simulated layer\n- Lightning: Branching tree from center toward edges, minimal lines\n\nInteraction:\n- Clicking a pattern button immediately redraws the infill in the left panel.\n- Moving the density slider redraws immediately.\n- Hovering over the infill area reveals a tooltip: \"Pattern: [Name] | Density: [X]% | Coverage: [Y]%\"\n\nDefault: Grid pattern, 20% density.\n\nColor scheme: Perimeter walls in dark blue; infill lines in medium blue; empty interior in off-white.\nResponsive: Canvas fills iframe width; panels stack vertically on screens narrower than 600px."
+}

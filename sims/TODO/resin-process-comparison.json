@@ -1,0 +1,14 @@
+{
+  "sim_id": "resin-process-comparison",
+  "diagram_name": "Resin Process Comparison Explorer",
+  "chapter_number": 10,
+  "chapter_title": "Resin Printing: SLA, MSLA, and DLP",
+  "chapter_dir": "10-resin-printing",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students compare SLA, DLP, and MSLA processes by examining how each technology delivers UV light to the resin vat, and analyze the trade-offs between precision, speed, and cost.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: diagram\n**sim-id:** resin-process-comparison<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Analyze (L4)\nBloom Verb: Compare\nLearning Objective: Students compare SLA, DLP, and MSLA processes by examining how each technology delivers UV light to the resin vat, and analyze the trade-offs between precision, speed, and cost.\n\nVisual layout:\n- Three side-by-side cross-section diagrams (SLA, DLP, MSLA), each showing:\n  - The light source at the bottom (laser dot for SLA, projector cone for DLP, LED array for MSLA)\n  - The masking element (galvo mirrors for SLA, DMD chip for DLP, LCD panel for MSLA)\n  - The resin vat with FEP film\n  - The build platform above with a partially built object\n  - Animated UV light path for each technology (laser tracing for SLA, full-layer flash for DLP/MSLA)\n\nInteractive elements:\n- Click any diagram: Expand a side panel with specs — light source, typical XY resolution, layer cure time, relative cost, best use cases\n- Toggle \"Animate Layer\": Shows an animated cycle of one layer exposing for each selected technology simultaneously — helps compare speed differences visually\n- Hover any component label: Shows a tooltip with the component's definition\n- \"Compare Spec\" button: Opens a floating comparison table with all three technologies side by side\n\nColor coding:\n- UV exposure zones: yellow (active) → teal (cured resin)\n- Build platform: gray with dark hatching for cured layers\n- Resin: transparent blue for liquid, dark teal for cured\n\nAnimation details:\n- SLA: laser dot scans across the cross-section pattern (fast)\n- DLP/MSLA: full rectangular flash with a single frame (faster for large layers)\n- Timer below each shows relative layer time at typical settings\n\nResponsive: maintains 3-column layout down to 600px, then stacks to vertical for smaller screens."
+}

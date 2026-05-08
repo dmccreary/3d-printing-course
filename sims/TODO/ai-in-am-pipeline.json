@@ -1,0 +1,14 @@
+{
+  "sim_id": "ai-in-am-pipeline",
+  "diagram_name": "AI in AM Pipeline Explorer",
+  "chapter_number": 15,
+  "chapter_title": "AI and Machine Learning in Additive Manufacturing",
+  "chapter_dir": "15-ai-and-machine-learning",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "Organize",
+  "learning_objective": "Students organize AI applications in additive manufacturing by their stage in the production pipeline and analyze what data each system needs and what output it provides.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: diagram\n**sim-id:** ai-in-am-pipeline<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Analyze (L4)\nBloom Verb: Organize\nLearning Objective: Students organize AI applications in additive manufacturing by their stage in the production pipeline and analyze what data each system needs and what output it provides.\n\nVisual layout:\n- Horizontal pipeline with four stages: Design → Slicing → Printing → Post-Processing\n- AI application nodes placed above or below the pipeline at their relevant stage:\n  - Design: Text-to-CAD, Material Recommender\n  - Slicing: AI Slicer Optimizer\n  - Printing: First-Layer Vision, Spaghetti Detection, Predictive Maintenance, Defect Classification\n  - Post-Processing: Dimensional AI Inspection\n- Each node is a rounded rectangle; arrows connect nodes to their pipeline stage\n\nInteractive elements:\n- Click any AI node: Expand info panel showing (a) what data input the system needs, (b) what output it produces, (c) what can go wrong (limitation/hallucination risk), (d) a real-world example tool or product\n- Hover any arrow from node to pipeline: Tooltip shows what the AI \"hands off\" to the human or next system\n- Filter button \"Show only monitoring\" or \"Show only generative\" — highlights relevant nodes and dims others\n- \"Which stage is most AI-intensive?\" button: triggers an animation that highlights the Printing stage with a \"most applications\" label and explanation\n\nColor coding:\n- Blue nodes: generative AI (creates something new)\n- Green nodes: monitoring/detection AI (observes and flags)\n- Orange nodes: optimization AI (improves parameters)\n- Yellow nodes: educational/assistive AI\n\nCanvas: 700×400px main area + 250px right info panel\nResponsive: pipeline changes from horizontal to vertical on narrow screens."
+}

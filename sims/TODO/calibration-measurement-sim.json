@@ -1,0 +1,14 @@
+{
+  "sim_id": "calibration-measurement-sim",
+  "diagram_name": "Calibration and Measurement MicroSim",
+  "chapter_number": 11,
+  "chapter_title": "Design for Additive Manufacturing and Metrology",
+  "chapter_dir": "11-dfam-and-metrology",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "Calculate",
+  "learning_objective": "Students apply caliper measurement technique by reading simulated caliper displays and calculating the dimensional error and required calibration correction for a printed calibration cube.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: microsim\n**sim-id:** calibration-measurement-sim<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Apply (L3)\nBloom Verb: Calculate\nLearning Objective: Students apply caliper measurement technique by reading simulated caliper displays and calculating the dimensional error and required calibration correction for a printed calibration cube.\n\nCanvas layout:\n- Left panel (300px): Isometric view of a calibration cube with highlighted measurement faces. Click a face to activate that measurement.\n- Center panel (250px): Animated digital caliper display showing a reading for the selected dimension, with the jaw gap visible\n- Right panel (150px): Data entry table — student enters the measured values for X, Y, Z dimensions\n\nVisual elements:\n- Calibration cube rendered in p5.js with distinct labeled faces (X, Y, Z)\n- Digital caliper: realistic LCD display showing mm reading with decimal point; jaws animate to show correct placement\n- Three rows in the data table: Designed (20.00), Measured (editable), Error (auto-calculated), Status (Pass/Fail at ±0.3 mm default tolerance)\n\nInteractive controls:\n- Click cube face: selects that dimension and animates caliper to measuring position\n- Input field: student types their reading; error calculates immediately\n- Slider: \"Printer Accuracy Level\" (Good / Average / Needs Calibration) — changes the simulated measured values to present different scenarios\n- Button: \"Calculate E-step Correction\" — shows formula and computed correction factor if the extruder calibration is the diagnosed root cause\n\nData:\n- Scenario 1 (Good): X=19.97, Y=20.01, Z=19.95 — within tolerance\n- Scenario 2 (Under-extrusion): X=19.72, Y=19.74, Z=19.80 — consistent under-sizing\n- Scenario 3 (Z issue): X=19.98, Y=19.97, Z=19.60 — Z axis only out\n\nInstructional Rationale: Apply-level objective requires students to use a procedure in a given situation. Simulating calibration cube reading lets students practice the data-gathering and diagnosis steps before working with real hardware.\n\nResponsive: panels reflow to vertical stack on narrow screens."
+}

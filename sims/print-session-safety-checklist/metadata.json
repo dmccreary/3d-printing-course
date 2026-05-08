@@ -1,0 +1,21 @@
+{
+  "title": "Print Session Safety Checklist",
+  "description": "Students assess the safety adequacy of a print setup by working through a structured checklist and identifying which risk areas need attention before beginning a print session.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "print-session-safety-checklist",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "Assess",
+  "completion_status": "scaffold",
+  "chapter_number": 9,
+  "chapter_title": "Safety, Ethics, and Sustainability in 3D Printing",
+  "chapter_dir": "09-safety-ethics-sustainability"
+}

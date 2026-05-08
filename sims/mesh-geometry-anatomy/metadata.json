@@ -1,0 +1,21 @@
+{
+  "title": "Mesh Geometry Anatomy",
+  "description": "Students can identify and explain the role of vertices, edges, faces, and surface normals in a triangle mesh.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "mesh-geometry-anatomy",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "3D File Formats and Mesh Geometry",
+  "chapter_dir": "05-file-formats-and-mesh"
+}

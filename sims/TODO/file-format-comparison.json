@@ -1,0 +1,14 @@
+{
+  "sim_id": "file-format-comparison",
+  "diagram_name": "3D File Format Comparison Explorer",
+  "chapter_number": 5,
+  "chapter_title": "3D File Formats and Mesh Geometry",
+  "chapter_dir": "05-file-formats-and-mesh",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students can compare STL, 3MF, and OBJ across printing-relevant properties and choose the appropriate format for a given workflow.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: infographic\n**sim-id:** file-format-comparison<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nPurpose: Allow students to explore the capabilities of STL, 3MF, and OBJ side by side through an interactive comparison matrix with expandable detail panels. Bloom Level: Analyze (L4). Bloom Verb: compare and differentiate.\n\nLearning Objective: Students can compare STL, 3MF, and OBJ across printing-relevant properties and choose the appropriate format for a given workflow.\n\nCanvas layout:\n- Three \"format cards\" arranged horizontally (one per format): STL (left), 3MF (center), OBJ (right)\n- Each card shows: format name, a format icon (stylized file icon), and 6 property indicators\n- Below cards: Detail panel showing full comparison text when a property row is clicked\n\nProperty rows (displayed as icon + label + colored dot for each format):\n1. Units in file — Red dot STL, Green dot 3MF, Red dot OBJ\n2. Color support — Red dot STL, Green dot 3MF, Yellow dot OBJ (\"with .mtl file\")\n3. Multiple objects — Red dot STL, Green dot 3MF, Green dot OBJ\n4. Slicer settings — Red dot STL, Green dot 3MF, Red dot OBJ\n5. Universal support — Green dot STL, Yellow dot 3MF (\"modern slicers\"), Yellow dot OBJ\n6. File size — Yellow dot STL, Green dot 3MF (\"compressed\"), Red dot OBJ (\"large ASCII\")\n\nColor coding for dots: Green = supported/good, Yellow = partial/conditional, Red = not supported/limitation.\n\nInteractivity:\n- Clicking any property row highlights that row across all three cards and opens the detail panel\n- Detail panel shows: property name, explanation of why it matters for printing, and what each format does\n- Clicking a format card header selects that format and shows a summary of its best use cases and known limitations\n- Hover state on any card subtly raises it (shadow effect)\n\nDefault state: No row selected; overview text shown: \"Click any property row to compare how STL, 3MF, and OBJ handle it.\"\n\nResponsive design: On narrow screens, cards stack vertically. Detail panel always visible below cards."
+}

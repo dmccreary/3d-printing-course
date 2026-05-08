@@ -1,0 +1,14 @@
+{
+  "sim_id": "pltw-design-process-cycle",
+  "diagram_name": "The PLTW Engineering Design Process Cycle",
+  "chapter_number": 3,
+  "chapter_title": "The Engineering Design Process",
+  "chapter_dir": "03-engineering-design-process",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Recall and sequence the seven steps of the PLTW engineering design process and explain how they connect in an iterative loop (Bloom L1–L2: recall, sequence, explain).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: interactive-infographic\n**sim-id:** pltw-design-process-cycle<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Recall and sequence the seven steps of the PLTW engineering design process and explain how they connect in an iterative loop (Bloom L1–L2: recall, sequence, explain).\n\n**Description:** A circular p5.js diagram showing the PLTW design process as a ring of seven labeled nodes connected by curved directional arrows forming a clockwise loop. A center label reads \"PLTW Engineering Design Process.\"\n\n**Node labels and colors (clockwise from top):**\n1. Define the Problem — blue (#1565C0)\n2. Research — teal (#00695C)\n3. Ideate — green (#388E3C)\n4. Specify — yellow (#F57F17)\n5. Prototype — orange (#E64A19)\n6. Test & Validate — red (#C62828)\n7. Communicate — purple (#6A1B9A)\n\n**Canvas:** 650 × 500 px, responsive.\n\n**Interactions:**\n- Clicking any node highlights it with a pulsing glow and opens a detail panel below the diagram showing:\n  - Step name and one-sentence description\n  - Key questions asked at this step (bulleted list, 3–4 items)\n  - Typical deliverables (e.g., \"problem statement,\" \"sketch sheet,\" \"CAD model\")\n  - AM-specific note: how this step plays out in a 3D printing project\n  - A \"Next Step →\" button that advances to the next node in the cycle\n- Arrows between non-adjacent nodes (e.g., Test back to Ideate) are shown as lighter dashed arcs to indicate that iteration can jump back to earlier steps; hovering these arcs shows a tooltip: \"Iteration: test results revealed a flaw — return here to redesign.\"\n- A \"Full Cycle\" button animates a glowing bead traveling around the ring in sequence with a 0.8 s pause at each node.\n\n**Layout:** Nodes evenly spaced on a circle of radius 200 px. Node circles are 60 px diameter with white text. Arrows are curved SVG paths with arrowheads."
+}

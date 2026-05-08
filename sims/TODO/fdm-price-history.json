@@ -1,0 +1,14 @@
+{
+  "sim_id": "fdm-price-history",
+  "diagram_name": "FDM Printer Price Decline (2009–2024)",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Foundations and History of Additive Manufacturing\"",
+  "chapter_dir": "01-foundations-and-history",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will *interpret* (Bloom L2 — Understand) how patent expiration and open-source development drove the price of desktop FDM printers down by more than 99% in fifteen years.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: chart\n**sim-id:** fdm-price-history<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Learning objective:** Students will *interpret* (Bloom L2 — Understand) how patent expiration and open-source development drove the price of desktop FDM printers down by more than 99% in fifteen years.\n\n**Chart type:** Line chart with labeled data points; y-axis supports log/linear toggle.\n\n**Dataset (approximate market price for a capable consumer/prosumer FDM printer):**\n\n| Year | Price USD | Key event |\n|------|-----------|-----------|\n| 2009 | 14,900 | Patent expires; MakerBot founded |\n| 2010 | 7,500 | MakerBot Thing-O-Matic |\n| 2011 | 2,500 | Prusa Mendel kit popularized |\n| 2012 | 2,199 | MakerBot Replicator 2 |\n| 2013 | 1,299 | Flashforge Creator |\n| 2014 | 699 | Proliferation of Chinese kits |\n| 2015 | 499 | Prusa i3 kit widely available |\n| 2017 | 299 | Creality CR-10 ships |\n| 2018 | 229 | Creality Ender 3 — best-selling printer in history |\n| 2020 | 179 | Multiple sub-$200 capable printers |\n| 2022 | 349 | Bambu Lab P1P — high-speed CoreXY at prosumer price |\n| 2024 | 149 | Entry-level capable FDM under $150 |\n\n**Axes:**\n- X: Year 2009–2024, labeled every 2 years\n- Y: Price in USD — default log scale (100–20,000); toggle button for linear scale\n\n**Interactions:**\n- Clicking any data point opens an infobox with year, price, and the key event label.\n- Hovering shows a tooltip: \"[Year]: ~$[price] — [event].\"\n- Toggle button: \"Switch to Linear Scale\" / \"Switch to Log Scale\"\n- A dashed horizontal reference line at $500 is labeled \"Typical school-budget threshold.\"\n\n**Colors:** Line stroke #1565c0; data points #ff6600; infobox background white with #ccc border.\n\n**Responsive design:** Canvas width follows parent container; minimum height 280 px; text minimum 12 px."
+}

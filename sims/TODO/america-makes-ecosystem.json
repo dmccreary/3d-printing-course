@@ -1,0 +1,14 @@
+{
+  "sim_id": "america-makes-ecosystem",
+  "diagram_name": "The America Makes Ecosystem",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Foundations and History of Additive Manufacturing\"",
+  "chapter_dir": "01-foundations-and-history",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will *identify* (Bloom L1 — Remember) the major stakeholders in the America Makes ecosystem and their relationships to workforce development and this course.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: graph-data-model\n**sim-id:** america-makes-ecosystem<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Learning objective:** Students will *identify* (Bloom L1 — Remember) the major stakeholders in the America Makes ecosystem and their relationships to workforce development and this course.\n\n**Nodes (each clickable; infobox appears below the canvas):**\n\n| ID | Label | Group | Color |\n|----|-------|-------|-------|\n| 1 | America Makes | hub | #e65100 |\n| 2 | U.S. Dept. of Defense | govt | #1565c0 |\n| 3 | U.S. Dept. of Energy | govt | #1565c0 |\n| 4 | Manufacturing USA | govt | #1565c0 |\n| 5 | Research Universities | academia | #2e7d32 |\n| 6 | Community Colleges | academia | #2e7d32 |\n| 7 | High School CTE | academia | #2e7d32 |\n| 8 | AM Equipment Makers | industry | #6a1b9a |\n| 9 | Material Suppliers | industry | #6a1b9a |\n| 10 | End-User Manufacturers | industry | #6a1b9a |\n| 11 | AM Workforce Framework | workforce | #f9a825 |\n| 12 | NC3 / NIMS Certifications | workforce | #f9a825 |\n| 13 | This Course | student | #c62828 |\n\n**Directed edges:**\n\n- 2 → 1 \"Founding co-sponsor\"\n- 3 → 1 \"Founding co-sponsor\"\n- 4 → 1 \"Parent network\"\n- 1 → 5 \"Research grants\"\n- 1 → 6 \"Curriculum alignment\"\n- 1 → 7 \"CTE pathway support\"\n- 8 → 1 \"Industry membership & funding\"\n- 9 → 1 \"Industry membership & funding\"\n- 10 → 1 \"Industry membership & funding\"\n- 1 → 11 \"Publishes & maintains\"\n- 11 → 12 \"Informs certification standards\"\n- 11 → 13 \"Shapes course competencies\"\n- 5 → 6 \"Articulation agreements\"\n- 6 → 7 \"Dual-credit programs\"\n- 13 → 6 \"Articulation pathway\"\n\n**Infobox examples:**\n- Node 1: \"America Makes (est. 2012, Youngstown OH) — the nation's leading public–private partnership for AM R&D and workforce development. Member organizations include 200+ companies and universities.\"\n- Node 13: \"This Course — aligned to America Makes workforce competency frameworks. Portfolio evidence produced here supports community-college articulation at partner institutions.\"\n\n**Canvas:** 700 × 500 px, Barnes-Hut physics layout, hub node fixed at center. Responsive to window resize."
+}

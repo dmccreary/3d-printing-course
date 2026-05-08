@@ -1,0 +1,14 @@
+{
+  "sim_id": "resin-family-comparison",
+  "diagram_name": "Resin Family Property Comparison",
+  "chapter_number": 6,
+  "chapter_title": "Materials Science for Additive Manufacturing",
+  "chapter_dir": "06-materials-science",
+  "library": "Chart.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students can distinguish the three resin families (standard, tough/flexible, engineering) by their mechanical and thermal properties and match each to appropriate applications.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: chart\n**sim-id:** resin-family-comparison<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nBloom Level: Understand (L2)\nBloom Verb: Compare\nLearning Objective: Students can distinguish the three resin families (standard, tough/flexible, engineering) by their mechanical and thermal properties and match each to appropriate applications.\n\nChart type: Horizontal grouped bar chart with a property toggle\n\nPurpose: Allow students to compare the three resin families across four key dimensions and connect each family to real applications, reinforcing the trade-offs between cost, performance, and use case.\n\nProperties (toggled via button row at top):\n1. Tensile Strength (MPa)\n2. Elongation at Break (%)\n3. Heat Deflection Temperature (°C)\n4. Relative Cost Index (1.0 = Standard baseline)\n\nData:\n- Standard Resin (blue): Tensile 40 MPa, Elongation 5%, HDT 45°C, Cost 1.0\n- Tough/Flexible Resin (teal): Tensile 50 MPa, Elongation 120%, HDT 55°C, Cost 2.5\n- Engineering Resin (orange): Tensile 65 MPa, Elongation 25%, HDT 200°C, Cost 4.5\n\nInteractive elements:\n- Hovering any bar reveals a tooltip with exact value, units, and a one-sentence explanation.\n- Toggle buttons at top switch the active property; bars update with a smooth transition.\n- Clicking a bar selects that resin family and populates a side card with its typical applications.\n\nApplication summary cards (shown on click):\n- Standard Resin: \"Best for: miniatures, jewelry prototypes, dental study models, display objects. Not suitable for functional mechanical parts or outdoor use.\"\n- Tough/Flexible Resin: \"Best for: snap-fit enclosures, living hinges, protective cases, gaskets, compressible grips. A practical bridge between aesthetics and function.\"\n- Engineering Resin: \"Best for: high-temperature tooling, biocompatible dental or medical devices, investment casting patterns. Requires careful post-cure protocols and precise exposure settings.\"\n\nColor scheme: Blue, teal, orange — consistent with the chapter's visual language.\nResponsive: Canvas scales to iframe width on resize."
+}

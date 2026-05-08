@@ -1,0 +1,14 @@
+{
+  "sim_id": "ideation-sketch-canvas",
+  "diagram_name": "Ideation Sketch Canvas",
+  "chapter_number": 3,
+  "chapter_title": "The Engineering Design Process",
+  "chapter_dir": "03-engineering-design-process",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Apply ideation principles by generating multiple distinct design concepts for a given constraint set (Bloom L3: apply, practice, demonstrate).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: MicroSim\n**sim-id:** ideation-sketch-canvas<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Apply ideation principles by generating multiple distinct design concepts for a given constraint set (Bloom L3: apply, practice, demonstrate).\n\n**Description:** An interactive p5.js canvas that simulates a structured ideation session. The student is given a randomly selected engineering challenge (from a set of five AM-relevant prompts, e.g., \"Design a phone stand with no supports,\" \"Design a cable organizer for a desk,\" \"Design a modular hook system for a pegboard\") and a 5-minute countdown timer. The canvas is divided into six equal cells, each with a faint \"Concept #N\" label, simulating a 6-concept ideation sheet.\n\n**Canvas layout (700 × 520 px, responsive):**\n- Top bar: Challenge description card (yellow), timer display, and \"New Challenge\" button\n- Main area: 2 × 3 grid of sketch cells (each ~210 × 140 px), each with a \"Concept #N\" header and a free-draw area (mouse/touch drawing with a light pencil stroke style)\n- Bottom bar: \"Done — Review My Concepts\" button + constraint checklist (checkboxes for the key constraints of the current challenge)\n\n**Interactions:**\n- Drawing: click/drag to draw freehand strokes in any cell; right-click or double-tap to erase last stroke\n- \"New Challenge\" randomizes the challenge prompt and clears the canvas (with a confirm dialog to prevent accidental erasure)\n- Timer counts down from 5:00; at 0:00 it flashes orange and shows \"Time's up — review your concepts\"\n- \"Done — Review My Concepts\" opens an overlay with the constraint checklist: student checks which constraints each concept addresses\n- \"Clear Cell\" button (appears on hover of each cell) clears only that cell's strokes\n\n**Responsive behavior:** On narrow screens, the grid collapses to 1 × 6 (single column). Drawing still works via touch.\n**Note:** This is a low-fidelity practice tool, not a submission system. Its value is in structured time-pressure ideation, not in the quality of the drawings."
+}

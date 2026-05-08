@@ -1,0 +1,21 @@
+{
+  "title": "Modern Printer Architecture Comparison",
+  "description": "Students compare bed-slinger and CoreXY printer architectures by examining how each moves its axes, and analyze how the moving mass difference affects achievable print speed.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "modern-printer-comparison",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Compare",
+  "completion_status": "scaffold",
+  "chapter_number": 13,
+  "chapter_title": "Modern Hardware — Multi-Material, Motion, and Speed",
+  "chapter_dir": "13-modern-hardware"
+}

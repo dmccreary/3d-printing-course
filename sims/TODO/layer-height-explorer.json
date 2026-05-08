@@ -1,0 +1,14 @@
+{
+  "sim_id": "layer-height-explorer",
+  "diagram_name": "Layer Height Cross-Section Explorer",
+  "chapter_number": 7,
+  "chapter_title": "Slicing, G-code, and Toolpaths",
+  "chapter_dir": "07-slicing-and-toolpaths",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "Use",
+  "learning_objective": "Students can predict how changing layer height affects layer count, surface finish, and relative print time for a given part height.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: microsim\n**sim-id:** layer-height-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Apply (L3)\nBloom Verb: Use\nLearning Objective: Students can predict how changing layer height affects layer count, surface finish, and relative print time for a given part height.\n\nInstructional Rationale: An interactive slider with live visual feedback is appropriate for an Apply-level objective — students are not just recalling a fact but actively manipulating a parameter and observing consequential changes, which builds the intuition needed to choose layer heights in practice.\n\nCanvas layout:\n- Left panel (60% width): Side-view cross-section of a 20 mm tall rectangular block, rendered as a stack of visible layer lines. Layer lines drawn as alternating bands in two shades of blue to make individual layers visible. Layers scale in thickness proportionally to the selected layer height.\n- Right panel (40% width): Data readout showing:\n  - Selected Layer Height (mm)\n  - Total Layers (20 mm ÷ layer height, rounded up)\n  - Relative Print Time (normalized: 0.20 mm = 1.0×)\n  - Surface Smoothness rating (qualitative scale: Coarse / Draft / Standard / Fine / Very Fine)\n\nControls (below the panels):\n- Horizontal slider: Layer Height — range 0.08 mm to 0.36 mm, step 0.04 mm\n- Default: 0.20 mm\n\nInteraction:\n- Moving the slider immediately updates the cross-section drawing and all four data readout values.\n- Hovering the cross-section reveals a tooltip with the exact layer height and layer count at that resolution.\n- A thin red line on the cross-section marks the 0.4 mm nozzle diameter for reference (labeled \"Nozzle diameter\").\n\nData:\n- Layer count = ceil(20 / layer_height)\n- Relative print time = 0.20 / layer_height (simplified, assumes speed constant)\n- Surface smoothness: 0.08–0.12 → \"Very Fine\", 0.16–0.20 → \"Standard\", 0.24–0.28 → \"Draft\", 0.32–0.36 → \"Coarse\"\n\nColor scheme: Layer bands in two shades of navy blue; control panel in light gray; red reference line for nozzle diameter.\nResponsive: Canvas fills iframe width; panels stack vertically on screens narrower than 600px."
+}

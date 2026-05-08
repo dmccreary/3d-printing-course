@@ -1,0 +1,21 @@
+{
+  "title": "Support Strategy Decision Flow",
+  "description": "Students can evaluate a part's geometry and select the appropriate support strategy (no support, normal support, tree support, support interface, dissolvable support) based on overhang angle, surface quality requirements, and material constraints.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "support-strategy-decision",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "Recommend",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Slicing, G-code, and Toolpaths",
+  "chapter_dir": "07-slicing-and-toolpaths"
+}

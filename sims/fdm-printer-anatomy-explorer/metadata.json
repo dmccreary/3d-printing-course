@@ -1,0 +1,21 @@
+{
+  "title": "FDM Printer Anatomy Explorer",
+  "description": "Students identify and name the major components of an FDM printer and understand how the four subsystems are organized.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "fdm-printer-anatomy-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "Identify",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "FDM Printer Hardware and Operation",
+  "chapter_dir": "08-fdm-printer-hardware"
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resin Family Property Comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Resin Family Property Comparison</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> resin-family-comparison</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Students can distinguish the three resin families (standard, tough/flexible, engineering) by their mechanical and thermal properties and match each to appropriate applications.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    **sim-id:** resin-family-comparison<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Bloom Level: Understand (L2)
+    Bloom Verb: Compare
+    Learning Objective: Students can distinguish the three resin families (standard, tough/flexible, engineering) by their mechanical and thermal properties and match each to appropriate applications.
+    
+    Chart type: Horizontal grouped bar chart with a property toggle
+    
+    Purpose: Allow students to compare the three resin families across four key dimensions and connect each family to real applications, reinforcing the trade-offs between cost, performance, and use case.
+    
+    Properties (toggled via button row at top):
+    1. Tensile Strength (MPa)
+    2. Elongation at Break (%)
+    3. Heat Deflection Temperature (°C)
+    4. Relative Cost Index (1.0 = Standard baseline)
+    
+    Data:
+    - Standard Resin (blue): Tensile 40 MPa, Elongation 5%, HDT 45°C, Cost 1.0
+    - Tough/Flexible Resin (teal): Tensile 50 MPa, Elongation 120%, HDT 55°C, Cost 2.5
+    - Engineering Resin (orange): Tensile 65 MPa, Elongation 25%, HDT 200°C, Cost 4.5
+    
+    Interactive elements:
+    - Hovering any bar reveals a tooltip with exact value, units, and a one-sentence explanation.
+    - Toggle buttons at top switch the active property; bars update with a smooth transition.
+    - Clicking a bar selects that resin family and populates a side card with its typical applications.
+    
+    Application summary cards (shown on click):
+    - Standard Resin: "Best for: miniatures, jewelry prototypes, dental study models, display objects. Not suitable for functional mechanical parts or outdoor use."
+    - Tough/Flexible Resin: "Best for: snap-fit enclosures, living hinges, protective cases, gaskets, compressible grips. A practical bridge between aesthetics and function."
+    - Engineering Resin: "Best for: high-temperature tooling, biocompatible dental or medical devices, investment casting patterns. Requires careful post-cure protocols and precise exposure settings."
+    
+    Color scheme: Blue, teal, orange — consistent with the chapter's visual language.
+    Responsive: Canvas scales to iframe width on resize.
+    -->
+</body>
+</html>

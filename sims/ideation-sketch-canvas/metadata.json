@@ -1,0 +1,21 @@
+{
+  "title": "Ideation Sketch Canvas",
+  "description": "Apply ideation principles by generating multiple distinct design concepts for a given constraint set (Bloom L3: apply, practice, demonstrate).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "ideation-sketch-canvas",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "The Engineering Design Process",
+  "chapter_dir": "03-engineering-design-process"
+}
