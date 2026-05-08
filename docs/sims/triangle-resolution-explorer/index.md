@@ -1,28 +1,24 @@
 ---
 title: Triangle Resolution Explorer
 description: Students can adjust chord deviation and angular tolerance to achieve the appropriate mesh resolution for a given print resolution, and explain the trade-off between quality and file size.
-status: scaffold
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Apply
 ---
 
 # Triangle Resolution Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
 Students can adjust chord deviation and angular tolerance to achieve the appropriate mesh resolution for a given print resolution, and explain the trade-off between quality and file size.
 
-- **Bloom Level:** TBD
-- **Bloom Verb:** TBD
+- **Bloom Level:** Apply
+- **Bloom Verb:** use, demonstrate
 - **Library:** p5.js
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
