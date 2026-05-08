@@ -1,0 +1,21 @@
+{
+  "title": "Z-Offset Calibration MicroSim",
+  "description": "Students practice adjusting the Z offset and observe the resulting first-layer cross-section to develop intuition for the correct gap.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "z-offset-calibration-sim",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "Demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "FDM Printer Hardware and Operation",
+  "chapter_dir": "08-fdm-printer-hardware"
+}

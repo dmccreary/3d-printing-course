@@ -1,0 +1,21 @@
+{
+  "title": "Resin Process Comparison Explorer",
+  "description": "Students compare SLA, DLP, and MSLA processes by examining how each technology delivers UV light to the resin vat, and analyze the trade-offs between precision, speed, and cost.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "resin-process-comparison",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Compare",
+  "completion_status": "scaffold",
+  "chapter_number": 10,
+  "chapter_title": "Resin Printing: SLA, MSLA, and DLP",
+  "chapter_dir": "10-resin-printing"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Layer Height Cross-Section Explorer",
+  "description": "Students can predict how changing layer height affects layer count, surface finish, and relative print time for a given part height.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "layer-height-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "Use",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Slicing, G-code, and Toolpaths",
+  "chapter_dir": "07-slicing-and-toolpaths"
+}

@@ -21,7 +21,6 @@ nav:
   - Home: index.md
   - About: about.md
   - Course Description: course-description.md
-  - Glossary: glossary.md
 
   - Chapters:
       - List of Chapters: chapters/index.md
@@ -90,7 +89,7 @@ nav:
           - Quiz: chapters/16-careers-and-capstone/quiz.md
           - References: chapters/16-careers-and-capstone/references.md
       
-  - FAQ: faq.md
+
 
   - MicroSims:
       - List of MicroSims: sims/index.md
@@ -113,7 +112,10 @@ nav:
       - learning-graph/index-template.md
       - learning-graph/vis-network-json-format.md
 
-
+# Supplementary Material
+  - Glossary: glossary.md
+  - FAQ: faq.md
+  - Teacher's Guide: teachers-guide.md
   - License: license.md
   - Contact: contact.md
 
@@ -121,8 +123,8 @@ nav:
 theme:
   name: material
   # Once a logo is generated, point this at docs/img/logo.png or a mascot pose:
-  # logo: img/logo.png
-  # favicon: img/favicon.ico
+  logo: img/mascot/neutral.png
+  favicon: img/favicon.ico
   palette:
     primary: 'indigo'
     accent: 'orange'
@@ -194,12 +196,19 @@ exclude_docs: |
   **/image-prompt*.md
   **/image-prompts*.md
   **/cover-prompt.md
+  img/image-cover-prompt.md
   **/TODO.md
 
 # Rebuild on changes during `mkdocs serve`
 watch:
   - docs
   - mkdocs.yml
+
+# Python hooks — run at build time (not shipped to the site).
+# social_override: sets og:image to cover.png on any page that lacks a
+# page-level `image:` frontmatter key, ensuring consistent social previews.
+hooks:
+  - docs/plugins/social_override.py
 
 # Copyright
 copyright: 'Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.'

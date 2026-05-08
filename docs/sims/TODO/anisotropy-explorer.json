@@ -1,0 +1,14 @@
+{
+  "sim_id": "anisotropy-explorer",
+  "diagram_name": "Anisotropy Explorer",
+  "chapter_number": 2,
+  "chapter_title": "AM Standards, Process Families, and Industrial AM",
+  "chapter_dir": "02-standards-and-process-families",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Analyze how build orientation affects mechanical strength in FDM parts by applying tensile and bending loads in different orientations (Bloom L4: examine relationships, distinguish).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: MicroSim\n**sim-id:** anisotropy-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Analyze how build orientation affects mechanical strength in FDM parts by applying tensile and bending loads in different orientations (Bloom L4: examine relationships, distinguish).\n\n**Description:** An interactive p5.js simulation showing a rectangular test bar printed in FDM. The student can select build orientation (flat/XY, on-edge, upright/Z) using radio buttons, then apply either a tensile pull or a bending moment using buttons.\n\n**Canvas layout (600 × 420 px, responsive):**\n- Top third: The test bar rendered as a 3D-perspective isometric box, with layer lines drawn horizontally in the current orientation. Layer lines are color-coded (blue = XY, green = on-edge, orange = vertical/Z).\n- Middle section: A strength bar gauge (0–100 %, green to red gradient) showing relative strength in the selected load direction. Values are approximate but pedagogically accurate (XY tensile ≈ 90 %, on-edge tensile ≈ 75 %, Z tensile ≈ 45 % for typical PLA).\n- Bottom section: A one-sentence explanation that updates to describe why the strength is high or low for the current combination.\n\n**Controls:**\n- Radio group \"Build Orientation\": Flat (XY), On-Edge, Upright (Z)\n- Radio group \"Load Direction\": Tensile (pull apart), Bending (snap across layers), Shear (slide layers)\n- Button \"Apply Load\" — triggers an animated bar deformation and snapping effect on weak combinations; a subtle flex on strong combinations\n\n**Interactions:** All controls update the display immediately. The strength gauge animates smoothly when parameters change. When a combination results in < 50 % strength, the test bar shows a red crack line across the weakest layer interface.\n\n**Responsive behavior:** Canvas scales to fit window width while maintaining aspect ratio."
+}

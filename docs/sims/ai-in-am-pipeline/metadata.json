@@ -1,0 +1,21 @@
+{
+  "title": "AI in AM Pipeline Explorer",
+  "description": "Students organize AI applications in additive manufacturing by their stage in the production pipeline and analyze what data each system needs and what output it provides.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "ai-in-am-pipeline",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Organize",
+  "completion_status": "scaffold",
+  "chapter_number": 15,
+  "chapter_title": "AI and Machine Learning in Additive Manufacturing",
+  "chapter_dir": "15-ai-and-machine-learning"
+}

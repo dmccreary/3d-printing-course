@@ -1,0 +1,14 @@
+{
+  "sim_id": "metal-am-workflow",
+  "diagram_name": "Metal AM Build-to-Part Workflow",
+  "chapter_number": 2,
+  "chapter_title": "AM Standards, Process Families, and Industrial AM",
+  "chapter_dir": "02-standards-and-process-families",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Recall and sequence the steps from metal powder to finished metal part in industrial AM (Bloom L1–L2: recall, sequence, summarize).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: interactive-infographic\n**sim-id:** metal-am-workflow<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Learning objective:** Recall and sequence the steps from metal powder to finished metal part in industrial AM (Bloom L1–L2: recall, sequence, summarize).\n\n**Description:** A horizontal left-to-right workflow diagram using vis-network showing the complete production sequence for a DMLS metal part. Seven sequential nodes connected by directional arrows:\n\n1. **Powder Preparation** — Sieving, moisture control, recycling assessment\n2. **Build Setup** — Support design, orientation, slicing, atmosphere purge\n3. **DMLS Build** — Layer-by-layer laser melting in inert atmosphere\n4. **Build Plate Removal** — Wire EDM or band saw separation\n5. **Stress Relief** — Furnace anneal cycle with temperature/time profile\n6. **Support Removal + Machining** — CNC finishing of critical surfaces\n7. **Quality Inspection** — CT scanning, dimensional metrology, surface roughness\n\n**Interactions:** Clicking any node opens a detail panel showing:\n- Step name and description (2–3 sentences)\n- Typical equipment used\n- Key quality control check at this step\n- Typical duration or processing time\n- \"What goes wrong here?\" — one common failure mode and its remedy\n\nHovering any arrow shows a tooltip describing what changes between the two steps (e.g., \"Part separates from build plate but residual stress remains\").\n\n**Layout:** Horizontal chain with nodes at equal spacing; detail panel appears below the diagram.\n**Canvas:** 750 × 200 px for diagram + 200 px for detail panel = 400 px total height, responsive.\n**Colors:** Each step node in a sequential warm-to-cool gradient (orange → yellow → green → teal → blue → indigo → violet) to reinforce the concept of progression."
+}

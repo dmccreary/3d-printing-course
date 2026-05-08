@@ -1,0 +1,14 @@
+{
+  "sim_id": "modern-printer-comparison",
+  "diagram_name": "Modern Printer Architecture Comparison",
+  "chapter_number": 13,
+  "chapter_title": "Modern Hardware — Multi-Material, Motion, and Speed",
+  "chapter_dir": "13-modern-hardware",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students compare bed-slinger and CoreXY printer architectures by examining how each moves its axes, and analyze how the moving mass difference affects achievable print speed.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: diagram\n**sim-id:** modern-printer-comparison<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Analyze (L4)\nBloom Verb: Compare\nLearning Objective: Students compare bed-slinger and CoreXY printer architectures by examining how each moves its axes, and analyze how the moving mass difference affects achievable print speed.\n\nVisual layout:\n- Side-by-side schematic of two printers:\n  - Left: Bed slinger (classic Prusa-style proportions) — bed moves in Y, head moves in X/Z\n  - Right: CoreXY (Bambu-style proportions) — bed moves only in Z, head moves in X/Y via coupled belt loop\n- Motion arrows animated on each printer showing which axis moves when\n- Mass labels on moving components: \"~200g (head)\" for CoreXY head, \"~500g (bed + print)\" for bed-slinger Y axis\n\nInteractive elements:\n- \"Animate Move\" button: animates a diagonal move on both printers simultaneously, showing how each motion system executes it differently\n- Click any component: info panel shows component name, function, and \"how this affects print quality\"\n- Hover \"Belt\" on CoreXY: tooltip shows the CoreXY belt routing explanation (both motors act together to produce any XY move)\n- Speed slider: drag to increase move speed; at high speeds, the bed-slinger shows ringing artifacts (oscillating color of deposited path), while the CoreXY shows clean lines\n\nColor coding:\n- Red components: high-mass, speed-limiting elements\n- Green components: low-mass, speed-enabling elements\n- Blue: motion path\n\nCanvas:\n- Each printer: 300×300px schematic\n- Info panel: 200px right sidebar\n\nResponsive: stacks to vertical layout on screens below 700px."
+}

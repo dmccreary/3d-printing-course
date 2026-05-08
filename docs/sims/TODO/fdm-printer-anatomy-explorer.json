@@ -1,0 +1,14 @@
+{
+  "sim_id": "fdm-printer-anatomy-explorer",
+  "diagram_name": "FDM Printer Anatomy Explorer",
+  "chapter_number": 8,
+  "chapter_title": "FDM Printer Hardware and Operation",
+  "chapter_dir": "08-fdm-printer-hardware",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "Identify",
+  "learning_objective": "Students identify and name the major components of an FDM printer and understand how the four subsystems are organized.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: diagram\n**sim-id:** fdm-printer-anatomy-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Remember (L1)\nBloom Verb: Identify\nLearning Objective: Students identify and name the major components of an FDM printer and understand how the four subsystems are organized.\n\nVisual layout:\n- Isometric-style schematic of a Cartesian FDM printer (bed-slinger style, similar to Prusa MK3/Ender 3 proportions) drawn with simple geometric shapes in p5.js\n- Labeled hotspots on: nozzle, hotend assembly, heat break, extruder motor, PTFE tube (or direct-drive notation), X-axis gantry with belt, Y-axis belt and print bed, Z-axis lead screws, linear rods/bearings, motherboard enclosure, build surface\n- Each hotspot is a pulsing circle (color-coded by subsystem)\n- Color coding: Orange = extrusion system, Blue = motion system, Red = thermal system, Green = electronics\n\nInteractive elements:\n- Hover a hotspot: Reveal a tooltip with the component name, one-sentence description, and subsystem label\n- Click a hotspot: Expand an info panel on the right showing: component name, function, common materials, and a \"things that go wrong\" note\n- Toggle buttons at top: \"Show Motion System\", \"Show Extrusion System\", \"Show Thermal System\", \"Show Electronics\" — dimming other subsystems to highlight the selected one\n- A legend at bottom maps subsystem colors to names\n\nCanvas layout:\n- Left 60%: printer schematic\n- Right 40%: info panel (updates on click)\n\nResponsive design: scales proportionally on window resize; minimum width 320px."
+}

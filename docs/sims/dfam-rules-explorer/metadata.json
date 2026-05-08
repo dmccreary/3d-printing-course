@@ -1,0 +1,21 @@
+{
+  "title": "DfAM Rules Explorer",
+  "description": "Students explain the key DfAM design rules — overhang angle, bridging, wall thickness, hole tolerance, and self-supporting geometry — by examining cross-section diagrams and reading hover explanations.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "dfam-rules-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Explain",
+  "completion_status": "scaffold",
+  "chapter_number": 11,
+  "chapter_title": "Design for Additive Manufacturing and Metrology",
+  "chapter_dir": "11-dfam-and-metrology"
+}

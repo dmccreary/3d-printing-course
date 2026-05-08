@@ -1,0 +1,14 @@
+{
+  "sim_id": "mesh-geometry-anatomy",
+  "diagram_name": "Mesh Geometry Anatomy",
+  "chapter_number": 5,
+  "chapter_title": "3D File Formats and Mesh Geometry",
+  "chapter_dir": "05-file-formats-and-mesh",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students can identify and explain the role of vertices, edges, faces, and surface normals in a triangle mesh.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: diagram\n**sim-id:** mesh-geometry-anatomy<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nPurpose: Teach the three primitive elements of a mesh (vertex, edge, face) and surface normals. Bloom Level: Understand (L2). Bloom Verb: identify and explain.\n\nLearning Objective: Students can identify and explain the role of vertices, edges, faces, and surface normals in a triangle mesh.\n\nCanvas layout:\n- Main drawing area (left ~70%): Shows a simple 3D mesh object (sphere approximation with ~80 triangles, rendered in an isometric-like projection with slight rotation)\n- Info panel (right ~30%): Shows name, definition, and role of the currently hovered element\n\nVisual elements:\n- Mesh rendered with visible triangle wireframe over shaded faces\n- Vertices displayed as small filled circles (orange) at each corner\n- Edges displayed as thin lines (gray)\n- Faces shaded light blue with slight transparency so the wireframe shows through\n- Surface normal arrows (short red arrows) drawn perpendicular to each visible face, pointing outward\n\nInteractivity:\n- Hovering a vertex highlights it (yellow) and shows in the info panel: \"Vertex — A single point in 3D space defined by X, Y, Z coordinates. Meshes typically have thousands of vertices.\"\n- Hovering an edge highlights it (bright yellow) and shows: \"Edge — A straight line segment connecting exactly two vertices. Each triangle has exactly three edges.\"\n- Hovering a face highlights it (bright orange) and shows: \"Face — A flat triangular surface defined by three vertices. The surface normal (red arrow) indicates which side is 'outside.'\"\n- A toggle button \"Show Normals / Hide Normals\" controls visibility of normal arrows\n- A slow auto-rotation animation (can be paused with a button) to show the 3D nature of the mesh\n\nResponsive design: Canvas resizes to container width while maintaining proportions. Minimum canvas height 400px.\n\nColor scheme: Dark background (#1a1a2e), blue faces (#4a90d9 with 0.6 opacity), orange vertices (#ff8c00), gray edges (#aaaaaa), red normal arrows (#ff4444), yellow hover highlights."
+}

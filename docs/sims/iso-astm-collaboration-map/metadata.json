@@ -1,0 +1,21 @@
+{
+  "title": "ISO and ASTM Collaboration Map",
+  "description": "Recall and explain the roles of ISO and ASTM as standards bodies in additive manufacturing (Bloom L1–L2: identify, explain).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "iso-astm-collaboration-map",
+  "library": "vis-network",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "AM Standards, Process Families, and Industrial AM",
+  "chapter_dir": "02-standards-and-process-families"
+}

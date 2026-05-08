@@ -1,0 +1,21 @@
+{
+  "title": "Maintenance Schedule Interactive Checklist",
+  "description": "Students use a structured maintenance checklist to develop habits for keeping an FDM printer running reliably, and connect each task to a mechanical reason.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "fdm-maintenance-scheduler",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "Use",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "FDM Printer Hardware and Operation",
+  "chapter_dir": "08-fdm-printer-hardware"
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "fdm-maintenance-scheduler",
+  "diagram_name": "Maintenance Schedule Interactive Checklist",
+  "chapter_number": 8,
+  "chapter_title": "FDM Printer Hardware and Operation",
+  "chapter_dir": "08-fdm-printer-hardware",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "Use",
+  "learning_objective": "Students use a structured maintenance checklist to develop habits for keeping an FDM printer running reliably, and connect each task to a mechanical reason.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: infographic\n**sim-id:** fdm-maintenance-scheduler<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Apply (L3)\nBloom Verb: Use\nLearning Objective: Students use a structured maintenance checklist to develop habits for keeping an FDM printer running reliably, and connect each task to a mechanical reason.\n\nLayout:\n- Left column: Frequency tabs — \"After Each Print\", \"Monthly\", \"As-Needed\"\n- Right panel: Checklist items with checkboxes, task name, time estimate, and a \"Why?\" expand button\n\nInteractive elements:\n- Clicking a tab shows the relevant maintenance tasks\n- Each task has a checkbox (toggles checked/unchecked with visual feedback)\n- \"Why?\" button next to each task expands a 2-sentence explanation of what goes wrong if the task is skipped\n- Progress bar at top shows \"X of Y tasks checked for this period\"\n- \"Reset Checklist\" button clears all checks with confirmation dialog\n\nVisual style:\n- Clean card layout, each task on a card with an icon (wrench, oil drop, spring, etc.)\n- Checked tasks show a green checkmark overlay\n- Overdue indicator (red dot) appears on tasks that haven't been checked in a simulated period\n\nData:\nAfter-each-print tasks: Clean build surface, inspect first layer, check filament path for tangles\nMonthly tasks: Belt tension check (twang test), Z screw lubrication, linear rod lubrication, pulley set screw check, extruder gear cleaning, E-step verification\nAs-needed tasks: Nozzle cold pull, nozzle replacement, bed leveling re-calibration, firmware update check\n\nResponsive: horizontal layout collapses to vertical tabs on narrow screens; minimum width 280px."
+}

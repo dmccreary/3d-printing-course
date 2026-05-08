@@ -1,0 +1,14 @@
+{
+  "sim_id": "iteration-cycle-simulator",
+  "diagram_name": "Iteration Cycle Simulator",
+  "chapter_number": 3,
+  "chapter_title": "The Engineering Design Process",
+  "chapter_dir": "03-engineering-design-process",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Analyze how repeated prototype-test-revise cycles converge on a design that meets specifications (Bloom L4: examine relationships, analyze patterns).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: MicroSim\n**sim-id:** iteration-cycle-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Analyze how repeated prototype-test-revise cycles converge on a design that meets specifications (Bloom L4: examine relationships, analyze patterns).\n\n**Description:** An animated p5.js simulation showing an abstract design metric (e.g., \"load capacity\" or \"dimensional accuracy\") improving over successive iterations. The student controls how much effort goes into each phase of the cycle and observes how the design metric evolves.\n\n**Canvas layout (680 × 460 px, responsive):**\n- Top: A horizontal \"Design Quality\" gauge (0–100 %), starting at 30–40 %, increasing with iterations\n- Middle: Three sliders labeled \"Research depth,\" \"Prototype fidelity,\" and \"Test rigor\" (each 1–5)\n- Center: A circular animation showing the three-phase loop: Prototype → Test → Revise, with a glowing bead cycling around\n- Right panel: A live line chart showing Design Quality vs. Iteration Number (X-axis 1–10, Y-axis 0–100 %)\n- Bottom: \"Run Next Iteration\" button; \"Reset\" button\n\n**Simulation logic (simplified, pedagogically calibrated):**\n- Each iteration increases Design Quality by a random amount within a range influenced by the three sliders (higher values = larger potential improvement)\n- Diminishing returns are modeled: improvements shrink as quality approaches 100 %\n- A \"Specification Target\" horizontal line at 80 % (user-draggable between 60–95 %) shows when the design would be accepted\n- At each iteration, a brief text log entry appears (e.g., \"Iteration 3: Tab thickness increased 0.4 mm → load capacity improved 12 %\")\n\n**Interactions:** All sliders update simulation parameters for the next iteration. Clicking \"Run Next Iteration\" advances one loop and updates the chart and gauge. Hovering any chart point shows that iteration's log entry in a tooltip.\n\n**Responsive behavior:** On narrow screens, the chart and left panel stack vertically."
+}

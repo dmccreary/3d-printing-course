@@ -1,0 +1,21 @@
+{
+  "title": "Iteration Cycle Simulator",
+  "description": "Analyze how repeated prototype-test-revise cycles converge on a design that meets specifications (Bloom L4: examine relationships, analyze patterns).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "iteration-cycle-simulator",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "The Engineering Design Process",
+  "chapter_dir": "03-engineering-design-process"
+}

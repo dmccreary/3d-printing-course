@@ -1,0 +1,14 @@
+{
+  "sim_id": "feature-tree-builder",
+  "diagram_name": "Feature Tree Builder",
+  "chapter_number": 4,
+  "chapter_title": "Computer-Aided Design and Modeling",
+  "chapter_dir": "04-cad-and-modeling",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Apply feature-based modeling by sequencing feature operations to produce a target part, understanding how the feature tree order affects the final geometry (Bloom L3–L4: apply, analyze).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: MicroSim\n**sim-id:** feature-tree-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Apply feature-based modeling by sequencing feature operations to produce a target part, understanding how the feature tree order affects the final geometry (Bloom L3–L4: apply, analyze).\n\n**Description:** An interactive p5.js simulation showing a simplified 3D isometric view of a part (rendered as colored block geometry, not full 3D — pseudo-3D using isometric projection) that updates in real time as the student adds features to a feature tree panel.\n\n**Canvas layout (700 × 500 px, responsive):**\n- Left panel (300 × 500 px): Feature tree list\n  - Starts with one base feature: \"Extrude Boss: 40×60×20 mm block\" (fixed, cannot remove)\n  - \"Add Feature\" dropdown: Extrude Cut (hole), Fillet, Shell, Linear Pattern, Circular Pattern\n  - Each added feature shows in the list with name, key parameter, and an \"Edit\" pencil and \"×\" delete button\n  - \"Move Up ↑\" and \"Move Down ↓\" arrows on each feature (to demonstrate reorder effects)\n- Right panel (400 × 500 px): Isometric 3D view of current part\n  - Rendered in real time as features are added/removed/reordered\n  - The part is a simplified block; features change its visible geometry (holes appear as dark squares, fillets show as rounded corners, shell shows as a hollow with open top face)\n  - Currently selected feature highlighted in yellow on the 3D view\n\n**Pre-loaded challenge:** A \"Target Part\" thumbnail shown in a corner — a simple bracket shape with two holes and a fillet. Student must add the right features in the right order to match it.\n\n**Interactions:**\n- Adding a feature opens a mini parameter panel (e.g., \"Extrude Cut: diameter = [  ] mm, depth = [  ] mm\")\n- Moving a fillet above a hole demonstrates rebuild failure (error icon on the fillet)\n- \"Rebuild\" button forces recalculation; errors flash red\n- \"Compare to Target\" button shows a split view comparing student's part to the target\n\n**Responsive behavior:** On narrow screens, the tree panel stacks above the 3D view."
+}

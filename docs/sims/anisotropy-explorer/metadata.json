@@ -1,0 +1,21 @@
+{
+  "title": "Anisotropy Explorer",
+  "description": "Analyze how build orientation affects mechanical strength in FDM parts by applying tensile and bending loads in different orientations (Bloom L4: examine relationships, distinguish).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "anisotropy-explorer",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "AM Standards, Process Families, and Industrial AM",
+  "chapter_dir": "02-standards-and-process-families"
+}

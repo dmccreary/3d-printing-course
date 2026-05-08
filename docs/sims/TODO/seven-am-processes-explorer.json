@@ -1,0 +1,14 @@
+{
+  "sim_id": "seven-am-processes-explorer",
+  "diagram_name": "Seven Process Families Explorer",
+  "chapter_number": 2,
+  "chapter_title": "AM Standards, Process Families, and Industrial AM",
+  "chapter_dir": "02-standards-and-process-families",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Identify and explain each of the seven ISO/ASTM 52900 AM process categories by feedstock type, energy source, and representative technology (Bloom L1–L2: recall, classify).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: interactive-infographic\n**sim-id:** seven-am-processes-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Identify and explain each of the seven ISO/ASTM 52900 AM process categories by feedstock type, energy source, and representative technology (Bloom L1–L2: recall, classify).\n\n**Description:** A radial hub-and-spoke infographic centered on a \"ISO/ASTM 52900\" hub node. Seven labeled spokes radiate outward to category nodes, each containing the category name and a small icon representing the feedstock type (filament spool, resin vat, powder bed, droplets, powder + binder, wire/powder nozzle, sheets stack).\n\n**Layout (700 × 600 px, responsive):**\n- Center hub: Dark circle labeled \"AM Process Categories\" (ISO/ASTM 52900)\n- 7 category nodes arranged in a ring at radius ~220 px, evenly spaced\n- Each node: Rounded rectangle with category name (bold), feedstock icon below\n- Color coding: Each category has a distinct hue (Material Extrusion = blue, Vat Photo = purple, PBF = orange, Material Jetting = teal, Binder Jetting = green, DED = red, Sheet Lamination = brown)\n\n**Interactions:**\n- Clicking any category node expands a detail panel below the diagram (or to the right on wide screens) showing:\n  - Category name and formal ISO/ASTM 52900 definition\n  - How material is joined (one sentence)\n  - Two representative technologies/machines\n  - Typical materials\n  - One-line description of best use case\n- The selected node glows with a halo effect. Previous selection dims.\n- A \"Compare Two\" mode: click one node, then shift-click another to view a side-by-side comparison of the two categories.\n\n**Responsive behavior:** On narrow screens (< 500 px), the radial layout collapses to a vertical list with the same clickable detail panels.\n\n**Color scheme:** Soft pastel node backgrounds with dark text; white center hub on dark background."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "sketch-constraint-explorer",
+  "diagram_name": "Sketch Constraint States Explorer",
+  "chapter_number": 4,
+  "chapter_title": "Computer-Aided Design and Modeling",
+  "chapter_dir": "04-cad-and-modeling",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Identify the three sketch constraint states (under-constrained, fully constrained, over-constrained) and apply geometric and dimensional constraints to reach the fully constrained state (Bloom L1–L3: identify, explain, apply).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: MicroSim\n**sim-id:** sketch-constraint-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Identify the three sketch constraint states (under-constrained, fully constrained, over-constrained) and apply geometric and dimensional constraints to reach the fully constrained state (Bloom L1–L3: identify, explain, apply).\n\n**Description:** An interactive p5.js canvas showing a simple L-shaped sketch profile made of five line segments. The student adds constraints and dimensions to move the sketch from under-constrained to fully constrained, experiencing the state transitions directly.\n\n**Canvas layout (680 × 480 px, responsive):**\n- Left panel (480 × 480 px): The sketch canvas showing the L-shape profile\n  - Line colors: blue = under-constrained, black = fully constrained, red = over-constrained\n  - A status badge at top: \"UNDER-CONSTRAINED (N free degrees)\" / \"FULLY CONSTRAINED\" / \"OVER-CONSTRAINED\"\n  - Clicking a line selects it (yellow highlight)\n  - Clicking two lines selects both for relational constraints\n- Right panel (200 × 480 px): Constraint palette\n  - Section \"Geometric Constraints\": buttons for Horizontal, Vertical, Parallel, Perpendicular, Equal, Coincident\n  - Section \"Dimensional Constraint\": a text input for length/distance and an \"Apply Dimension\" button\n  - Section \"Status\": shows count of free degrees of freedom remaining\n  - \"Reset Sketch\" button clears all constraints\n\n**Simulation logic:**\n- The L-shape starts with 7 degrees of freedom (DOF): position in X (1), position in Y (1), rotation (1), and 4 line lengths\n- Each constraint reduces DOF by a specific amount (horizontal/vertical removes 1, dimension removes 1, equal removes 1, etc.)\n- When DOF reaches 0, all lines turn black and the status shows \"FULLY CONSTRAINED\"\n- Adding one more constraint after full definition turns a conflicting entity red and shows \"OVER-CONSTRAINED — remove a constraint\"\n- Hovering any constraint button shows a tooltip explaining what relationship it enforces\n\n**Responsive behavior:** On narrow screens (< 600 px), the right panel moves below the sketch canvas."
+}

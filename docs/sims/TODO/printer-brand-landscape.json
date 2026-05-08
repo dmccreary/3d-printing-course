@@ -1,0 +1,14 @@
+{
+  "sim_id": "printer-brand-landscape",
+  "diagram_name": "Printer Brand Landscape Comparison",
+  "chapter_number": 14,
+  "chapter_title": "The Modern 3D Printing Ecosystem — Slicers, Connectivity, Brands, and Production",
+  "chapter_dir": "14-modern-ecosystem",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students compare major consumer printer brands across dimensions including price, open-source status, print speed, ease of use, and community support to make informed recommendations for different use cases.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: chart\n**sim-id:** printer-brand-landscape<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Analyze (L4)\nBloom Verb: Compare\nLearning Objective: Students compare major consumer printer brands across dimensions including price, open-source status, print speed, ease of use, and community support to make informed recommendations for different use cases.\n\nVisual layout:\n- Radar (spider) chart with 6 axes: Price-Value, Print Speed, Ease of Use, Open Source, Community Support, Material Compatibility\n- Each brand plotted as a colored polygon: Bambu (blue), Prusa (orange), Creality (green), Elegoo (resin only, purple), Snapmaker (multi-function, yellow)\n- Scores on each axis are 1–10 based on industry consensus data\n\nInteractive elements:\n- Hover any brand's polygon: Highlight that brand's data and show a floating card with the brand's strengths and typical use-case recommendations\n- Toggle checkboxes: show/hide individual brands to compare subsets\n- Click any axis label: Show a tooltip explaining what that dimension means and how scores were assigned\n- \"Use Case Matcher\" dropdown: Select \"School Lab\", \"Hobbyist Maker\", \"Prototype Engineer\", \"High-Detail Resin\" — highlights the recommended brand(s) for that use case\n\nData:\nBambu: Price-Value=8, Speed=10, Ease=9, OpenSource=3, Community=7, Material=8\nPrusa: Price-Value=7, Speed=6, Ease=7, OpenSource=10, Community=10, Material=9\nCreality: Price-Value=9, Speed=7, Ease=5, OpenSource=7, Community=9, Material=7\nElegoo (resin): Price-Value=9, Speed=8, Ease=7, OpenSource=5, Community=8, Material=4 (resin only)\nSnapmaker: Price-Value=6, Speed=5, Ease=7, OpenSource=4, Community=6, Material=7\n\nResponsive: chart scales proportionally; minimum 300px diameter."
+}

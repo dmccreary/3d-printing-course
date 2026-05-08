@@ -1,0 +1,21 @@
+{
+  "title": "Input Shaping and Speed Comparison",
+  "description": "Students explain how input shaping cancels resonance artifacts by comparing simulated surface quality at different print speeds with and without resonance compensation.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "input-shaping-demo",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Explain",
+  "completion_status": "scaffold",
+  "chapter_number": 13,
+  "chapter_title": "Modern Hardware — Multi-Material, Motion, and Speed",
+  "chapter_dir": "13-modern-hardware"
+}

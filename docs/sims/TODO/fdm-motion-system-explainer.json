@@ -1,0 +1,14 @@
+{
+  "sim_id": "fdm-motion-system-explainer",
+  "diagram_name": "Motion System Explainer",
+  "chapter_number": 8,
+  "chapter_title": "FDM Printer Hardware and Operation",
+  "chapter_dir": "08-fdm-printer-hardware",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students explain how stepper motors, belts, and lead screws translate G-code motion commands into physical print-head movement.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: microsim\n**sim-id:** fdm-motion-system-explainer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Understand (L2)\nBloom Verb: Explain\nLearning Objective: Students explain how stepper motors, belts, and lead screws translate G-code motion commands into physical print-head movement.\n\nData Visibility Requirements:\nStage 1: Show G-code command (e.g., G1 X50 Y30 F3000) as text at the top\nStage 2: Show the command parsed into axis deltas: ΔX = 50 mm, ΔY = 30 mm\nStage 3: Animate the print head moving from origin to (50, 30) over the build area — X belt and Y belt highlighted as they activate\nStage 4: Show step count calculations: steps = (distance / mm_per_step), displayed numerically\nStage 5: Show final position reached, with confirmation overlay\n\nCanvas layout:\n- Top panel (80px): G-code input field (preset commands to select, no freeform entry) + \"Run\" button\n- Center (360px): Top-down view of printer build area with print head carriage, X-axis rod and belt, Y-axis rod and belt\n- Bottom panel (80px): Step counter for X motor and Y motor, updating in real time during animation\n\nInteractive controls:\n- Dropdown: select from 5 preset G-code moves (short X-only, short Y-only, diagonal, full-bed traverse, retrace)\n- Slider: animation speed (slow/medium/fast)\n- Toggle: \"Show Steps\" checkbox — shows/hides step-count overlay\n- Button: Reset to home position\n\nVisual elements:\n- Print head as a small colored square with crosshair\n- X belt shown as a dashed line across top and bottom of carriage (moves with head)\n- Y belt shown as dashed lines on sides\n- Animated pulley wheels at belt endpoints, spinning during moves\n- Motion path drawn as a fading trail\n\nInstructional Rationale: Step-through with concrete data visibility is appropriate because the Understand objective requires students to connect abstract G-code numbers to physical steps and distances. Animation shows the relationship dynamically; step counters make the math visible.\n\nResponsive: scales to container width; minimum 320px."
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Resolution Explorer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Triangle Resolution Explorer</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> triangle-resolution-explorer</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> TBD</p>
+            <p><strong>Learning Objective:</strong> Students can adjust chord deviation and angular tolerance to achieve the appropriate mesh resolution for a given print resolution, and explain the trade-off between quality and file size.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** triangle-resolution-explorer<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Purpose: Allow students to explore the trade-off between triangle count, visual quality, and file size by adjusting mesh resolution parameters. Bloom Level: Apply (L3). Bloom Verb: use and demonstrate.
+    
+    Learning Objective: Students can adjust chord deviation and angular tolerance to achieve the appropriate mesh resolution for a given print resolution, and explain the trade-off between quality and file size.
+    
+    Canvas layout:
+    - Drawing area (upper 65%): Shows a sphere mesh rendered in wireframe-over-solid style, rotating slowly; sphere diameter ~200px at default
+    - Control panel (lower 35%): Two sliders and statistics display
+    
+    Controls:
+    1. Chord Deviation slider: Range 0.01 mm to 2.0 mm (logarithmic), default 0.2 mm. Label: "Chord Deviation (mm)"
+    2. Angular Deviation slider: Range 1° to 45°, default 15°. Label: "Angular Deviation (°)"
+    3. "Pause rotation" toggle button
+    
+    Statistics panel (updated live as sliders move):
+    - Triangle count: [computed value, e.g. "~1,240 triangles"]
+    - Estimated STL file size: [computed value, e.g. "~74 KB (binary)"]
+    - Worst-case surface error: [computed value in mm, e.g. "≤ 0.20 mm"]
+    - Quality rating: "Excellent / Good / Fair / Poor" based on chord deviation relative to 0.2mm FDM resolution
+    
+    Data Visibility Requirements (Understand objective):
+    - Stage 1: Show sphere at default settings — reasonably smooth, stats visible
+    - Stage 2: Drag chord deviation to 2.0 mm — sphere becomes obviously faceted, triangle count drops dramatically, "Poor" quality rating appears
+    - Stage 3: Drag chord deviation to 0.01 mm — sphere looks perfectly smooth, triangle count jumps to 50,000+, file size estimate rises to several MB
+    - This sequence makes the trade-off visceral and concrete
+    
+    Behavior:
+    - Sphere mesh is regenerated in real time as sliders move (regenerated using UV sphere algorithm, number of lat/lon divisions derived from chord deviation formula)
+    - Color of statistics panel changes: green for "Excellent/Good", yellow for "Fair", red for "Poor"
+    - Wireframe toggle: a checkbox "Show wireframe" overlays triangle edges; turning it off shows only the smooth-shaded surface
+    
+    Instructional Rationale: Parameter exploration (Apply/L3) is appropriate because students need to develop intuition for how numerical settings translate to visual quality. Seeing the triangle count change in real time as the slider moves builds this intuition more effectively than any static table.
+    
+    Responsive design: Sphere drawing area scales with container width. Minimum canvas height 480px. Slider labels wrap gracefully on narrow screens.
+    -->
+</body>
+</html>

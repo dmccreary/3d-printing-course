@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Printer Architecture Comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Modern Printer Architecture Comparison</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> modern-printer-comparison</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students compare bed-slinger and CoreXY printer architectures by examining how each moves its axes, and analyze how the moving mass difference affects achievable print speed.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: diagram
+    **sim-id:** modern-printer-comparison<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Level: Analyze (L4)
+    Bloom Verb: Compare
+    Learning Objective: Students compare bed-slinger and CoreXY printer architectures by examining how each moves its axes, and analyze how the moving mass difference affects achievable print speed.
+    
+    Visual layout:
+    - Side-by-side schematic of two printers:
+      - Left: Bed slinger (classic Prusa-style proportions) — bed moves in Y, head moves in X/Z
+      - Right: CoreXY (Bambu-style proportions) — bed moves only in Z, head moves in X/Y via coupled belt loop
+    - Motion arrows animated on each printer showing which axis moves when
+    - Mass labels on moving components: "~200g (head)" for CoreXY head, "~500g (bed + print)" for bed-slinger Y axis
+    
+    Interactive elements:
+    - "Animate Move" button: animates a diagonal move on both printers simultaneously, showing how each motion system executes it differently
+    - Click any component: info panel shows component name, function, and "how this affects print quality"
+    - Hover "Belt" on CoreXY: tooltip shows the CoreXY belt routing explanation (both motors act together to produce any XY move)
+    - Speed slider: drag to increase move speed; at high speeds, the bed-slinger shows ringing artifacts (oscillating color of deposited path), while the CoreXY shows clean lines
+    
+    Color coding:
+    - Red components: high-mass, speed-limiting elements
+    - Green components: low-mass, speed-enabling elements
+    - Blue: motion path
+    
+    Canvas:
+    - Each printer: 300×300px schematic
+    - Info panel: 200px right sidebar
+    
+    Responsive: stacks to vertical layout on screens below 700px.
+    -->
+</body>
+</html>

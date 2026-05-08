@@ -1,0 +1,14 @@
+{
+  "sim_id": "sub-vs-add-comparison",
+  "diagram_name": "Subtractive vs. Additive Manufacturing — Side-by-Side Comparison",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Foundations and History of Additive Manufacturing\"",
+  "chapter_dir": "01-foundations-and-history",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will *compare* (Bloom L2 — Understand) subtractive and additive manufacturing on the dimensions of material use, internal complexity, tooling requirements, and cost structure.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: interactive-infographic\n**sim-id:** sub-vs-add-comparison<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Students will *compare* (Bloom L2 — Understand) subtractive and additive manufacturing on the dimensions of material use, internal complexity, tooling requirements, and cost structure.\n\n**Canvas size:** 800 × 420 px, responsive.\n\n**Layout:** Two equal-width panels side by side, labeled \"Subtractive\" (left) and \"Additive\" (right).\n\n*Subtractive panel:*\n- Shows a block of material (gray rectangle) with a milling tool visible.\n- Animated: clicking \"Animate\" shows chips being cut away over 2 seconds, leaving a bracket-shaped silhouette.\n- Waste percentage badge: \"~40% material wasted\" in orange.\n\n*Additive panel:*\n- Shows an empty build plate with a nozzle above.\n- Animated: clicking \"Animate\" shows layers building up from the bottom over 2 seconds to form the same bracket shape.\n- Waste percentage badge: \"~2% material wasted (supports only)\" in green.\n\n**Comparison table below the panels** — four rows, each row is clickable and highlights both panels with a colored overlay showing which process has the advantage:\n\n| Dimension | Subtractive | Additive |\n|-----------|-------------|----------|\n| Internal features | Difficult | Easy |\n| Tooling required | Yes (fixtures, cutters) | No (just a digital file) |\n| Material waste | High (~40%) | Low (~2–10%) |\n| Unit cost (short run) | High (setup amortized over few parts) | Low (no setup cost) |\n\n**Infobox:** Clicking any row opens a sentence explaining the trade-off in more detail.\n\n**Responsive design:** Panels stack vertically on viewports < 600 px."
+}

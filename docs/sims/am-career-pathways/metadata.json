@@ -1,0 +1,21 @@
+{
+  "title": "Career Pathway Navigator",
+  "description": "Students evaluate different career pathways in additive manufacturing and recommend the most appropriate pathway based on personal goals (immediate employment, college degree, certification, apprenticeship).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "am-career-pathways",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "Recommend",
+  "completion_status": "scaffold",
+  "chapter_number": 16,
+  "chapter_title": "Digital Workflows, Careers, Articulation, and the Capstone Project",
+  "chapter_dir": "16-careers-and-capstone"
+}

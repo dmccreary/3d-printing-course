@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer Brand Landscape Comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Printer Brand Landscape Comparison</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> printer-brand-landscape</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students compare major consumer printer brands across dimensions including price, open-source status, print speed, ease of use, and community support to make informed recommendations for different use cases.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    **sim-id:** printer-brand-landscape<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Level: Analyze (L4)
+    Bloom Verb: Compare
+    Learning Objective: Students compare major consumer printer brands across dimensions including price, open-source status, print speed, ease of use, and community support to make informed recommendations for different use cases.
+    
+    Visual layout:
+    - Radar (spider) chart with 6 axes: Price-Value, Print Speed, Ease of Use, Open Source, Community Support, Material Compatibility
+    - Each brand plotted as a colored polygon: Bambu (blue), Prusa (orange), Creality (green), Elegoo (resin only, purple), Snapmaker (multi-function, yellow)
+    - Scores on each axis are 1–10 based on industry consensus data
+    
+    Interactive elements:
+    - Hover any brand's polygon: Highlight that brand's data and show a floating card with the brand's strengths and typical use-case recommendations
+    - Toggle checkboxes: show/hide individual brands to compare subsets
+    - Click any axis label: Show a tooltip explaining what that dimension means and how scores were assigned
+    - "Use Case Matcher" dropdown: Select "School Lab", "Hobbyist Maker", "Prototype Engineer", "High-Detail Resin" — highlights the recommended brand(s) for that use case
+    
+    Data:
+    Bambu: Price-Value=8, Speed=10, Ease=9, OpenSource=3, Community=7, Material=8
+    Prusa: Price-Value=7, Speed=6, Ease=7, OpenSource=10, Community=10, Material=9
+    Creality: Price-Value=9, Speed=7, Ease=5, OpenSource=7, Community=9, Material=7
+    Elegoo (resin): Price-Value=9, Speed=8, Ease=7, OpenSource=5, Community=8, Material=4 (resin only)
+    Snapmaker: Price-Value=6, Speed=5, Ease=7, OpenSource=4, Community=6, Material=7
+    
+    Responsive: chart scales proportionally; minimum 300px diameter.
+    -->
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "sim_id": "iso-astm-collaboration-map",
+  "diagram_name": "ISO and ASTM Collaboration Map",
+  "chapter_number": 2,
+  "chapter_title": "AM Standards, Process Families, and Industrial AM",
+  "chapter_dir": "02-standards-and-process-families",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Recall and explain the roles of ISO and ASTM as standards bodies in additive manufacturing (Bloom L1–L2: identify, explain).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: interactive-infographic\n**sim-id:** iso-astm-collaboration-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Learning objective:** Recall and explain the roles of ISO and ASTM as standards bodies in additive manufacturing (Bloom L1–L2: identify, explain).\n\n**Description:** A vis-network node-link diagram showing the relationship between ISO/TC 261 and ASTM F42, their collaboration agreement, and the resulting ISO/ASTM joint standards. The network has three layers:\n- Layer 1 (top): Two large anchor nodes — \"ISO / TC 261\" (blue, Geneva icon) and \"ASTM F42\" (red, Pennsylvania icon)\n- Layer 2 (middle): A shared node labeled \"Joint Standards Agreement (2011)\" connected to both anchors with bidirectional arrows\n- Layer 3 (bottom): Three outcome nodes branching from the agreement node — \"ISO/ASTM 52900 (Terminology)\", \"ISO/ASTM 52910 (Design)\", and \"ISO/ASTM 52921 (Coordinate Systems)\"\n\n**Interactions:** Clicking any node opens a right-side infobox with: organization name, founding year, headquarters, primary focus, and a one-sentence description of their role in AM standardization. Hovering highlights connected edges. A toggle button switches between \"Focus: Terminology\" and \"Focus: All Standards\" to filter visible nodes.\n\n**Canvas size:** 700 × 400 px, responsive.\n**Layout:** Hierarchical top-to-bottom.\n**Colors:** ISO nodes in blue (#1565C0), ASTM nodes in red (#C62828), shared/joint nodes in purple (#6A1B9A), text in white on node backgrounds."
+}

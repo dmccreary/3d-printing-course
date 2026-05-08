@@ -1,0 +1,14 @@
+{
+  "sim_id": "resin-exposure-explorer",
+  "diagram_name": "Exposure Setting Explorer",
+  "chapter_number": 10,
+  "chapter_title": "Resin Printing: SLA, MSLA, and DLP",
+  "chapter_dir": "10-resin-printing",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "Demonstrate",
+  "learning_objective": "Students demonstrate the relationship between exposure time and layer cure depth/bleed by adjusting a slider and observing cross-section changes in a simulated layer.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: microsim\n**sim-id:** resin-exposure-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Apply (L3)\nBloom Verb: Demonstrate\nLearning Objective: Students demonstrate the relationship between exposure time and layer cure depth/bleed by adjusting a slider and observing cross-section changes in a simulated layer.\n\nCanvas layout:\n- Top (80px): Two sliders — \"Normal Layer Exposure (s)\" range 0.5–6.0, and \"Bottom Layer Exposure (s)\" range 5–80\n- Center (300px): Cross-section view of a resin layer being cured:\n  - Shows LCD pixel column (light blue = UV passing through)\n  - Shows resin layer as a horizontal rectangle\n  - Shows cured zone expanding downward and outward as exposure increases\n  - Annotates cure depth and bleed width in mm\n- Bottom (100px): Status indicators: \"Under-cured / Optimal / Over-cured\" with color coding, plus dimensional error estimate for bottom layer elephant's foot\n\nVisual elements:\n- UV rays shown as short yellow vertical lines from LCD to resin surface\n- Cured resin shown in a darker teal color filling from the top of the layer down to cure depth\n- If over-exposed, cured zone bleeds sideways past the pixel boundary (shown in orange)\n- Target cross-section outline shown in dashed line for reference\n- Real-time label: \"Cure depth: X µm, Bleed: Y µm\"\n\nInteractive controls:\n- Normal exposure slider (primary)\n- Bottom exposure slider\n- Toggle: \"Show bottom layer / normal layer\" switches which scenario is visualized\n- Button: \"What happens to my print?\" — shows a simplified cross-section of the base of a print using the current settings\n\nDefault parameters:\n- Normal exposure: 2.0 s\n- Bottom exposure: 30 s\n\nInstructional Rationale: Parameter exploration is appropriate for Apply-level objectives. Students need to build physical intuition for how over- and under-exposure manifest in the printed part — this is difficult to convey through prose alone.\n\nResponsive: scales to container; minimum 320px."
+}

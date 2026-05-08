@@ -1,0 +1,21 @@
+{
+  "title": "Mesh Repair Workflow",
+  "description": "Students can follow the mesh repair workflow — analyze, auto-repair, inspect, manual repair, re-export — and select the appropriate tool and action for each step.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "mesh-repair-workflow",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "3D File Formats and Mesh Geometry",
+  "chapter_dir": "05-file-formats-and-mesh"
+}

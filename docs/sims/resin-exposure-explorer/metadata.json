@@ -1,0 +1,21 @@
+{
+  "title": "Exposure Setting Explorer",
+  "description": "Students demonstrate the relationship between exposure time and layer cure depth/bleed by adjusting a slider and observing cross-section changes in a simulated layer.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "resin-exposure-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "Demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 10,
+  "chapter_title": "Resin Printing: SLA, MSLA, and DLP",
+  "chapter_dir": "10-resin-printing"
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "am-career-pathways",
+  "diagram_name": "Career Pathway Navigator",
+  "chapter_number": 16,
+  "chapter_title": "Digital Workflows, Careers, Articulation, and the Capstone Project",
+  "chapter_dir": "16-careers-and-capstone",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "Recommend",
+  "learning_objective": "Students evaluate different career pathways in additive manufacturing and recommend the most appropriate pathway based on personal goals (immediate employment, college degree, certification, apprenticeship).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: diagram\n**sim-id:** am-career-pathways<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Evaluate (L5)\nBloom Verb: Recommend\nLearning Objective: Students evaluate different career pathways in additive manufacturing and recommend the most appropriate pathway based on personal goals (immediate employment, college degree, certification, apprenticeship).\n\nVisual layout:\n- Central node: \"High School AM Course Completion\"\n- Four branching pathways radiating outward:\n  1. Direct Employment (→ Entry-level AM Operator → Senior Technician → Process Engineer)\n  2. Community College Articulation (→ AAS Degree → Manufacturing Engineer)\n  3. Certification Track (→ NC3/NIMS Certification → Industry Credential → Specialized Roles)\n  4. Apprenticeship (→ Registered Apprenticeship → Journeyperson → Lead Technician)\n- Each pathway node shows: role title, typical salary range, education required, and time to reach milestone\n\nInteractive elements:\n- Click any node: Expand info panel with role description, typical employers, key skills, and links to relevant certification bodies or programs\n- \"Filter by Goal\" buttons: \"Fastest to Income\", \"Highest Long-Term Earnings\", \"Best for College Prep\", \"Hands-On Learning\" — highlights the most relevant pathway(s) for each goal\n- Hover any arrow between nodes: tooltip shows the transition requirements (\"needs: 2-year degree or equivalent certification\")\n- \"Salary Range Chart\" button: opens a bar chart comparing typical salary ranges at each role tier across all four pathways\n\nColor coding:\n- Blue: academic/degree pathway\n- Green: certification pathway\n- Orange: employment pathway\n- Purple: apprenticeship pathway\n\nCanvas: 700×420px diagram + 200px right info panel\nResponsive: collapses to vertical layout on narrow screens."
+}

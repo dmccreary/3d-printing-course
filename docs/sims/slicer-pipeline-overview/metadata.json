@@ -1,0 +1,21 @@
+{
+  "title": "Slicer Pipeline Overview",
+  "description": "Students can describe what happens at each stage of the digital-to-physical pipeline from CAD model to printed part, including the role of the slicer, the G-code file, and the printer firmware.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "slicer-pipeline-overview",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Explain",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Slicing, G-code, and Toolpaths",
+  "chapter_dir": "07-slicing-and-toolpaths"
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "print-session-safety-checklist",
+  "diagram_name": "Print Session Safety Checklist",
+  "chapter_number": 9,
+  "chapter_title": "Safety, Ethics, and Sustainability in 3D Printing",
+  "chapter_dir": "09-safety-ethics-sustainability",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "Assess",
+  "learning_objective": "Students assess the safety adequacy of a print setup by working through a structured checklist and identifying which risk areas need attention before beginning a print session.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: infographic\n**sim-id:** print-session-safety-checklist<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Evaluate (L5)\nBloom Verb: Assess\nLearning Objective: Students assess the safety adequacy of a print setup by working through a structured checklist and identifying which risk areas need attention before beginning a print session.\n\nLayout:\n- Four collapsible card panels: Fume & Particle Risk, Fire Safety, Chemical (Resin), IP & Ethics\n- Each card shows an icon, a risk-level badge (Low / Medium / High — determined by user answers), and a list of checklist questions\n\nInteractive elements:\n- Each question has a Yes / No / N/A radio button\n- As the user answers, the card's risk-level badge updates dynamically:\n  - All Yes = Green (Low risk)\n  - Mixed = Yellow (Medium — hover shows which gaps remain)\n  - Multiple No = Red (High — hover shows specific unmet criteria)\n- Overall \"Session Readiness\" indicator at the top: Ready to Print / Review Required / Do Not Start\n- \"Why does this matter?\" tooltip on each question (hover reveals 1-sentence rationale)\n- Reset button clears all answers\n\nScenarios (optional guided mode):\n- Dropdown: Select a scenario (e.g., \"ABS print, unventilated classroom\", \"PLA print, well-ventilated lab\") — pre-fills some answers and highlights the residual risks\n\nVisual style:\n- Clean card layout with clear icons for each risk category\n- Color transitions for risk badges (smooth green/yellow/red)\n- Accessible contrast ratios\n\nResponsive: stacks cards vertically on narrow screens; minimum 320px."
+}

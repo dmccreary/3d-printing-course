@@ -1,0 +1,21 @@
+{
+  "title": "Feature Tree Builder",
+  "description": "Apply feature-based modeling by sequencing feature operations to produce a target part, understanding how the feature tree order affects the final geometry (Bloom L3–L4: apply, analyze).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "feature-tree-builder",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Computer-Aided Design and Modeling",
+  "chapter_dir": "04-cad-and-modeling"
+}

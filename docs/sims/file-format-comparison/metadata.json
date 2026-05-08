@@ -1,0 +1,21 @@
+{
+  "title": "3D File Format Comparison Explorer",
+  "description": "Students can compare STL, 3MF, and OBJ across printing-relevant properties and choose the appropriate format for a given workflow.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "file-format-comparison",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "3D File Formats and Mesh Geometry",
+  "chapter_dir": "05-file-formats-and-mesh"
+}

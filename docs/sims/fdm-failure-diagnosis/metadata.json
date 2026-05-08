@@ -1,0 +1,21 @@
+{
+  "title": "FDM Failure Diagnosis Decision Tree",
+  "description": "Students evaluate a described print failure by navigating a decision tree that identifies the most likely root cause and recommended fix.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "fdm-failure-diagnosis",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "Judge",
+  "completion_status": "scaffold",
+  "chapter_number": 12,
+  "chapter_title": "Print Failures, Troubleshooting, and Post-Processing",
+  "chapter_dir": "12-troubleshooting-and-postprocessing"
+}

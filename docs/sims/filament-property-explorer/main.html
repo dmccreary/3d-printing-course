@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filament Property Explorer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Filament Property Explorer</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> filament-property-explorer</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Students can compare thermoplastic filaments across multiple property dimensions and identify which material best fits a given application scenario.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** filament-property-explorer<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Bloom Level: Analyze (L4)
+    Bloom Verb: Compare
+    Learning Objective: Students can compare thermoplastic filaments across multiple property dimensions and identify which material best fits a given application scenario.
+    
+    Instructional Rationale: A parameter explorer is appropriate for an Analyze-level objective because students need to examine relationships between properties across multiple materials — something a static table cannot enable. By toggling which property is displayed and filtering materials of interest, students build an accurate mental model of the filament landscape rather than memorizing isolated facts.
+    
+    Canvas layout:
+    - Top: Radio button row to select active property: Tensile Strength (MPa) | Elongation at Break (%) | Glass Transition Temp (°C) | Nozzle Temperature (°C)
+    - Center: Horizontal bar chart — one bar per material, bars sized proportionally to the selected property value
+    - Left: Material checkboxes to show/hide individual materials (all checked by default)
+    - Bottom: Info panel — clicking a bar fills the panel with: material name, selected property value with units, and a 2-sentence explanation of what that value means in practice
+    
+    Data:
+    - PLA: Tensile 58 MPa, Elongation 6%, Tg 60°C, Nozzle 205°C
+    - PETG: Tensile 50 MPa, Elongation 35%, Tg 80°C, Nozzle 240°C
+    - ABS: Tensile 48 MPa, Elongation 15%, Tg 100°C, Nozzle 240°C
+    - ASA: Tensile 50 MPa, Elongation 12%, Tg 100°C, Nozzle 250°C
+    - TPU (95A): Tensile 35 MPa, Elongation 500%, Tg −30°C, Nozzle 228°C
+    - Nylon PA12: Tensile 60 MPa, Elongation 80%, Tg 55°C, Nozzle 255°C
+    - Polycarbonate: Tensile 65 MPa, Elongation 110%, Tg 145°C, Nozzle 285°C
+    
+    Interaction:
+    - Clicking a bar selects it; info panel updates with a property-specific explanation.
+    - Hovering a bar shows a tooltip with the exact value and unit.
+    - Toggling the property radio button re-renders bars smoothly.
+    - Deselecting a material's checkbox fades its bar to 20% opacity.
+    
+    Color scheme: Each material has a consistent color used across all property views (PLA = green, PETG = teal, ABS = orange, ASA = amber, TPU = purple, Nylon = blue, PC = red).
+    
+    Responsive behavior: Canvas fills iframe width; chart scales proportionally on resize.
+    -->
+</body>
+</html>

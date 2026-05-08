@@ -1,0 +1,14 @@
+{
+  "sim_id": "fdm-failure-diagnosis",
+  "diagram_name": "FDM Failure Diagnosis Decision Tree",
+  "chapter_number": 12,
+  "chapter_title": "Print Failures, Troubleshooting, and Post-Processing",
+  "chapter_dir": "12-troubleshooting-and-postprocessing",
+  "library": "p5.js",
+  "bloom_level": "Evaluate (L5)",
+  "bloom_verb": "Judge",
+  "learning_objective": "Students evaluate a described print failure by navigating a decision tree that identifies the most likely root cause and recommended fix.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: workflow\n**sim-id:** fdm-failure-diagnosis<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Evaluate (L5)\nBloom Verb: Judge\nLearning Objective: Students evaluate a described print failure by navigating a decision tree that identifies the most likely root cause and recommended fix.\n\nVisual layout:\n- Interactive decision tree rendered in p5.js\n- Root node: \"Where does the failure appear?\"\n- Branch categories: First Layer / All Layers / Specific Geometry / After Long Run\n- Each category branches into symptom nodes (e.g., \"Gaps in first layer?\", \"Lines not bonding?\", \"Blobs and zits?\")\n- Leaf nodes show: Failure Name, Root Cause (1–2 sentences), Recommended Fix (numbered list), Related Slicer Setting\n\nInteractive elements:\n- Click any branch node to navigate deeper into the tree; breadcrumb trail at top shows path taken\n- Each leaf node has a \"See Example Photo Description\" button — expands a text panel describing what this failure looks like in detail\n- \"Start Over\" button resets to root\n- Hover any node to see the full question/description in a tooltip\n\nTree data covers: warping, first-layer not sticking, first-layer too squished, stringing, under-extrusion, over-extrusion, layer separation, elephant's foot, ringing/ghosting, clogged nozzle, failed mid-print adhesion\n\nColor coding:\n- Blue: question/branch nodes\n- Orange: symptom confirmation nodes\n- Green: leaf nodes (diagnosis + fix)\n- Red: safety-related fixes (thermal runaway, nozzle clog fire risk)\n\nResponsive: tree scales to container; on narrow screens, switches from graphical tree to a guided Q&A form."
+}

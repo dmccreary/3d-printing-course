@@ -1,0 +1,21 @@
+{
+  "title": "Printer Brand Landscape Comparison",
+  "description": "Students compare major consumer printer brands across dimensions including price, open-source status, print speed, ease of use, and community support to make informed recommendations for different use cases.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-08",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "printer-brand-landscape",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Compare",
+  "completion_status": "scaffold",
+  "chapter_number": 14,
+  "chapter_title": "The Modern 3D Printing Ecosystem — Slicers, Connectivity, Brands, and Production",
+  "chapter_dir": "14-modern-ecosystem"
+}

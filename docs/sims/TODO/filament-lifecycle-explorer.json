@@ -1,0 +1,14 @@
+{
+  "sim_id": "filament-lifecycle-explorer",
+  "diagram_name": "Filament Lifecycle Explorer",
+  "chapter_number": 9,
+  "chapter_title": "Safety, Ethics, and Sustainability in 3D Printing",
+  "chapter_dir": "09-safety-ethics-sustainability",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "Examine",
+  "learning_objective": "Students examine the full lifecycle of a 3D-printed filament part — from raw material to end-of-life — and identify where waste and environmental impact occur.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: infographic\n**sim-id:** filament-lifecycle-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Analyze (L4)\nBloom Verb: Examine\nLearning Objective: Students examine the full lifecycle of a 3D-printed filament part — from raw material to end-of-life — and identify where waste and environmental impact occur.\n\nLayout:\n- Circular flow diagram showing lifecycle stages: Raw Material → Pellet Production → Filament Extrusion → Spool → Printer → Finished Part → End of Life (branching to: Recycled / Landfill / Compost / Repurposed)\n- Each stage is a labeled node on the circle\n- Arrows between stages show material and energy flow\n\nInteractive elements:\n- Click any node: Expand an info panel with details — what happens at this stage, energy input, waste generated, and sustainability notes\n- Hover any arrow: Show tooltip with \"what's flowing here\" (e.g., \"PLA pellets\", \"waste prints\", \"extrusion heat\")\n- Filter toggle: \"Show PLA\", \"Show PETG\", \"Show ABS\" — each filter highlights the path and updates the info panel with material-specific data\n- \"Zoom to End of Life\" button: expands the end-of-life branch to show the three disposal paths with their requirements and barriers\n\nColor coding:\n- Green: Sustainable / recyclable pathways\n- Yellow: Conditionally sustainable\n- Red: Landfill / non-recyclable pathways\n- Blue: Process / energy inputs\n\nCanvas:\n- Main diagram: 600×400 area\n- Info panel: right side, 200px wide\n\nResponsive: reflows to vertical on narrow screens."
+}

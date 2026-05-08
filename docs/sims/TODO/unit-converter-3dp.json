@@ -1,0 +1,14 @@
+{
+  "sim_id": "unit-converter-3dp",
+  "diagram_name": "Unit Conversion MicroSim",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Foundations and History of Additive Manufacturing\"",
+  "chapter_dir": "01-foundations-and-history",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will *apply* (Bloom L3 — Apply) metric-to-imperial unit conversions and interpret dimensions in the context of printed part specifications.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: microsim\n**sim-id:** unit-converter-3dp<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Students will *apply* (Bloom L3 — Apply) metric-to-imperial unit conversions and interpret dimensions in the context of printed part specifications.\n\n**Canvas size:** 720 × 380 px, responsive to window resize.\n\n**Layout — three conversion panels side by side:**\n\n*Panel 1 — Length (mm ↔ in):*\n- Slider: 1–300 mm, default 50 mm\n- Displays: \"[value] mm = [value/25.4 rounded to 3 dp] in\"\n- Below: \"A standard desktop print bed is 220 mm = 8.66 in wide.\"\n\n*Panel 2 — Temperature (°C ↔ °F):*\n- Slider: 150–300 °C, default 210 °C\n- Displays: \"[°C] °C = [°C × 9/5 + 32] °F\"\n- Color bar from blue (150 °C) through orange (250 °C) to red (300 °C)\n- Below: \"PLA prints at ~210 °C = 410 °F.\"\n\n*Panel 3 — Mass (g ↔ oz):*\n- Slider: 1–1000 g, default 250 g\n- Displays: \"[g] g = [g/28.35 rounded to 1 dp] oz\"\n- Below: \"A standard filament spool is 1,000 g = 35.3 oz.\"\n\n**Interactions:**\n- Each slider updates its panel in real time.\n- Clicking a panel's \"Quiz Me\" button hides one value; student types the answer and gets immediate feedback (green ✓ / red ✗ with the correct value shown).\n- A \"Reset All\" button restores all sliders to defaults.\n\n**Responsive design:** Panels stack vertically on narrow viewports (<500 px); minimum font size 13 px."
+}

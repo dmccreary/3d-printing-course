@@ -1,0 +1,14 @@
+{
+  "sim_id": "filament-property-explorer",
+  "diagram_name": "Filament Property Explorer",
+  "chapter_number": 6,
+  "chapter_title": "Materials Science for Additive Manufacturing",
+  "chapter_dir": "06-materials-science",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students can compare thermoplastic filaments across multiple property dimensions and identify which material best fits a given application scenario.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-08",
+  "specification": "Type: microsim\n**sim-id:** filament-property-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nBloom Level: Analyze (L4)\nBloom Verb: Compare\nLearning Objective: Students can compare thermoplastic filaments across multiple property dimensions and identify which material best fits a given application scenario.\n\nInstructional Rationale: A parameter explorer is appropriate for an Analyze-level objective because students need to examine relationships between properties across multiple materials — something a static table cannot enable. By toggling which property is displayed and filtering materials of interest, students build an accurate mental model of the filament landscape rather than memorizing isolated facts.\n\nCanvas layout:\n- Top: Radio button row to select active property: Tensile Strength (MPa) | Elongation at Break (%) | Glass Transition Temp (°C) | Nozzle Temperature (°C)\n- Center: Horizontal bar chart — one bar per material, bars sized proportionally to the selected property value\n- Left: Material checkboxes to show/hide individual materials (all checked by default)\n- Bottom: Info panel — clicking a bar fills the panel with: material name, selected property value with units, and a 2-sentence explanation of what that value means in practice\n\nData:\n- PLA: Tensile 58 MPa, Elongation 6%, Tg 60°C, Nozzle 205°C\n- PETG: Tensile 50 MPa, Elongation 35%, Tg 80°C, Nozzle 240°C\n- ABS: Tensile 48 MPa, Elongation 15%, Tg 100°C, Nozzle 240°C\n- ASA: Tensile 50 MPa, Elongation 12%, Tg 100°C, Nozzle 250°C\n- TPU (95A): Tensile 35 MPa, Elongation 500%, Tg −30°C, Nozzle 228°C\n- Nylon PA12: Tensile 60 MPa, Elongation 80%, Tg 55°C, Nozzle 255°C\n- Polycarbonate: Tensile 65 MPa, Elongation 110%, Tg 145°C, Nozzle 285°C\n\nInteraction:\n- Clicking a bar selects it; info panel updates with a property-specific explanation.\n- Hovering a bar shows a tooltip with the exact value and unit.\n- Toggling the property radio button re-renders bars smoothly.\n- Deselecting a material's checkbox fades its bar to 20% opacity.\n\nColor scheme: Each material has a consistent color used across all property views (PLA = green, PETG = teal, ABS = orange, ASA = amber, TPU = purple, Nylon = blue, PC = red).\n\nResponsive behavior: Canvas fills iframe width; chart scales proportionally on resize."
+}
