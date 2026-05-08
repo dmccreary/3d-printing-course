@@ -1,9 +1,9 @@
 ---
 title: Industrial PBF Process Comparison
-description: Compare SLS, MJF, DMLS, and EBM on energy source, material, atmosphere, and application (Bloom L4: differentiate, compare, contrast).
-status: scaffold
+description: "Compare SLS, MJF, DMLS, and EBM on energy source, material, atmosphere, and application (Bloom L4: differentiate, compare, contrast)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Analyze
 ---
 
 # Industrial PBF Process Comparison
@@ -22,7 +22,7 @@ Compare SLS, MJF, DMLS, and EBM on energy source, material, atmosphere, and appl
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
