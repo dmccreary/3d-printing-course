@@ -1,16 +1,12 @@
 ---
 title: Slicer Pipeline Overview
 description: Students can describe what happens at each stage of the digital-to-physical pipeline from CAD model to printed part, including the role of the slicer, the G-code file, and the printer firmware.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Understand (L2)
 ---
 
 # Slicer Pipeline Overview
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students can describe what happens at each stage of the digital-to-physical pipe
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="562" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
