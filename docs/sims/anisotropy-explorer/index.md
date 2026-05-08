@@ -1,16 +1,12 @@
 ---
 title: Anisotropy Explorer
-description: Analyze how build orientation affects mechanical strength in FDM parts by applying tensile and bending loads in different orientations (Bloom L4: examine relationships, distinguish).
-status: scaffold
+description: "Analyze how build orientation affects mechanical strength in FDM parts by applying tensile and bending loads in different orientations (Bloom L4: examine relationships, distinguish)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Analyze
 ---
 
 # Anisotropy Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Analyze how build orientation affects mechanical strength in FDM parts by applyi
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="572" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

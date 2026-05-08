@@ -3,111 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Anisotropy Explorer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0; padding: 0; background: #f8f9fa; }
+        main { display: block; width: 100%; }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Anisotropy Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> anisotropy-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> TBD</p>
-            <p><strong>Learning Objective:</strong> Analyze how build orientation affects mechanical strength in FDM parts by applying tensile and bending loads in different orientations (Bloom L4: examine relationships, distinguish).</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: MicroSim
-    **sim-id:** anisotropy-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    **Learning objective:** Analyze how build orientation affects mechanical strength in FDM parts by applying tensile and bending loads in different orientations (Bloom L4: examine relationships, distinguish).
-    
-    **Description:** An interactive p5.js simulation showing a rectangular test bar printed in FDM. The student can select build orientation (flat/XY, on-edge, upright/Z) using radio buttons, then apply either a tensile pull or a bending moment using buttons.
-    
-    **Canvas layout (600 × 420 px, responsive):**
-    - Top third: The test bar rendered as a 3D-perspective isometric box, with layer lines drawn horizontally in the current orientation. Layer lines are color-coded (blue = XY, green = on-edge, orange = vertical/Z).
-    - Middle section: A strength bar gauge (0–100 %, green to red gradient) showing relative strength in the selected load direction. Values are approximate but pedagogically accurate (XY tensile ≈ 90 %, on-edge tensile ≈ 75 %, Z tensile ≈ 45 % for typical PLA).
-    - Bottom section: A one-sentence explanation that updates to describe why the strength is high or low for the current combination.
-    
-    **Controls:**
-    - Radio group "Build Orientation": Flat (XY), On-Edge, Upright (Z)
-    - Radio group "Load Direction": Tensile (pull apart), Bending (snap across layers), Shear (slide layers)
-    - Button "Apply Load" — triggers an animated bar deformation and snapping effect on weak combinations; a subtle flex on strong combinations
-    
-    **Interactions:** All controls update the display immediately. The strength gauge animates smoothly when parameters change. When a combination results in < 50 % strength, the test bar shows a red crack line across the weakest layer interface.
-    
-    **Responsive behavior:** Canvas scales to fit window width while maintaining aspect ratio.
-    -->
+    <main></main>
+    <script src="anisotropy-explorer.js"></script>
 </body>
 </html>
