@@ -255,7 +255,7 @@ watch:
 # social_override: sets og:image to cover.png on any page that lacks a
 # page-level `image:` frontmatter key, ensuring consistent social previews.
 hooks:
-  - docs/plugins/social_override.py
+  - plugins/social_override.py
 
 # Copyright
 copyright: 'Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.'
