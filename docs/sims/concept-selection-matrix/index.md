@@ -1,9 +1,9 @@
 ---
 title: Concept Selection Decision Matrix
-description: Apply a weighted decision matrix to select the best design concept from a set of alternatives (Bloom L3–L5: apply, analyze, evaluate).
-status: scaffold
+description: "Apply a weighted decision matrix to select the best design concept from a set of alternatives (Bloom L3–L5: apply, analyze, evaluate)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Apply-Analyze-Evaluate
 ---
 
 # Concept Selection Decision Matrix
@@ -22,7 +22,7 @@ Apply a weighted decision matrix to select the best design concept from a set of
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="652" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
