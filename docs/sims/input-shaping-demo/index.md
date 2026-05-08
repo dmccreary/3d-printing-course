@@ -1,16 +1,12 @@
 ---
 title: Input Shaping and Speed Comparison
 description: Students explain how input shaping cancels resonance artifacts by comparing simulated surface quality at different print speeds with and without resonance compensation.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Understand (L2)
 ---
 
 # Input Shaping and Speed Comparison
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students explain how input shaping cancels resonance artifacts by comparing simu
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

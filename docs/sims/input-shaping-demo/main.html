@@ -3,115 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Shaping and Speed Comparison</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Input Shaping Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0; padding: 0; background: #f8f9fa; }
+        main { display: block; width: 100%; }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Input Shaping and Speed Comparison</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> input-shaping-demo</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Students explain how input shaping cancels resonance artifacts by comparing simulated surface quality at different print speeds with and without resonance compensation.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** input-shaping-demo<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Level: Understand (L2)
-    Bloom Verb: Explain
-    Learning Objective: Students explain how input shaping cancels resonance artifacts by comparing simulated surface quality at different print speeds with and without resonance compensation.
-    
-    Canvas layout:
-    - Left panel (200px): Controls — speed slider (50–600 mm/s), toggle "Input Shaping On/Off", toggle "Pressure Advance On/Off"
-    - Center panel (350px): Simulation of a top-down view of a square being printed, showing the actual deposited path vs. the commanded path. Without input shaping at high speeds, the deposited path shows oscillating error. With input shaping, it matches the command.
-    - Right panel (150px): "Surface Quality Score" (0–100) calculated from the simulated path deviation, plus indicators for "Ringing visible: Yes/No" and "Corner quality: Poor/Good/Excellent"
-    
-    Data Visibility:
-    - At 60 mm/s without input shaping: path deviation <0.05 mm, no visible ringing
-    - At 300 mm/s without input shaping: ringing oscillations ±0.5 mm visible on straight walls after corners
-    - At 300 mm/s with input shaping: path deviation <0.08 mm, no visible ringing
-    - At 600 mm/s with input shaping: path deviation <0.15 mm, minor corner rounding visible
-    - With pressure advance off at corners: small blob visible at corner endpoint, gap at start of new wall
-    
-    Step-through mode: "Step Through a Corner" button shows one corner being printed frame by frame, with annotations showing when pressure advance fires relative to the head position change.
-    
-    Instructional Rationale: Step-through with data visibility appropriate for Understand level. Students need to see the deviation between commanded and actual path to understand why input shaping matters — prose alone cannot convey the magnitude of the correction.
-    
-    Responsive: panels reflow vertically on screens below 600px.
-    -->
+    <main></main>
+    <script src="input-shaping-demo.js"></script>
 </body>
 </html>
