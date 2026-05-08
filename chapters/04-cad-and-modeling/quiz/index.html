@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/3d-printing-course/chapters/04-cad-and-modeling/quiz/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Quiz: Computer-Aided Design and Modeling - Introduction to 3D Printing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-0GVHRS0Y5Y"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-0GVHRS0Y5Y",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-0GVHRS0Y5Y",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quiz: Computer-Aided Design and Modeling - Introduction to 3D Printing">
+<meta property="og:description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/04-cad-and-modeling/quiz.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/04-cad-and-modeling/quiz/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Quiz: Computer-Aided Design and Modeling - Introduction to 3D Printing">
+<meta property="twitter:description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/04-cad-and-modeling/quiz.png">
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quiz-computer-aided-design-and-modeling" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction to 3D Printing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz: Computer-Aided Design and Modeling
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    Introduction to 3D Printing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Description
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapters
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MicroSims
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Graph
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-in-parametric-cad-a-sketch-entity-that-appears-blue-in-the-viewport-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. In parametric CAD, a sketch entity that appears blue in the viewport is:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-what-is-the-main-advantage-of-parametric-modeling-over-non-parametric-fixed-geometry-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. What is the main advantage of parametric modeling over non-parametric (fixed-geometry) modeling?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-which-cad-feature-operation-creates-a-solid-by-rotating-a-2d-sketch-profile-around-an-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Which CAD feature operation creates a solid by rotating a 2D sketch profile around an axis?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-why-should-fillet-features-typically-be-placed-at-the-very-end-of-the-feature-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Why should fillet features typically be placed at the very end of the feature tree?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-in-a-cad-assembly-what-does-it-mean-for-a-part-to-have-0-remaining-degrees-of-freedom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. In a CAD assembly, what does it mean for a part to have "0 remaining degrees of freedom"?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-the-shell-feature-in-cad-is-most-useful-for-additive-manufacturing-because-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. The Shell feature in CAD is most useful for additive manufacturing because it:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-which-of-the-three-cad-tools-discussed-in-the-chapter-is-completely-browser-based-requiring-no-local-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Which of the three CAD tools discussed in the chapter is completely browser-based, requiring no local installation?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-a-linear-pattern-feature-is-most-appropriate-when-you-need-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. A Linear Pattern feature is most appropriate when you need to:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ai-assisted-cad-tools-such-as-text-to-geometry-generators-are-most-effectively-used-by-designers-who" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. AI-assisted CAD tools such as text-to-geometry generators are most effectively used by designers who:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-which-boolean-operation-retains-only-the-volume-shared-by-two-overlapping-solid-bodies-discarding-everything-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Which Boolean operation retains only the volume shared by two overlapping solid bodies, discarding everything else?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/04-cad-and-modeling/quiz.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="quiz-computer-aided-design-and-modeling">Quiz: Computer-Aided Design and Modeling<a class="headerlink" href="#quiz-computer-aided-design-and-modeling" title="Permanent link">¶</a></h1>
+<p>Test your understanding of parametric CAD, sketch constraints, feature operations, and CAD tools with these questions.</p>
+<hr>
+<h4 id="1-in-parametric-cad-a-sketch-entity-that-appears-blue-in-the-viewport-is">1. In parametric CAD, a sketch entity that appears blue in the viewport is:<a class="headerlink" href="#1-in-parametric-cad-a-sketch-entity-that-appears-blue-in-the-viewport-is" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Fully constrained and ready for feature creation</li>
+<li>Over-constrained with conflicting geometric rules</li>
+<li>Under-constrained and still free to move or scale</li>
+<li>Locked on a reference plane and cannot be edited</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. In most parametric CAD tools, blue entities are under-constrained — they still have unconstrained degrees of freedom and can drift when features are rebuilt. Black entities are fully constrained (the goal); red entities are over-constrained (conflicting constraints). A blue sketch should not be used to create a feature because its geometry may change unpredictably as the model evolves.</p>
+<p><strong>Concept Tested:</strong> Sketch Constraints</p>
+</details>
+<hr>
+<h4 id="2-what-is-the-main-advantage-of-parametric-modeling-over-non-parametric-fixed-geometry-modeling">2. What is the main advantage of parametric modeling over non-parametric (fixed-geometry) modeling?<a class="headerlink" href="#2-what-is-the-main-advantage-of-parametric-modeling-over-non-parametric-fixed-geometry-modeling" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Parametric models use less file storage space than non-parametric ones</li>
+<li>Changing one dimension parameter automatically updates all dependent geometry</li>
+<li>Parametric models can be exported directly to G-code without a slicer</li>
+<li>Parametric models do not require a feature tree to track design history</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. In parametric modeling, dimensions and relationships are stored as editable parameters. Changing one value — say, bracket width from 40 mm to 60 mm — propagates through the entire model, updating all features that depend on it. Non-parametric models require manually moving every affected edge and face. File size, G-code export, and feature trees are separate concepts unrelated to the parametric/non-parametric distinction.</p>
+<p><strong>Concept Tested:</strong> Parametric Modeling</p>
+</details>
+<hr>
+<h4 id="3-which-cad-feature-operation-creates-a-solid-by-rotating-a-2d-sketch-profile-around-an-axis">3. Which CAD feature operation creates a solid by rotating a 2D sketch profile around an axis?<a class="headerlink" href="#3-which-cad-feature-operation-creates-a-solid-by-rotating-a-2d-sketch-profile-around-an-axis" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Extrude Boss</li>
+<li>Shell</li>
+<li>Revolve</li>
+<li>Loft</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. The Revolve feature spins a 2D sketch profile around a specified axis by a defined angle (typically 360° for a complete solid). It is used for rotationally symmetric shapes such as cylinders, cones, rings, and bottle bodies. Extrude Boss pushes a profile along a straight axis; Shell hollows an existing solid; Loft blends between two or more profiles on different planes.</p>
+<p><strong>Concept Tested:</strong> Revolve Feature</p>
+</details>
+<hr>
+<h4 id="4-why-should-fillet-features-typically-be-placed-at-the-very-end-of-the-feature-tree">4. Why should fillet features typically be placed at the very end of the feature tree?<a class="headerlink" href="#4-why-should-fillet-features-typically-be-placed-at-the-very-end-of-the-feature-tree" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Fillets are cosmetic and the CAD software cannot process them until the model is complete</li>
+<li>Fillets applied early create reference edges that downstream features depend on, causing rebuild failures when earlier features change</li>
+<li>The slicer requires fillets to be the last operation so it can calculate toolpaths correctly</li>
+<li>Fillets increase file size and should be added only when the model is ready for export</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. If a fillet is applied early in the feature tree, later features (holes, cuts, patterns) may reference the filleted edge. When an earlier feature changes and the fillet geometry shifts, those downstream references break and the model fails to rebuild. Placing fillets last — as "finishing touches" — avoids this cascading failure. This has nothing to do with slicer processing, cosmetic classification, or file size.</p>
+<p><strong>Concept Tested:</strong> Fillet and Chamfer</p>
+</details>
+<hr>
+<h4 id="5-in-a-cad-assembly-what-does-it-mean-for-a-part-to-have-0-remaining-degrees-of-freedom">5. In a CAD assembly, what does it mean for a part to have "0 remaining degrees of freedom"?<a class="headerlink" href="#5-in-a-cad-assembly-what-does-it-mean-for-a-part-to-have-0-remaining-degrees-of-freedom" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>The part cannot be edited because the CAD file is locked</li>
+<li>The part is fully constrained and cannot translate or rotate in any direction</li>
+<li>The part has no features applied to it yet in the feature tree</li>
+<li>The part is a rigid body that has been excluded from motion simulation</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. A rigid body in 3D space has 6 degrees of freedom (3 translation, 3 rotation). Each mate constraint removes one or more DOF. When all 6 are removed (DOF = 0), the part is fully constrained — it has a fixed, unambiguous position in the assembly that will not change when the model is rebuilt. DOF is about positional constraint, not file permissions, feature history, or simulation exclusion.</p>
+<p><strong>Concept Tested:</strong> Mate Constraints</p>
+</details>
+<hr>
+<h4 id="6-the-shell-feature-in-cad-is-most-useful-for-additive-manufacturing-because-it">6. The Shell feature in CAD is most useful for additive manufacturing because it:<a class="headerlink" href="#6-the-shell-feature-in-cad-is-most-useful-for-additive-manufacturing-because-it" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Converts a solid part into a hollow structure with controlled wall thickness</li>
+<li>Automatically generates support structures for the slicer</li>
+<li>Splits a complex model into printable segments that can be assembled</li>
+<li>Removes all internal geometry to reduce file size before STL export</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. Shell hollows a solid body by removing interior material while leaving walls of a specified uniform thickness and creating openings at selected faces. This is valuable when the hollow interior is part of the design intent (enclosures, containers) rather than leaving it to the slicer's infill system. Shell does not generate supports, split models, or reduce STL file size through geometry removal.</p>
+<p><strong>Concept Tested:</strong> Shell Feature</p>
+</details>
+<hr>
+<h4 id="7-which-of-the-three-cad-tools-discussed-in-the-chapter-is-completely-browser-based-requiring-no-local-installation">7. Which of the three CAD tools discussed in the chapter is completely browser-based, requiring no local installation?<a class="headerlink" href="#7-which-of-the-three-cad-tools-discussed-in-the-chapter-is-completely-browser-based-requiring-no-local-installation" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>FreeCAD</li>
+<li>Fusion 360</li>
+<li>Onshape</li>
+<li>SolidWorks</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Onshape is a fully cloud-based parametric CAD platform that runs in a standard web browser — no download or installation required. It works on any device, including Chromebooks. FreeCAD is an open-source desktop application that installs locally. Fusion 360 installs as a desktop application with cloud sync. SolidWorks is a professional desktop application not covered in this chapter's three tools.</p>
+<p><strong>Concept Tested:</strong> Onshape Workflow</p>
+</details>
+<hr>
+<h4 id="8-a-linear-pattern-feature-is-most-appropriate-when-you-need-to">8. A Linear Pattern feature is most appropriate when you need to:<a class="headerlink" href="#8-a-linear-pattern-feature-is-most-appropriate-when-you-need-to" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Blend smoothly between two differently shaped cross-sections</li>
+<li>Replicate a feature multiple times in rows and columns at equal spacing</li>
+<li>Remove a cylindrical volume from an existing solid to create a hole</li>
+<li>Constrain two faces in an assembly to be flush with each other</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. A Linear Pattern replicates a feature (or set of features) in one or two directions at equal intervals — perfect for mounting holes along a rail, ventilation slots across a panel, or fins on a heat sink. Option A describes a Loft feature; option C describes an Extrude Cut; option D describes a Coincident mate constraint in an assembly.</p>
+<p><strong>Concept Tested:</strong> Pattern Features</p>
+</details>
+<hr>
+<h4 id="9-ai-assisted-cad-tools-such-as-text-to-geometry-generators-are-most-effectively-used-by-designers-who">9. AI-assisted CAD tools such as text-to-geometry generators are most effectively used by designers who:<a class="headerlink" href="#9-ai-assisted-cad-tools-such-as-text-to-geometry-generators-are-most-effectively-used-by-designers-who" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Have no CAD experience, since the AI replaces the need to learn manual modeling</li>
+<li>Understand parametric modeling deeply enough to evaluate, edit, and verify AI-generated geometry</li>
+<li>Work only with FreeCAD, as it is the primary platform supporting AI integration</li>
+<li>Produce purely decorative models that require no dimensional accuracy</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. AI-generated geometry still requires a skilled designer to evaluate whether it is dimensionally correct, structurally sound, and properly constrained. Designers who understand sketching, features, and constraints can use AI to go faster; designers who expect AI to do the thinking for them tend to miss critical errors. AI does not replace CAD fundamentals — it leverages them. No single CAD platform monopolizes AI integration.</p>
+<p><strong>Concept Tested:</strong> AI-Assisted CAD</p>
+</details>
+<hr>
+<h4 id="10-which-boolean-operation-retains-only-the-volume-shared-by-two-overlapping-solid-bodies-discarding-everything-else">10. Which Boolean operation retains only the volume shared by two overlapping solid bodies, discarding everything else?<a class="headerlink" href="#10-which-boolean-operation-retains-only-the-volume-shared-by-two-overlapping-solid-bodies-discarding-everything-else" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Union</li>
+<li>Difference</li>
+<li>Intersection</li>
+<li>Extrude Cut</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. A Boolean Intersection retains only the region where two solids overlap — useful for finding the common volume of two shapes. Union combines two solids into one merged body; Difference (and the equivalent Extrude Cut) subtracts one body from another to create holes and pockets; Extrude Cut is a specific application of Boolean Difference. Understanding these three operations gives you full control over multi-body geometry.</p>
+<p><strong>Concept Tested:</strong> Boolean Operations</p>
+</details>
+<hr>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
