@@ -26,8 +26,22 @@ nav:
 
   - Chapters:
       - List of Chapters: chapters/index.md
-      # Add chapter entries here as content is generated, e.g.:
-      # - 1. Introduction: chapters/01-introduction/index.md
+      - 1. Foundations and History: chapters/01-foundations-and-history/index.md
+      - 2. Standards and Process Families: chapters/02-standards-and-process-families/index.md
+      - 3. Engineering Design Process: chapters/03-engineering-design-process/index.md
+      - 4. CAD and Modeling: chapters/04-cad-and-modeling/index.md
+      - 5. File Formats and Mesh: chapters/05-file-formats-and-mesh/index.md
+      - 6. Materials Science: chapters/06-materials-science/index.md
+      - 7. Slicing and Toolpaths: chapters/07-slicing-and-toolpaths/index.md
+      - 8. FDM Printer Hardware: chapters/08-fdm-printer-hardware/index.md
+      - 9. Safety, Ethics, Sustainability: chapters/09-safety-ethics-sustainability/index.md
+      - 10. Resin Printing: chapters/10-resin-printing/index.md
+      - 11. DfAM and Metrology: chapters/11-dfam-and-metrology/index.md
+      - 12. Troubleshooting and Post-Processing: chapters/12-troubleshooting-and-postprocessing/index.md
+      - 13. Modern Hardware: chapters/13-modern-hardware/index.md
+      - 14. Modern Ecosystem: chapters/14-modern-ecosystem/index.md
+      - 15. AI and Machine Learning: chapters/15-ai-and-machine-learning/index.md
+      - 16. Careers and Capstone: chapters/16-careers-and-capstone/index.md
 
   - Learning Graph:
       - Introduction: learning-graph/index.md
@@ -40,6 +54,7 @@ nav:
 
   - MicroSims:
       - List of MicroSims: sims/index.md
+      - Learning Graph Viewer: sims/graph-viewer/index.md
 
   - License: license.md
   - Contact: contact.md

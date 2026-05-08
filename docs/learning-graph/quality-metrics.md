@@ -4,10 +4,10 @@
 
 - **Total Concepts**: 292
 - **Foundational Concepts** (no prerequisites, other concepts depend on them): 12
-- **Terminal Nodes** (nothing depends on them, but have prerequisites): 139
+- **Terminal Nodes** (nothing depends on them, but have prerequisites): 141
 - **Orphaned Nodes** (completely disconnected, no edges): 0
 - **Concepts with Dependencies**: 280
-- **Average Dependencies per Concept**: 1.68
+- **Average Dependencies per Concept**: 1.66
 
 ## Graph Structure Validation
 
@@ -57,7 +57,7 @@ These concepts have no prerequisites:
 
 Terminal nodes are concepts that nothing else depends on but have prerequisites. They represent natural endpoints of learning paths — culminating or specialized concepts.
 
-- **Total Terminal Nodes**: 139 (47.6% of all concepts)
+- **Total Terminal Nodes**: 141 (48.3% of all concepts)
 - **Healthy Range**: 5-40% of total concepts
 
 Concepts at the end of learning paths:
@@ -83,7 +83,7 @@ Concepts at the end of learning paths:
 - **64**: Fillet And Chamfer
 - **65**: Shell Feature
 
-*...and 119 more*
+*...and 121 more*
 
 ## Orphaned Nodes Analysis
 
@@ -121,14 +121,14 @@ Top 10 concepts that are prerequisites for the most other concepts:
 | Dependencies | Number of Concepts |
 |--------------|--------------------|
 | 0 | 12 |
-| 1 | 124 |
-| 2 | 127 |
+| 1 | 130 |
+| 2 | 121 |
 | 3 | 24 |
 | 4 | 5 |
 
 ## Recommendations
 
-- ℹ️ **High terminal node percentage** (47.6%): Consider if some terminal concepts should be prerequisites for advanced concepts
+- ℹ️ **High terminal node percentage** (48.3%): Consider if some terminal concepts should be prerequisites for advanced concepts
 - ✅ **DAG structure verified**: Graph supports valid learning progressions
 
 ---

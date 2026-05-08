@@ -1,11 +1,32 @@
 # Chapters
 
-This is the list of chapters in Introduction to 3D Printing. Each chapter has its own folder
-under `docs/chapters/` with a two-digit numeric prefix (for example,
-`01-introduction/`).
+This textbook is organized into **16 chapters** covering **292 concepts** drawn from the [learning graph](../learning-graph/index.md). The chapter ordering respects the concept dependency DAG — every concept appears only after its prerequisites have been introduced.
 
-Chapters are added by the `book-chapter-generator` skill once the learning
-graph is complete; their content is filled in by the
-`chapter-content-generator` skill.
+## Chapter Overview
 
-<!-- Chapter list is auto-rendered from the nav once chapters exist. -->
+1. [Foundations and History of Additive Manufacturing](01-foundations-and-history/index.md) — 18 concepts. This chapter starts with the math, physics, and computer-skills foundations the rest of the course assumes, then traces the story of additive manufacturing from the Industrial Revolution through Charles Hull's invention of stereolithography, the expiration of the FDM patent, the desktop-printer revolution, the RepRap project, and the rise of America Makes.
+2. [AM Standards, Process Families, and Industrial AM](02-standards-and-process-families/index.md) — 25 concepts. This chapter introduces the formal vocabulary of additive manufacturing: ISO and ASTM as standards bodies, the foundational ISO/ASTM 52900 terminology standard, and the seven AM process categories that organize every printing technology you will encounter.
+3. [The Engineering Design Process](03-engineering-design-process/index.md) — 12 concepts. This chapter teaches the PLTW engineering design process — the iterative loop of problem definition, research, ideation, specifications, prototyping, testing, and communication — that every subsequent project in this course will follow.
+4. [Computer-Aided Design and Modeling](04-cad-and-modeling/index.md) — 19 concepts. This chapter teaches parametric, feature-based CAD: 2D sketching with constraints, the core feature operations (extrude, revolve, sweep/loft, fillet, shell, pattern, boolean), reference geometry, assemblies and mate constraints, and three named CAD tools (Onshape, Fusion 360, FreeCAD).
+5. [3D File Formats and Mesh Geometry](05-file-formats-and-mesh/index.md) — 9 concepts. This chapter is the bridge between CAD and the printer.
+6. [Materials Science for Additive Manufacturing](06-materials-science/index.md) — 24 concepts. This chapter introduces polymer basics, the distinction between thermoplastics and photopolymer resins, and the mechanical properties that matter for printed parts (tensile strength, elongation at break, glass transition temperature).
+7. [Slicing, G-code, and Toolpaths](07-slicing-and-toolpaths/index.md) — 23 concepts. This chapter covers the slicer software that turns CAD geometry into machine instructions.
+8. [FDM Printer Hardware and Operation](08-fdm-printer-hardware/index.md) — 19 concepts. This chapter is a hands-on tour of the FDM printer — the FDM/FFF process itself plus every major component (nozzle, hotend, heat break, extruder, stepper motors, belts, lead screws, linear bearings, motherboard firmware, build surface).
+9. [Safety, Ethics, and Sustainability in 3D Printing](09-safety-ethics-sustainability/index.md) — 12 concepts. This chapter covers the non-negotiable safety and ethical practices for 3D printing: workshop safety, VOC and ultrafine-particle exposure, ventilation requirements, fire safety, resin disposal, filament recycling and broader sustainability in additive manufacturing, intellectual-property considerations, open-source and Creative Commons licensing of 3D models, and the ethics of restricted designs (e.
+10. [Resin Printing: SLA, MSLA, and DLP](10-resin-printing/index.md) — 13 concepts. This chapter introduces the three vat-photopolymerization processes (SLA, MSLA, DLP), the resin printer and its parts (LCD, light source, vat, FEP film), exposure settings, resin-specific support strategies, the wash-and-cure post-processing workflow, IPA handling, and the resin-specific PPE that must be in place before any print starts.
+11. [Design for Additive Manufacturing and Metrology](11-dfam-and-metrology/index.md) — 20 concepts. This chapter teaches Design for Additive Manufacturing (DfAM) — the design rules that emerge from how AM processes actually build parts: overhangs, bridging, part-orientation strategy, support minimization, wall thickness rules, hole and slot tolerances, self-supporting angles, lattice structures, topology optimization, generative design, and lightweighting.
+12. [Print Failures, Troubleshooting, and Post-Processing](12-troubleshooting-and-postprocessing/index.md) — 19 concepts. This chapter teaches a structured troubleshooting workflow and the most common print failure modes (warping, first-layer failures, stringing, under- and over-extrusion, layer separation, elephant's foot, ringing/ghosting, clogged nozzles, failed adhesion, resin-specific failures).
+13. [Modern Hardware: Multi-Material, Motion, and Speed](13-modern-hardware/index.md) — 23 concepts. This chapter covers the sub-$5,000 hardware advances of the last decade: multi-material and multi-color printing (AMS, Prusa MMU, IDEX, toolchanger printers, filament splicing, multi-material waste handling), modern motion systems (CoreXY, bed slingers, linear rails) and the speed-enabling firmware stack (Klipper, input shaping, pressure advance, high-speed printing), modern hotends (all-metal, high-flow, hardened nozzles), and bed surfaces and probes (PEI flex plates, spring steel sheets, BLTouch, inductive probes, strain-gauge leveling).
+14. [The Modern 3D Printing Ecosystem: Slicers, Connectivity, Brands, and Production](14-modern-ecosystem/index.md) — 19 concepts. This chapter surveys the modern 3D-printing ecosystem: today's slicers (PrusaSlicer, OrcaSlicer, Bambu Studio, Cura) and their adaptive features (variable and adaptive layer height), networked printer features (Wi-Fi, camera monitoring, OctoPrint, Mainsail), heated chambers and enclosed printers, and the major consumer printer brands students will actually encounter (Bambu Lab, Prusa, Creality, Elegoo, Snapmaker).
+15. [AI and Machine Learning in Additive Manufacturing](15-ai-and-machine-learning/index.md) — 21 concepts. This chapter is a focused look at how AI and machine learning are reshaping additive manufacturing.
+16. [Digital Workflows, Careers, Articulation, and the Capstone Project](16-careers-and-capstone/index.md) — 16 concepts. This final chapter brings everything together.
+
+## How to Use This Textbook
+
+Work through the chapters in order. Each chapter assumes you have mastered the concepts in earlier chapters; later chapters reference earlier material without re-explaining it. The first chapter establishes the math, physics, and historical foundations the rest of the course builds on, and the final chapter integrates every prior topic into a capstone project that you can take to a community college, scholarship application, or apprenticeship interview.
+
+If you are using this book as supplemental material for an existing course, the [learning graph](../learning-graph/index.md) lets you find any concept by name and trace its prerequisites and dependents.
+
+---
+
+**Note:** Each chapter includes a list of concepts covered. Make sure to complete prerequisites before moving to advanced chapters.

@@ -1,5 +1,9 @@
 # Learning Graph for Introduction to 3D Printing
 
+[Open Learning Graph Viewer Fullscreen](../sims/graph-viewer/main.html){ .md-button .md-button--primary }
+
+<iframe src="../sims/graph-viewer/main.html" width="100%" height="600px" frameborder="0"></iframe>
+
 This section contains the learning graph for this textbook. A learning graph is a graph of concepts used in this textbook. Each concept is represented by a node in a network graph. Concepts are connected by directed edges that indicate what concepts each node depends on before that concept is understood by the student.
 
 A learning graph is the foundational data structure for intelligent textbooks that can recommend learning paths. A learning graph is like a roadmap of concepts to help students arrive at their learning goals.
