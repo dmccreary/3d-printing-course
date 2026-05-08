@@ -1,16 +1,12 @@
 ---
 title: Support Strategy Decision Flow
 description: Students can evaluate a part's geometry and select the appropriate support strategy (no support, normal support, tree support, support interface, dissolvable support) based on overhang angle, surface quality requirements, and material constraints.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Evaluate (L5)
 ---
 
 # Support Strategy Decision Flow
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students can evaluate a part's geometry and select the appropriate support strat
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="682" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
