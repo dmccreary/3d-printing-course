@@ -1,0 +1,2372 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/3d-printing-course/chapters/12-troubleshooting-and-postprocessing/quiz/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../references/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Quiz - Introduction to 3D Printing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-0GVHRS0Y5Y"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-0GVHRS0Y5Y",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-0GVHRS0Y5Y",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quiz - Introduction to 3D Printing">
+<meta property="og:description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/12-troubleshooting-and-postprocessing/quiz.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/12-troubleshooting-and-postprocessing/quiz/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Quiz - Introduction to 3D Printing">
+<meta property="twitter:description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/12-troubleshooting-and-postprocessing/quiz.png">
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quiz-print-failures-troubleshooting-and-post-processing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction to 3D Printing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    Introduction to 3D Printing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Description
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapters
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../01-foundations-and-history/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Foundations and History
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../02-standards-and-process-families/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Standards and Process Families
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../03-engineering-design-process/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Engineering Design Process
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../04-cad-and-modeling/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. CAD and Modeling
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../05-file-formats-and-mesh/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. File Formats and Mesh
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../06-materials-science/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Materials Science
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../07-slicing-and-toolpaths/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Slicing and Toolpaths
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../08-fdm-printer-hardware/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. FDM Printer Hardware
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../09-safety-ethics-sustainability/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Safety, Ethics, Sustainability
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../10-resin-printing/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Resin Printing
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../11-dfam-and-metrology/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. DfAM and Metrology
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Troubleshooting and Post-Processing
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_13" id="__nav_5_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    12. Troubleshooting and Post-Processing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-which-failure-mode-produces-wavy-rippling-surface-artifacts-on-the-walls-of-a-print-directly-behind-a-sharp-corner-and-what-is-its-primary-cause" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Which failure mode produces wavy, rippling surface artifacts on the walls of a print directly behind a sharp corner, and what is its primary cause?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-students-pla-print-is-curling-upward-at-the-corners-and-eventually-detaches-from-the-build-plate-mid-print-which-combination-of-adjustments-is-most-likely-to-resolve-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A student's PLA print is curling upward at the corners and eventually detaches from the build plate mid-print. Which combination of adjustments is most likely to resolve this?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-during-a-cold-pull-atomic-pull-procedure-what-is-the-correct-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. During a cold pull (atomic pull) procedure, what is the correct sequence?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-under-extrusion-produces-prints-with-gaps-between-walls-and-weak-layer-adhesion-before-adjusting-flow-rate-in-the-slicer-what-hardware-cause-should-be-ruled-out-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Under-extrusion produces prints with gaps between walls and weak layer adhesion. Before adjusting flow rate in the slicer, what hardware cause should be ruled out first?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-a-student-finishes-printing-a-structural-bracket-in-abs-and-notices-visible-layer-separation-delamination-between-layers-near-the-top-of-the-part-the-most-likely-cause-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. A student finishes printing a structural bracket in ABS and notices visible layer separation (delamination) between layers near the top of the part. The most likely cause is:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-acetone-vapor-smoothing-is-an-effective-post-processing-method-for-abs-parts-because" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Acetone vapor smoothing is an effective post-processing method for ABS parts because:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-annealing-a-pla-print-in-an-oven-at-6065c-for-3060-minutes-improves-which-property-and-what-risk-must-be-managed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Annealing a PLA print in an oven at 60–65°C for 30–60 minutes improves which property, and what risk must be managed?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-a-resin-print-fails-completely-the-support-grid-is-stuck-to-the-fep-film-and-the-build-platform-rises-empty-which-root-cause-should-be-investigated-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. A resin print fails completely — the support grid is stuck to the FEP film and the build platform rises empty. Which root cause should be investigated first?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-when-sanding-a-printed-pla-part-to-prepare-it-for-painting-the-correct-progression-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. When sanding a printed PLA part to prepare it for painting, the correct progression is:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-a-student-wants-to-join-two-large-printed-pla-halves-of-an-enclosure-that-were-split-to-fit-the-build-volume-evaluate-which-joining-method-provides-both-a-strong-structural-bond-and-a-clean-exterior-appearance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. A student wants to join two large printed PLA halves of an enclosure that were split to fit the build volume. Evaluate which joining method provides both a strong structural bond and a clean exterior appearance.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../13-modern-hardware/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Modern Hardware
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../14-modern-ecosystem/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Modern Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../15-ai-and-machine-learning/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. AI and Machine Learning
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../16-careers-and-capstone/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Careers and Capstone
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MicroSims
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Graph
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-which-failure-mode-produces-wavy-rippling-surface-artifacts-on-the-walls-of-a-print-directly-behind-a-sharp-corner-and-what-is-its-primary-cause" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Which failure mode produces wavy, rippling surface artifacts on the walls of a print directly behind a sharp corner, and what is its primary cause?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-students-pla-print-is-curling-upward-at-the-corners-and-eventually-detaches-from-the-build-plate-mid-print-which-combination-of-adjustments-is-most-likely-to-resolve-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A student's PLA print is curling upward at the corners and eventually detaches from the build plate mid-print. Which combination of adjustments is most likely to resolve this?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-during-a-cold-pull-atomic-pull-procedure-what-is-the-correct-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. During a cold pull (atomic pull) procedure, what is the correct sequence?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-under-extrusion-produces-prints-with-gaps-between-walls-and-weak-layer-adhesion-before-adjusting-flow-rate-in-the-slicer-what-hardware-cause-should-be-ruled-out-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Under-extrusion produces prints with gaps between walls and weak layer adhesion. Before adjusting flow rate in the slicer, what hardware cause should be ruled out first?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-a-student-finishes-printing-a-structural-bracket-in-abs-and-notices-visible-layer-separation-delamination-between-layers-near-the-top-of-the-part-the-most-likely-cause-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. A student finishes printing a structural bracket in ABS and notices visible layer separation (delamination) between layers near the top of the part. The most likely cause is:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-acetone-vapor-smoothing-is-an-effective-post-processing-method-for-abs-parts-because" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Acetone vapor smoothing is an effective post-processing method for ABS parts because:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-annealing-a-pla-print-in-an-oven-at-6065c-for-3060-minutes-improves-which-property-and-what-risk-must-be-managed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Annealing a PLA print in an oven at 60–65°C for 30–60 minutes improves which property, and what risk must be managed?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-a-resin-print-fails-completely-the-support-grid-is-stuck-to-the-fep-film-and-the-build-platform-rises-empty-which-root-cause-should-be-investigated-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. A resin print fails completely — the support grid is stuck to the FEP film and the build platform rises empty. Which root cause should be investigated first?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-when-sanding-a-printed-pla-part-to-prepare-it-for-painting-the-correct-progression-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. When sanding a printed PLA part to prepare it for painting, the correct progression is:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-a-student-wants-to-join-two-large-printed-pla-halves-of-an-enclosure-that-were-split-to-fit-the-build-volume-evaluate-which-joining-method-provides-both-a-strong-structural-bond-and-a-clean-exterior-appearance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. A student wants to join two large printed PLA halves of an enclosure that were split to fit the build volume. Evaluate which joining method provides both a strong structural bond and a clean exterior appearance.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    12. Troubleshooting and Post-Processing
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/12-troubleshooting-and-postprocessing/quiz.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="quiz-print-failures-troubleshooting-and-post-processing">Quiz: Print Failures, Troubleshooting, and Post-Processing<a class="headerlink" href="#quiz-print-failures-troubleshooting-and-post-processing" title="Permanent link">¶</a></h1>
+<p>Test your understanding of the structured troubleshooting workflow, common FDM and resin failure modes, their root causes, and post-processing techniques including sanding, annealing, and chemical smoothing.</p>
+<hr>
+<h4 id="1-which-failure-mode-produces-wavy-rippling-surface-artifacts-on-the-walls-of-a-print-directly-behind-a-sharp-corner-and-what-is-its-primary-cause">1. Which failure mode produces wavy, rippling surface artifacts on the walls of a print directly behind a sharp corner, and what is its primary cause?<a class="headerlink" href="#1-which-failure-mode-produces-wavy-rippling-surface-artifacts-on-the-walls-of-a-print-directly-behind-a-sharp-corner-and-what-is-its-primary-cause" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Stringing — caused by excess moisture in filament releasing steam during extrusion</li>
+<li>Over-extrusion — caused by the flow rate multiplier being set too high in the slicer</li>
+<li>Ringing (ghosting) — caused by vibration in the printer frame or belts after a rapid direction change</li>
+<li>Z-banding — caused by a bent or poorly lubricated lead screw</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Ringing (also called ghosting) appears as a series of oscillating waves on print walls immediately after a sharp corner or direction reversal. When the printhead reverses direction at high speed, the frame and belts absorb mechanical energy and continue to oscillate. Each oscillation deposits a bead in a slightly wrong position, creating the ripple pattern. Stringing produces threads across open gaps; over-extrusion causes bulging and poor dimensional accuracy; Z-banding produces consistent horizontal lines matching the lead screw pitch.</p>
+<p><strong>Concept Tested:</strong> Ringing And Ghosting</p>
+</details>
+<hr>
+<h4 id="2-a-students-pla-print-is-curling-upward-at-the-corners-and-eventually-detaches-from-the-build-plate-mid-print-which-combination-of-adjustments-is-most-likely-to-resolve-this">2. A student's PLA print is curling upward at the corners and eventually detaches from the build plate mid-print. Which combination of adjustments is most likely to resolve this?<a class="headerlink" href="#2-a-students-pla-print-is-curling-upward-at-the-corners-and-eventually-detaches-from-the-build-plate-mid-print-which-combination-of-adjustments-is-most-likely-to-resolve-this" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Raise the bed temperature, add a brim, and reduce cooling fan speed for the first layers</li>
+<li>Increase retraction distance and reduce print speed to prevent stringing near the corners</li>
+<li>Increase layer height and reduce wall count to decrease the thermal mass at the corners</li>
+<li>Switch to vase mode and reduce the brim width</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. Warping at corners is caused by differential thermal shrinkage — the outer layers cool and contract faster than the interior, pulling edges upward. Raising bed temperature keeps the base material warm and pliable longer, resisting the curl. Adding a brim increases the footprint area anchoring the part to the plate. Reducing cooling fan speed for early layers slows the shrinkage rate at the critical base layers. Retraction tuning addresses stringing, not adhesion; changing layer height and wall count doesn't fix the thermal cause.</p>
+<p><strong>Concept Tested:</strong> Warping</p>
+</details>
+<hr>
+<h4 id="3-during-a-cold-pull-atomic-pull-procedure-what-is-the-correct-sequence">3. During a cold pull (atomic pull) procedure, what is the correct sequence?<a class="headerlink" href="#3-during-a-cold-pull-atomic-pull-procedure-what-is-the-correct-sequence" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Heat to printing temperature, insert new filament, pull it out quickly while still molten</li>
+<li>Heat to printing temperature, push filament through, then cool to ~90°C and pull the filament out firmly</li>
+<li>Cool the hotend to room temperature and mechanically extract the nozzle to clear the blockage</li>
+<li>Heat to 300°C to melt any obstruction, then flush with solvent before reloading</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. A cold pull procedure clears partial nozzle clogs by exploiting the plastic's intermediate state at ~85–95°C. The hotend is heated to full temperature, fresh filament is pushed through, then the temperature is lowered to the semi-solid range (~90°C for PLA). At this temperature the plastic is soft enough to grip the clog but not liquid enough to flow — pulling firmly extracts both the residual material and whatever was clogging the nozzle. Pulling at full melt temperature just stretches the plastic without gripping debris.</p>
+<p><strong>Concept Tested:</strong> Clogged Nozzle</p>
+</details>
+<hr>
+<h4 id="4-under-extrusion-produces-prints-with-gaps-between-walls-and-weak-layer-adhesion-before-adjusting-flow-rate-in-the-slicer-what-hardware-cause-should-be-ruled-out-first">4. Under-extrusion produces prints with gaps between walls and weak layer adhesion. Before adjusting flow rate in the slicer, what hardware cause should be ruled out first?<a class="headerlink" href="#4-under-extrusion-produces-prints-with-gaps-between-walls-and-weak-layer-adhesion-before-adjusting-flow-rate-in-the-slicer-what-hardware-cause-should-be-ruled-out-first" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>The build plate being too far from the nozzle, restricting first-layer flow</li>
+<li>The print speed being too high, preventing the cooling fan from keeping up</li>
+<li>The Z-offset being set too low, causing over-adhesion at the base</li>
+<li>A partial clog in the nozzle or a worn extruder gear skipping on the filament</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. Under-extrusion has a hardware root cause more often than a slicer root cause. A partial nozzle clog creates back-pressure that reduces flow; a worn extruder drive gear loses grip and skips rather than advancing filament consistently. Both produce the same symptom — less material than commanded. Adjusting the slicer's flow rate multiplier to compensate for a hardware problem masks the real issue and can lead to progressive worsening. Bed distance affects the first layer only; print speed affects surface quality; Z-offset affects first-layer squish.</p>
+<p><strong>Concept Tested:</strong> Under-Extrusion</p>
+</details>
+<hr>
+<h4 id="5-a-student-finishes-printing-a-structural-bracket-in-abs-and-notices-visible-layer-separation-delamination-between-layers-near-the-top-of-the-part-the-most-likely-cause-is">5. A student finishes printing a structural bracket in ABS and notices visible layer separation (delamination) between layers near the top of the part. The most likely cause is:<a class="headerlink" href="#5-a-student-finishes-printing-a-structural-bracket-in-abs-and-notices-visible-layer-separation-delamination-between-layers-near-the-top-of-the-part-the-most-likely-cause-is" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>The infill density is too low, leaving air gaps that weaken the inter-layer bond</li>
+<li>The print speed is too high, causing the layers to shift relative to each other</li>
+<li>The nozzle temperature is too low or a cooling fan is blowing on ABS too aggressively, preventing proper layer fusion</li>
+<li>Moisture in the ABS filament releasing steam bubbles that weaken the bond between layers</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Layer separation in ABS almost always results from the deposited bead cooling too quickly before the next layer arrives, preventing proper polymer chain interdiffusion across the interface. ABS is especially vulnerable because it has high thermal expansion and requires a hot environment (heated enclosure) to maintain temperature between layers. A strong cooling fan chills ABS below the fusion threshold. Nozzle temperature that is too low prevents the new bead from reheating and bonding to the previous layer. Infill density affects strength but not delamination directly.</p>
+<p><strong>Concept Tested:</strong> Layer Separation</p>
+</details>
+<hr>
+<h4 id="6-acetone-vapor-smoothing-is-an-effective-post-processing-method-for-abs-parts-because">6. Acetone vapor smoothing is an effective post-processing method for ABS parts because:<a class="headerlink" href="#6-acetone-vapor-smoothing-is-an-effective-post-processing-method-for-abs-parts-because" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Acetone reacts chemically with ABS to permanently cross-link the polymer chains, increasing hardness</li>
+<li>Acetone dissolves the ABS surface layer slightly, allowing the softened material to reflow and erase layer lines</li>
+<li>Acetone sterilizes the part surface, making it suitable for food-contact applications</li>
+<li>Acetone only affects the exterior of the part, leaving the structural interior completely unchanged</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. Acetone is a solvent for ABS. When ABS is exposed to acetone vapor in a sealed chamber, the surface absorbs a controlled amount of solvent, softening the outermost layer slightly. Surface tension causes the softened plastic to reflow into a smooth, glossy surface — layer lines become nearly invisible. The reaction is not cross-linking (thermosets cross-link; ABS is a thermoplastic); acetone does not sterilize or produce food-safe surfaces; and the effect extends only to the outermost layers, making option D partially correct but misleadingly worded.</p>
+<p><strong>Concept Tested:</strong> Chemical Smoothing</p>
+</details>
+<hr>
+<h4 id="7-annealing-a-pla-print-in-an-oven-at-6065c-for-3060-minutes-improves-which-property-and-what-risk-must-be-managed">7. Annealing a PLA print in an oven at 60–65°C for 30–60 minutes improves which property, and what risk must be managed?<a class="headerlink" href="#7-annealing-a-pla-print-in-an-oven-at-6065c-for-3060-minutes-improves-which-property-and-what-risk-must-be-managed" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Improves heat deflection temperature by allowing crystallization; risk is dimensional distortion if the part lacks support</li>
+<li>Improves UV resistance; risk is discoloration of pigmented filaments</li>
+<li>Improves surface finish by reflowing the outer layer; risk is melting fine details below the nozzle resolution</li>
+<li>Improves layer adhesion by re-fusing layers; risk is warping of the base layer if the oven is uneven</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. PLA can undergo stress-relief crystallization when held near (but below) its glass transition temperature of ~60°C. Annealing allows amorphous regions to reorganize into more ordered crystalline structures, raising the effective heat deflection temperature by 10–20°C. The risk is dimensional change — as the polymer chains rearrange, the part can warp or sag if not supported during the process. Placing the part on a flat surface or in a sand bed provides support. Annealing does not meaningfully affect UV resistance or surface finish.</p>
+<p><strong>Concept Tested:</strong> Annealing</p>
+</details>
+<hr>
+<h4 id="8-a-resin-print-fails-completely-the-support-grid-is-stuck-to-the-fep-film-and-the-build-platform-rises-empty-which-root-cause-should-be-investigated-first">8. A resin print fails completely — the support grid is stuck to the FEP film and the build platform rises empty. Which root cause should be investigated first?<a class="headerlink" href="#8-a-resin-print-fails-completely-the-support-grid-is-stuck-to-the-fep-film-and-the-build-platform-rises-empty-which-root-cause-should-be-investigated-first" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Insufficient bottom layer exposure time, failing to bond the first layers to the build platform</li>
+<li>Excess IPA left on the build platform from the previous cleaning, preventing adhesion</li>
+<li>The FEP film being too new and transparent, passing too much UV and over-curing the base layers</li>
+<li>Incorrect resin temperature — resin below 20°C becomes too viscous to level between exposures</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. When a resin print separates entirely and adheres to the FEP rather than the platform, the fundamental cause is failure of the critical first layers to bond to the build platform. Bottom exposure time must be long enough (typically 20–60 seconds) to cure deeply into the resin and create a strong mechanical bond with the build plate surface. If bottom layers under-cure, the weakest bond is at the platform — and peel forces during layer separation pull the print to the FEP instead. IPA contamination and FEP clarity are secondary considerations.</p>
+<p><strong>Concept Tested:</strong> Resin Print Failures</p>
+</details>
+<hr>
+<h4 id="9-when-sanding-a-printed-pla-part-to-prepare-it-for-painting-the-correct-progression-is">9. When sanding a printed PLA part to prepare it for painting, the correct progression is:<a class="headerlink" href="#9-when-sanding-a-printed-pla-part-to-prepare-it-for-painting-the-correct-progression-is" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Start with 400-grit sandpaper and finish with 80-grit to maximize surface roughness for paint adhesion</li>
+<li>Use only wet sanding at 2000-grit to avoid removing material beyond the outer wall</li>
+<li>Sand with 80-grit throughout — coarser grits cut faster and leave a texture that improves paint grip</li>
+<li>Start with 120-grit to remove layer lines, progress to 220-grit, then 400-grit, finishing with primer before top coats</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. Sanding follows a progression from coarser to finer grits. Starting at 120-grit removes the most prominent layer lines efficiently. Progressing to 220-grit removes the scratches from 120-grit, then 400-grit produces a smooth surface. Applying primer before painting fills any remaining micro-texture and provides a uniform base for color coats. Starting coarse and going finer is the fundamental principle — starting fine on unprocessed print surfaces wastes effort; starting at 2000-grit can't remove layer lines efficiently; leaving deep scratches from 80-grit defeats the purpose.</p>
+<p><strong>Concept Tested:</strong> Sanding And Finishing</p>
+</details>
+<hr>
+<h4 id="10-a-student-wants-to-join-two-large-printed-pla-halves-of-an-enclosure-that-were-split-to-fit-the-build-volume-evaluate-which-joining-method-provides-both-a-strong-structural-bond-and-a-clean-exterior-appearance">10. A student wants to join two large printed PLA halves of an enclosure that were split to fit the build volume. Evaluate which joining method provides both a strong structural bond and a clean exterior appearance.<a class="headerlink" href="#10-a-student-wants-to-join-two-large-printed-pla-halves-of-an-enclosure-that-were-split-to-fit-the-build-volume-evaluate-which-joining-method-provides-both-a-strong-structural-bond-and-a-clean-exterior-appearance" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Hot glue — fast application and easy repositioning if alignment is off</li>
+<li>Mechanical snap clips printed into both halves, which can be disassembled without adhesive</li>
+<li>Super glue (CA adhesive) applied to both mating surfaces, aligned, and held for 60 seconds, with sanding and primer over the seam</li>
+<li>Soldering the parts together using a hot iron pressed against the seam</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Cyanoacrylate (CA/super glue) bonds effectively to PLA, cures rapidly, and produces a thin, strong glue line. After bonding and cure, the seam can be sanded flush, filled with spot putty if needed, and primed — producing a nearly invisible joint. Hot glue is weak at elevated temperatures, creates thick visible seams, and is not structurally reliable for enclosures; snap clips work for removable assemblies but leave visible gaps at the parting line; pressing a soldering iron against PLA melts and deforms the material rather than welding it cleanly.</p>
+<p><strong>Concept Tested:</strong> Joining Printed Parts</p>
+</details>
+<hr>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Content">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../references/" class="md-footer__link md-footer__link--next" aria-label="Next: References">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                References
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

@@ -21,6 +21,10 @@
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/glossary/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/3d-printing-course/license/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
@@ -81,11 +85,19 @@
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/05-file-formats-and-mesh/quiz/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/05-file-formats-and-mesh/references/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/06-materials-science/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/06-materials-science/quiz/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
@@ -97,11 +109,19 @@
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/07-slicing-and-toolpaths/quiz/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/07-slicing-and-toolpaths/references/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/08-fdm-printer-hardware/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/08-fdm-printer-hardware/quiz/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
@@ -113,11 +133,19 @@
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/09-safety-ethics-sustainability/quiz/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/09-safety-ethics-sustainability/references/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/10-resin-printing/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/10-resin-printing/quiz/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
@@ -129,11 +157,19 @@
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/11-dfam-and-metrology/quiz/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/11-dfam-and-metrology/references/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/12-troubleshooting-and-postprocessing/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/12-troubleshooting-and-postprocessing/quiz/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
@@ -145,11 +181,19 @@
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/13-modern-hardware/quiz/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/13-modern-hardware/references/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/14-modern-ecosystem/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/14-modern-ecosystem/quiz/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
@@ -161,11 +205,19 @@
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/15-ai-and-machine-learning/quiz/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/15-ai-and-machine-learning/references/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/16-careers-and-capstone/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/16-careers-and-capstone/quiz/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
@@ -222,6 +274,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/quality-metrics/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/quiz-generation-report/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
