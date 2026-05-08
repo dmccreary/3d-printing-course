@@ -186,8 +186,8 @@ function drawLengthPanel(x0, pw, mm) {
   // Context note
   textSize(12);
   fill('#555');
-  textAlign(CENTER, TOP);
-  text('A standard print bed is 220 mm = 8.66 in wide.', cx, 100, pw - 10, 60);
+  textAlign(LEFT, TOP);
+  text('A standard print bed is 220 mm = 8.66 in wide.', x0 + 5, 100, pw - 10, 60);
 
   // Mini ruler
   stroke('#1565c0');
@@ -269,8 +269,8 @@ function drawTempPanel(x0, pw, degC) {
   // Context note
   textSize(12);
   fill('#555');
-  textAlign(CENTER, TOP);
-  text('PLA prints at ~210 °C = 410 °F.', cx, 126, pw - 10, 50);
+  textAlign(LEFT, TOP);
+  text('PLA prints at ~210 °C = 410 °F.', x0 + 5, 126, pw - 10, 50);
 }
 
 function drawMassPanel(x0, pw, g) {
@@ -297,8 +297,8 @@ function drawMassPanel(x0, pw, g) {
   // Context note
   textSize(12);
   fill('#555');
-  textAlign(CENTER, TOP);
-  text('A standard filament spool is 1,000 g = 35.3 oz.', cx, 102, pw - 10, 50);
+  textAlign(LEFT, TOP);
+  text('A standard filament spool is 1,000 g = 35.3 oz.', x0 + 5, 102, pw - 10, 50);
 
   // Spool icon
   let spoolX = cx;
