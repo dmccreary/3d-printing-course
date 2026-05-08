@@ -1,16 +1,12 @@
 ---
 title: DfAM Rules Explorer
 description: Students explain the key DfAM design rules — overhang angle, bridging, wall thickness, hole tolerance, and self-supporting geometry — by examining cross-section diagrams and reading hover explanations.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Understand (L2)
 ---
 
 # DfAM Rules Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students explain the key DfAM design rules — overhang angle, bridging, wall th
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
