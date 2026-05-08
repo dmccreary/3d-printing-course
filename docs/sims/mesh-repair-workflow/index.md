@@ -1,28 +1,24 @@
 ---
 title: Mesh Repair Workflow
 description: Students can follow the mesh repair workflow — analyze, auto-repair, inspect, manual repair, re-export — and select the appropriate tool and action for each step.
-status: scaffold
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Apply
 ---
 
 # Mesh Repair Workflow
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
 Students can follow the mesh repair workflow — analyze, auto-repair, inspect, manual repair, re-export — and select the appropriate tool and action for each step.
 
-- **Bloom Level:** TBD
-- **Bloom Verb:** TBD
+- **Bloom Level:** Apply
+- **Bloom Verb:** execute, implement
 - **Library:** p5.js
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="602" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
