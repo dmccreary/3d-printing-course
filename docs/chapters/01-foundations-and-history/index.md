@@ -8,6 +8,19 @@ version: 0.08
 
 # Foundations and History of Additive Manufacturing
 
+!!! mascot-welcome "Hi! I'm Benchy."
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello">
+    Welcome to Introduction to 3D Printing! I'm **Benchy** — an anthropomorphic version of the classic 3DBenchy calibration tugboat that makers worldwide use to test their printers. I'll be popping up throughout this book, but only when I have a specific job to do. I have exactly **six jobs**, and you'll learn to recognize me by which one I'm doing:
+
+    1. **Welcome you** at the start of every chapter — that's what I'm doing right now.
+    2. **Help you think through** key concepts, laws, and equations — the ideas worth pausing on.
+    3. **Give you tips** — the practical moves that working makers know but nobody writes down.
+    4. **Warn you gently** about the specific mistakes and pitfalls that trip up even careful students.
+    5. **Encourage you** when a section is genuinely hard and you deserve to know that before you hit it.
+    6. **Celebrate with you** at the end of each chapter when you've earned it.
+
+    That's it. If I'm not doing one of those six things, I'm not in the chapter. Let's make something great!
+
 ## Summary
 
 This chapter starts with the math, physics, and computer-skills foundations the rest of the course assumes, then traces the story of additive manufacturing from the Industrial Revolution through Charles Hull's invention of stereolithography, the expiration of the FDM patent, the desktop-printer revolution, the RepRap project, and the rise of America Makes. By the end you will be able to place modern 3D printing in its broader engineering and economic context, and you will be ready to learn the formal vocabulary in Chapter 2.
@@ -147,6 +160,10 @@ Type: microsim
 
 ### Basic Physics: Why Matter Behaves the Way It Does
 
+!!! mascot-encouraging "Physics connects directly to the printer."
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy gives a thumbs-up">
+    The next three sections introduce basic physics — matter, force, mass, and density. Every concept here connects to something you'll do at the printer: choosing a filament, reading a temperature, or diagnosing a clog. If physics has felt abstract before, this is where it gets real.
+
 Before we can talk sensibly about how plastic melts, flows, and solidifies in a 3D printer, we need three **basic physics concepts**: the nature of matter, how forces act on objects, and how energy moves between systems.
 
 Matter is made of atoms and molecules. The state of matter — solid, liquid, or gas — depends on how much thermal energy the molecules have and how strongly they attract each other. In a solid, molecules vibrate in fixed positions; in a liquid, they flow past each other; in a gas, they move freely. In additive manufacturing, we exploit this: we heat thermoplastic filament from solid to a viscous liquid (at around 200–260 °C for most common materials), extrude it in precise paths, and then let it cool back to solid within seconds.
@@ -184,6 +201,10 @@ The table below lists the densities of common 3D printing materials for referenc
 | TPU (95A) | 1.21 | 0.98× (similar) |
 | Nylon PA12 | 1.01 | 0.81× (lighter) |
 | Polycarbonate | 1.20 | 0.97× (similar) |
+
+!!! mascot-thinking "Density is the link between geometry and cost."
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks with hand on chin">
+    Here's the practical payoff of \(\rho = m/V\): your slicer estimates filament consumption in meters of length, but you pay for it in grams. The slicer uses your material's density to make that conversion — so switching from PLA to ABS for the same part automatically saves about 16% in material weight, which can matter for lightweight or load-bearing designs.
 
 ### Force and Pressure in AM Systems
 
@@ -224,6 +245,10 @@ A practical folder structure for this course looks like this:
 
 Use descriptive, date-stamped file names rather than generic ones. A file named `bracket_v3_2026-05-07.stl` is findable six months later; a file named `final_FINAL_use-this-one.stl` is not.
 
+!!! mascot-warning "The wrong file goes to the printer — not the right one."
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy holds up a cautionary hand">
+    The most common file disaster isn't a deleted file — it's printing an outdated version because three exports share the same name. Put a version number and date on every STL or 3MF you export: you will thank yourself when you open that folder three weeks later.
+
 ### Mouse and 3D Navigation
 
 **Mouse and 3D navigation** in CAD and slicer software follows conventions that feel awkward for the first hour and automatic within a week. Almost every 3D program supports three core operations:
@@ -238,6 +263,10 @@ Some programs (Onshape, Fusion 360, Blender) let you customize which buttons tri
 - **Numpad 3** — Right view
 - **Numpad 7** — Top view
 - **Numpad 5** — Toggle perspective / orthographic
+
+!!! mascot-tip "Remap your mouse buttons in the first session."
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy points a helpful finger">
+    Most CAD programs let you save a custom mouse-button mapping in preferences. If middle-click orbiting feels awkward, remap it to right-click on day one — spending five minutes on this setup saves hours of frustration across an entire semester.
 
 In class we will practice 3D navigation in the first software session. After that, it becomes muscle memory.
 
@@ -518,6 +547,10 @@ Carry these points forward:
 - The **RepRap Project** (2005) used open-source principles to make FDM technology freely available years before the patent expired, building the community that drove the revolution.
 - **America Makes** (2012) anchors the national AM workforce ecosystem; its competency frameworks shaped this course.
 - Your **file management and 3D navigation skills** are not trivial — they directly affect the quality and reproducibility of every project you complete.
+
+!!! mascot-celebration "Chapter 1 complete — you've built the foundation!"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with arms raised">
+    You've covered the math, physics, and computer skills this course depends on, and traced 3D printing from a $300,000 industrial machine in 1988 to a classroom tool in 2026. Chapter 2 moves from history into formal vocabulary — the seven ISO/ASTM 52900 process categories every AM professional uses. See you there!
 
 In Chapter 2 you will learn the seven ISO/ASTM 52900 process categories — the formal vocabulary that engineers and technicians use to describe and compare all forms of additive manufacturing.
 
