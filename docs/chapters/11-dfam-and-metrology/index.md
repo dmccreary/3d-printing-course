@@ -328,3 +328,5 @@ In a school lab, both matter. If five printers in the room all print the same ca
 !!! mascot-celebration "You Can Design AND Measure"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you">
     This chapter gave you two complementary skills: designing parts that work with the printer, and measuring parts to know whether the design worked. That's the full loop — design, print, measure, iterate — and it's the engineering design process applied to manufacturing. Chapter 12 awaits with troubleshooting and post-processing, where you'll put both skills to use diagnosing real print failures.
+
+[See Annotated References](./references.md)

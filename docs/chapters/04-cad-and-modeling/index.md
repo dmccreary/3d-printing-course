@@ -451,3 +451,5 @@ This chapter has covered the complete foundation of parametric, feature-based CA
 !!! mascot-celebration "Chapter 4 Complete — You Can Model Now"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates">
     You've just covered every concept a working mechanical designer uses every day: sketches, constraints, features, assemblies, and the tools to put it all together. That's not a small thing — parametric CAD is one of the most transferable skills in modern engineering. In Chapter 5, you'll take the models you can now build and learn exactly how to get them out of the CAD environment and into a format the printer can use. Mesh files, STL, 3MF — the bridge from digital to physical is next.
+
+[See Annotated References](./references.md)

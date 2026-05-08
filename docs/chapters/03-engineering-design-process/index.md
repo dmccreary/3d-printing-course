@@ -437,3 +437,5 @@ The PLTW engineering design process provides a repeatable, learnable framework f
 !!! mascot-celebration "Chapter 3 Complete — You Have a Process Now"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates">
     That's the full PLTW loop in your hands — define, research, ideate, specify, prototype, test, communicate. You just built the mental scaffolding that every project in this course will hang on. Chapter 4 is where things get tangible: you'll start working in CAD, turning the ideas you can now sketch and specify into the 3D models you'll send to a printer. Let's make something.
+
+[See Annotated References](./references.md)

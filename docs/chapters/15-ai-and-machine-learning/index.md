@@ -341,3 +341,5 @@ Responsive: pipeline changes from horizontal to vertical on narrow screens.
 !!! mascot-celebration "You Can Think Critically About AI — and Use It Effectively"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you">
     This chapter asked you to be both excited about AI tools and appropriately skeptical of them — which is exactly the right posture for working with emerging technology. You understand what AI can do in additive manufacturing, why it works, and where it can go wrong. The final chapter puts everything together: careers, pathways, and the capstone project that will let you demonstrate everything you've learned.
+
+[See Annotated References](./references.md)

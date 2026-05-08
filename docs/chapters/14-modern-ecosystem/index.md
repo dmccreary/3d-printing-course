@@ -256,3 +256,5 @@ In a school makerspace with 4–8 printers, a production mindset improves throug
 !!! mascot-celebration "You Understand the Whole Ecosystem"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you">
     From slicer profiles to printer brands to production workflow — you now have the context to make real equipment and software decisions, not just operate whatever is in front of you. Chapter 15 takes us into the most forward-looking territory in this book: how AI and machine learning are transforming the design, operation, and optimization of additive manufacturing.
+
+[See Annotated References](./references.md)

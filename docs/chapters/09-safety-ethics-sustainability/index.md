@@ -362,3 +362,5 @@ Responsive: stacks cards vertically on narrow screens; minimum 320px.
 !!! mascot-celebration "You're Now a Responsible Maker"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you">
     This chapter asked you to think beyond the printer — about the air you breathe while it runs, the community you share the space with, and the people whose creative work you're using. That's a different kind of competence than bed leveling or slicer settings, but it's just as important. Up next in Chapter 10, we move to resin printing — where ventilation and PPE go from strongly recommended to absolutely required.
+
+[See Annotated References](./references.md)

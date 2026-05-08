@@ -447,3 +447,5 @@ Twenty-three concepts, one complete pipeline from model to printer. Here is a su
 !!! mascot-celebration "Twenty-Three Down — You Can Read a Slicer Now"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates chapter completion">
     That is a complete slicer education in one chapter. You understand G-code, you know what every major parameter does, and you can reason about why a print fails rather than just adjusting things at random. Next up: **Chapter 8 — FDM Printer Operation**, where you take all these settings off the screen and onto a real machine. Bed leveling, first-layer calibration, filament changes — everything you just learned about first layer settings and temperatures is about to become something you do with your hands.
+
+[See Annotated References](./references.md)

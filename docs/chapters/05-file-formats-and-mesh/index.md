@@ -462,3 +462,5 @@ You now have the complete picture of how a 3D shape travels from your CAD softwa
 !!! mascot-celebration "That's Chapter 5 Done!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates">
     You just learned what every triangle in your model is doing and why every single one of them needs to be in the right place. That's not trivial — most people who operate 3D printers for years never bother to understand mesh geometry at this level. Next up is Chapter 6: Materials Science, where you'll find out why the plastic you choose matters just as much as the geometry you print it in.
+
+[See Annotated References](./references.md)

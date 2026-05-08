@@ -475,3 +475,5 @@ That's not just printer operation. That's engineering thinking.
 !!! mascot-celebration "You Know Your Printer Inside and Out"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you">
     If you've made it through this chapter, you can look at any FDM printer and name every component, explain what it does, and describe what goes wrong when it fails. That's a genuinely useful skill — most printer problems are diagnosed by people who understand the hardware, not by people who just follow a troubleshooting chart. Next up in Chapter 9, we shift from the machine itself to something just as important: how to work with it safely, responsibly, and sustainably.
+
+[See Annotated References](./references.md)

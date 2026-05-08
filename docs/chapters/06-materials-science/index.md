@@ -336,3 +336,5 @@ You've worked through 24 concepts across three material families. Here's a summa
 !!! mascot-celebration "Twenty-Four Concepts — You Made It"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates at the end of the chapter">
     That is a genuinely substantial amount of materials science for one chapter, and you handled it. You can now read a data sheet, explain why your dashboard PLA part warped, and make an informed case for why that outdoor bracket should be ASA instead of PLA. Next up: **Chapter 7 — Slicing and Toolpath Generation**, where all this materials knowledge turns into actual print settings. Knowing your Tg and hygroscopic risk makes the temperature and cooling sliders in your slicer feel a lot less arbitrary.
+
+[See Annotated References](./references.md)

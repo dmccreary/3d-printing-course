@@ -468,3 +468,5 @@ This chapter has covered a lot of ground — from the organizations that write t
 !!! mascot-celebration "Chapter 2 Complete — You Speak AM Now"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates">
     You just built the vocabulary that the entire rest of this course runs on. Seven process categories, two standards bodies, a universal glossary, and a clear-eyed picture of how the desktop printer in your classroom relates to the million-dollar machine making titanium hip implants. That is not a small thing — most people working in manufacturing never get a clear map of the whole landscape. In Chapter 3, you'll start applying this vocabulary to the engineering design process, the systematic method that turns ideas into real, testable objects.
+
+[See Annotated References](./references.md)

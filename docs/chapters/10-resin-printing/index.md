@@ -350,3 +350,5 @@ Responsive: maintains 3-column layout down to 600px, then stacks to vertical for
 !!! mascot-celebration "Resin Printing Is in Your Toolkit"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you">
     You now understand how three different light-based processes build parts from liquid resin, why PPE is non-negotiable, and how to take a print from vat to finished part safely. Resin printing unlocks a level of surface detail and resolution that FDM simply can't match for certain applications. Next up in Chapter 11, we dive into designing for the manufacturing process — learning how to orient, hollow, and structure parts specifically for additive processes.
+
+[See Annotated References](./references.md)

@@ -326,3 +326,5 @@ This knowledge base is the foundation for a career in manufacturing technology, 
 !!! mascot-celebration "You Made It — Let's Make Something Great"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you">
     Sixteen chapters. Hundreds of concepts. Thousands of printed layers of understanding. You started this book not knowing the difference between FDM and SLA; you're finishing it knowing the thermal runaway settings in your firmware, the tolerance allowances for press-fit holes, the Creative Commons license you need to check before distributing a model, and the career pathways that can take this knowledge somewhere real. That's an extraordinary amount of ground to cover — and you covered it. Now go make something. I'll be on the build plate, as always, ready to tell you how the printer is doing.
+
+[See Annotated References](./references.md)

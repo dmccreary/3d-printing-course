@@ -333,3 +333,5 @@ Let's work through the troubleshooting workflow:
 !!! mascot-celebration "You Can Diagnose and Finish a Print"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you">
     Troubleshooting is the skill that separates a person who can follow a recipe from a person who understands the process. You now have both: the systematic workflow to diagnose any failure, and the post-processing toolkit to finish what comes out well. Chapter 13 moves us forward in time to modern printer hardware — the machines that have raised the bar for what a consumer 3D printer can do.
+
+[See Annotated References](./references.md)

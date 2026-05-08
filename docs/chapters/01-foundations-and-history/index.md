@@ -569,3 +569,5 @@ In Chapter 2 you will learn the seven ISO/ASTM 52900 process categories — the 
 5. Describe two specific ways that America Makes connects a high school additive manufacturing course to careers and college credit.
 
 6. You have a printed part with dimensions 80 mm × 55 mm × 30 mm. Calculate its volume in mm³ and cm³. If it is printed in PETG (density 1.27 g/cm³) with 20% infill (meaning 20% of the interior is solid), estimate the mass of the part. (Hint: multiply the full volume by 0.20 for the infill fraction, then add the shell volume — simplify by assuming 30% of the total volume is shell walls.)
+
+[See Annotated References](./references.md)

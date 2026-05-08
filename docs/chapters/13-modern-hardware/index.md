@@ -323,3 +323,5 @@ Responsive: stacks to vertical layout on screens below 700px.
 !!! mascot-celebration "You Know the State of the Art"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you">
     The printer landscape we just covered represents a decade of competitive development compressed into one chapter. You now understand not just what modern printers can do but why they can do it — the specific hardware and firmware innovations that drove each improvement. Chapter 14 zooms out to the broader modern ecosystem: the slicers, model repositories, digital workflows, and community infrastructure that make all this hardware useful.
+
+[See Annotated References](./references.md)

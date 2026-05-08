@@ -21,30 +21,81 @@ nav:
   - Home: index.md
   - About: about.md
   - Course Description: course-description.md
+  - Glossary: glossary.md
 
   - Chapters:
       - List of Chapters: chapters/index.md
-      - 1. Foundations and History: chapters/01-foundations-and-history/index.md
-      - 2. Standards and Process Families: chapters/02-standards-and-process-families/index.md
-      - 3. Engineering Design Process: chapters/03-engineering-design-process/index.md
-      - 4. CAD and Modeling: chapters/04-cad-and-modeling/index.md
-      - 5. File Formats and Mesh: chapters/05-file-formats-and-mesh/index.md
-      - 6. Materials Science: chapters/06-materials-science/index.md
-      - 7. Slicing and Toolpaths: chapters/07-slicing-and-toolpaths/index.md
-      - 8. FDM Printer Hardware: chapters/08-fdm-printer-hardware/index.md
-      - 9. Safety, Ethics, Sustainability: chapters/09-safety-ethics-sustainability/index.md
-      - 10. Resin Printing: chapters/10-resin-printing/index.md
-      - 11. DfAM and Metrology: chapters/11-dfam-and-metrology/index.md
-      - 12. Troubleshooting and Post-Processing: chapters/12-troubleshooting-and-postprocessing/index.md
-      - 13. Modern Hardware: chapters/13-modern-hardware/index.md
-      - 14. Modern Ecosystem: chapters/14-modern-ecosystem/index.md
-      - 15. AI and Machine Learning: chapters/15-ai-and-machine-learning/index.md
-      - 16. Careers and Capstone: chapters/16-careers-and-capstone/index.md
+      - 1. Foundations and History:
+          - Content: chapters/01-foundations-and-history/index.md
+          - Quiz: chapters/01-foundations-and-history/quiz.md
+          - References: chapters/01-foundations-and-history/references.md
+      - 2. Standards and Process Families:
+          - Content: chapters/02-standards-and-process-families/index.md
+          - Quiz: chapters/02-standards-and-process-families/quiz.md
+          - References: chapters/02-standards-and-process-families/references.md
+      - 3. Engineering Design Process:
+          - Content: chapters/03-engineering-design-process/index.md
+          - Quiz: chapters/03-engineering-design-process/quiz.md
+          - References: chapters/03-engineering-design-process/references.md
+      - 4. CAD and Modeling:
+          - Content: chapters/04-cad-and-modeling/index.md
+          - Quiz: chapters/04-cad-and-modeling/quiz.md
+          - References: chapters/04-cad-and-modeling/references.md
+      - 5. File Formats and Mesh:
+          - Content: chapters/05-file-formats-and-mesh/index.md
+          - Quiz: chapters/05-file-formats-and-mesh/quiz.md
+          - References: chapters/05-file-formats-and-mesh/references.md
+      - 6. Materials Science:
+          - Content: chapters/06-materials-science/index.md
+          - Quiz: chapters/06-materials-science/quiz.md
+          - References: chapters/06-materials-science/references.md
+      - 7. Slicing and Toolpaths:
+          - Content: chapters/07-slicing-and-toolpaths/index.md
+          - Quiz: chapters/07-slicing-and-toolpaths/quiz.md
+          - References: chapters/07-slicing-and-toolpaths/references.md
+      - 8. FDM Printer Hardware:
+          - Content: chapters/08-fdm-printer-hardware/index.md
+          - Quiz: chapters/08-fdm-printer-hardware/quiz.md
+          - References: chapters/08-fdm-printer-hardware/references.md
+      - 9. Safety, Ethics, Sustainability:
+          - Content: chapters/09-safety-ethics-sustainability/index.md
+          - Quiz: chapters/09-safety-ethics-sustainability/quiz.md
+          - References: chapters/09-safety-ethics-sustainability/references.md
+      - 10. Resin Printing:
+          - Content: chapters/10-resin-printing/index.md
+          - Quiz: chapters/10-resin-printing/quiz.md
+          - References: chapters/10-resin-printing/references.md
+      - 11. DfAM and Metrology:
+          - Content: chapters/11-dfam-and-metrology/index.md
+          - Quiz: chapters/11-dfam-and-metrology/quiz.md
+          - References: chapters/11-dfam-and-metrology/references.md
+      - 12. Troubleshooting and Post-Processing:
+          - Content: chapters/12-troubleshooting-and-postprocessing/index.md
+          - Quiz: chapters/12-troubleshooting-and-postprocessing/quiz.md
+          - References: chapters/12-troubleshooting-and-postprocessing/references.md
+      - 13. Modern Hardware:
+          - Content: chapters/13-modern-hardware/index.md
+          - Quiz: chapters/13-modern-hardware/quiz.md
+          - References: chapters/13-modern-hardware/references.md
+      - 14. Modern Ecosystem:
+          - Content: chapters/14-modern-ecosystem/index.md
+          - Quiz: chapters/14-modern-ecosystem/quiz.md
+          - References: chapters/14-modern-ecosystem/references.md
+      - 15. AI and Machine Learning:
+          - Content: chapters/15-ai-and-machine-learning/index.md
+          - Quiz: chapters/15-ai-and-machine-learning/quiz.md
+          - References: chapters/15-ai-and-machine-learning/references.md
+      - 16. Careers and Capstone:
+          - Content: chapters/16-careers-and-capstone/index.md
+          - Quiz: chapters/16-careers-and-capstone/quiz.md
+          - References: chapters/16-careers-and-capstone/references.md
       
+  - FAQ: faq.md
+
   - MicroSims:
       - List of MicroSims: sims/index.md
       - Learning Graph Viewer: sims/graph-viewer/index.md
-      
+
   - Learning Graph:
       - Introduction: learning-graph/index.md
       - 3D Printing Organizations: learning-graph/3d-printing-orgs.md
@@ -58,6 +109,7 @@ nav:
       - learning-graph/diagram-details.md
       - learning-graph/diagram-table.md
       - learning-graph/faq-quality-report.md
+      - Quiz Generation Report: learning-graph/quiz-generation-report.md
       - learning-graph/index-template.md
       - learning-graph/vis-network-json-format.md
 
