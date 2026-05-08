@@ -10,6 +10,7 @@ hide:
 <style>
 .md-content__inner h1 {display: none !important;}
 </style>
+![Cover Image](./img/cover.png)
 
 # Introduction to 3D Printing
 

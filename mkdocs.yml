@@ -92,8 +92,55 @@ nav:
 
 
   - MicroSims:
-      - List of MicroSims: sims/index.md
-      - Learning Graph Viewer: sims/graph-viewer/index.md
+    - List of MicroSims: sims/index.md
+    - 3D File Format Comparison Explorer: sims/file-format-comparison/index.md
+    - AI in AM Pipeline Explorer: sims/ai-in-am-pipeline/index.md
+    - Anisotropy Explorer: sims/anisotropy-explorer/index.md
+    - Assembly Mate Constraints Visualizer: sims/assembly-mate-visualizer/index.md
+    - Calibration and Measurement MicroSim: sims/calibration-measurement-sim/index.md
+    - Career Pathway Navigator: sims/am-career-pathways/index.md
+    - Concept Selection Decision Matrix: sims/concept-selection-matrix/index.md
+    - DfAM Rules Explorer: sims/dfam-rules-explorer/index.md
+    - Engineering Notebook Page Anatomy: sims/notebook-page-anatomy/index.md
+    - Exposure Setting Explorer: sims/resin-exposure-explorer/index.md
+    - FDM Failure Diagnosis Decision Tree: sims/fdm-failure-diagnosis/index.md
+    - FDM Printer Anatomy Explorer: sims/fdm-printer-anatomy-explorer/index.md
+    - FDM Printer Price Decline (2009–2024): sims/fdm-price-history/index.md
+    - Feature Tree Builder: sims/feature-tree-builder/index.md
+    - Filament Lifecycle Explorer: sims/filament-lifecycle-explorer/index.md
+    - Filament Property Explorer: sims/filament-property-explorer/index.md
+    - Ideation Sketch Canvas: sims/ideation-sketch-canvas/index.md
+    - Industrial PBF Process Comparison: sims/industrial-pbf-comparison/index.md
+    - Infill Pattern Explorer: sims/infill-pattern-explorer/index.md
+    - Input Shaping and Speed Comparison: sims/input-shaping-demo/index.md
+    - ISO and ASTM Collaboration Map: sims/iso-astm-collaboration-map/index.md
+    - Iteration Cycle Simulator: sims/iteration-cycle-simulator/index.md
+    - Layer Height Cross-Section Explorer: sims/layer-height-explorer/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Maintenance Schedule Interactive Checklist: sims/fdm-maintenance-scheduler/index.md
+    - Material Data Sheet Interactive Explorer: sims/material-data-sheet-explorer/index.md
+    - Mesh Geometry Anatomy: sims/mesh-geometry-anatomy/index.md
+    - Mesh Repair Workflow: sims/mesh-repair-workflow/index.md
+    - Metal AM Build-to-Part Workflow: sims/metal-am-workflow/index.md
+    - Modern Printer Architecture Comparison: sims/modern-printer-comparison/index.md
+    - Motion System Explainer: sims/fdm-motion-system-explainer/index.md
+    - Non-Manifold Error Types: sims/non-manifold-error-types/index.md
+    - Print Session Safety Checklist: sims/print-session-safety-checklist/index.md
+    - Printer Brand Landscape Comparison: sims/printer-brand-landscape/index.md
+    - Resin Family Property Comparison: sims/resin-family-comparison/index.md
+    - Resin Process Comparison Explorer: sims/resin-process-comparison/index.md
+    - Seven Process Families Explorer: sims/seven-am-processes-explorer/index.md
+    - Sketch Constraint States Explorer: sims/sketch-constraint-explorer/index.md
+    - Slicer Pipeline Overview: sims/slicer-pipeline-overview/index.md
+    - Subtractive vs. Additive Manufacturing — Side-by-Side Comparison: sims/sub-vs-add-comparison/index.md
+    - Support Strategy Decision Flow: sims/support-strategy-decision/index.md
+    - The America Makes Ecosystem: sims/america-makes-ecosystem/index.md
+    - The PLTW Engineering Design Process Cycle: sims/pltw-design-process-cycle/index.md
+    - Triangle Resolution Explorer: sims/triangle-resolution-explorer/index.md
+    - Unit Conversion MicroSim: sims/unit-converter-3dp/index.md
+    - Z-Offset Calibration MicroSim: sims/z-offset-calibration-sim/index.md
+
+
 
   - Learning Graph:
       - Introduction: learning-graph/index.md

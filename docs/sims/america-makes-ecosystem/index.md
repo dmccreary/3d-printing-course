@@ -11,7 +11,7 @@ quality_score: 0
 
 # The America Makes Ecosystem
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="582" width="100%" scrolling="no"></iframe>
 
 [Run the The America Makes Ecosystem MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

@@ -11,7 +11,7 @@ quality_score: 0
 
 # FDM Printer Price Decline (2009–2024)
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="522" width="100%" scrolling="no"></iframe>
 
 [Run the FDM Printer Price Decline (2009–2024) MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

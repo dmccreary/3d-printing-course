@@ -1,16 +1,12 @@
 ---
 title: Print Session Safety Checklist
 description: Students assess the safety adequacy of a print setup by working through a structured checklist and identifying which risk areas need attention before beginning a print session.
-status: scaffold
-library: p5.js
+status: implemented
+library: Custom HTML/DOM
 bloom_level: Evaluate (L5)
 ---
 
 # Print Session Safety Checklist
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -18,11 +14,11 @@ Students assess the safety adequacy of a print setup by working through a struct
 
 - **Bloom Level:** Evaluate (L5)
 - **Bloom Verb:** Assess
-- **Library:** p5.js
+- **Library:** Custom HTML/DOM
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

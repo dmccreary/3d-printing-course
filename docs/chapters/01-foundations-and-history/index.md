@@ -119,6 +119,10 @@ The table below summarizes the units you will encounter most in this course.
 
 #### Diagram: Unit Conversion MicroSim
 
+
+<iframe src="../../sims/unit-converter-3dp/main.html" width="100%" height="432" scrolling="no"></iframe>
+[Run Unit Conversion MicroSim Fullscreen](../../sims/unit-converter-3dp/main.html)
+
 <details markdown="1">
 <summary>Interactive MicroSim: Metric ↔ Imperial Unit Converter for 3D Printing</summary>
 Type: microsim
@@ -293,6 +297,10 @@ These limitations set the stage for a fundamentally different idea.
 
 #### Diagram: Subtractive vs. Additive Manufacturing — Side-by-Side Comparison
 
+
+<iframe src="../../sims/sub-vs-add-comparison/main.html" width="100%" height="442" scrolling="no"></iframe>
+[Run Subtractive vs. Additive Manufacturing Fullscreen](../../sims/sub-vs-add-comparison/main.html)
+
 <details markdown="1">
 <summary>Interactive Comparison: Subtractive vs. Additive Manufacturing</summary>
 Type: interactive-infographic
@@ -393,6 +401,10 @@ The result is the landscape you see today: capable multi-filament FDM printers a
 
 #### Diagram: FDM Printer Price Decline (2009–2024)
 
+
+<iframe src="../../sims/fdm-price-history/main.html" width="100%" height="522" scrolling="no"></iframe>
+[Run FDM Printer Price Decline (2009–2024) Fullscreen](../../sims/fdm-price-history/main.html)
+
 <details markdown="1">
 <summary>Interactive Chart: Desktop FDM Printer Price vs. Time</summary>
 Type: chart
@@ -469,6 +481,10 @@ America Makes is a public–private partnership that connects manufacturers, uni
 For you, as a student in this course, America Makes is relevant in three direct ways. First, the workforce competency frameworks it developed informed the structure of this course and the skills you will practice. Second, many community colleges with AM articulation agreements align their curricula to America Makes standards — meaning the portfolio evidence you build here is recognized beyond this classroom. Third, the certifications from organizations like **NC3** and **NIMS** that some students pursue after completing a course like this one are mapped to the same competency framework.
 
 #### Diagram: The America Makes Ecosystem
+
+
+<iframe src="../../sims/america-makes-ecosystem/main.html" width="100%" height="582" scrolling="no"></iframe>
+[Run The America Makes Ecosystem Fullscreen](../../sims/america-makes-ecosystem/main.html)
 
 <details markdown="1">
 <summary>Interactive Network: America Makes Stakeholder Map</summary>
