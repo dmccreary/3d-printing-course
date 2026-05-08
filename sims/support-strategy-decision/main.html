@@ -3,127 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Support Strategy Decision Flow</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0; padding: 0; background: #f8f9fa; }
+        main { display: block; width: 100%; }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Support Strategy Decision Flow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> support-strategy-decision</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students can evaluate a part's geometry and select the appropriate support strategy (no support, normal support, tree support, support interface, dissolvable support) based on overhang angle, surface quality requirements, and material constraints.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** support-strategy-decision<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Level: Evaluate (L5)
-    Bloom Verb: Recommend
-    Learning Objective: Students can evaluate a part's geometry and select the appropriate support strategy (no support, normal support, tree support, support interface, dissolvable support) based on overhang angle, surface quality requirements, and material constraints.
-    
-    Visual style: Interactive decision tree flowchart with rectangular process nodes, diamond decision nodes, and terminal recommendation nodes. Clicking a node reveals an explanation in a side panel.
-    
-    Nodes and text:
-    Start → "Does the part have overhanging surfaces?"
-    → No: Terminal "No supports needed. Orient the part to minimize overhangs, or use DfAM to redesign."
-    → Yes: "Are overhangs steeper than 45° from horizontal?"
-    → No: Terminal "Self-supporting overhang. Most FDM printers bridge well up to 45°. No supports required."
-    → Yes: "Is the supported surface visible or functional?"
-    → No: Terminal "Use Normal Supports. They print fast and the surface quality is acceptable for hidden geometry."
-    → Yes: "Is a multi-material printer or soluble filament available?"
-    → Yes: Terminal "Use Dissolvable Support Interface (PVA or HIPS). Produces the cleanest supported surfaces; dissolves completely in water or limonene."
-    → No: "Is the geometry complex with many isolated overhang points?"
-    → Yes: Terminal "Use Tree Supports with Support Interface. Tree supports minimize contact points; interface layer improves surface quality."
-    → No: Terminal "Use Normal Supports with Support Interface. Dense interface improves surface quality; normal structure is simpler to generate."
-    
-    Each node:
-    - Hover: highlights the node with a border
-    - Click: side panel displays a 3–4 sentence explanation of the reasoning and practical tips
-    
-    Side panel contents per node:
-    - "No supports needed": "Before printing, rotate the part in your slicer to find the orientation that minimizes overhang area. The slicer's 'place face on build plate' feature and the overhang preview (usually shown in red) help identify the optimal orientation."
-    - "Self-supporting": "FDM printers can typically bridge horizontally for 50–80 mm without supports if bridging speed is reduced and cooling is strong. Bridges over 80 mm benefit from supports or redesign."
-    - "Normal Supports": "In Cura, enable 'Generate Support' and set Support Structure to 'Normal'. Adjust Support Density (10–20% is standard) and Z Distance (0.15–0.2 mm to help separation)."
-    - "Dissolvable Interface": "PVA dissolves in water and works well with PLA. HIPS dissolves in d-limonene and pairs with ABS. Requires a dual-extrusion printer or tool changer."
-    - "Tree Supports with Interface": "In PrusaSlicer, set Support Style to 'Organic'. In Cura, set Support Structure to 'Tree'. Enable Support Interface with 0.2 mm Z gap for cleanest removal."
-    - "Normal Supports with Interface": "Enable Support Interface in Cura's Support section. Set Interface Layer Count to 2–4 and Interface Z Distance to 0.15 mm. This alone transforms surface quality on supported overhangs."
-    
-    Color scheme: Decision diamonds in amber; process rectangles in blue; terminal recommendations in green; selected node highlighted in a warm orange border.
-    Responsive: Canvas scales to fill iframe width; on narrow screens, the tree renders vertically.
-    -->
+    <main></main>
+    <script src="support-strategy-decision.js"></script>
 </body>
 </html>
