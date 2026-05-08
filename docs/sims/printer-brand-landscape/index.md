@@ -1,16 +1,12 @@
 ---
 title: Printer Brand Landscape Comparison
 description: Students compare major consumer printer brands across dimensions including price, open-source status, print speed, ease of use, and community support to make informed recommendations for different use cases.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Analyze (L4)
 ---
 
 # Printer Brand Landscape Comparison
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students compare major consumer printer brands across dimensions including price
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="602" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
