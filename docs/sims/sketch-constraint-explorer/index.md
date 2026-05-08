@@ -1,28 +1,24 @@
 ---
 title: Sketch Constraint States Explorer
-description: Identify the three sketch constraint states (under-constrained, fully constrained, over-constrained) and apply geometric and dimensional constraints to reach the fully constrained state (Bloom L1–L3: identify, explain, apply).
-status: scaffold
+description: "Identify the three sketch constraint states (under-constrained, fully constrained, over-constrained) and apply geometric and dimensional constraints to reach the fully constrained state (Bloom L1–L3: identify, explain, apply)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Remember-Understand-Apply
 ---
 
 # Sketch Constraint States Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
 Identify the three sketch constraint states (under-constrained, fully constrained, over-constrained) and apply geometric and dimensional constraints to reach the fully constrained state (Bloom L1–L3: identify, explain, apply).
 
-- **Bloom Level:** TBD
-- **Bloom Verb:** TBD
+- **Bloom Level:** Remember / Understand / Apply
+- **Bloom Verb:** identify, explain, apply
 - **Library:** p5.js
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="562" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
