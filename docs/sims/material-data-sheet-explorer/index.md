@@ -1,16 +1,12 @@
 ---
 title: Material Data Sheet Interactive Explorer
 description: Students can identify and explain the purpose of each major section of a thermoplastic filament data sheet.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Understand (L2)
 ---
 
 # Material Data Sheet Interactive Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students can identify and explain the purpose of each major section of a thermop
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
