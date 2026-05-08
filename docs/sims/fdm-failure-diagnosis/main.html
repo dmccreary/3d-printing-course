@@ -3,120 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDM Failure Diagnosis Decision Tree</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>FDM Failure Diagnosis</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0; padding: 0; background: #f8f9fa; }
+        main { display: block; width: 100%; }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>FDM Failure Diagnosis Decision Tree</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> fdm-failure-diagnosis</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Students evaluate a described print failure by navigating a decision tree that identifies the most likely root cause and recommended fix.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** fdm-failure-diagnosis<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Level: Evaluate (L5)
-    Bloom Verb: Judge
-    Learning Objective: Students evaluate a described print failure by navigating a decision tree that identifies the most likely root cause and recommended fix.
-    
-    Visual layout:
-    - Interactive decision tree rendered in p5.js
-    - Root node: "Where does the failure appear?"
-    - Branch categories: First Layer / All Layers / Specific Geometry / After Long Run
-    - Each category branches into symptom nodes (e.g., "Gaps in first layer?", "Lines not bonding?", "Blobs and zits?")
-    - Leaf nodes show: Failure Name, Root Cause (1–2 sentences), Recommended Fix (numbered list), Related Slicer Setting
-    
-    Interactive elements:
-    - Click any branch node to navigate deeper into the tree; breadcrumb trail at top shows path taken
-    - Each leaf node has a "See Example Photo Description" button — expands a text panel describing what this failure looks like in detail
-    - "Start Over" button resets to root
-    - Hover any node to see the full question/description in a tooltip
-    
-    Tree data covers: warping, first-layer not sticking, first-layer too squished, stringing, under-extrusion, over-extrusion, layer separation, elephant's foot, ringing/ghosting, clogged nozzle, failed mid-print adhesion
-    
-    Color coding:
-    - Blue: question/branch nodes
-    - Orange: symptom confirmation nodes
-    - Green: leaf nodes (diagnosis + fix)
-    - Red: safety-related fixes (thermal runaway, nozzle clog fire risk)
-    
-    Responsive: tree scales to container; on narrow screens, switches from graphical tree to a guided Q&A form.
-    -->
+    <main></main>
+    <script src="fdm-failure-diagnosis.js"></script>
 </body>
 </html>

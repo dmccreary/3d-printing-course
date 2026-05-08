@@ -1,16 +1,12 @@
 ---
 title: FDM Failure Diagnosis Decision Tree
 description: Students evaluate a described print failure by navigating a decision tree that identifies the most likely root cause and recommended fix.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Evaluate (L5)
 ---
 
 # FDM Failure Diagnosis Decision Tree
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students evaluate a described print failure by navigating a decision tree that i
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="642" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
