@@ -1,16 +1,12 @@
 ---
 title: Maintenance Schedule Interactive Checklist
 description: Students use a structured maintenance checklist to develop habits for keeping an FDM printer running reliably, and connect each task to a mechanical reason.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Apply (L3)
 ---
 
 # Maintenance Schedule Interactive Checklist
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students use a structured maintenance checklist to develop habits for keeping an
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
