@@ -1,16 +1,12 @@
 ---
 title: Resin Process Comparison Explorer
 description: Students compare SLA, DLP, and MSLA processes by examining how each technology delivers UV light to the resin vat, and analyze the trade-offs between precision, speed, and cost.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Analyze (L4)
 ---
 
 # Resin Process Comparison Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students compare SLA, DLP, and MSLA processes by examining how each technology d
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="602" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
