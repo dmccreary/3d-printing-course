@@ -13,8 +13,6 @@ repo_name: 'GitHub Repo'
 repo_url: 'https://github.com/dmccreary/3d-printing-course'
 edit_uri: 'blob/main/docs'
 
-# Copyright
-copyright: 'Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.'
 
 # Navigation
 # IMPORTANT: do NOT add `navigation.tabs` — these books use side navigation
@@ -122,6 +120,7 @@ markdown_extensions:
 # Custom CSS — file is created by init-textbook
 extra_css:
   - css/extra.css
+  - css/mascot.css
 
 # Custom JavaScript — uncomment once a corresponding file exists
 # extra_javascript:
@@ -138,6 +137,9 @@ exclude_docs: |
 watch:
   - docs
   - mkdocs.yml
+
+# Copyright
+copyright: 'Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.'
 
 # Extra
 extra:
@@ -166,3 +168,4 @@ extra:
   # analytics:
   #   provider: google
   #   property: G-XXXXXXXXXX
+

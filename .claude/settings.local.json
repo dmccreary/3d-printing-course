@@ -5,7 +5,8 @@
       "Skill(update-config:*)",
       "Bash(find /Users/dan/.claude/skills/init-textbook/assets/templates -type f | sort)",
       "Bash(cp /Users/dan/.claude/skills/init-textbook/assets/templates/docs/img/license.png /Users/dan/Documents/ws/3d-printing-course/docs/img/license.png && echo \"copied\")",
-      "Bash(mkdocs build *)"
+      "Bash(mkdocs build *)",
+      "Bash(python3 *)"
     ]
   }
 }
