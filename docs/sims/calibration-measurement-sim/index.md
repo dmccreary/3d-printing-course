@@ -1,16 +1,12 @@
 ---
 title: Calibration and Measurement MicroSim
 description: Students apply caliper measurement technique by reading simulated caliper displays and calculating the dimensional error and required calibration correction for a printed calibration cube.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Apply (L3)
 ---
 
 # Calibration and Measurement MicroSim
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students apply caliper measurement technique by reading simulated caliper displa
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
