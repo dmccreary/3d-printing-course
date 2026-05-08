@@ -3,121 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>AI in AM Pipeline Explorer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0; padding: 0; background: #f8f9fa; }
+        main { display: block; width: 100%; }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>AI in AM Pipeline Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> ai-in-am-pipeline</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Students organize AI applications in additive manufacturing by their stage in the production pipeline and analyze what data each system needs and what output it provides.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: diagram
-    **sim-id:** ai-in-am-pipeline<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Level: Analyze (L4)
-    Bloom Verb: Organize
-    Learning Objective: Students organize AI applications in additive manufacturing by their stage in the production pipeline and analyze what data each system needs and what output it provides.
-    
-    Visual layout:
-    - Horizontal pipeline with four stages: Design → Slicing → Printing → Post-Processing
-    - AI application nodes placed above or below the pipeline at their relevant stage:
-      - Design: Text-to-CAD, Material Recommender
-      - Slicing: AI Slicer Optimizer
-      - Printing: First-Layer Vision, Spaghetti Detection, Predictive Maintenance, Defect Classification
-      - Post-Processing: Dimensional AI Inspection
-    - Each node is a rounded rectangle; arrows connect nodes to their pipeline stage
-    
-    Interactive elements:
-    - Click any AI node: Expand info panel showing (a) what data input the system needs, (b) what output it produces, (c) what can go wrong (limitation/hallucination risk), (d) a real-world example tool or product
-    - Hover any arrow from node to pipeline: Tooltip shows what the AI "hands off" to the human or next system
-    - Filter button "Show only monitoring" or "Show only generative" — highlights relevant nodes and dims others
-    - "Which stage is most AI-intensive?" button: triggers an animation that highlights the Printing stage with a "most applications" label and explanation
-    
-    Color coding:
-    - Blue nodes: generative AI (creates something new)
-    - Green nodes: monitoring/detection AI (observes and flags)
-    - Orange nodes: optimization AI (improves parameters)
-    - Yellow nodes: educational/assistive AI
-    
-    Canvas: 700×400px main area + 250px right info panel
-    Responsive: pipeline changes from horizontal to vertical on narrow screens.
-    -->
+    <main></main>
+    <script src="ai-in-am-pipeline.js"></script>
 </body>
 </html>

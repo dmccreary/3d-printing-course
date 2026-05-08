@@ -109,10 +109,24 @@ function computeLayout() {
   pipelineY = canvasHeight * 0.48;
   pipelineH = 38;
 
+  // Count nodes per (stage, above) group to spread them horizontally
+  let groupCounts = {};
+  let groupIdx    = {};
+  AI_NODES.forEach(n => {
+    let key = n.stage + '_' + n.above;
+    groupCounts[key] = (groupCounts[key] || 0) + 1;
+    groupIdx[key]    = 0;
+  });
+
   nodePositions = AI_NODES.map(n => {
+    let key    = n.stage + '_' + n.above;
+    let count  = groupCounts[key];
+    let idx    = groupIdx[key]++;
     let stageX = pipeW * STAGES[n.stage].x;
+    let spread = 100;  // total horizontal spread for the group
+    let offset = count > 1 ? (idx / (count - 1) - 0.5) * spread : 0;
     let ny     = n.above ? pipelineY - 100 : pipelineY + pipelineH + 68;
-    return { x: stageX, y: ny, w: 90, h: 42 };
+    return { x: stageX + offset, y: ny, w: 90, h: 42 };
   });
 }
 
@@ -222,10 +236,10 @@ function drawNodes(pipeW) {
     strokeWeight(isSel ? 2.5 : 1.5);
     rect(pos.x - pos.w / 2, pos.y - pos.h / 2, pos.w, pos.h, 5);
 
-    // Label
+    // Label — bounding box left edge = pos.x - (pos.w-6)/2 for CENTER alignment
     noStroke(); fill(255, 255, 255, alpha > 100 ? 230 : 60);
     textAlign(CENTER, CENTER); textSize(9.5); textStyle(BOLD);
-    text(node.label, pos.x, pos.y, pos.w - 6);
+    text(node.label, pos.x - (pos.w - 6) / 2, pos.y - pos.h / 2 + 2, pos.w - 6, pos.h - 4);
     textStyle(NORMAL);
   });
 }
