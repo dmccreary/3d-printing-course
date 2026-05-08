@@ -1,28 +1,24 @@
 ---
 title: Assembly Mate Constraints Visualizer
-description: Identify common mate constraint types, explain what degrees of freedom each removes, and analyze how combinations of mates fully constrain a part in an assembly (Bloom L1–L4: identify, explain, analyze).
-status: scaffold
+description: "Identify common mate constraint types, explain what degrees of freedom each removes, and analyze how combinations of mates fully constrain a part in an assembly (Bloom L1–L4: identify, explain, analyze)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Remember-Understand-Apply-Analyze
 ---
 
 # Assembly Mate Constraints Visualizer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
 Identify common mate constraint types, explain what degrees of freedom each removes, and analyze how combinations of mates fully constrain a part in an assembly (Bloom L1–L4: identify, explain, analyze).
 
-- **Bloom Level:** TBD
-- **Bloom Verb:** TBD
+- **Bloom Level:** Remember / Understand / Apply / Analyze
+- **Bloom Verb:** identify, explain, analyze
 - **Library:** p5.js
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="562" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
