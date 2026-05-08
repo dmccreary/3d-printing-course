@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+        <meta name="description" content="Computer vision and ML foundations, vision-based print monitoring, spaghetti detection, AI slicer optimization, text-to-CAD, AI material recommenders, LLM tutoring, synthetic training data, edge AI, and critical thinking about AI ethics and hallucination risks.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -29,7 +26,7 @@
     
     
       
-        <title>15. AI and Machine Learning - Introduction to 3D Printing</title>
+        <title>AI and Machine Learning in Additive Manufacturing - Introduction to 3D Printing</title>
       
     
     
@@ -50,7 +47,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -65,7 +62,30 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI and Machine Learning in Additive Manufacturing - Introduction to 3D Printing">
+<meta property="og:description" content="Computer vision and ML foundations, vision-based print monitoring, spaghetti detection, AI slicer optimization, text-to-CAD, AI material recommenders, LLM tutoring, synthetic training data, edge AI, and critical thinking about AI ethics and hallucination risks.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/15-ai-and-machine-learning/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/15-ai-and-machine-learning/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="AI and Machine Learning in Additive Manufacturing - Introduction to 3D Printing">
+<meta property="twitter:description" content="Computer vision and ML foundations, vision-based print monitoring, spaghetti detection, AI slicer optimization, text-to-CAD, AI material recommenders, LLM tutoring, synthetic training data, edge AI, and critical thinking about AI ethics and hallucination risks.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/15-ai-and-machine-learning/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -101,12 +121,12 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -118,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              15. AI and Machine Learning
+              AI and Machine Learning in Additive Manufacturing
             
           </span>
         </div>
@@ -134,7 +154,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -143,20 +163,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -182,7 +202,7 @@
         <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -206,7 +226,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -218,7 +238,7 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Introduction to 3D Printing
@@ -228,7 +248,7 @@
       <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -908,6 +928,356 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ai-in-additive-manufacturing-why-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI in Additive Manufacturing: Why Now?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foundation-concepts-computer-vision-ml-and-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foundation Concepts: Computer Vision, ML, and Neural Networks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Foundation Concepts: Computer Vision, ML, and Neural Networks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computer-vision-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Computer Vision Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-learning-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine Learning Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neural-networks-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neural Networks Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vision-based-print-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision-Based Print Monitoring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vision-Based Print Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-layer-vision-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First-Layer Vision Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spaghetti-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spaghetti Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obico-open-source-print-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obico: Open-Source Print Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bambu-lab-ai-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bambu Lab AI Inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-lapse-print-capture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time-Lapse Print Capture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defect-classification-and-automatic-print-pause" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defect Classification and Automatic Print Pause
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ml-driven-process-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ML-Driven Process Optimization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ML-Driven Process Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#predictive-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Predictive Maintenance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-slicer-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Slicer Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generative-ai-for-design-and-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generative AI for Design and Materials
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Generative AI for Design and Materials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-to-cad-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text-to-CAD Generation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-material-recommender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Material Recommender
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-learning-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Learning Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Learning Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-troubleshooting-assistants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Troubleshooting Assistants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llm-tutoring-for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LLM Tutoring for Students
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#critical-thinking-the-technical-realities-of-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical Thinking: The Technical Realities of AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critical Thinking: The Technical Realities of AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#synthetic-training-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synthetic Training Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edge-ai-on-printers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edge AI on Printers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-ethics-in-manufacturing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Ethics in Manufacturing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-hallucination-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Hallucination Risks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Hallucination Risks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ai-in-am-pipeline-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: AI in AM Pipeline Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1136,7 +1506,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1187,6 +1557,356 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ai-in-additive-manufacturing-why-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI in Additive Manufacturing: Why Now?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foundation-concepts-computer-vision-ml-and-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foundation Concepts: Computer Vision, ML, and Neural Networks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Foundation Concepts: Computer Vision, ML, and Neural Networks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computer-vision-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Computer Vision Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-learning-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine Learning Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neural-networks-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neural Networks Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vision-based-print-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision-Based Print Monitoring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vision-Based Print Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-layer-vision-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First-Layer Vision Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spaghetti-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spaghetti Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obico-open-source-print-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obico: Open-Source Print Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bambu-lab-ai-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bambu Lab AI Inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-lapse-print-capture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time-Lapse Print Capture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defect-classification-and-automatic-print-pause" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defect Classification and Automatic Print Pause
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ml-driven-process-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ML-Driven Process Optimization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ML-Driven Process Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#predictive-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Predictive Maintenance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-slicer-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Slicer Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generative-ai-for-design-and-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generative AI for Design and Materials
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Generative AI for Design and Materials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-to-cad-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text-to-CAD Generation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-material-recommender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Material Recommender
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-learning-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Learning Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Learning Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-troubleshooting-assistants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Troubleshooting Assistants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llm-tutoring-for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LLM Tutoring for Students
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#critical-thinking-the-technical-realities-of-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical Thinking: The Technical Realities of AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critical Thinking: The Technical Realities of AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#synthetic-training-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synthetic Training Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edge-ai-on-printers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edge AI on Printers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-ethics-in-manufacturing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Ethics in Manufacturing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-hallucination-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Hallucination Risks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Hallucination Risks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ai-in-am-pipeline-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: AI in AM Pipeline Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1205,7 +1925,7 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
+  <nav class="md-path" aria-label="Navigation">
     <ol class="md-path__list">
       
         
@@ -1254,16 +1974,21 @@
   
     <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/15-ai-and-machine-learning/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="ai-and-machine-learning-in-additive-manufacturing">AI and Machine Learning in Additive Manufacturing<a class="headerlink" href="#ai-and-machine-learning-in-additive-manufacturing" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>This chapter is a focused look at how AI and machine learning are reshaping additive manufacturing. Students learn the foundations (computer vision, machine learning, neural networks), then the practical applications: vision-based first-layer checks, spaghetti detection, Obico open monitoring, Bambu Lab AI inspection, time-lapse capture, defect classification, automatic pause; ML-driven process optimization (predictive maintenance, AI slicer tuning); generative AI for design and materials (text-to-CAD, AI material recommenders); AI-powered learning supports (troubleshooting assistants, LLM tutoring); and the AI infrastructure topics that students should think critically about — synthetic training data, edge AI on printers, AI ethics in manufacturing, and AI hallucination risks.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h1 id="ai-and-machine-learning-in-additive-manufacturing">AI and Machine Learning in Additive Manufacturing<a class="headerlink" href="#ai-and-machine-learning-in-additive-manufacturing" title="Permanent link">¶</a></h1>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Welcome to Chapter 15</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello"></a>
+I have been printed by a lot of different people over the years — but I've never been designed by an AI until recently. This chapter covers how machine learning and artificial intelligence are changing every stage of the additive manufacturing pipeline: from monitoring your print for failures while you're away, to helping you optimize slicer settings, to generating CAD geometry from a text description. It also asks some harder questions about what these tools get wrong — and why that matters in manufacturing.</p>
+</div>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
+<p>This chapter is a focused look at how AI and machine learning are reshaping additive manufacturing. Students learn the foundations (computer vision, machine learning, neural networks), then the practical applications: vision-based first-layer checks, spaghetti detection, open monitoring platforms, AI print inspection, time-lapse capture, defect classification, automatic pause; ML-driven process optimization (predictive maintenance, AI slicer tuning); generative AI for design and materials (text-to-CAD, AI material recommenders); AI-powered learning supports (troubleshooting assistants, LLM tutoring); and the AI infrastructure topics that students should think critically about — synthetic training data, edge AI on printers, AI ethics in manufacturing, and AI hallucination risks.</p>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 21 concepts from the learning graph:</p>
 <ol>
 <li>AI In Additive Manufacturing (Concept 271)</li>
@@ -1288,7 +2013,7 @@
 <li>AI Ethics In Manufacturing (Concept 290)</li>
 <li>AI Hallucination Risks (Concept 291)</li>
 </ol>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../01-foundations-and-history/">Chapter 1: Foundations and History of Additive Manufacturing</a></li>
@@ -1298,16 +2023,221 @@
 <li><a href="../08-fdm-printer-hardware/">Chapter 8: FDM Printer Hardware and Operation</a></li>
 <li><a href="../11-dfam-and-metrology/">Chapter 11: Design for Additive Manufacturing and Metrology</a></li>
 <li><a href="../12-troubleshooting-and-postprocessing/">Chapter 12: Print Failures, Troubleshooting, and Post-Processing</a></li>
-<li><a href="../14-modern-ecosystem/">Chapter 14: The Modern 3D Printing Ecosystem: Slicers, Connectivity, Brands, and Production</a></li>
+<li><a href="../14-modern-ecosystem/">Chapter 14: The Modern 3D Printing Ecosystem</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<h2 id="ai-in-additive-manufacturing-why-now">AI in Additive Manufacturing: Why Now?<a class="headerlink" href="#ai-in-additive-manufacturing-why-now" title="Permanent link">¶</a></h2>
+<p>Artificial intelligence tools have been available in various forms for decades. So why are they suddenly reshaping manufacturing? Two parallel developments converged around 2020: first, the cost of computing power fell far enough that running complex neural network models became practical on consumer hardware (and even on microcontrollers embedded in printers). Second, the availability of large, labeled datasets — including millions of images of print failures, material property tables, and G-code sequences paired with print outcomes — gave ML models the training data they needed to produce useful predictions.</p>
+<p><strong>AI in additive manufacturing</strong> today operates at every stage of the fabrication pipeline:</p>
+<ul>
+<li><strong>Before printing</strong> — AI-assisted design generation, material selection, slicer optimization</li>
+<li><strong>During printing</strong> — real-time visual monitoring, failure detection, automatic intervention</li>
+<li><strong>After printing</strong> — automated quality inspection, dimensional analysis, defect classification</li>
+</ul>
+<p>This chapter works through each stage, starting with the technical foundations and moving to the applications you're most likely to encounter in a school, makerspace, or entry-level industry role.</p>
+<hr>
+<h2 id="foundation-concepts-computer-vision-ml-and-neural-networks">Foundation Concepts: Computer Vision, ML, and Neural Networks<a class="headerlink" href="#foundation-concepts-computer-vision-ml-and-neural-networks" title="Permanent link">¶</a></h2>
+<p>To understand how AI monitors your prints and flags problems, you need a working mental model of three concepts: computer vision, machine learning, and neural networks.</p>
+<h3 id="computer-vision-basics">Computer Vision Basics<a class="headerlink" href="#computer-vision-basics" title="Permanent link">¶</a></h3>
+<p><strong>Computer vision</strong> is the field of AI concerned with making computers interpret and understand images and video. A computer vision system takes an image (a grid of pixel values) as input and produces a classification, a detection, or a segmentation as output. "Is this a cat or a dog?" is classification. "Where is the person in this image?" is detection. "Which pixels belong to the 3D print vs. the background?" is segmentation.</p>
+<p>For 3D printing, the most relevant computer vision tasks are:
+- <strong>Failure classification</strong>: does this frame of video look like a healthy print or a failure?
+- <strong>First-layer quality scoring</strong>: does the first layer show proper adhesion and line width?
+- <strong>Spaghetti detection</strong>: has the print detached and is the nozzle extruding plastic into the air?</p>
+<h3 id="machine-learning-basics">Machine Learning Basics<a class="headerlink" href="#machine-learning-basics" title="Permanent link">¶</a></h3>
+<p><strong>Machine learning (ML)</strong> is the approach to AI in which a system learns patterns from data rather than following explicitly programmed rules. Instead of an engineer writing rules like "if there are lines sticking out horizontally, it's a failure," an ML system is shown thousands of images labeled as "failure" or "not failure" and learns the visual patterns that distinguish them.</p>
+<p>The core ML workflow:</p>
+<ol>
+<li><strong>Collect and label training data</strong> — thousands to millions of examples</li>
+<li><strong>Choose a model architecture</strong> — the mathematical structure that will learn</li>
+<li><strong>Train the model</strong> — optimize the model's parameters to minimize prediction error on the training data</li>
+<li><strong>Validate and test</strong> — check performance on data the model hasn't seen</li>
+<li><strong>Deploy</strong> — run the model on new, real-world inputs</li>
+</ol>
+<p>The quality of the training data is the dominant factor in model performance. Garbage data produces garbage predictions — a rule sometimes stated as GIGO (Garbage In, Garbage Out).</p>
+<h3 id="neural-networks-overview">Neural Networks Overview<a class="headerlink" href="#neural-networks-overview" title="Permanent link">¶</a></h3>
+<p><strong>Neural networks</strong> are the dominant model architecture in modern ML. A neural network is a layered mathematical structure loosely inspired by biological neurons: inputs feed into a first layer of "neurons," each of which produces a weighted sum of its inputs and applies a nonlinear function; those outputs feed into the next layer, and so on until the final layer produces the prediction.</p>
+<p>A <strong>deep neural network</strong> (deep learning) simply means a network with many layers — typically 10 to hundreds. The depth allows the network to learn increasingly abstract representations: early layers detect edges and colors; middle layers detect shapes and textures; later layers detect high-level concepts like "this looks like spaghetti" or "this first layer has gaps."</p>
+<p>Training a deep neural network requires large datasets and substantial computing power (often GPU clusters for the initial training). But once trained, running a model on new images (<strong>inference</strong>) can be done on modest hardware — including the processors built into modern printers.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">ML Learns What We Show It — Nothing More</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks carefully"></a>
+This is the central insight about ML that distinguishes a user who understands the technology from one who only experiences it: an ML model doesn't "know" what a failed print is. It knows what the failure images in its training set looked like. If your failure mode looks different from the training examples — a new material, an unusual geometry, a different camera angle — the model may not catch it. Understanding this limitation is what lets you use AI tools intelligently rather than blindly trusting them.</p>
+</div>
+<hr>
+<h2 id="vision-based-print-monitoring">Vision-Based Print Monitoring<a class="headerlink" href="#vision-based-print-monitoring" title="Permanent link">¶</a></h2>
+<h3 id="first-layer-vision-check">First-Layer Vision Check<a class="headerlink" href="#first-layer-vision-check" title="Permanent link">¶</a></h3>
+<p>A <strong>first-layer vision check</strong> uses a camera and computer vision model to evaluate the quality of the first layer immediately after it's deposited. The system captures an image of the first layer, runs it through a trained classifier, and produces a quality score or a pass/fail assessment.</p>
+<p>What the model looks for:
+- <strong>Adhesion quality</strong>: are the lines well-adhered to the build surface or lifting at edges?
+- <strong>Line consistency</strong>: are the extruded lines uniform width, or do they show thin sections (under-extrusion) or merged sections (over-extrusion)?
+- <strong>Coverage</strong>: does the first layer cover the expected area without gaps?
+- <strong>Z offset indicator</strong>: lines that look circular in cross-section (not squished) indicate the nozzle was too far from the bed.</p>
+<p>Bambu Lab's Micro LiDAR performs a related scan — using laser distance measurement rather than a camera — to detect first-layer thickness across the build plate after the first layer is deposited.</p>
+<h3 id="spaghetti-detection">Spaghetti Detection<a class="headerlink" href="#spaghetti-detection" title="Permanent link">¶</a></h3>
+<p><strong>Spaghetti detection</strong> is the poster child for AI print monitoring: catching the specific failure mode where a print has detached from the bed (or knocked over) and the nozzle continues to extrude filament into empty space, producing a chaotic nest of plastic threads (hence "spaghetti").</p>
+<p>Spaghetti is obvious to a human watching the print — and completely invisible to the printer, which has no sensor telling it that its G-code movements are depositing plastic into air instead of onto a part. A camera + AI system can catch this failure within seconds of it starting, automatically pause the printer, and notify the operator.</p>
+<p>The detection model is typically trained on thousands of labeled images of spaghetti failures and normal prints. Because spaghetti has distinctive visual characteristics (tangled thin extrusions floating above the build surface), detection accuracy is relatively high — typically 85–95% recall depending on the implementation and camera position.</p>
+<h3 id="obico-open-source-print-monitoring">Obico: Open-Source Print Monitoring<a class="headerlink" href="#obico-open-source-print-monitoring" title="Permanent link">¶</a></h3>
+<p><strong>Obico</strong> (formerly "The Spaghetti Detective") is an open-source platform for AI-powered print monitoring. It consists of a server component that runs the AI model and a client plugin for OctoPrint or Mainsail that sends camera frames to the server for analysis. Obico can be run on a local server (self-hosted) or used through a cloud service.</p>
+<p>Obico provides:
+- Continuous spaghetti detection with configurable confidence thresholds
+- Automatic print pause or stop on detection
+- Notification via email, push notification, or messaging apps
+- Print history and failure log</p>
+<p>The open-source model makes Obico popular in educational settings — it can be self-hosted on a school server, keeping print data local, and it supports any USB camera rather than requiring proprietary hardware.</p>
+<h3 id="bambu-lab-ai-inspection">Bambu Lab AI Inspection<a class="headerlink" href="#bambu-lab-ai-inspection" title="Permanent link">¶</a></h3>
+<p>Bambu Lab's built-in AI inspection system uses the camera integrated into their printers (X1C, P1S) alongside a cloud-based model to monitor prints in real time. The Bambu system adds a proprietary twist: the printer's Micro LiDAR scanner can detect nozzle height anomalies and flow inconsistencies independent of camera-based detection.</p>
+<p>The Bambu AI system can:
+- Detect spaghetti and paused for safety
+- Flag first-layer adhesion issues
+- Identify certain nozzle clogs based on flow sensor feedback
+- Generate thumbnail previews of print progress for remote monitoring</p>
+<h3 id="time-lapse-print-capture">Time-Lapse Print Capture<a class="headerlink" href="#time-lapse-print-capture" title="Permanent link">¶</a></h3>
+<p><strong>Time-lapse capture</strong> records one frame at each layer change, producing a compressed video of the entire print compressed into seconds. Beyond being visually satisfying to watch, time-lapses are a practical quality control tool: you can review the entire print history to identify exactly when and where a failure began.</p>
+<p>OctoPrint's Octolapse plugin is the standard tool for this; it moves the print head to a consistent position (out of frame or to a fixed "park position") before capturing each frame, producing a ghost-like video where the part seems to grow without a visible print head.</p>
+<h3 id="defect-classification-and-automatic-print-pause">Defect Classification and Automatic Print Pause<a class="headerlink" href="#defect-classification-and-automatic-print-pause" title="Permanent link">¶</a></h3>
+<p><strong>Defect classification models</strong> go beyond binary spaghetti detection: they attempt to classify the specific failure mode visible in a frame — warping, layer shifting, stringing, under-extrusion, spaghetti — rather than just "failure or not." This more granular output can drive more specific responses: a warping detection triggers a notification to check bed adhesion; spaghetti detection triggers an automatic stop; stringing detection logs the event for later profile tuning.</p>
+<p><strong>Automatic print pause</strong> is the intervention capability that makes monitoring useful rather than just diagnostic. When the detection system's confidence exceeds a configurable threshold, it sends a pause command to the printer. Configuring the confidence threshold is a trade-off: a low threshold catches more failures but triggers more false positives (pausing a healthy print); a high threshold misses subtle early failures. Most users start at 80% confidence and adjust based on their false-positive rate.</p>
+<hr>
+<h2 id="ml-driven-process-optimization">ML-Driven Process Optimization<a class="headerlink" href="#ml-driven-process-optimization" title="Permanent link">¶</a></h2>
+<h3 id="predictive-maintenance">Predictive Maintenance<a class="headerlink" href="#predictive-maintenance" title="Permanent link">¶</a></h3>
+<p><strong>Predictive maintenance (PdM)</strong> uses ML to predict when a mechanical component is likely to fail, so it can be replaced proactively rather than reactively. In 3D printing, the relevant components are belts, bearings, extruder gears, nozzles, and thermistor wires.</p>
+<p>PdM systems work by monitoring signals that correlate with component health:
+- <strong>Vibration spectra</strong> — a worn bearing produces distinctive frequency peaks in accelerometer data
+- <strong>Motor current</strong> — a stiff belt or dry bearings causes motors to draw more current
+- <strong>Temperature stability</strong> — a degrading thermistor or heater cartridge produces increasingly variable temperature readings
+- <strong>Extruder motor step consistency</strong> — a grinding extruder gear skips steps in a recognizable pattern</p>
+<p>The ML model learns what "healthy" signals look like and flags anomalies that correlate with impending failure. In a school with many printers running constantly, predictive maintenance could prevent the scenario where a printer fails mid-job on a critical print.</p>
+<h3 id="ai-slicer-optimization">AI Slicer Optimization<a class="headerlink" href="#ai-slicer-optimization" title="Permanent link">¶</a></h3>
+<p><strong>AI slicer optimization</strong> uses ML to recommend or automatically set slicer parameters for a given model and material, without requiring the user to manually tune settings. The system learns from a database of (model features, slicer settings, print outcomes) tuples — essentially: "for parts shaped like this, with these material properties, these settings produced the best results."</p>
+<p>Current implementations range from simple heuristic recommenders ("parts taller than 200 mm should use slower speeds") to more sophisticated approaches that use geometric analysis of the STL to predict where failures will occur and adjust settings regionally. OrcaSlicer's calibration wizards are a step toward this — they use automated print sequences and measurements to tune parameters rather than requiring manual expertise.</p>
+<hr>
+<h2 id="generative-ai-for-design-and-materials">Generative AI for Design and Materials<a class="headerlink" href="#generative-ai-for-design-and-materials" title="Permanent link">¶</a></h2>
+<h3 id="text-to-cad-generation">Text-to-CAD Generation<a class="headerlink" href="#text-to-cad-generation" title="Permanent link">¶</a></h3>
+<p><strong>Text-to-CAD generation</strong> uses large language models (LLMs) or diffusion models to generate 3D geometry from a text description. Early tools (2023–2025) can produce rough 3D models from prompts like "a mounting bracket with two M3 holes, 30 mm apart" or "a simple pencil holder with a hexagonal base." The output quality ranges from useful starting points that require significant manual editing to surprisingly print-ready geometry for simple forms.</p>
+<p>Text-to-CAD is still in early development; current tools produce better meshes than parametric models (they output STL/OBJ rather than fully editable CAD files), and they struggle with precise dimensional requirements. However, the trajectory is clear: as of 2024–2025, tools like Autodesk AI, Zoo/KittyCAD, and various open-source efforts are making rapid progress. For iterating on concept designs quickly — "show me ten variations of a cable clip" — text-to-CAD is already useful even at current capability levels.</p>
+<h3 id="ai-material-recommender">AI Material Recommender<a class="headerlink" href="#ai-material-recommender" title="Permanent link">¶</a></h3>
+<p><strong>AI material recommenders</strong> take a set of functional requirements (operating temperature, required tensile strength, chemical exposure, print complexity, budget) and recommend the best filament material and brand for the application. These tools are essentially structured expert systems: they codify the kind of material selection logic that an experienced engineer applies, making it accessible to beginners.</p>
+<p>For students doing design projects, an AI material recommender can shortcut hours of research: "I need to print a bracket that holds at 70 °C, costs under $30/kg, and prints without an enclosure" → "PETG or ASA are your best options; avoid ABS (needs enclosure) and PLA (Tg too low)."</p>
+<hr>
+<h2 id="ai-learning-tools">AI Learning Tools<a class="headerlink" href="#ai-learning-tools" title="Permanent link">¶</a></h2>
+<h3 id="ai-troubleshooting-assistants">AI Troubleshooting Assistants<a class="headerlink" href="#ai-troubleshooting-assistants" title="Permanent link">¶</a></h3>
+<p><strong>AI troubleshooting assistants</strong> are LLM-powered chatbots trained or prompted with 3D printing knowledge that help users diagnose print failures. The user describes a symptom ("my print has a ring of spaghetti around the base but the main print looks fine") and the assistant suggests probable causes and fixes.</p>
+<p>These tools have real utility for beginners who don't yet have the pattern recognition to map symptoms to root causes. They work best as a first-pass diagnosis, with the user verifying suggestions against the actual print before making changes.</p>
+<p>The limitation — covered in detail below — is that LLMs can hallucinate specific technical details: firmware commands that don't exist, temperature ranges that are fabricated, or calibration procedures that sound plausible but are wrong. A beginner who doesn't yet know enough to catch these errors is particularly vulnerable to acting on bad AI advice.</p>
+<h3 id="llm-tutoring-for-students">LLM Tutoring for Students<a class="headerlink" href="#llm-tutoring-for-students" title="Permanent link">¶</a></h3>
+<p><strong>LLM tutoring for students</strong> uses large language models as interactive learning companions: explaining concepts on demand, answering questions at any hour, adapting explanations to the student's level. For a subject like 3D printing — where learners come in with widely varying backgrounds and where the "right" question depends on what the student is currently stuck on — an LLM tutor can fill gaps between class sessions.</p>
+<p>Effective LLM tutoring works best when:
+- The student asks specific, grounded questions rather than "explain everything about slicing"
+- The student treats the LLM's answers as hypotheses to verify against other sources
+- The student brings follow-up questions when an answer doesn't fully make sense</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Use AI Tutors as a Starting Point, Not an Oracle</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/tip.png" data-desc-position="bottom"><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy shares a practical tip"></a>
+When you use an AI chatbot to help with 3D printing questions, treat it like a very knowledgeable friend who hasn't looked at your specific printer or slicer recently. They can point you in the right direction and explain general principles reliably. But for specific firmware commands, exact temperature values for a specific resin, or compatibility between a specific nozzle and hotend, always verify in the official documentation. The AI is reasoning from patterns, not reading your printer's manual.</p>
+</div>
+<hr>
+<h2 id="critical-thinking-the-technical-realities-of-ai">Critical Thinking: The Technical Realities of AI<a class="headerlink" href="#critical-thinking-the-technical-realities-of-ai" title="Permanent link">¶</a></h2>
+<h3 id="synthetic-training-data">Synthetic Training Data<a class="headerlink" href="#synthetic-training-data" title="Permanent link">¶</a></h3>
+<p>Training a failure detection model requires thousands or millions of labeled images of print failures. Collecting this data from real prints is expensive and time-consuming. <strong>Synthetic training data</strong> uses computer graphics to generate realistic-looking failure images without having to produce those failures in the real world.</p>
+<p>Synthetic data generation involves rendering photorealistic images of 3D-printed objects with simulated failure modes (spaghetti, warping, layer shifts) at various camera angles, lighting conditions, and material colors. These synthetic images, combined with real-world images, significantly increase the effective training dataset size.</p>
+<p>The trade-off: models trained primarily on synthetic data may fail to generalize to real conditions that weren't represented in the simulation — specific lighting artifacts, different material textures, or unusual failure geometries. This gap between synthetic training and real-world deployment is an active research challenge.</p>
+<h3 id="edge-ai-on-printers">Edge AI on Printers<a class="headerlink" href="#edge-ai-on-printers" title="Permanent link">¶</a></h3>
+<p><strong>Edge AI</strong> refers to running AI inference directly on the device where data is generated — in this case, on the printer's mainboard or a companion SBC — rather than sending data to a cloud server. Edge AI has several advantages: it works without an internet connection, it avoids latency from cloud round-trips, and it keeps print data local (a privacy benefit for sensitive applications).</p>
+<p>Bambu Lab's Micro LiDAR and camera-based inspection runs on the printer itself — no cloud round-trip is required for real-time monitoring. Similarly, Klipper running on a Raspberry Pi can run local AI models for failure detection through OctoPrint/Obico in self-hosted mode.</p>
+<p>The challenge is that current edge hardware has limited computational capacity relative to cloud servers, so edge AI models must be compressed and optimized aggressively — often at some cost to detection accuracy.</p>
+<h3 id="ai-ethics-in-manufacturing">AI Ethics in Manufacturing<a class="headerlink" href="#ai-ethics-in-manufacturing" title="Permanent link">¶</a></h3>
+<p><strong>AI ethics in manufacturing</strong> covers a set of questions that become increasingly important as AI systems take on more consequential roles:</p>
+<ul>
+<li><strong>Bias in training data</strong> — if a failure detection model is trained primarily on images from one printer brand at standard PLA settings, it will perform poorly on a different brand or material. Biased deployment of a "safety" system creates a false sense of security.</li>
+<li><strong>Over-reliance on automation</strong> — a user who trusts AI monitoring completely may stop developing their own troubleshooting skills, creating fragility when the AI fails.</li>
+<li><strong>Accountability for automated decisions</strong> — if an AI system pauses a time-critical print incorrectly, who is responsible? The user? The software developer? The printer manufacturer?</li>
+<li><strong>Data privacy</strong> — printers with cloud AI send images of your prints to external servers. For sensitive prototypes or proprietary designs, this raises intellectual property concerns.</li>
+<li><strong>Labor implications</strong> — automated quality inspection and print management reduce the number of human operators required per machine. This is an efficiency gain in some contexts and a job-displacement concern in others.</li>
+</ul>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Trust the AI Until You Understand the AI</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/warning.png" data-desc-position="bottom"><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy warns about a common mistake"></a>
+"The AI said so" is not a safety argument in manufacturing. AI failure detection systems have false-negative rates — they miss real failures. AI troubleshooting assistants hallucinate. AI slicer optimizers make recommendations based on their training data, which may not match your specific situation. Use these tools as accelerators, not authorities. The operator's judgment — informed by the knowledge in this course — is still the final check.</p>
+</div>
+<h3 id="ai-hallucination-risks">AI Hallucination Risks<a class="headerlink" href="#ai-hallucination-risks" title="Permanent link">¶</a></h3>
+<p><strong>Hallucination</strong> in AI refers to the tendency of large language models (and some other generative AI systems) to produce confident-sounding statements that are factually incorrect. The term is somewhat misleading — the model isn't "seeing things" in a psychological sense. It's producing text that is statistically consistent with its training distribution but not grounded in accurate information.</p>
+<p>In 3D printing contexts, hallucination risks include:</p>
+<ul>
+<li><strong>Incorrect firmware commands</strong> — an LLM may suggest <code>M504 Z-1.2</code> for Z-offset when the correct command is <code>M851 Z-1.2</code> (and <code>M504</code> doesn't exist or does something else).</li>
+<li><strong>Wrong temperature ranges</strong> — the model may state that a specific brand of nylon prints at 220 °C when that brand's recommended range is 255–270 °C.</li>
+<li><strong>Non-existent features</strong> — "use the 'auto-retraction' feature in Cura version 5.7" when no such feature exists.</li>
+<li><strong>Plausible but wrong DfAM rules</strong> — fabricated "rules" about hole sizes, overhang limits, or wall thicknesses that sound authoritative but don't match engineering reality.</li>
+</ul>
+<p>The mitigation: always verify AI-provided technical specifics against authoritative sources (manufacturer data sheets, official firmware documentation, slicer release notes). Use AI to understand concepts and orient your search; use documentation to confirm specific values and procedures.</p>
+<h4 id="diagram-ai-in-am-pipeline-explorer">Diagram: AI in AM Pipeline Explorer<a class="headerlink" href="#diagram-ai-in-am-pipeline-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/ai-in-am-pipeline/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>AI in the Additive Manufacturing Pipeline Explorer</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> ai-in-am-pipeline<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Organize
+Learning Objective: Students organize AI applications in additive manufacturing by their stage in the production pipeline and analyze what data each system needs and what output it provides.</p>
+<p>Visual layout:
+- Horizontal pipeline with four stages: Design → Slicing → Printing → Post-Processing
+- AI application nodes placed above or below the pipeline at their relevant stage:
+  - Design: Text-to-CAD, Material Recommender
+  - Slicing: AI Slicer Optimizer
+  - Printing: First-Layer Vision, Spaghetti Detection, Predictive Maintenance, Defect Classification
+  - Post-Processing: Dimensional AI Inspection
+- Each node is a rounded rectangle; arrows connect nodes to their pipeline stage</p>
+<p>Interactive elements:
+- Click any AI node: Expand info panel showing (a) what data input the system needs, (b) what output it produces, (c) what can go wrong (limitation/hallucination risk), (d) a real-world example tool or product
+- Hover any arrow from node to pipeline: Tooltip shows what the AI "hands off" to the human or next system
+- Filter button "Show only monitoring" or "Show only generative" — highlights relevant nodes and dims others
+- "Which stage is most AI-intensive?" button: triggers an animation that highlights the Printing stage with a "most applications" label and explanation</p>
+<p>Color coding:
+- Blue nodes: generative AI (creates something new)
+- Green nodes: monitoring/detection AI (observes and flags)
+- Orange nodes: optimization AI (improves parameters)
+- Yellow nodes: educational/assistive AI</p>
+<p>Canvas: 700×400px main area + 250px right info panel
+Responsive: pipeline changes from horizontal to vertical on narrow screens.</p>
+</details>
+<hr>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">¶</a></h2>
+<ul>
+<li>AI in AM operates at design (text-to-CAD, material recommenders), slicing (optimization), printing (vision monitoring, spaghetti detection), and inspection (defect classification) stages.</li>
+<li>Computer vision detects failure signatures in camera images; ML learns those signatures from training data; neural networks are the primary architecture for image-based classification.</li>
+<li>First-layer vision checks and spaghetti detection can automatically pause or stop failing prints before significant waste accumulates.</li>
+<li>Obico provides open-source, self-hostable AI monitoring compatible with OctoPrint; Bambu Studio provides proprietary integrated AI inspection.</li>
+<li>Time-lapse capture creates a frame-by-frame record of a print that enables post-hoc failure diagnosis.</li>
+<li>Predictive maintenance uses sensor data to predict mechanical failures before they cause print failures.</li>
+<li>Text-to-CAD is useful for rapid concept iteration but does not yet reliably produce dimensionally precise parametric models.</li>
+<li>AI material recommenders codify expert material selection logic; they're most useful for beginners navigating the material landscape.</li>
+<li>AI troubleshooting assistants and LLM tutors are valuable learning accelerators when used critically — but LLMs hallucinate specific technical details, which must always be verified against authoritative sources.</li>
+<li>Synthetic training data fills gaps in real-world datasets but may not generalize to all deployment conditions.</li>
+<li>Edge AI runs inference locally on the printer; it works offline and keeps data local, at some cost to model capability.</li>
+<li>AI ethics concerns in manufacturing include training data bias, over-reliance on automation, accountability, data privacy, and labor implications.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: What Is the Difference Between a False Positive and a False Negative in AI Print Failure Detection? — Click to Reveal</summary>
+<p>A <strong>false positive</strong> occurs when the AI detects a failure that isn't actually happening — it pauses or stops a healthy print unnecessarily. The cost is wasted print time and user frustration. A <strong>false negative</strong> occurs when the AI fails to detect a real failure — spaghetti or a detached print continues undetected. The cost is wasted material, potential printer damage, and possibly a safety hazard. Adjusting the detection confidence threshold is a trade-off between these two error types: lowering the threshold increases sensitivity (catches more real failures) but also increases false positives; raising it reduces false positives but misses more real failures.</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You Can Think Critically About AI — and Use It Effectively</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you"></a>
+This chapter asked you to be both excited about AI tools and appropriately skeptical of them — which is exactly the right posture for working with emerging technology. You understand what AI can do in additive manufacturing, why it works, and where it can go wrong. The final chapter puts everything together: careers, pathways, and the capstone project that will let you demonstrate everything you've learned.</p>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1324,7 +2254,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1334,13 +2264,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../14-modern-ecosystem/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 14. Modern Ecosystem">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1365,7 +2295,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1377,7 +2307,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1402,5 +2332,7 @@
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

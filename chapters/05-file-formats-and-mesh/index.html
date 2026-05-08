@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -50,7 +47,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -65,7 +62,30 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="3D File Formats and Mesh Geometry - Introduction to 3D Printing">
+<meta property="og:description" content="Learn how 3D shapes are stored as triangle meshes in STL, 3MF, and OBJ files, what manifold geometry means, and how to export and repair meshes for reliable printing.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/05-file-formats-and-mesh/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/05-file-formats-and-mesh/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="3D File Formats and Mesh Geometry - Introduction to 3D Printing">
+<meta property="twitter:description" content="Learn how 3D shapes are stored as triangle meshes in STL, 3MF, and OBJ files, what manifold geometry means, and how to export and repair meshes for reliable printing.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/05-file-formats-and-mesh/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -101,12 +121,12 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -134,7 +154,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -143,20 +163,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -182,7 +202,7 @@
         <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -206,7 +226,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -218,7 +238,7 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Introduction to 3D Printing
@@ -228,7 +248,7 @@
       <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -1354,7 +1374,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1641,7 +1661,7 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
+  <nav class="md-path" aria-label="Navigation">
     <ol class="md-path__list">
       
         
@@ -1690,21 +1710,21 @@
   
     <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/05-file-formats-and-mesh/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="3d-file-formats-and-mesh-geometry">3D File Formats and Mesh Geometry<a class="headerlink" href="#3d-file-formats-and-mesh-geometry" title="Permanent link">&para;</a></h1>
+<h1 id="3d-file-formats-and-mesh-geometry">3D File Formats and Mesh Geometry<a class="headerlink" href="#3d-file-formats-and-mesh-geometry" title="Permanent link">¶</a></h1>
 <div class="admonition mascot-welcome">
 <p class="admonition-title">Welcome to Chapter 5</p>
-<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello"></a>
 Your CAD model looks exactly the way you want it — clean shapes, satisfying proportions, ready to print. Now comes the step most beginners underestimate: saving it in a format a slicer can actually understand, without breaking the geometry in the process. In this chapter you'll learn how triangle meshes work, why manifold geometry matters, which file format to choose and when, and how to export your models so they print on the first try rather than the fifth.</p>
 </div>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter is the bridge between CAD and the printer. Students learn the three common 3D file formats (STL, 3MF, OBJ), the underlying triangle-mesh representation of 3D geometry, what manifold means and why non-manifold geometry causes printing failures, how to repair meshes, and how to choose appropriate triangle resolution and STL export settings.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 9 concepts from the learning graph:</p>
 <ol>
 <li>STL File Format (Concept 74)</li>
@@ -1717,34 +1737,34 @@ Your CAD model looks exactly the way you want it — clean shapes, satisfying pr
 <li>Non Manifold Errors (Concept 81)</li>
 <li>STL Export Settings (Concept 82)</li>
 </ol>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../01-foundations-and-history/">Chapter 1: Foundations and History of Additive Manufacturing</a></li>
 <li><a href="../04-cad-and-modeling/">Chapter 4: Computer-Aided Design and Modeling</a></li>
 </ul>
-<hr />
-<h2 id="how-a-computer-represents-a-3d-shape">How a Computer Represents a 3D Shape<a class="headerlink" href="#how-a-computer-represents-a-3d-shape" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="how-a-computer-represents-a-3d-shape">How a Computer Represents a 3D Shape<a class="headerlink" href="#how-a-computer-represents-a-3d-shape" title="Permanent link">¶</a></h2>
 <p>When you model a part in CAD software, the software stores that shape using exact mathematical geometry — curves, surfaces, and solid volumes defined by equations. A cylinder, for example, is represented as a perfect curved surface with a defined radius and height. This mathematical representation is precise and infinitely scalable, which is exactly what you want while you're designing.</p>
 <p>The problem is that 3D printers — and most downstream software — don't speak the language of exact mathematical surfaces. A slicer needs to answer a very specific question about your model: for any given point in space, is that point inside the solid or outside it? Answering that question efficiently requires a simpler, more uniform geometry. That's where <strong>mesh geometry</strong> comes in.</p>
 <p>A <strong>mesh</strong> is an approximation of a 3D surface built entirely from flat triangles. Instead of a smooth mathematical cylinder, you get a faceted shape made of hundreds or thousands of small triangular faces arranged to approximate that cylinder. The triangles share edges and vertices, fitting together like an irregular tile mosaic that wraps around the surface of the shape. Every 3D file format used in 3D printing stores geometry as a mesh, which is why understanding meshes is the foundation for everything else in this chapter.</p>
 <div class="admonition mascot-thinking">
 <p class="admonition-title">The Triangle Question</p>
-<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy looks thoughtful">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy looks thoughtful"></a>
 Why triangles specifically? Because any three points in 3D space define exactly one flat plane — no more, no less. A triangle is always flat, always unambiguous. Squares and pentagons can warp into non-planar shapes when you push their corners around, which creates all kinds of mathematical headaches. Triangles never have that problem, which is why every mesh format ultimately reduces geometry to triangles, even if you started with rectangles.</p>
 </div>
-<h3 id="anatomy-of-a-triangle-mesh">Anatomy of a Triangle Mesh<a class="headerlink" href="#anatomy-of-a-triangle-mesh" title="Permanent link">&para;</a></h3>
+<h3 id="anatomy-of-a-triangle-mesh">Anatomy of a Triangle Mesh<a class="headerlink" href="#anatomy-of-a-triangle-mesh" title="Permanent link">¶</a></h3>
 <p>Every mesh consists of three types of geometric primitives. A <strong>vertex</strong> (plural: vertices) is a single point in 3D space, defined by three coordinates — X, Y, and Z. An <strong>edge</strong> is a straight line segment connecting exactly two vertices. A <strong>face</strong> is a flat triangle defined by exactly three vertices and three edges. Together, these three elements — vertices, edges, and faces — describe every surface in every 3D model you will ever print.</p>
 <p>Beyond the geometry itself, each triangular face also carries a <strong>surface normal</strong> — a vector that points perpendicular to the face, away from the solid interior of the model. Think of it as an arrow indicating which side of the triangle is "outside." Slicers use surface normals to figure out where the material should go and where empty space should be. When a normal points the wrong direction, the slicer gets confused about inside and outside — and the result is a broken print.</p>
 <p>The following interactive diagram lets you explore the components of a mesh. Hover over vertices, edges, and faces to see how each element is defined, and observe how the normals indicate the outward direction of each face.</p>
-<h4 id="diagram-mesh-geometry-anatomy">Diagram: Mesh Geometry Anatomy<a class="headerlink" href="#diagram-mesh-geometry-anatomy" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-mesh-geometry-anatomy">Diagram: Mesh Geometry Anatomy<a class="headerlink" href="#diagram-mesh-geometry-anatomy" title="Permanent link">¶</a></h4>
 <iframe src="../../sims/mesh-geometry-anatomy/main.html" width="100%" height="520px" scrolling="no"></iframe>
 
 <details>
 <summary>Mesh Geometry Anatomy</summary>
 <p>Type: diagram
-<strong>sim-id:</strong> mesh-geometry-anatomy<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> mesh-geometry-anatomy<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p>Purpose: Teach the three primitive elements of a mesh (vertex, edge, face) and surface normals. Bloom Level: Understand (L2). Bloom Verb: identify and explain.</p>
 <p>Learning Objective: Students can identify and explain the role of vertices, edges, faces, and surface normals in a triangle mesh.</p>
@@ -1766,8 +1786,8 @@ Why triangles specifically? Because any three points in 3D space define exactly 
 <p>Responsive design: Canvas resizes to container width while maintaining proportions. Minimum canvas height 400px.</p>
 <p>Color scheme: Dark background (#1a1a2e), blue faces (#4a90d9 with 0.6 opacity), orange vertices (#ff8c00), gray edges (#aaaaaa), red normal arrows (#ff4444), yellow hover highlights.</p>
 </details>
-<hr />
-<h2 id="manifold-geometry-the-watertight-rule">Manifold Geometry: The Watertight Rule<a class="headerlink" href="#manifold-geometry-the-watertight-rule" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="manifold-geometry-the-watertight-rule">Manifold Geometry: The Watertight Rule<a class="headerlink" href="#manifold-geometry-the-watertight-rule" title="Permanent link">¶</a></h2>
 <p>Once you understand what a mesh is, you can understand the most important quality requirement for a printable 3D model: <strong>manifold geometry</strong>. A mesh is manifold if it is completely closed — no holes, no gaps, no edges left dangling — and if every edge is shared by exactly two faces.</p>
 <p>The easiest way to think about manifold geometry is the <strong>watertight test</strong>. Imagine you could fill your 3D model with water. If no water could leak out — because every surface is sealed — the model is watertight and therefore manifold. If there's even a single triangular gap, the water would pour through it, and the model is non-manifold.</p>
 <p>Manifold geometry also requires that every interior edge of the mesh belongs to exactly two triangles — one on each side. Think of the shared edge between two faces of a cube: the edge is where both faces meet. If an edge belongs to only one triangle, it's a "free edge" — an open seam. If an edge belongs to three or more triangles, the geometry is ambiguous about which side is inside and which is outside. Both situations break the manifold condition.</p>
@@ -1803,23 +1823,23 @@ Why triangles specifically? Because any three points in 3D space define exactly 
 </tr>
 </tbody>
 </table>
-<h3 id="non-manifold-errors">Non-Manifold Errors<a class="headerlink" href="#non-manifold-errors" title="Permanent link">&para;</a></h3>
+<h3 id="non-manifold-errors">Non-Manifold Errors<a class="headerlink" href="#non-manifold-errors" title="Permanent link">¶</a></h3>
 <p>Non-manifold geometry comes in several distinct flavors, and each one breaks the slicer's ability to generate correct toolpaths. Before looking at the diagram below — which shows each error type — let's define the four most common problems so you know what to look for when your slicer reports an error.</p>
 <p>An <strong>open edge</strong> (sometimes called a hole or gap) occurs when one or more triangles are simply missing, leaving a free edge that belongs to only one face. A <strong>T-junction</strong> happens when a vertex from one triangle lands on the edge of another triangle without a corresponding vertex there — the edges don't line up cleanly. <strong>Inverted normals</strong> occur when a face's outward-pointing normal has been flipped inward, so the slicer thinks the inside of the model is the outside. <strong>Overlapping faces</strong> happen when two triangles occupy the same region of space, creating a zone of ambiguous interior/exterior.</p>
 <div class="admonition mascot-warning">
 <p class="admonition-title">Inverted Normals Are Invisible in Your CAD View</p>
-<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy looks concerned">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/warning.png" data-desc-position="bottom"><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy looks concerned"></a>
 Here's the frustrating thing about inverted normals: your CAD software usually hides them by rendering both sides of every face. The model looks perfectly fine on screen. But when you export to STL and open it in a slicer, the slicer only renders the outward-facing side — so inverted faces appear as holes or missing surfaces. Always check your export in a mesh viewer or your slicer before sending a critical print.</p>
 </div>
 <p>The interactive diagram below illustrates each of the four non-manifold error types. Click any error type to see a magnified view of what the geometry looks like and why it causes a printing failure.</p>
-<h4 id="diagram-non-manifold-error-types">Diagram: Non-Manifold Error Types<a class="headerlink" href="#diagram-non-manifold-error-types" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-non-manifold-error-types">Diagram: Non-Manifold Error Types<a class="headerlink" href="#diagram-non-manifold-error-types" title="Permanent link">¶</a></h4>
 <iframe src="../../sims/non-manifold-error-types/main.html" width="100%" height="540px" scrolling="no"></iframe>
 
 <details>
 <summary>Non-Manifold Error Types</summary>
 <p>Type: diagram
-<strong>sim-id:</strong> non-manifold-error-types<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> non-manifold-error-types<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p>Purpose: Help students recognize the four most common non-manifold geometry errors by seeing their visual geometry and understanding why each breaks slicing. Bloom Level: Understand (L2). Bloom Verb: identify and explain.</p>
 <p>Learning Objective: Students can identify open edges, T-junctions, inverted normals, and overlapping faces in mesh geometry and explain why each causes slicing failures.</p>
@@ -1847,24 +1867,24 @@ Here's the frustrating thing about inverted normals: your CAD software usually h
 <p>Color scheme: Error cards use a dark blue background (#1e293b) with white wireframes. Selected card has an orange border (#f97316). Detail panel is slightly lighter (#334155). Error highlights in red (#ef4444). Normal arrows in red for inverted, green for correct.</p>
 <p>Responsive design: Grid layout reflows to 1×4 column on narrow screens. Canvas height adjusts to content.</p>
 </details>
-<hr />
-<h2 id="the-stl-file-format">The STL File Format<a class="headerlink" href="#the-stl-file-format" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="the-stl-file-format">The STL File Format<a class="headerlink" href="#the-stl-file-format" title="Permanent link">¶</a></h2>
 <p>Now that you understand mesh geometry, you're ready to look at how meshes are stored in files. The oldest and most widely supported 3D printing format is <strong>STL</strong>, which stands for <strong>Standard Tessellation Language</strong> (sometimes also said to stand for "stereolithography," after the printing process it was originally designed for). Chuck Hull and 3D Systems developed STL in 1987, and it has been the default 3D printing file format ever since — partly because it works, and partly because of the enormous inertia of three decades of software support.</p>
 <p>STL is beautifully simple. An STL file stores nothing but a list of triangles. For each triangle, it records the coordinates of three vertices and the outward-pointing surface normal. That's it — no colors, no materials, no units, no scale information, no metadata of any kind. Just triangles. This simplicity is both STL's greatest strength and its biggest limitation.</p>
 <p>STL files come in two flavors. <strong>ASCII STL</strong> stores all the numbers as human-readable text, which means you can open one in a text editor and see lines like <code>vertex 12.500 0.000 5.237</code>. This is useful for debugging and for checking whether a file is corrupt, but ASCII files are large — sometimes four to five times larger than the equivalent binary version. <strong>Binary STL</strong> stores the same numbers as compact binary data, producing much smaller files that load faster. Almost all slicers and CAD tools default to binary STL for export, and you should too unless you have a specific reason to need human-readable output.</p>
 <div class="admonition mascot-tip">
 <p class="admonition-title">Always Use Binary STL for Printing</p>
-<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy gives a thumbs-up">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/tip.png" data-desc-position="bottom"><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy gives a thumbs-up"></a>
 For any model you're actually going to print, export as binary STL. The file will be four to five times smaller, load faster in your slicer, and upload faster to print services. The only time you need ASCII STL is when you're debugging a broken file and want to read the raw triangle data yourself. Otherwise, binary every time — your slicer doesn't care about the difference, but your file system will thank you.</p>
 </div>
 <p>One practical consequence of STL's lack of unit information: every number in an STL file is treated as millimeters by most slicers by default. If you model in inches and export without unit conversion, your printer will interpret inch values as millimeters, and your part will come out 25.4 times too small. This is one of the most common causes of the "my print is tiny!" problem beginners encounter. Always check your slicer's import dialog and confirm the units are set correctly.</p>
-<hr />
-<h2 id="the-3mf-file-format">The 3MF File Format<a class="headerlink" href="#the-3mf-file-format" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="the-3mf-file-format">The 3MF File Format<a class="headerlink" href="#the-3mf-file-format" title="Permanent link">¶</a></h2>
 <p>The <strong>3MF (3D Manufacturing Format)</strong> standard was developed by the 3MF Consortium — a group including Microsoft, Autodesk, Ultimaker, and other major industry players — and released in 2015 to address STL's limitations. If STL is a first-generation format that barely survived long enough for the desktop printing revolution, 3MF is the format designed for that revolution.</p>
 <p>A 3MF file is actually a ZIP archive containing an XML document that describes the model, plus any supporting assets (textures, thumbnails). Because it uses XML, 3MF can store far more information than STL. A single 3MF file can include multiple objects with distinct positions and orientations, material assignments per face or object, color information for multi-material printers, build plate positioning, and explicit unit declarations (so the millimeter/inch confusion disappears). Some slicers, including PrusaSlicer and Bambu Studio, store their entire print project — model geometry plus all slicer settings — in a single 3MF file, making it the ideal format for sharing a complete, repeatable print setup with someone else.</p>
 <p>For most high school workflows, either STL or 3MF works fine for single-material, single-color prints. But if you're working with a multi-material printer, printing objects with embedded color data, or want to share a complete slicer setup (not just the model), 3MF is the better choice.</p>
-<hr />
-<h2 id="the-obj-file-format">The OBJ File Format<a class="headerlink" href="#the-obj-file-format" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="the-obj-file-format">The OBJ File Format<a class="headerlink" href="#the-obj-file-format" title="Permanent link">¶</a></h2>
 <p>The <strong>OBJ format</strong> originated at Wavefront Technologies in the late 1980s as a general-purpose 3D graphics file format, and it predates the desktop 3D printing era. OBJ is more common in animation, game development, and visual effects than in 3D printing, but you'll encounter it when downloading models from general 3D asset libraries or working with photogrammetry software that reconstructs 3D models from photos.</p>
 <p>OBJ files can describe geometry using triangles or other polygon types (quads, n-gons), which is one reason they're popular in graphics: artists prefer to work with quads rather than triangles. However, most slicers require triangulated geometry, so CAD and mesh tools typically convert OBJ quads to triangles on import. OBJ files are also paired with a companion <code>.mtl</code> (material library) file that describes surface colors and textures — if you want OBJ models to display their original colors, you need both files together.</p>
 <p>The following table compares all three formats across the properties that matter most for 3D printing:</p>
@@ -1929,14 +1949,14 @@ For any model you're actually going to print, export as binary STL. The file wil
 </tbody>
 </table>
 <p>For everyday printing of single-color parts, STL and 3MF are your go-to formats. OBJ is most useful when you're importing models from general 3D asset sources and need to bring in color information.</p>
-<h4 id="diagram-3d-file-format-comparison-explorer">Diagram: 3D File Format Comparison Explorer<a class="headerlink" href="#diagram-3d-file-format-comparison-explorer" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-3d-file-format-comparison-explorer">Diagram: 3D File Format Comparison Explorer<a class="headerlink" href="#diagram-3d-file-format-comparison-explorer" title="Permanent link">¶</a></h4>
 <iframe src="../../sims/file-format-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 <details>
 <summary>3D File Format Comparison Explorer</summary>
 <p>Type: infographic
-<strong>sim-id:</strong> file-format-comparison<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> file-format-comparison<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p>Purpose: Allow students to explore the capabilities of STL, 3MF, and OBJ side by side through an interactive comparison matrix with expandable detail panels. Bloom Level: Analyze (L4). Bloom Verb: compare and differentiate.</p>
 <p>Learning Objective: Students can compare STL, 3MF, and OBJ across printing-relevant properties and choose the appropriate format for a given workflow.</p>
@@ -1960,26 +1980,26 @@ For any model you're actually going to print, export as binary STL. The file wil
 <p>Default state: No row selected; overview text shown: "Click any property row to compare how STL, 3MF, and OBJ handle it."</p>
 <p>Responsive design: On narrow screens, cards stack vertically. Detail panel always visible below cards.</p>
 </details>
-<hr />
-<h2 id="triangle-resolution-quality-vs-file-size">Triangle Resolution: Quality vs. File Size<a class="headerlink" href="#triangle-resolution-quality-vs-file-size" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="triangle-resolution-quality-vs-file-size">Triangle Resolution: Quality vs. File Size<a class="headerlink" href="#triangle-resolution-quality-vs-file-size" title="Permanent link">¶</a></h2>
 <p>Because meshes approximate curved surfaces with flat triangles, the question is always: how many triangles do you need? This is the problem of <strong>triangle resolution</strong> — finding the balance between geometric accuracy and file size.</p>
 <p>Think about approximating a circle with straight line segments. With 4 segments you get a square — recognizably circular in intent but far from the real thing. With 8 you get an octagon, better but still obviously faceted. With 32 segments you get something that looks smooth to the eye from a normal viewing distance. With 360 segments the polygon is indistinguishable from a true circle at normal print scales. The same principle applies in three dimensions: more triangles means smoother curves, but also larger files and longer processing times.</p>
 <p>Two export parameters control triangle resolution in most CAD tools. <strong>Chord deviation</strong> (also called "chord tolerance" or "linear deflection") sets the maximum allowed distance between a triangle edge and the true curved surface it's approximating. A chord deviation of 0.1 mm means no point on the mesh surface will be more than 0.1 mm away from the original CAD geometry. <strong>Angular deviation</strong> (also called "angular tolerance") sets the maximum angle between adjacent face normals — it controls how faceted curved surfaces look from the side.</p>
 <div class="admonition mascot-encouraging">
 <p class="admonition-title">Getting Resolution Right Takes One Try</p>
-<p><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy looks encouraging">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/encouraging.png" data-desc-position="bottom"><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy looks encouraging"></a>
 Resolution settings can feel like they require expert calibration, but you really only need to know two rules: don't go coarser than your printer's actual resolution (usually 0.1–0.2 mm chord deviation is plenty), and don't go so fine that your file becomes hundreds of megabytes. Most CAD tools have a "high quality" export preset that lands right in the sweet spot. Try it once, check the result in your slicer, and you'll rarely need to touch these settings again.</p>
 </div>
 <p>Before examining the MicroSim below — which lets you see the effect of different resolution settings — let's define one more key concept: the <strong>faceting artifact</strong>. When triangle resolution is set too low, curved surfaces in your print show visible flat facets — flat spots that weren't in your original design. On a cylinder, low resolution produces a clearly polygonal cross-section. On a sphere, it produces a golf-ball-like texture of flat patches. These artifacts can't be removed by slicer settings; they're baked into the mesh before the slicer sees it. The fix is always to re-export from CAD at higher resolution.</p>
 <p>The following MicroSim lets you adjust the chord deviation and angular tolerance for a sphere and see in real time how the mesh changes. Use the sliders to explore the relationship between resolution settings, triangle count, and visual quality.</p>
-<h4 id="diagram-triangle-resolution-explorer">Diagram: Triangle Resolution Explorer<a class="headerlink" href="#diagram-triangle-resolution-explorer" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-triangle-resolution-explorer">Diagram: Triangle Resolution Explorer<a class="headerlink" href="#diagram-triangle-resolution-explorer" title="Permanent link">¶</a></h4>
 <iframe src="../../sims/triangle-resolution-explorer/main.html" width="100%" height="560px" scrolling="no"></iframe>
 
 <details>
 <summary>Triangle Resolution Explorer</summary>
 <p>Type: microsim
-<strong>sim-id:</strong> triangle-resolution-explorer<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> triangle-resolution-explorer<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p>Purpose: Allow students to explore the trade-off between triangle count, visual quality, and file size by adjusting mesh resolution parameters. Bloom Level: Apply (L3). Bloom Verb: use and demonstrate.</p>
 <p>Learning Objective: Students can adjust chord deviation and angular tolerance to achieve the appropriate mesh resolution for a given print resolution, and explain the trade-off between quality and file size.</p>
@@ -2007,8 +2027,8 @@ Resolution settings can feel like they require expert calibration, but you reall
 <p>Instructional Rationale: Parameter exploration (Apply/L3) is appropriate because students need to develop intuition for how numerical settings translate to visual quality. Seeing the triangle count change in real time as the slider moves builds this intuition more effectively than any static table.</p>
 <p>Responsive design: Sphere drawing area scales with container width. Minimum canvas height 480px. Slider labels wrap gracefully on narrow screens.</p>
 </details>
-<hr />
-<h2 id="mesh-repair">Mesh Repair<a class="headerlink" href="#mesh-repair" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="mesh-repair">Mesh Repair<a class="headerlink" href="#mesh-repair" title="Permanent link">¶</a></h2>
 <p>Even experienced designers export meshes with errors. Sometimes a boolean operation in CAD leaves a T-junction. Sometimes two bodies are overlapping by a fraction of a millimeter after a union operation. Sometimes a model downloaded from the internet was created in old software and has accumulated decades of small geometric inconsistencies. Mesh repair is the process of detecting and correcting these errors before you send a file to the slicer.</p>
 <p>The good news is that most modern slicers do basic mesh repair automatically. PrusaSlicer, Bambu Studio, and Cura all run a background mesh check on import and attempt to fix minor problems — filling small holes, removing duplicate faces, correcting flipped normals — without telling you. For simple models with small errors, this silent repair is usually sufficient.</p>
 <p>For more serious problems, or when you want to understand what went wrong, dedicated mesh repair tools give you much more control. The key steps in a typical mesh repair workflow are as follows:</p>
@@ -2069,14 +2089,14 @@ Resolution settings can feel like they require expert calibration, but you reall
 </tbody>
 </table>
 <p>For this course, PrusaSlicer's built-in repair plus Meshmixer for anything more complex is a practical, zero-cost workflow that handles 95% of the problems you'll encounter.</p>
-<h4 id="diagram-mesh-repair-workflow">Diagram: Mesh Repair Workflow<a class="headerlink" href="#diagram-mesh-repair-workflow" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-mesh-repair-workflow">Diagram: Mesh Repair Workflow<a class="headerlink" href="#diagram-mesh-repair-workflow" title="Permanent link">¶</a></h4>
 <iframe src="../../sims/mesh-repair-workflow/main.html" width="100%" height="520px" scrolling="no"></iframe>
 
 <details>
 <summary>Mesh Repair Workflow</summary>
 <p>Type: workflow
-<strong>sim-id:</strong> mesh-repair-workflow<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> mesh-repair-workflow<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p>Purpose: Walk students through the standard mesh repair decision workflow so they can apply the correct repair strategy for different error types. Bloom Level: Apply (L3). Bloom Verb: execute and implement.</p>
 <p>Learning Objective: Students can follow the mesh repair workflow — analyze, auto-repair, inspect, manual repair, re-export — and select the appropriate tool and action for each step.</p>
@@ -2134,8 +2154,8 @@ Resolution settings can feel like they require expert calibration, but you reall
 <p>Default state: START node is selected and detail panel shows its content.</p>
 <p>Responsive design: Flowchart scales to canvas width. Text in nodes wraps automatically. Minimum font size 12px. Canvas height adjusts to fit all nodes with comfortable spacing.</p>
 </details>
-<hr />
-<h2 id="stl-export-settings">STL Export Settings<a class="headerlink" href="#stl-export-settings" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="stl-export-settings">STL Export Settings<a class="headerlink" href="#stl-export-settings" title="Permanent link">¶</a></h2>
 <p>The last skill in this chapter is translating your CAD model into a clean, correctly sized STL or 3MF file. Every major CAD tool has an export dialog with settings that control how the mesh is generated, and making the right choices here prevents problems later.</p>
 <p><strong>Chord deviation</strong> and <strong>angular deviation</strong> — the resolution settings you explored in the MicroSim above — are your first decisions. For most desktop FDM printers, a chord deviation of 0.1 to 0.2 mm is appropriate. That matches the printer's actual layer resolution and x/y positional accuracy, so going finer produces a larger file with no perceptible improvement in print quality. Going coarser (0.5 mm or more) starts to produce visible faceting on curved features.</p>
 <p><strong>Units</strong> matter enormously and are easy to get right: check that your CAD software is exporting in millimeters, or that you've converted to millimeters before export. Almost every slicer assumes millimeters. If you design in inches or centimeters, the conversion must happen before or during export — not in the slicer, where a scaling mistake is much easier to make.</p>
@@ -2178,8 +2198,8 @@ Resolution settings can feel like they require expert calibration, but you reall
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">¶</a></h2>
 <p>You now have the complete picture of how a 3D shape travels from your CAD software to your slicer: as a triangle mesh stored in a file format, ready for the slicer to interpret layer by layer. Here's what to keep with you:</p>
 <ul>
 <li>A <strong>mesh</strong> is a surface made of triangles. Every vertex, edge, and face has a specific role, and surface normals tell the slicer which side is "outside."</li>
@@ -2193,7 +2213,7 @@ Resolution settings can feel like they require expert calibration, but you reall
 </ul>
 <div class="admonition mascot-celebration">
 <p class="admonition-title">That's Chapter 5 Done!</p>
-<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates"></a>
 You just learned what every triangle in your model is doing and why every single one of them needs to be in the right place. That's not trivial — most people who operate 3D printers for years never bother to understand mesh geometry at this level. Next up is Chapter 6: Materials Science, where you'll find out why the plastic you choose matters just as much as the geometry you print it in.</p>
 </div>
 
@@ -2221,7 +2241,7 @@ You just learned what every triangle in your model is doing and why every single
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -2231,13 +2251,13 @@ You just learned what every triangle in your model is doing and why every single
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../04-cad-and-modeling/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4. CAD and Modeling">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -2262,7 +2282,7 @@ You just learned what every triangle in your model is doing and why every single
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -2274,7 +2294,7 @@ You just learned what every triangle in your model is doing and why every single
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -2299,5 +2319,7 @@ You just learned what every triangle in your model is doing and why every single
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+        <meta name="description" content="Multi-material and multi-color printing systems, CoreXY vs bed-slinger motion, Klipper firmware with input shaping and pressure advance, high-speed printing, modern hotends, and advanced bed surfaces and auto-leveling probes.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -29,7 +26,7 @@
     
     
       
-        <title>13. Modern Hardware - Introduction to 3D Printing</title>
+        <title>Modern Hardware — Multi-Material, Motion, and Speed - Introduction to 3D Printing</title>
       
     
     
@@ -50,7 +47,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -65,7 +62,30 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Modern Hardware — Multi-Material, Motion, and Speed - Introduction to 3D Printing">
+<meta property="og:description" content="Multi-material and multi-color printing systems, CoreXY vs bed-slinger motion, Klipper firmware with input shaping and pressure advance, high-speed printing, modern hotends, and advanced bed surfaces and auto-leveling probes.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/13-modern-hardware/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/13-modern-hardware/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Modern Hardware — Multi-Material, Motion, and Speed - Introduction to 3D Printing">
+<meta property="twitter:description" content="Multi-material and multi-color printing systems, CoreXY vs bed-slinger motion, Klipper firmware with input shaping and pressure advance, high-speed printing, modern hotends, and advanced bed surfaces and auto-leveling probes.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/13-modern-hardware/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -101,12 +121,12 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -118,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              13. Modern Hardware
+              Modern Hardware — Multi-Material, Motion, and Speed
             
           </span>
         </div>
@@ -134,7 +154,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -143,20 +163,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -182,7 +202,7 @@
         <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -206,7 +226,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -218,7 +238,7 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Introduction to 3D Printing
@@ -228,7 +248,7 @@
       <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -852,6 +872,323 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#beyond-single-material-single-color-printing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beyond Single-Material, Single-Color Printing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beyond Single-Material, Single-Color Printing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ams-automatic-material-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMS (Automatic Material System)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prusa-mmu-multi-material-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prusa MMU (Multi-Material Unit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idex-independent-dual-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IDEX (Independent Dual Extrusion)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolchanger-printers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toolchanger Printers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filament-splicing-and-multi-material-waste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filament Splicing and Multi-Material Waste
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-motion-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modern Motion Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern Motion Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bed-slinger-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bed Slinger Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corexy-motion-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CoreXY Motion System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-firmware-revolution-klipper-input-shaping-and-pressure-advance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Firmware Revolution: Klipper, Input Shaping, and Pressure Advance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Firmware Revolution: Klipper, Input Shaping, and Pressure Advance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#klipper-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Klipper Firmware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-shaping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input Shaping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pressure-advance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pressure Advance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pressure Advance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-input-shaping-and-speed-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Input Shaping and Speed Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-hotends-all-metal-high-flow-and-hardened-nozzles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modern Hotends: All-Metal, High-Flow, and Hardened Nozzles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern Hotends: All-Metal, High-Flow, and Hardened Nozzles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all-metal-hotend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All-Metal Hotend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-flow-hotend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        High-Flow Hotend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardened-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardened Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-bed-surfaces-and-auto-leveling-probes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modern Bed Surfaces and Auto-Leveling Probes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern Bed Surfaces and Auto-Leveling Probes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pei-flex-plate-and-spring-steel-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PEI Flex Plate and Spring Steel Sheet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-leveling-probe-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Leveling Probe Technologies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-these-advances-work-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How These Advances Work Together
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How These Advances Work Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-modern-printer-architecture-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Modern Printer Architecture Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1136,7 +1473,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1187,6 +1524,323 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#beyond-single-material-single-color-printing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beyond Single-Material, Single-Color Printing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beyond Single-Material, Single-Color Printing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ams-automatic-material-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMS (Automatic Material System)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prusa-mmu-multi-material-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prusa MMU (Multi-Material Unit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idex-independent-dual-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IDEX (Independent Dual Extrusion)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolchanger-printers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toolchanger Printers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filament-splicing-and-multi-material-waste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filament Splicing and Multi-Material Waste
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-motion-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modern Motion Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern Motion Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bed-slinger-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bed Slinger Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corexy-motion-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CoreXY Motion System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-firmware-revolution-klipper-input-shaping-and-pressure-advance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Firmware Revolution: Klipper, Input Shaping, and Pressure Advance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Firmware Revolution: Klipper, Input Shaping, and Pressure Advance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#klipper-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Klipper Firmware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-shaping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input Shaping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pressure-advance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pressure Advance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pressure Advance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-input-shaping-and-speed-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Input Shaping and Speed Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-hotends-all-metal-high-flow-and-hardened-nozzles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modern Hotends: All-Metal, High-Flow, and Hardened Nozzles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern Hotends: All-Metal, High-Flow, and Hardened Nozzles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all-metal-hotend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All-Metal Hotend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-flow-hotend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        High-Flow Hotend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardened-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardened Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-bed-surfaces-and-auto-leveling-probes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modern Bed Surfaces and Auto-Leveling Probes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern Bed Surfaces and Auto-Leveling Probes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pei-flex-plate-and-spring-steel-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PEI Flex Plate and Spring Steel Sheet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-leveling-probe-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Leveling Probe Technologies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-these-advances-work-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How These Advances Work Together
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How These Advances Work Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-modern-printer-architecture-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Modern Printer Architecture Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1205,7 +1859,7 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
+  <nav class="md-path" aria-label="Navigation">
     <ol class="md-path__list">
       
         
@@ -1254,16 +1908,21 @@
   
     <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/13-modern-hardware/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="modern-hardware-multi-material-motion-and-speed">Modern Hardware: Multi-Material, Motion, and Speed<a class="headerlink" href="#modern-hardware-multi-material-motion-and-speed" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>This chapter covers the sub-$5,000 hardware advances of the last decade: multi-material and multi-color printing (AMS, Prusa MMU, IDEX, toolchanger printers, filament splicing, multi-material waste handling), modern motion systems (CoreXY, bed slingers, linear rails) and the speed-enabling firmware stack (Klipper, input shaping, pressure advance, high-speed printing), modern hotends (all-metal, high-flow, hardened nozzles), and bed surfaces and probes (PEI flex plates, spring steel sheets, BLTouch, inductive probes, strain-gauge leveling).</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h1 id="modern-hardware-multi-material-motion-and-speed">Modern Hardware: Multi-Material, Motion, and Speed<a class="headerlink" href="#modern-hardware-multi-material-motion-and-speed" title="Permanent link">¶</a></h1>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Welcome to Chapter 13</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello"></a>
+When I was first designed in 2015, a "fast" print was 60 mm/s on a printer that took six minutes to level its own bed. Today, machines print me in under four minutes at 600 mm/s and swap between five filament colors automatically. This chapter covers how we got here — the hardware and firmware advances that transformed consumer 3D printing from a patient hobbyist pursuit into a genuinely practical fabrication tool.</p>
+</div>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
+<p>This chapter covers the sub-$5,000 hardware advances of the last decade: multi-material and multi-color printing systems (AMS, Prusa MMU, IDEX, toolchanger printers, filament splicing, multi-material waste handling), modern motion systems (CoreXY, bed slingers, linear rails), the speed-enabling firmware stack (Klipper, input shaping, pressure advance, high-speed printing), modern hotends (all-metal, high-flow, hardened nozzles), and advanced bed surfaces and probes (PEI flex plates, spring steel sheets, BLTouch, inductive probes, strain-gauge leveling).</p>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 23 concepts from the learning graph:</p>
 <ol>
 <li>Multi-Material Printing (Concept 224)</li>
@@ -1290,7 +1949,7 @@
 <li>Inductive Probe (Concept 245)</li>
 <li>Strain Gauge Leveling (Concept 246)</li>
 </ol>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../06-materials-science/">Chapter 6: Materials Science for Additive Manufacturing</a></li>
@@ -1298,14 +1957,241 @@
 <li><a href="../08-fdm-printer-hardware/">Chapter 8: FDM Printer Hardware and Operation</a></li>
 <li><a href="../12-troubleshooting-and-postprocessing/">Chapter 12: Print Failures, Troubleshooting, and Post-Processing</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<h2 id="beyond-single-material-single-color-printing">Beyond Single-Material, Single-Color Printing<a class="headerlink" href="#beyond-single-material-single-color-printing" title="Permanent link">¶</a></h2>
+<p>Chapter 8 described a single-material FDM printer — one hotend, one filament, one color. The majority of everyday prints still work this way. But a large category of applications requires either <strong>multiple materials</strong> (soluble supports + structural material, rigid + flexible, hard + soft) or <strong>multiple colors</strong> (functional labels, artistic multi-tone objects, color-coded engineering parts). The 2018–2025 period saw an explosion of hardware approaches to this problem, each with different trade-offs.</p>
+<p>Two terms are worth distinguishing upfront:</p>
+<ul>
+<li><strong>Multi-material printing</strong> — printing with two or more chemically distinct materials in the same object. The most useful application is printing dissolvable supports (PVA, BVOH, or HIPS) alongside a structural material, allowing support removal without tools or surface damage.</li>
+<li><strong>Multi-color printing</strong> — printing with the same material family in different colors. Most "multi-color" systems (AMS, MMU) are single-material multi-color: they switch between spools of PLA in different colors rather than between chemically different polymers.</li>
+</ul>
+<h3 id="ams-automatic-material-system">AMS (Automatic Material System)<a class="headerlink" href="#ams-automatic-material-system" title="Permanent link">¶</a></h3>
+<p>Bambu Lab's <strong>Automatic Material System (AMS)</strong> is the commercial multi-color solution that brought the feature to the mass market. The AMS holds up to four spools in a single unit, with up to four AMS units connectable to one printer — enabling up to 16-color prints. A hub mechanism feeds the selected filament into the extruder, while the outgoing filament is retracted back to the AMS for storage before the next material feeds.</p>
+<p>The AMS uses filament cutting (a built-in cutter inside the printer) and a "filament buffer" zone to manage the loading/unloading sequence quickly. Color changes happen at the slicer-defined color boundary, with a configurable purge volume (waste material flushed to a dedicated "wipe tower" or directly to a waste chute) to clear the previous color from the hotend before depositing the new one.</p>
+<h3 id="prusa-mmu-multi-material-unit">Prusa MMU (Multi-Material Unit)<a class="headerlink" href="#prusa-mmu-multi-material-unit" title="Permanent link">¶</a></h3>
+<p>Prusa's <strong>Multi-Material Unit (MMU)</strong> is a retrofit module that adds 5-material capability to Prusa MK-series printers. Unlike the AMS, the MMU relies on longer filament path management — the filament from the selected spool travels through a PTFE tube to the extruder and then down through a new multi-channel ptfe bowden arrangement. The MMU2S (second generation) added a dedicated filament sensor to reduce the frequent jams that plagued the original design.</p>
+<p>The MMU is popular for engineering users who want dissolvable supports (printing PLA + PVA), as PVA dissolves completely in water with no surface scarring. The challenge: PVA is hygroscopic (absorbs moisture from air) and requires dry-box storage between print sessions.</p>
+<h3 id="idex-independent-dual-extrusion">IDEX (Independent Dual Extrusion)<a class="headerlink" href="#idex-independent-dual-extrusion" title="Permanent link">¶</a></h3>
+<p><strong>IDEX</strong> printers mount two independent print heads on the same X-axis rail — each head can move to its parked position while the other prints, or they can both print simultaneously (for mirroring or duplication modes). IDEX was designed to solve the "ooze shield" problem of standard dual extruder designs: the second, inactive head tends to ooze onto the print.</p>
+<p>Because each IDEX head retracts completely off the print area when not in use, ooze contamination is virtually eliminated. IDEX is well-suited for dissolvable-support printing (one head prints structural material, the other prints soluble support) and for doubling throughput when printing two identical parts simultaneously.</p>
+<h3 id="toolchanger-printers">Toolchanger Printers<a class="headerlink" href="#toolchanger-printers" title="Permanent link">¶</a></h3>
+<p>The most flexible multi-material approach is the <strong>toolchanger</strong>: a robot arm or shuttle that docks and undocks entire print heads (hotend, extruder, and sometimes sensors included) from a common carriage. E3D's ToolChanger, Prusa Research's XL, and some high-end industrial machines use this architecture.</p>
+<p>Toolchangers can switch between heads with different nozzle sizes, different maximum temperatures, and even different sensor packages — enabling combinations like a 0.25 mm fine-detail head + a 1.0 mm high-speed head in the same job, or a standard FDM head + a paste-extrusion head for ceramic or chocolate printing.</p>
+<h3 id="filament-splicing-and-multi-material-waste">Filament Splicing and Multi-Material Waste<a class="headerlink" href="#filament-splicing-and-multi-material-waste" title="Permanent link">¶</a></h3>
+<p>An alternative to hardware multi-material units is <strong>filament splicing</strong>: a device that cuts and joins segments of different-color or different-material filaments into a single spliced strand before it enters the printer. The Mosaic Palette is the best-known splicing system. The printer sees a single filament path; the splicer manages timing to deliver the right material at the right moment.</p>
+<p>Splicing eliminates the mechanical complexity of a multi-spool loading mechanism, but it requires careful timing calibration and produces significant <strong>multi-material waste</strong>: the color transition inside the hotend takes several centimeters of purging to fully clear. This purge material is collected in a dedicated "purge tower" (a column of mixed-color material printed next to the main model) or a waste bucket. Print farms that do large multi-color print runs can generate significant purge waste — one of the sustainability trade-offs of multi-color printing.</p>
+<hr>
+<h2 id="modern-motion-systems">Modern Motion Systems<a class="headerlink" href="#modern-motion-systems" title="Permanent link">¶</a></h2>
+<p>The motion system is one of the primary determinants of how fast a printer can move and how much vibration it introduces into prints. Two dominant architectures compete in the consumer space.</p>
+<h3 id="bed-slinger-design">Bed Slinger Design<a class="headerlink" href="#bed-slinger-design" title="Permanent link">¶</a></h3>
+<p>A <strong>bed slinger</strong> is the traditional Cartesian printer architecture where the print bed moves in the Y axis and the print head moves in X and Z. Prusa MK-series and Creality Ender-series printers are classic bed slingers. The advantages are simplicity, low cost, and a large community of users and documentation. The disadvantage is that the print itself moves — and at high speeds, the inertia of the print mass introduces vibration, limiting achievable speeds without ringing artifacts.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Moving the Print Is Moving the Problem</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks carefully"></a>
+In a bed slinger, I — the print — am one of the moving masses. Every acceleration pulse that moves the bed also accelerates me, and as I grow taller and heavier, the resonant frequency of the print-plus-bed system changes. This is why bed slingers are fundamentally limited in speed: you can't accelerate a growing 300-gram PLA object as fast as you can accelerate a lightweight empty carriage.</p>
+</div>
+<h3 id="corexy-motion-system">CoreXY Motion System<a class="headerlink" href="#corexy-motion-system" title="Permanent link">¶</a></h3>
+<p><strong>CoreXY</strong> is a motion architecture where both X and Y movements are produced by two motors acting on a single belt loop. The print bed moves only in Z (not in X or Y). The print head carriage is the only moving mass in XY, and it can be made very light. The result: the same acceleration that would shake a bed-slinger produces much less ringing on a CoreXY because the mass being accelerated is just the carriage and print head.</p>
+<p>CoreXY enables the very high speeds (300–600 mm/s) of modern machines like the Bambu Lab X1 Carbon and Bambu P1P. The complexity trade-off: CoreXY belt routing is more mechanically complex, alignment is more sensitive, and diagnosing issues requires understanding the coupled belt system.</p>
+<h3 id="linear-rails">Linear Rails<a class="headerlink" href="#linear-rails" title="Permanent link">¶</a></h3>
+<p>Both bed slingers and CoreXY printers can use either round linear rods (with LM8UU ball bearings, as described in Chapter 8) or <strong>linear rails</strong> (precision-ground steel rails with recirculating-ball carriages). Linear rails provide better rigidity, lower friction, and higher precision than round-rod systems, at higher cost. They're standard equipment on high-speed CoreXY printers and in delta printers where the stiffness of the guide system directly affects print quality at speed.</p>
+<hr>
+<h2 id="the-firmware-revolution-klipper-input-shaping-and-pressure-advance">The Firmware Revolution: Klipper, Input Shaping, and Pressure Advance<a class="headerlink" href="#the-firmware-revolution-klipper-input-shaping-and-pressure-advance" title="Permanent link">¶</a></h2>
+<p>Hardware advances in motion systems and hotends would mean little without firmware that can exploit them. The firmware stack that powers modern high-speed printing is built on <strong>Klipper</strong> and two key algorithms.</p>
+<h3 id="klipper-firmware">Klipper Firmware<a class="headerlink" href="#klipper-firmware" title="Permanent link">¶</a></h3>
+<p><strong>Klipper</strong> is an open-source firmware that splits computation between the printer's microcontroller (which handles real-time motor pulses) and a companion single-board computer like a Raspberry Pi (which handles path planning, G-code parsing, and advanced features). By offloading computation to a more powerful processor, Klipper can run algorithms too complex for a microcontroller alone.</p>
+<p>Key Klipper advantages over Marlin:</p>
+<ul>
+<li>Configuration in a human-readable text file (easy to back up, version-control, and share)</li>
+<li>Web interface (Mainsail, Fluidd) for monitoring and control from any browser</li>
+<li>Python-based macro system for complex automated procedures</li>
+<li>Real-time computation of input shaping and pressure advance corrections</li>
+</ul>
+<h3 id="input-shaping">Input Shaping<a class="headerlink" href="#input-shaping" title="Permanent link">¶</a></h3>
+<p>When a printer accelerates, the frame and belt system oscillate at their natural resonant frequency — producing the ringing artifacts described in Chapter 12. <strong>Input shaping</strong> (also called resonance compensation) is an algorithm that measures those resonant frequencies (using an accelerometer mounted to the print head) and then pre-distorts the motion commands to cancel out the resonance before it occurs.</p>
+<p>The physical analogy: if you know a bridge vibrates at 10 Hz when you walk across it, you can deliberately mis-time your steps so they arrive out of phase with the resonance — your footsteps cancel the bridge's oscillation instead of amplifying it. Input shaping does exactly this for printer motion, and it's what allows Bambu Lab and Klipper printers to print at 300–600 mm/s with smooth surfaces that would have required &lt;80 mm/s without the compensation.</p>
+<h3 id="pressure-advance">Pressure Advance<a class="headerlink" href="#pressure-advance" title="Permanent link">¶</a></h3>
+<p>When an FDM extruder starts a move, there's a brief lag before the pressure in the nozzle fully builds and extrusion begins at the commanded rate. At the end of a move, residual pressure continues to push out material as the head decelerates. These effects cause rounded corners (too little material at the start of a corner, too much at the end) and blobs at deceleration points.</p>
+<p><strong>Pressure advance</strong> (called Linear Advance in Marlin) measures this pressure lag and pre-compensates: the firmware begins increasing extruder pressure slightly before the print head reaches a corner, and begins retracting slightly before the head decelerates. The result is crisper corners, less blobs, and more consistent extrusion at variable speeds.</p>
+<p>Together, input shaping and pressure advance enable the <strong>high-speed printing</strong> regime: print speeds above 200 mm/s with quality comparable to what was achievable at 60 mm/s a decade ago.</p>
+<h4 id="diagram-input-shaping-and-speed-comparison">Diagram: Input Shaping and Speed Comparison<a class="headerlink" href="#diagram-input-shaping-and-speed-comparison" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/input-shaping-demo/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>Input Shaping and High-Speed Printing Demo</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> input-shaping-demo<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain
+Learning Objective: Students explain how input shaping cancels resonance artifacts by comparing simulated surface quality at different print speeds with and without resonance compensation.</p>
+<p>Canvas layout:
+- Left panel (200px): Controls — speed slider (50–600 mm/s), toggle "Input Shaping On/Off", toggle "Pressure Advance On/Off"
+- Center panel (350px): Simulation of a top-down view of a square being printed, showing the actual deposited path vs. the commanded path. Without input shaping at high speeds, the deposited path shows oscillating error. With input shaping, it matches the command.
+- Right panel (150px): "Surface Quality Score" (0–100) calculated from the simulated path deviation, plus indicators for "Ringing visible: Yes/No" and "Corner quality: Poor/Good/Excellent"</p>
+<p>Data Visibility:
+- At 60 mm/s without input shaping: path deviation &lt;0.05 mm, no visible ringing
+- At 300 mm/s without input shaping: ringing oscillations ±0.5 mm visible on straight walls after corners
+- At 300 mm/s with input shaping: path deviation &lt;0.08 mm, no visible ringing
+- At 600 mm/s with input shaping: path deviation &lt;0.15 mm, minor corner rounding visible
+- With pressure advance off at corners: small blob visible at corner endpoint, gap at start of new wall</p>
+<p>Step-through mode: "Step Through a Corner" button shows one corner being printed frame by frame, with annotations showing when pressure advance fires relative to the head position change.</p>
+<p>Instructional Rationale: Step-through with data visibility appropriate for Understand level. Students need to see the deviation between commanded and actual path to understand why input shaping matters — prose alone cannot convey the magnitude of the correction.</p>
+<p>Responsive: panels reflow vertically on screens below 600px.</p>
+</details>
+<hr>
+<h2 id="modern-hotends-all-metal-high-flow-and-hardened-nozzles">Modern Hotends: All-Metal, High-Flow, and Hardened Nozzles<a class="headerlink" href="#modern-hotends-all-metal-high-flow-and-hardened-nozzles" title="Permanent link">¶</a></h2>
+<p>The hotend is the component that most directly limits print speed and material compatibility. Several advances have pushed what's possible.</p>
+<h3 id="all-metal-hotend">All-Metal Hotend<a class="headerlink" href="#all-metal-hotend" title="Permanent link">¶</a></h3>
+<p>A standard hotend uses a PTFE liner that extends into the heat break and sometimes into the hot zone. PTFE is used for its very low friction, which makes filament loading smooth. However, PTFE begins to degrade at temperatures above ~240 °C, and at 260+ °C it releases harmful fumes (PFOA/PFAS compounds). This limits standard hotends to PLA, PETG, and similar materials that print below 240 °C.</p>
+<p>An <strong>all-metal hotend</strong> replaces the PTFE components with stainless steel or titanium — materials that don't degrade at high temperatures. All-metal hotends are required for high-temperature filaments: ABS, ASA, PC (polycarbonate), nylon, and high-performance engineering materials like PEEK (350+ °C). The trade-off: the higher friction of bare metal walls (no PTFE coating) increases retraction sensitivity and makes flexible filaments harder to use in Bowden configurations.</p>
+<h3 id="high-flow-hotend">High-Flow Hotend<a class="headerlink" href="#high-flow-hotend" title="Permanent link">¶</a></h3>
+<p><strong>High-flow hotends</strong> address the volumetric extrusion limit: at some point, increasing print speed doesn't help because the hotend can't melt filament fast enough to supply it. The volumetric flow rate (mm³/s) is the true bottleneck, not the linear speed. High-flow hotends use:</p>
+<ul>
+<li>Larger melt zones (longer or wider heater blocks)</li>
+<li>Higher-power heater cartridges (60–80 W vs. 30–40 W standard)</li>
+<li>Higher-mass heat blocks that store more thermal energy</li>
+<li>Reduced PTFE-to-metal transition distance for all-metal designs</li>
+</ul>
+<p>The E3D Revo, Bambu CHT-style nozzles, and Phaetus Rapido are examples of high-flow designs that enable sustained volumetric outputs of 30–60 mm³/s vs. the 8–12 mm³/s of a standard hotend. This is what makes printing at 600 mm/s with a 0.4 mm nozzle physically possible.</p>
+<h3 id="hardened-nozzle">Hardened Nozzle<a class="headerlink" href="#hardened-nozzle" title="Permanent link">¶</a></h3>
+<p>As covered briefly in Chapter 8, <strong>hardened steel and ruby-tipped nozzles</strong> resist the abrasive wear caused by carbon fiber, glass fiber, glow-in-the-dark, and metal-particle composite filaments. With the growth of high-performance composite filaments for functional parts, hardened nozzles have become a routine accessory rather than a specialty item.</p>
+<hr>
+<h2 id="modern-bed-surfaces-and-auto-leveling-probes">Modern Bed Surfaces and Auto-Leveling Probes<a class="headerlink" href="#modern-bed-surfaces-and-auto-leveling-probes" title="Permanent link">¶</a></h2>
+<p>The build surface and leveling system have also advanced substantially since the glass-and-hairspray era.</p>
+<p>Before examining specific technologies, recall from Chapter 8 that bed leveling (tramming) ensures the build surface is parallel to the print head plane, and that Z-offset calibration sets the precise nozzle-to-bed gap. Auto bed leveling (ABL) adds a probe to measure a grid of points and apply software compensation. The probe technology determines how accurately, quickly, and robustly the system works.</p>
+<h3 id="pei-flex-plate-and-spring-steel-sheet">PEI Flex Plate and Spring Steel Sheet<a class="headerlink" href="#pei-flex-plate-and-spring-steel-sheet" title="Permanent link">¶</a></h3>
+<p><strong>PEI (Polyetherimide) spring steel sheets</strong> have become the standard removable build surface for consumer printers. The spring steel substrate is magnetically held to the heated bed by a magnetic sheet — easy to remove without tools. PEI coating provides excellent adhesion to most FDM materials when warm, and the flex-to-release mechanism means finished prints pop off with a simple bend, no scraper needed.</p>
+<p>Two texture options are common:</p>
+<ul>
+<li><strong>Smooth PEI</strong>: excellent for PLA and TPU, giving parts a glossy bottom surface finish that looks almost injection-molded.</li>
+<li><strong>Textured PEI</strong> (satin or rough powder coating): better adhesion for PETG and materials that sometimes over-adhere to smooth PEI; gives a matte textured bottom surface.</li>
+</ul>
+<h3 id="auto-leveling-probe-technologies">Auto-Leveling Probe Technologies<a class="headerlink" href="#auto-leveling-probe-technologies" title="Permanent link">¶</a></h3>
+<p>Several probe designs are in common use, each with different operating principles and trade-offs:</p>
+<p><strong>BLTouch / CR Touch</strong> — a servo-actuated pin that physically extends and touches the bed surface, then retracts. Works on any surface type. Accuracy: ±0.005 mm typical. Requires mounting at a specific distance from the nozzle (the probe offset) and calibrating that offset in firmware.</p>
+<p><strong>Inductive probes</strong> — sense the metal build surface without physical contact via an electromagnetic field. Work on spring steel and aluminum beds; won't work on glass or other non-conductive surfaces. Faster and more durable than contact probes because there are no moving parts.</p>
+<p><strong>Strain gauge leveling</strong> — the most advanced approach, used in the Bambu Lab and some Prusa printers. A load cell (pressure sensor) in the print head assembly detects the minute force when the nozzle contacts the bed surface — effectively using the nozzle itself as the probe. Since the nozzle is the reference point, there's no offset to calibrate. The measurement point is always exactly where material will be deposited. Accuracy: ±0.001 mm or better. The trade-off: the nozzle must physically touch the bed, which requires a clean nozzle and can leave marks on PEI if the nozzle has residual filament.</p>
+<p>The following table summarizes the major probe technologies:</p>
+<table>
+<thead>
+<tr>
+<th>Probe Type</th>
+<th>Contact</th>
+<th>Works On</th>
+<th>Typical Accuracy</th>
+<th>Calibration Needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BLTouch / CR Touch</td>
+<td>Physical pin</td>
+<td>Any surface</td>
+<td>±0.005 mm</td>
+<td>Probe XY offset + Z offset</td>
+</tr>
+<tr>
+<td>Inductive probe</td>
+<td>Non-contact (EM)</td>
+<td>Metal surfaces only</td>
+<td>±0.01 mm</td>
+<td>Z offset</td>
+</tr>
+<tr>
+<td>Capacitive probe</td>
+<td>Non-contact</td>
+<td>Conductive surfaces</td>
+<td>±0.02 mm</td>
+<td>Z offset</td>
+</tr>
+<tr>
+<td>Strain gauge / nozzle</td>
+<td>Physical nozzle</td>
+<td>Any surface</td>
+<td>±0.001 mm</td>
+<td>None (no offset)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="how-these-advances-work-together">How These Advances Work Together<a class="headerlink" href="#how-these-advances-work-together" title="Permanent link">¶</a></h2>
+<p>The modern high-speed printer (Bambu Lab X1C, Prusa XL, Voron) is not a single innovation — it's a system where each component has been upgraded to remove what was previously the bottleneck:</p>
+<ol>
+<li><strong>CoreXY carriage</strong> — lightweight, low-inertia XY motion</li>
+<li><strong>Linear rails</strong> — rigid, low-friction guidance</li>
+<li><strong>High-flow all-metal hotend</strong> — sufficient melt capacity for 600 mm/s at 0.4 mm nozzle</li>
+<li><strong>Hardened nozzle</strong> — handles engineering composite filaments</li>
+<li><strong>PEI spring steel with strain-gauge leveling</strong> — reliable first-layer without manual setup</li>
+<li><strong>Klipper + input shaping + pressure advance</strong> — cancels the vibration and flow-lag that would otherwise limit surface quality at these speeds</li>
+<li><strong>AMS or MMU</strong> — adds multi-color capability without operator intervention</li>
+</ol>
+<p>The result is a machine that in 2024 costs <span class="arithmatex">\(500–\)</span>800 and outperforms what cost $20,000 in 2014 on speed, surface quality, and ease of use. That pace of development is not slowing down.</p>
+<h4 id="diagram-modern-printer-architecture-comparison">Diagram: Modern Printer Architecture Comparison<a class="headerlink" href="#diagram-modern-printer-architecture-comparison" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/modern-printer-comparison/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>Modern Printer Architecture Comparison</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> modern-printer-comparison<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Compare
+Learning Objective: Students compare bed-slinger and CoreXY printer architectures by examining how each moves its axes, and analyze how the moving mass difference affects achievable print speed.</p>
+<p>Visual layout:
+- Side-by-side schematic of two printers:
+  - Left: Bed slinger (classic Prusa-style proportions) — bed moves in Y, head moves in X/Z
+  - Right: CoreXY (Bambu-style proportions) — bed moves only in Z, head moves in X/Y via coupled belt loop
+- Motion arrows animated on each printer showing which axis moves when
+- Mass labels on moving components: "~200g (head)" for CoreXY head, "~500g (bed + print)" for bed-slinger Y axis</p>
+<p>Interactive elements:
+- "Animate Move" button: animates a diagonal move on both printers simultaneously, showing how each motion system executes it differently
+- Click any component: info panel shows component name, function, and "how this affects print quality"
+- Hover "Belt" on CoreXY: tooltip shows the CoreXY belt routing explanation (both motors act together to produce any XY move)
+- Speed slider: drag to increase move speed; at high speeds, the bed-slinger shows ringing artifacts (oscillating color of deposited path), while the CoreXY shows clean lines</p>
+<p>Color coding:
+- Red components: high-mass, speed-limiting elements
+- Green components: low-mass, speed-enabling elements
+- Blue: motion path</p>
+<p>Canvas:
+- Each printer: 300×300px schematic
+- Info panel: 200px right sidebar</p>
+<p>Responsive: stacks to vertical layout on screens below 700px.</p>
+</details>
+<hr>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">¶</a></h2>
+<ul>
+<li>Multi-material printing enables dissolvable supports and functional material combinations; multi-color printing uses single-material filament switching to produce colored objects.</li>
+<li>AMS (Bambu) and MMU (Prusa) are the major consumer multi-color solutions; each uses a purge/wipe strategy to clear the previous color, generating material waste.</li>
+<li>IDEX uses two independent heads on one rail, eliminating ooze contamination; toolchangers swap entire print heads for maximum flexibility.</li>
+<li>Bed slingers move the print in Y — the growing print mass is a speed-limiting inertia; CoreXY moves only a lightweight carriage in XY, enabling much higher accelerations.</li>
+<li>Linear rails provide greater rigidity and precision than round-rod systems, critical for high-speed accuracy.</li>
+<li>Klipper splits computation between microcontroller (motor pulses) and companion SBC (advanced algorithms), enabling input shaping and pressure advance.</li>
+<li>Input shaping measures and cancels resonant frequencies, allowing high-speed printing without ringing artifacts.</li>
+<li>Pressure advance pre-compensates for hotend pressure lag, producing crisp corners at variable speeds.</li>
+<li>All-metal hotends are required for temperatures above ~240 °C; high-flow hotends remove the volumetric extrusion bottleneck.</li>
+<li>Strain-gauge leveling uses the nozzle as the probe — eliminating probe offset calibration and achieving sub-micron repeatability.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: Why Does a CoreXY Printer Handle High Speeds Better Than a Bed Slinger? — Click to Reveal</summary>
+<p>In a bed slinger, both the bed and the growing print must accelerate and decelerate with each Y-axis move. As the print grows heavier, the resonant frequency of the bed+print system decreases, and accelerating it causes vibration (ringing). In a CoreXY printer, the bed moves only in Z — very slowly, once per layer. All XY motion is performed by a lightweight carriage with only the print head as its moving mass. This low, consistent mass allows much higher accelerations without exciting resonance, which is why CoreXY printers can run at 300–600 mm/s while bed slingers typically peak at 100–150 mm/s for quality prints.</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You Know the State of the Art</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you"></a>
+The printer landscape we just covered represents a decade of competitive development compressed into one chapter. You now understand not just what modern printers can do but why they can do it — the specific hardware and firmware innovations that drove each improvement. Chapter 14 zooms out to the broader modern ecosystem: the slicers, model repositories, digital workflows, and community infrastructure that make all this hardware useful.</p>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1322,7 +2208,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1332,13 +2218,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../12-troubleshooting-and-postprocessing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 12. Troubleshooting and Post-Processing">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1363,7 +2249,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1375,7 +2261,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1400,5 +2286,7 @@
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

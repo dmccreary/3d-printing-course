@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+        <meta name="description" content="A hands-on tour of every major FDM printer component — hotend, extruder, motion system, firmware, build surfaces — plus bed leveling, calibration, filament loading, and routine maintenance.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -29,7 +26,7 @@
     
     
       
-        <title>8. FDM Printer Hardware - Introduction to 3D Printing</title>
+        <title>FDM Printer Hardware and Operation - Introduction to 3D Printing</title>
       
     
     
@@ -50,7 +47,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -65,7 +62,30 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="FDM Printer Hardware and Operation - Introduction to 3D Printing">
+<meta property="og:description" content="A hands-on tour of every major FDM printer component — hotend, extruder, motion system, firmware, build surfaces — plus bed leveling, calibration, filament loading, and routine maintenance.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/08-fdm-printer-hardware/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/08-fdm-printer-hardware/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="FDM Printer Hardware and Operation - Introduction to 3D Printing">
+<meta property="twitter:description" content="A hands-on tour of every major FDM printer component — hotend, extruder, motion system, firmware, build surfaces — plus bed leveling, calibration, filament loading, and routine maintenance.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/08-fdm-printer-hardware/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -101,12 +121,12 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -118,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              8. FDM Printer Hardware
+              FDM Printer Hardware and Operation
             
           </span>
         </div>
@@ -134,7 +154,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -143,20 +163,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -182,7 +202,7 @@
         <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -206,7 +226,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -218,7 +238,7 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Introduction to 3D Printing
@@ -228,7 +248,7 @@
       <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -712,6 +732,362 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-fdmfff-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How FDM/FFF Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-map-of-the-machine-fdm-printer-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Map of the Machine: FDM Printer Anatomy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A Map of the Machine: FDM Printer Anatomy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-fdm-printer-anatomy-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: FDM Printer Anatomy Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-extrusion-system-from-spool-to-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Extrusion System: From Spool to Nozzle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Extrusion System: From Spool to Nozzle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-extruder-mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Extruder Mechanism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-hotend-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Hotend Assembly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bowden-vs-direct-drive-a-critical-trade-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bowden vs. Direct Drive: A Critical Trade-Off
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-motion-system-moving-with-precision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Motion System: Moving with Precision
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Motion System: Moving with Precision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stepper-motors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stepper Motors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#belts-and-pulleys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Belts and Pulleys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lead-screws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lead Screws
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-bearings-and-rods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Bearings and Rods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linear Bearings and Rods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-motion-system-explainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Motion System Explainer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-brain-motherboard-and-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Brain: Motherboard and Firmware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-surfaces-where-the-print-meets-the-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Surfaces: Where the Print Meets the Plate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bed-leveling-and-z-offset-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bed Leveling and Z-Offset Calibration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bed Leveling and Z-Offset Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-bed-leveling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Bed Leveling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-bed-leveling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Bed Leveling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z-offset-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Z-Offset Calibration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Z-Offset Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-z-offset-calibration-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Z-Offset Calibration MicroSim
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filament-loading-and-nozzle-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filament Loading and Nozzle Changes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filament Loading and Nozzle Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-filament" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading Filament
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing the Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routine-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Routine Maintenance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Routine Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-maintenance-schedule-interactive-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Maintenance Schedule Interactive Checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bringing-it-all-together-from-g-code-to-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bringing It All Together: From G-Code to Print
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1136,7 +1512,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1187,6 +1563,362 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-fdmfff-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How FDM/FFF Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-map-of-the-machine-fdm-printer-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Map of the Machine: FDM Printer Anatomy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A Map of the Machine: FDM Printer Anatomy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-fdm-printer-anatomy-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: FDM Printer Anatomy Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-extrusion-system-from-spool-to-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Extrusion System: From Spool to Nozzle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Extrusion System: From Spool to Nozzle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-extruder-mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Extruder Mechanism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-hotend-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Hotend Assembly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bowden-vs-direct-drive-a-critical-trade-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bowden vs. Direct Drive: A Critical Trade-Off
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-motion-system-moving-with-precision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Motion System: Moving with Precision
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Motion System: Moving with Precision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stepper-motors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stepper Motors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#belts-and-pulleys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Belts and Pulleys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lead-screws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lead Screws
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-bearings-and-rods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Bearings and Rods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linear Bearings and Rods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-motion-system-explainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Motion System Explainer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-brain-motherboard-and-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Brain: Motherboard and Firmware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-surfaces-where-the-print-meets-the-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Surfaces: Where the Print Meets the Plate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bed-leveling-and-z-offset-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bed Leveling and Z-Offset Calibration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bed Leveling and Z-Offset Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-bed-leveling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Bed Leveling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-bed-leveling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Bed Leveling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z-offset-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Z-Offset Calibration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Z-Offset Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-z-offset-calibration-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Z-Offset Calibration MicroSim
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filament-loading-and-nozzle-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filament Loading and Nozzle Changes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filament Loading and Nozzle Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-filament" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading Filament
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing the Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routine-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Routine Maintenance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Routine Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-maintenance-schedule-interactive-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Maintenance Schedule Interactive Checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bringing-it-all-together-from-g-code-to-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bringing It All Together: From G-Code to Print
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1205,7 +1937,7 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
+  <nav class="md-path" aria-label="Navigation">
     <ol class="md-path__list">
       
         
@@ -1254,16 +1986,21 @@
   
     <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/08-fdm-printer-hardware/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="fdm-printer-hardware-and-operation">FDM Printer Hardware and Operation<a class="headerlink" href="#fdm-printer-hardware-and-operation" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="fdm-printer-hardware-and-operation">FDM Printer Hardware and Operation<a class="headerlink" href="#fdm-printer-hardware-and-operation" title="Permanent link">¶</a></h1>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Welcome to Chapter 8</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello"></a>
+This chapter is basically my autobiography — every component we cover is part of the machine that either prints me perfectly or turns me into a melted, stringy disaster. By the end, you'll know every part of an FDM printer by name, understand how each one contributes to print quality, and have the hands-on skills to level a bed, load filament, and keep your machine running reliably.</p>
+</div>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter is a hands-on tour of the FDM printer — the FDM/FFF process itself plus every major component (nozzle, hotend, heat break, extruder, stepper motors, belts, lead screws, linear bearings, motherboard firmware, build surface). Students learn the bowden vs. direct-drive trade-off, manual and automatic bed leveling, Z-offset calibration, filament loading and nozzle changes, and the routine maintenance procedures that keep a printer reliable.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 19 concepts from the learning graph:</p>
 <ol>
 <li>FDM FFF Process (Concept 36)</li>
@@ -1286,21 +2023,463 @@
 <li>Nozzle Change (Concept 119)</li>
 <li>Routine Maintenance (Concept 120)</li>
 </ol>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../02-standards-and-process-families/">Chapter 2: AM Standards, Process Families, and Industrial AM</a></li>
 <li><a href="../06-materials-science/">Chapter 6: Materials Science for Additive Manufacturing</a></li>
 <li><a href="../07-slicing-and-toolpaths/">Chapter 7: Slicing, G-code, and Toolpaths</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<h2 id="how-fdmfff-actually-works">How FDM/FFF Actually Works<a class="headerlink" href="#how-fdmfff-actually-works" title="Permanent link">¶</a></h2>
+<p>You've already met the seven ISO/ASTM 52900 process categories. Fused Deposition Modeling (FDM) — marketed under the generic name Fused Filament Fabrication (FFF) — belongs to the <strong>material extrusion</strong> family. The core idea is deceptively simple: melt a thermoplastic filament, push it through a tiny nozzle, and deposit it in a precise path layer by layer until a three-dimensional object emerges. That's it. The engineering challenge is doing this reliably, accurately, and quickly across thousands of consecutive layers.</p>
+<p>The FDM/FFF process works in three broad stages on every print:</p>
+<ol>
+<li><strong>Heating</strong> — The hotend raises the filament above its glass transition temperature (Tg) until it flows.</li>
+<li><strong>Deposition</strong> — The print head moves in X and Y while the extruder pushes molten plastic through the nozzle at a controlled rate.</li>
+<li><strong>Solidification</strong> — The deposited bead cools and bonds to the layer below; the build plate drops one layer height in Z, and the process repeats.</li>
+</ol>
+<p>The slicer you learned about in Chapter 7 translates every movement and extrusion rate into G-code commands. The printer's firmware interprets those commands and orchestrates the hardware. Understanding the hardware is therefore the final piece of the loop: slicer → G-code → firmware → motors/heaters → your print.</p>
+<hr>
+<h2 id="a-map-of-the-machine-fdm-printer-anatomy">A Map of the Machine: FDM Printer Anatomy<a class="headerlink" href="#a-map-of-the-machine-fdm-printer-anatomy" title="Permanent link">¶</a></h2>
+<p>Before we zoom in on individual components, it helps to see the whole machine as a system. An FDM printer has four major subsystems working in parallel:</p>
+<ul>
+<li><strong>Motion system</strong> — moves the print head and/or build plate in X, Y, and Z</li>
+<li><strong>Extrusion system</strong> — feeds, melts, and deposits filament</li>
+<li><strong>Thermal system</strong> — controls temperatures in the hotend and heated bed</li>
+<li><strong>Electronics</strong> — the motherboard, firmware, display, and sensors that coordinate everything</li>
+</ul>
+<p>These subsystems are tightly coupled. A motion system that loses steps produces dimensional errors. An extrusion system running 5 °C too cool produces weak layer bonds. Understanding why a print failed usually means tracing the symptom back to one of these four subsystems.</p>
+<h4 id="diagram-fdm-printer-anatomy-explorer">Diagram: FDM Printer Anatomy Explorer<a class="headerlink" href="#diagram-fdm-printer-anatomy-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/fdm-printer-anatomy-explorer/main.html" width="100%" height="560px" scrolling="no"></iframe>
+
+<details>
+<summary>FDM Printer Anatomy Explorer</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> fdm-printer-anatomy-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Remember (L1)
+Bloom Verb: Identify
+Learning Objective: Students identify and name the major components of an FDM printer and understand how the four subsystems are organized.</p>
+<p>Visual layout:
+- Isometric-style schematic of a Cartesian FDM printer (bed-slinger style, similar to Prusa MK3/Ender 3 proportions) drawn with simple geometric shapes in p5.js
+- Labeled hotspots on: nozzle, hotend assembly, heat break, extruder motor, PTFE tube (or direct-drive notation), X-axis gantry with belt, Y-axis belt and print bed, Z-axis lead screws, linear rods/bearings, motherboard enclosure, build surface
+- Each hotspot is a pulsing circle (color-coded by subsystem)
+- Color coding: Orange = extrusion system, Blue = motion system, Red = thermal system, Green = electronics</p>
+<p>Interactive elements:
+- Hover a hotspot: Reveal a tooltip with the component name, one-sentence description, and subsystem label
+- Click a hotspot: Expand an info panel on the right showing: component name, function, common materials, and a "things that go wrong" note
+- Toggle buttons at top: "Show Motion System", "Show Extrusion System", "Show Thermal System", "Show Electronics" — dimming other subsystems to highlight the selected one
+- A legend at bottom maps subsystem colors to names</p>
+<p>Canvas layout:
+- Left 60%: printer schematic
+- Right 40%: info panel (updates on click)</p>
+<p>Responsive design: scales proportionally on window resize; minimum width 320px.</p>
+</details>
+<hr>
+<h2 id="the-extrusion-system-from-spool-to-nozzle">The Extrusion System: From Spool to Nozzle<a class="headerlink" href="#the-extrusion-system-from-spool-to-nozzle" title="Permanent link">¶</a></h2>
+<p>The extrusion system is the heart of the printer. It takes solid filament from a spool and turns it into a precise bead of molten plastic. There are four distinct components in this chain: the extruder mechanism, the heat break, the hotend, and the nozzle. Understanding what each one does — and where each can fail — is essential for diagnosing print problems.</p>
+<h3 id="the-extruder-mechanism">The Extruder Mechanism<a class="headerlink" href="#the-extruder-mechanism" title="Permanent link">¶</a></h3>
+<p>The <strong>extruder mechanism</strong> is the device that grips and drives the filament. Think of it as the printer's "hands" — it controls how much filament enters the hotend at any given moment. Most desktop extruders use a pair of toothed gears (one driven, one idler) that clamp the filament between them. When the drive gear spins, it pulls or pushes the filament at a controlled rate.</p>
+<p>The extruder's performance depends on two things: grip strength and precision. If the idler tension is too low, the gears slip and under-extrusion results. If it's too high, the gears can grind filament into dust, blocking the path entirely. The motor driving the extruder is a <strong>stepper motor</strong> — we'll cover those shortly — and the firmware translates every G-code <code>E</code> move into a precise number of motor steps.</p>
+<h3 id="the-hotend-assembly">The Hotend Assembly<a class="headerlink" href="#the-hotend-assembly" title="Permanent link">¶</a></h3>
+<p>The <strong>hotend</strong> is the thermal core of the extrusion system. It contains three distinct zones that must each do their job precisely:</p>
+<ol>
+<li><strong>Cold zone (top)</strong> — stays at ambient temperature; this is where the filament enters as a solid rod.</li>
+<li><strong>Transition zone (heat break)</strong> — a narrow region that creates a sharp thermal boundary between cold and hot.</li>
+<li><strong>Hot zone (bottom)</strong> — the heater block, thermistor, and nozzle; filament melts here.</li>
+</ol>
+<p>The <strong>heat break</strong> is a deliberately thin, thermally resistive tube that connects the cold zone to the hot zone. Its job is to keep heat from "creeping" up into the cold zone — a failure mode called <strong>heat creep</strong> that softens filament before it reaches the hot zone and causes a jam. Good heat breaks are made of titanium alloy or stainless steel (both have low thermal conductivity) and may have a PTFE liner to reduce friction.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">The Heat Break Is Surprisingly Critical</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks carefully"></a>
+I've been jammed more times than I'd like to remember, and heat creep is the sneaky culprit behind a lot of those failures. The heat break isn't glamorous — it's a tiny tube you'll barely notice — but it's doing one of the hardest jobs in the whole machine: maintaining a 150 °C temperature gradient across about 5 mm of metal. Think of it as the thermal firewall between solid and liquid filament.</p>
+</div>
+<h3 id="the-nozzle">The Nozzle<a class="headerlink" href="#the-nozzle" title="Permanent link">¶</a></h3>
+<p>The <strong>nozzle</strong> is the final piece of the extrusion chain — a small, precisely machined orifice through which molten plastic exits. Standard nozzles are brass, with an inner bore of 0.4 mm (the most common size), though sizes range from 0.1 mm to 1.2 mm. Smaller nozzles produce finer detail; larger nozzles print faster and handle abrasive or fiber-filled materials better.</p>
+<p>Nozzle material matters too. Brass conducts heat well and is affordable but wears quickly with abrasive filaments like carbon fiber or glow-in-the-dark PLA. Hardened steel nozzles resist wear but conduct heat less efficiently. Ruby-tipped nozzles offer the best wear resistance but cost significantly more. The choice of nozzle material should match your filament choice.</p>
+<p>The table below summarizes common nozzle options to help you choose for a given application:</p>
+<table>
+<thead>
+<tr>
+<th>Nozzle Material</th>
+<th>Wear Resistance</th>
+<th>Heat Transfer</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brass</td>
+<td>Low</td>
+<td>Excellent</td>
+<td>PLA, PETG, ABS (standard filaments)</td>
+</tr>
+<tr>
+<td>Hardened steel</td>
+<td>High</td>
+<td>Good</td>
+<td>Carbon fiber, abrasive filaments</td>
+</tr>
+<tr>
+<td>Stainless steel</td>
+<td>Medium</td>
+<td>Moderate</td>
+<td>Food-safe applications</td>
+</tr>
+<tr>
+<td>Ruby tip</td>
+<td>Excellent</td>
+<td>Good</td>
+<td>Long-term abrasive use</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="bowden-vs-direct-drive-a-critical-trade-off">Bowden vs. Direct Drive: A Critical Trade-Off<a class="headerlink" href="#bowden-vs-direct-drive-a-critical-trade-off" title="Permanent link">¶</a></h2>
+<p>One of the most important design decisions in FDM printer architecture is where to place the extruder motor relative to the hotend. There are two dominant approaches, each with real trade-offs that affect what materials you can print and how fast you can print them.</p>
+<p>In a <strong>Bowden</strong> setup, the extruder motor sits on the printer frame — away from the print head — and pushes filament through a long PTFE tube (called a Bowden tube) to the hotend. The print head itself is lightweight because it carries only the hotend and nozzle, not the motor. This allows faster print speeds because there's less mass to accelerate and decelerate. The downside is that the long, flexible tube introduces a gap between the extruder and the nozzle, which makes it hard to control retraction precisely. Flexible filaments like TPU are notoriously difficult on Bowden setups because the filament buckles inside the tube.</p>
+<p>In a <strong>direct-drive</strong> setup, the extruder motor mounts directly on the print head, right above the hotend. Filament travels only a few millimeters from gear to nozzle, giving the extruder precise, immediate control over flow. Flexible filaments print reliably; retraction distances can be much shorter (0.5–2 mm vs. 4–7 mm on Bowden). The trade-off is added mass on the print head — heavier carriages require more conservative acceleration settings and can cause <strong>ringing</strong> artifacts (wavy surface lines) if pushed too fast.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Bowden or Direct: Match the Setup to the Material</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/tip.png" data-desc-position="bottom"><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy shares a practical tip"></a>
+Here's the practical rule: if you're printing mostly PLA, PETG, or ABS at high speeds, Bowden is fine — and a lightweight head makes the printer feel snappy. If you want to print flexible filaments (TPU, TPE) or if you're noticing stubborn stringing that retraction tuning can't fix, direct drive will solve the problem in ways that slicer settings simply can't.</p>
+</div>
+<hr>
+<h2 id="the-motion-system-moving-with-precision">The Motion System: Moving with Precision<a class="headerlink" href="#the-motion-system-moving-with-precision" title="Permanent link">¶</a></h2>
+<p>Every position the print head occupies — every coordinate in every G-code line — must be physically enacted by the motion system. This system translates electrical signals into precise mechanical movement across three axes.</p>
+<h3 id="stepper-motors">Stepper Motors<a class="headerlink" href="#stepper-motors" title="Permanent link">¶</a></h3>
+<p>A <strong>stepper motor</strong> is a brushless DC motor designed to rotate in discrete, fixed-angle steps rather than spinning continuously. A typical stepper motor used in desktop FDM printers takes 200 steps per full revolution (1.8° per step). Combined with microstepping — where the driver splits each step into smaller sub-steps — effective resolutions of 1/16 or 1/32 of a step are common.</p>
+<p>Stepper motors are used for every axis (X, Y, Z) and for the extruder. They're ideal for 3D printers because they move to a known position on command, without needing an encoder or feedback sensor. (This is called <strong>open-loop control</strong>: the firmware commands a position and trusts that the motor executed it. If the motor loses steps — stalling under overload — the printer doesn't know.) Most modern printers add stallguard detection or sensorless homing to catch missed steps, but preventing them in the first place through proper current settings and acceleration limits is the better solution.</p>
+<h3 id="belts-and-pulleys">Belts and Pulleys<a class="headerlink" href="#belts-and-pulleys" title="Permanent link">¶</a></h3>
+<p>X and Y axis motion in most desktop printers is driven by <strong>toothed belts and pulleys</strong>. The stepper motor rotates a toothed pulley that engages a belt looped around the axis. Belt tension is critical: a loose belt produces backlash and wavy prints; an over-tensioned belt stresses bearings and makes the motor work harder than necessary. A well-tensioned belt should produce a clear, resonant twang when plucked — most manufacturers specify a particular frequency that you can check with a phone app.</p>
+<p>Belts are made of reinforced rubber with a glass-fiber or Kevlar cord core. They stretch slightly over time, so re-tensioning is part of routine maintenance. If you start seeing shifting layers or ghosting artifacts and the slicer settings look fine, a stretched belt is a very likely cause.</p>
+<h3 id="lead-screws">Lead Screws<a class="headerlink" href="#lead-screws" title="Permanent link">¶</a></h3>
+<p>The Z axis uses a different mechanism than X and Y: instead of a belt, it uses a <strong>lead screw</strong> — a threaded rod that translates rotation into linear motion. When the Z stepper motor turns the lead screw, a brass nut riding on the screw moves the bed (or the gantry) up or down. Lead screws are used for Z because the axis moves slowly and doesn't need fast acceleration; they're also self-locking, meaning the Z axis holds its position even when the motor is unpowered.</p>
+<p>The pitch and lead of the screw determine how much vertical travel you get per motor step. A standard Tr8×8 lead screw (8 mm lead, 4 starts) moves 8 mm per revolution — with a 200-step motor and 16× microstepping, that's a theoretical Z resolution of 0.0025 mm per step.</p>
+<h3 id="linear-bearings-and-rods">Linear Bearings and Rods<a class="headerlink" href="#linear-bearings-and-rods" title="Permanent link">¶</a></h3>
+<p>All of these axes need smooth, low-friction guidance. <strong>Linear bearings</strong> ride on hardened steel rods and allow effortless sliding in one direction while constraining all others. The most common type on desktop printers is the LM8UU ball bearing (8 mm bore), which uses recirculating steel balls to minimize friction. These bearings require occasional lubrication with a light oil or lithium grease to prevent dryness-induced noise and wear.</p>
+<h4 id="diagram-motion-system-explainer">Diagram: Motion System Explainer<a class="headerlink" href="#diagram-motion-system-explainer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/fdm-motion-system-explainer/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>FDM Motion System Explainer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> fdm-motion-system-explainer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain
+Learning Objective: Students explain how stepper motors, belts, and lead screws translate G-code motion commands into physical print-head movement.</p>
+<p>Data Visibility Requirements:
+Stage 1: Show G-code command (e.g., G1 X50 Y30 F3000) as text at the top
+Stage 2: Show the command parsed into axis deltas: ΔX = 50 mm, ΔY = 30 mm
+Stage 3: Animate the print head moving from origin to (50, 30) over the build area — X belt and Y belt highlighted as they activate
+Stage 4: Show step count calculations: steps = (distance / mm_per_step), displayed numerically
+Stage 5: Show final position reached, with confirmation overlay</p>
+<p>Canvas layout:
+- Top panel (80px): G-code input field (preset commands to select, no freeform entry) + "Run" button
+- Center (360px): Top-down view of printer build area with print head carriage, X-axis rod and belt, Y-axis rod and belt
+- Bottom panel (80px): Step counter for X motor and Y motor, updating in real time during animation</p>
+<p>Interactive controls:
+- Dropdown: select from 5 preset G-code moves (short X-only, short Y-only, diagonal, full-bed traverse, retrace)
+- Slider: animation speed (slow/medium/fast)
+- Toggle: "Show Steps" checkbox — shows/hides step-count overlay
+- Button: Reset to home position</p>
+<p>Visual elements:
+- Print head as a small colored square with crosshair
+- X belt shown as a dashed line across top and bottom of carriage (moves with head)
+- Y belt shown as dashed lines on sides
+- Animated pulley wheels at belt endpoints, spinning during moves
+- Motion path drawn as a fading trail</p>
+<p>Instructional Rationale: Step-through with concrete data visibility is appropriate because the Understand objective requires students to connect abstract G-code numbers to physical steps and distances. Animation shows the relationship dynamically; step counters make the math visible.</p>
+<p>Responsive: scales to container width; minimum 320px.</p>
+</details>
+<hr>
+<h2 id="the-brain-motherboard-and-firmware">The Brain: Motherboard and Firmware<a class="headerlink" href="#the-brain-motherboard-and-firmware" title="Permanent link">¶</a></h2>
+<p>Every signal the printer sends to its motors, heaters, and sensors passes through the <strong>motherboard</strong> — a microcontroller-based circuit board that is the computational core of the machine. Common boards (like the 32-bit boards found in modern Prusa, Bambu, and Creality printers) run at 168–480 MHz, fast enough to process stepper pulses, PID temperature loops, and sensor readings simultaneously.</p>
+<p><strong>Firmware</strong> is the software that runs on the motherboard. It interprets incoming G-code (via USB, SD card, or Wi-Fi), manages the print job, controls motor drivers, and runs closed-loop temperature control (PID) for the hotend and heated bed. The dominant open-source firmware is <strong>Marlin</strong>, which runs on hundreds of different printer models. <strong>Klipper</strong> is a newer alternative that offloads computation to a Raspberry Pi, enabling faster processing and more sophisticated features like input shaping (anti-vibration algorithms).</p>
+<p>The firmware is responsible for key behaviors that directly affect print quality:</p>
+<ul>
+<li><strong>Acceleration profiles</strong> — limiting how fast the printer can speed up or slow down (too aggressive causes ringing artifacts)</li>
+<li><strong>Temperature PID tuning</strong> — keeping the hotend at ±1 °C of target (poor PID causes temperature swings and inconsistent extrusion)</li>
+<li><strong>Steps-per-mm calibration</strong> — ensuring each motor moves exactly the commanded distance</li>
+</ul>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Flashing Firmware Has Real Consequences</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/warning.png" data-desc-position="bottom"><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy warns about a mistake"></a>
+Updating or customizing firmware is powerful — but if you flash settings meant for a different machine, you can get wrong step values, inverted axes, or dangerously incorrect temperature readings. Always back up working firmware before flashing, and verify steps-per-mm and temperature sensor type after any firmware update. A misconfigured thermistor type can let the hotend overheat without triggering a safety shutdown.</p>
+</div>
+<hr>
+<h2 id="build-surfaces-where-the-print-meets-the-plate">Build Surfaces: Where the Print Meets the Plate<a class="headerlink" href="#build-surfaces-where-the-print-meets-the-plate" title="Permanent link">¶</a></h2>
+<p>The <strong>build surface</strong> is what your filament first sticks to, and "first layer adhesion" is one of the most important determinants of print success or failure. There are several surface types in common use, each with different adhesion characteristics, temperature requirements, and maintenance needs.</p>
+<p>Before examining these surfaces, it helps to understand two key terms: <strong>adhesion</strong> (how well the first layer sticks during printing) and <strong>release</strong> (how easily the finished print lifts off). A good build surface provides strong adhesion while printing and clean release once the print cools. Getting that balance right is the engineering challenge.</p>
+<p>Here is a comparison of the most common build surfaces:</p>
+<table>
+<thead>
+<tr>
+<th>Surface Type</th>
+<th>Best Materials</th>
+<th>Adhesion Method</th>
+<th>Release Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PEI spring steel (textured)</td>
+<td>PLA, PETG, ABS</td>
+<td>Heat + surface texture</td>
+<td>Flex the sheet when cooled</td>
+</tr>
+<tr>
+<td>PEI spring steel (smooth)</td>
+<td>PLA, TPU</td>
+<td>Heat</td>
+<td>Flex or slight gap at cool</td>
+</tr>
+<tr>
+<td>Glass + hairspray/glue stick</td>
+<td>PLA, ABS</td>
+<td>Adhesive layer</td>
+<td>Cools and releases naturally</td>
+</tr>
+<tr>
+<td>BuildTak / PEX</td>
+<td>PLA, PETG</td>
+<td>Surface chemistry</td>
+<td>Spatula; can be difficult</td>
+</tr>
+<tr>
+<td>Garolite / FR4</td>
+<td>Nylon</td>
+<td>Surface chemistry</td>
+<td>Cool to release</td>
+</tr>
+<tr>
+<td>Kapton tape</td>
+<td>ABS</td>
+<td>High-temp adhesive</td>
+<td>Spatula</td>
+</tr>
+</tbody>
+</table>
+<p>Modern removable PEI spring steel sheets have largely replaced glass plates on hobbyist printers because they handle the adhesion/release trade-off elegantly: prints stick firmly while hot, then release with a gentle flex of the sheet when cooled to room temperature.</p>
+<hr>
+<h2 id="bed-leveling-and-z-offset-calibration">Bed Leveling and Z-Offset Calibration<a class="headerlink" href="#bed-leveling-and-z-offset-calibration" title="Permanent link">¶</a></h2>
+<p>"Leveling the bed" is a somewhat misleading phrase — you're not leveling it with respect to gravity. You're <strong>tramming</strong> the bed: making the build surface parallel to the plane in which the print head moves. If the bed is even slightly tilted, one corner of your first layer will be too high (poor adhesion, gaps) and the opposite corner will be too low (nozzle scrapes the surface, causing clogs and marks).</p>
+<div class="admonition mascot-encouraging">
+<p class="admonition-title">Bed Leveling Is Learnable — Stick With It</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/encouraging.png" data-desc-position="bottom"><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy encourages the student"></a>
+Bed leveling frustrates almost every new printer operator. There's a real gap between "I understand the concept" and "my first layer looks perfect." That gap closes with practice. The first time you nail a perfect first layer — shiny, consistent, sticking beautifully across the whole plate — you'll know exactly what you were aiming for, and it'll get easier every time after that.</p>
+</div>
+<h3 id="manual-bed-leveling">Manual Bed Leveling<a class="headerlink" href="#manual-bed-leveling" title="Permanent link">¶</a></h3>
+<p><strong>Manual bed leveling</strong> uses adjustment knobs (or screws) at the corners of the build plate to raise or lower each corner independently. The standard method uses a piece of standard printer paper as a feeler gauge: you slide the paper between the nozzle and the bed, adjust each corner until the paper slides with a slight drag (not catching, not sliding freely), and repeat until all corners are consistent.</p>
+<p>The process typically goes like this:</p>
+<ol>
+<li>Heat the hotend and bed to printing temperature (thermal expansion affects the gap).</li>
+<li>Home all axes so the printer goes to its reference position.</li>
+<li>Move the nozzle to each corner (G-code: G1 X10 Y10, G1 X200 Y10, etc.).</li>
+<li>Adjust the corner knob until the paper-slide resistance feels correct.</li>
+<li>Repeat all four corners two or three times (adjusting one corner affects the others slightly).</li>
+<li>Check the center of the bed last.</li>
+</ol>
+<h3 id="auto-bed-leveling">Auto Bed Leveling<a class="headerlink" href="#auto-bed-leveling" title="Permanent link">¶</a></h3>
+<p><strong>Automatic bed leveling (ABL)</strong> uses a sensor to probe a grid of points across the bed surface, build a mesh map of any tilt or warp, and apply software corrections during printing so the first layer stays consistent even if the bed isn't perfectly flat. Common sensor types include:</p>
+<ul>
+<li><strong>BLTouch / CR Touch</strong> — a servo-actuated pin that physically touches the bed surface</li>
+<li><strong>Inductive probes</strong> — detect metal bed surfaces without contact</li>
+<li><strong>Capacitive probes</strong> — detect any conductive surface</li>
+<li><strong>Strain gauge / load cell (e.g., Klicky, Beacon)</strong> — uses the nozzle itself as the probe</li>
+</ul>
+<p>ABL does not eliminate the need for a well-trammed bed — it compensates for small deviations but can't correct for a dramatically tilted surface. Think of it as a software layer on top of a physically reasonable setup.</p>
+<h3 id="z-offset-calibration">Z-Offset Calibration<a class="headerlink" href="#z-offset-calibration" title="Permanent link">¶</a></h3>
+<p>Even with bed leveling complete, you need to set the <strong>Z offset</strong>: the precise gap between the nozzle and the bed surface at the probing or homing position. Too far: the filament doesn't squish into the bed and peels off. Too close: the nozzle scrapes the surface and blocks extrusion.</p>
+<p>Z offset is typically set in the printer's LCD menu or via a firmware command (<code>M851 Z-X.XX</code>) and saved to EEPROM. A well-calibrated first layer looks like slightly squished lines with no visible gaps between adjacent beads.</p>
+<h4 id="diagram-z-offset-calibration-microsim">Diagram: Z-Offset Calibration MicroSim<a class="headerlink" href="#diagram-z-offset-calibration-microsim" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/z-offset-calibration-sim/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>Z-Offset Calibration MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> z-offset-calibration-sim<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Demonstrate
+Learning Objective: Students practice adjusting the Z offset and observe the resulting first-layer cross-section to develop intuition for the correct gap.</p>
+<p>Canvas layout:
+- Top (60px): Z-offset slider labeled from -2.5 mm to +0.5 mm, current value displayed numerically
+- Center (280px): Cross-section view showing the nozzle tip above the build surface, with filament bead extruding and being compressed or gapped depending on offset
+- Bottom (140px): Four labeled preview thumbnails showing "Too Far", "Slightly High", "Correct", "Too Close" with colored indicators</p>
+<p>Visual elements:
+- Nozzle shown as a gray tapered shape, its vertical position controlled by the Z-offset slider
+- Extruded bead shown below nozzle: at correct offset it's elliptical and squished (wider than tall); too far = circular with no contact; too close = nozzle drags on surface, bead blocked
+- Color of bead changes: red (too close or too far), yellow (close but not ideal), green (correct range)
+- "First Layer Grade" text updates: Excellent / Good / Marginal / Poor / Nozzle Crash</p>
+<p>Interactive controls:
+- Z-offset slider (primary control)
+- "Show Magnified View" toggle: zooms in on the bead cross-section
+- Button: "What does this first layer look like?" — triggers a top-down view animation of how lines look when printed at the current offset</p>
+<p>Default parameters:
+- Starting Z offset: -1.0 mm (slightly high, good starting point for adjustment)</p>
+<p>Instructional Rationale: Parameter exploration (Apply level) is appropriate because students need to develop tactile intuition that can't be conveyed by prose alone. The simulation gives immediate, concrete feedback linking abstract offset numbers to physical print outcomes.</p>
+<p>Responsive: adjusts to container width; minimum 360px.</p>
+</details>
+<hr>
+<h2 id="filament-loading-and-nozzle-changes">Filament Loading and Nozzle Changes<a class="headerlink" href="#filament-loading-and-nozzle-changes" title="Permanent link">¶</a></h2>
+<h3 id="loading-filament">Loading Filament<a class="headerlink" href="#loading-filament" title="Permanent link">¶</a></h3>
+<p><strong>Filament loading</strong> is the process of feeding a new spool of filament through the extruder and into the hotend so it reaches the nozzle tip, ready to print. It sounds simple, but a few key steps make it reliable:</p>
+<ol>
+<li>Heat the hotend to the printing temperature for the target filament (not lower — the filament won't flow; not higher than needed — it can degrade).</li>
+<li>Cut the filament end at a 45° angle with sharp scissors or a filament cutter — a pointed end threads into the extruder more easily than a blunt one.</li>
+<li>Insert the filament into the extruder (from the top or rear depending on your printer's design) and push manually until you feel resistance, then engage the extruder motor via the printer's LCD menu ("Load Filament" or "Feed Filament").</li>
+<li>Continue feeding until the old filament or air is purged and fresh filament flows consistently from the nozzle.</li>
+</ol>
+<p>When switching materials with different temperatures (e.g., from PETG at 240 °C to PLA at 210 °C), always purge at the higher temperature first to ensure the residue of the higher-temp material fully exits.</p>
+<h3 id="changing-the-nozzle">Changing the Nozzle<a class="headerlink" href="#changing-the-nozzle" title="Permanent link">¶</a></h3>
+<p>A <strong>nozzle change</strong> is one of the most routine maintenance tasks on an FDM printer, whether you're switching sizes (0.4 mm to 0.8 mm for faster printing) or replacing a worn nozzle. The critical rule: <strong>always change the nozzle at printing temperature, never cold</strong>. Cold filament in the nozzle contracts and grips the threads; attempting to unscrew a cold nozzle can strip the heater block threads or crack the block.</p>
+<p>The correct procedure:</p>
+<ol>
+<li>Heat the hotend to the print temperature for the installed filament (typically 200–240 °C).</li>
+<li>Retract or manually push out residual filament so the nozzle bore is mostly clear.</li>
+<li>Use a socket wrench or nozzle-change pliers to hold the heater block steady (do not let it twist — it can shear heater cartridge wires).</li>
+<li>Use a second wrench to unscrew the nozzle counterclockwise.</li>
+<li>Screw in the new nozzle by hand until snug, then tighten a quarter-turn at temperature.</li>
+<li>Allow to cool fully, then re-heat to printing temperature and tighten the "hot tightening" — this seats the nozzle against the heat break for a leak-free seal.</li>
+</ol>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Never Unscrew a Cold Nozzle</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/warning.png" data-desc-position="bottom"><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy warns about a common mistake"></a>
+The number one nozzle-change mistake is attempting it cold. Solidified filament inside the threads acts like thread-lock adhesive — and the torque needed to break it free can strip the heater block or snap the nozzle off entirely. Heat before you wrench. Always.</p>
+</div>
+<hr>
+<h2 id="routine-maintenance">Routine Maintenance<a class="headerlink" href="#routine-maintenance" title="Permanent link">¶</a></h2>
+<p>An FDM printer that runs reliably is a printer that gets regular attention. Maintenance isn't complicated — most tasks take five minutes — but skipping them compounds. Here are the key tasks and their recommended intervals:</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Frequency</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clean build surface</td>
+<td>After each print</td>
+<td>Old adhesive or residue prevents consistent first-layer adhesion</td>
+</tr>
+<tr>
+<td>Re-tension belts</td>
+<td>Monthly</td>
+<td>Belts stretch; loose belts cause layer shifts and ghosting</td>
+</tr>
+<tr>
+<td>Lubricate Z lead screws</td>
+<td>Monthly</td>
+<td>Dry screws cause jerky Z movement and Z-banding</td>
+</tr>
+<tr>
+<td>Lubricate linear rods</td>
+<td>Monthly</td>
+<td>Dry bearings squeak, wear faster, and reduce print quality</td>
+</tr>
+<tr>
+<td>Check and tighten pulleys/grub screws</td>
+<td>Monthly</td>
+<td>Loose set screws cause axis slipping</td>
+</tr>
+<tr>
+<td>Inspect and clean extruder gears</td>
+<td>Monthly</td>
+<td>Ground filament dust builds up and reduces grip</td>
+</tr>
+<tr>
+<td>Cold-pull nozzle cleaning</td>
+<td>When clogs appear</td>
+<td>Removes partial clogs before they become full blockages</td>
+</tr>
+<tr>
+<td>Check hotend fan operation</td>
+<td>Every session</td>
+<td>Fan failure leads to heat creep and jams within minutes</td>
+</tr>
+<tr>
+<td>Calibrate E-steps</td>
+<td>After any extruder change</td>
+<td>Ensures correct extrusion volume</td>
+</tr>
+</tbody>
+</table>
+<p>A <strong>cold pull</strong> (also called an "atomic pull") is worth knowing in detail. You heat the hotend to printing temperature, push filament through until clear, then lower the temperature to about 90 °C (for PLA) and slowly pull the filament out. The tip of the filament should emerge shaped like a cast of the inside of the nozzle bore — any discoloration or debris indicates a partial clog that the pull has cleaned out.</p>
+<h4 id="diagram-maintenance-schedule-interactive-checklist">Diagram: Maintenance Schedule Interactive Checklist<a class="headerlink" href="#diagram-maintenance-schedule-interactive-checklist" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/fdm-maintenance-scheduler/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>FDM Maintenance Schedule Interactive Checklist</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> fdm-maintenance-scheduler<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Use
+Learning Objective: Students use a structured maintenance checklist to develop habits for keeping an FDM printer running reliably, and connect each task to a mechanical reason.</p>
+<p>Layout:
+- Left column: Frequency tabs — "After Each Print", "Monthly", "As-Needed"
+- Right panel: Checklist items with checkboxes, task name, time estimate, and a "Why?" expand button</p>
+<p>Interactive elements:
+- Clicking a tab shows the relevant maintenance tasks
+- Each task has a checkbox (toggles checked/unchecked with visual feedback)
+- "Why?" button next to each task expands a 2-sentence explanation of what goes wrong if the task is skipped
+- Progress bar at top shows "X of Y tasks checked for this period"
+- "Reset Checklist" button clears all checks with confirmation dialog</p>
+<p>Visual style:
+- Clean card layout, each task on a card with an icon (wrench, oil drop, spring, etc.)
+- Checked tasks show a green checkmark overlay
+- Overdue indicator (red dot) appears on tasks that haven't been checked in a simulated period</p>
+<p>Data:
+After-each-print tasks: Clean build surface, inspect first layer, check filament path for tangles
+Monthly tasks: Belt tension check (twang test), Z screw lubrication, linear rod lubrication, pulley set screw check, extruder gear cleaning, E-step verification
+As-needed tasks: Nozzle cold pull, nozzle replacement, bed leveling re-calibration, firmware update check</p>
+<p>Responsive: horizontal layout collapses to vertical tabs on narrow screens; minimum width 280px.</p>
+</details>
+<hr>
+<h2 id="bringing-it-all-together-from-g-code-to-print">Bringing It All Together: From G-Code to Print<a class="headerlink" href="#bringing-it-all-together-from-g-code-to-print" title="Permanent link">¶</a></h2>
+<p>Every concept in this chapter is part of a single, continuous chain. Your slicer writes a G-code file full of movement commands and temperatures. The firmware on the motherboard reads those commands and sends precise electrical pulses to the stepper motors. The motion system — belts, pulleys, lead screws, and linear bearings — translates those pulses into physical positions. At the end of the print head, the extruder pushes filament through the heat break and into the hotend, where it melts and exits through the nozzle. The first layer bonds to the build surface, and each subsequent layer bonds to the one before it.</p>
+<p>When everything is calibrated and maintained, this chain produces parts with dimensional accuracy within ±0.2 mm and layer bonds strong enough for functional use. When something breaks down — a loose belt, a clogged nozzle, a miscalibrated Z offset, a heat-crept hotend — the print will tell you. Your job is to read what the print is saying and trace the symptom back to its cause.</p>
+<p>That's not just printer operation. That's engineering thinking.</p>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">¶</a></h2>
+<ul>
+<li>FDM/FFF deposits molten thermoplastic layer by layer; the process has three stages: heat, deposit, solidify.</li>
+<li>An FDM printer has four interacting subsystems: motion, extrusion, thermal, and electronics.</li>
+<li>The hotend assembly has three thermal zones; the heat break creates the critical boundary between solid and molten filament.</li>
+<li>Bowden extruders are lighter and faster; direct-drive extruders handle flexible materials and offer better retraction control.</li>
+<li>Stepper motors move in fixed steps; X/Y motion uses belts and pulleys; Z motion uses lead screws.</li>
+<li>The motherboard runs firmware (Marlin, Klipper) that interprets G-code, controls heaters via PID, and manages motion.</li>
+<li>Build surface choice balances adhesion during printing and release after cooling; textured PEI spring steel is the current standard.</li>
+<li>Bed leveling (tramming) ensures the build surface is parallel to the print head plane; Z offset sets the precise nozzle-to-bed gap.</li>
+<li>Auto bed leveling measures a mesh and applies software compensation — it enhances, not replaces, physical tramming.</li>
+<li>Routine maintenance (belt tension, lubrication, gear cleaning, cold pulls) is what separates a reliable machine from a frustrating one.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: What Does the Heat Break Actually Do? — Click to Reveal</summary>
+<p>The heat break creates a sharp thermal boundary between the cold zone (where filament enters as a solid rod) and the hot zone (where it melts). It is made of a low-thermal-conductivity material (titanium or stainless steel) and is deliberately narrow to minimize heat transfer. Without it, heat would "creep" upward, softening filament before it reaches the hot zone and causing a jam called heat creep. The heat break is the thermal firewall that keeps solid and liquid filament exactly where they need to be.</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You Know Your Printer Inside and Out</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you"></a>
+If you've made it through this chapter, you can look at any FDM printer and name every component, explain what it does, and describe what goes wrong when it fails. That's a genuinely useful skill — most printer problems are diagnosed by people who understand the hardware, not by people who just follow a troubleshooting chart. Next up in Chapter 9, we shift from the machine itself to something just as important: how to work with it safely, responsibly, and sustainably.</p>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1317,7 +2496,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1327,13 +2506,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../07-slicing-and-toolpaths/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 7. Slicing and Toolpaths">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1358,7 +2537,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1370,7 +2549,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1395,5 +2574,7 @@
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+        <meta name="description" content="DfAM principles — overhangs, bridging, orientation strategy, support minimization, tolerances, lattices, topology optimization, and generative design — plus measurement skills with calipers, micrometers, GD&amp;T basics, and calibration procedures.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -29,7 +26,7 @@
     
     
       
-        <title>11. DfAM and Metrology - Introduction to 3D Printing</title>
+        <title>Design for Additive Manufacturing and Metrology - Introduction to 3D Printing</title>
       
     
     
@@ -50,7 +47,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -65,7 +62,30 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Design for Additive Manufacturing and Metrology - Introduction to 3D Printing">
+<meta property="og:description" content="DfAM principles — overhangs, bridging, orientation strategy, support minimization, tolerances, lattices, topology optimization, and generative design — plus measurement skills with calipers, micrometers, GD&amp;T basics, and calibration procedures.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/11-dfam-and-metrology/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/11-dfam-and-metrology/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Design for Additive Manufacturing and Metrology - Introduction to 3D Printing">
+<meta property="twitter:description" content="DfAM principles — overhangs, bridging, orientation strategy, support minimization, tolerances, lattices, topology optimization, and generative design — plus measurement skills with calipers, micrometers, GD&amp;T basics, and calibration procedures.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/11-dfam-and-metrology/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -101,12 +121,12 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -118,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              11. DfAM and Metrology
+              Design for Additive Manufacturing and Metrology
             
           </span>
         </div>
@@ -134,7 +154,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -143,20 +163,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -182,7 +202,7 @@
         <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -206,7 +226,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -218,7 +238,7 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Introduction to 3D Printing
@@ -228,7 +248,7 @@
       <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -796,6 +816,189 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-is-dfam-and-why-does-it-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is DfAM — and Why Does It Matter?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overhangs-and-self-supporting-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overhangs and Self-Supporting Angles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-orientation-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Part Orientation Strategy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-minimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Minimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wall-thickness-rules-and-hole-tolerances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wall Thickness Rules and Hole Tolerances
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wall Thickness Rules and Hole Tolerances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dfam-rules-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: DfAM Rules Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lattice-structures-topology-optimization-and-lightweighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lattice Structures, Topology Optimization, and Lightweighting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measuring-what-you-made-introduction-to-metrology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measuring What You Made: Introduction to Metrology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measuring What You Made: Introduction to Metrology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calipers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calipers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micrometers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Micrometers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gdt-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GD&amp;T Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calibration-cubes-and-quality-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calibration Cubes and Quality Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration Cubes and Quality Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-calibration-and-measurement-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Calibration and Measurement MicroSim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeatability-and-reproducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repeatability and Reproducibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1136,7 +1339,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1187,6 +1390,189 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-is-dfam-and-why-does-it-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is DfAM — and Why Does It Matter?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overhangs-and-self-supporting-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overhangs and Self-Supporting Angles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-orientation-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Part Orientation Strategy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-minimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Minimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wall-thickness-rules-and-hole-tolerances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wall Thickness Rules and Hole Tolerances
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wall Thickness Rules and Hole Tolerances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dfam-rules-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: DfAM Rules Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lattice-structures-topology-optimization-and-lightweighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lattice Structures, Topology Optimization, and Lightweighting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measuring-what-you-made-introduction-to-metrology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measuring What You Made: Introduction to Metrology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measuring What You Made: Introduction to Metrology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calipers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calipers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micrometers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Micrometers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gdt-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GD&amp;T Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calibration-cubes-and-quality-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calibration Cubes and Quality Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration Cubes and Quality Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-calibration-and-measurement-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Calibration and Measurement MicroSim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeatability-and-reproducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repeatability and Reproducibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1205,7 +1591,7 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
+  <nav class="md-path" aria-label="Navigation">
     <ol class="md-path__list">
       
         
@@ -1254,16 +1640,21 @@
   
     <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/11-dfam-and-metrology/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="design-for-additive-manufacturing-and-metrology">Design for Additive Manufacturing and Metrology<a class="headerlink" href="#design-for-additive-manufacturing-and-metrology" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>This chapter teaches Design for Additive Manufacturing (DfAM) — the design rules that emerge from how AM processes actually build parts: overhangs, bridging, part-orientation strategy, support minimization, wall thickness rules, hole and slot tolerances, self-supporting angles, lattice structures, topology optimization, generative design, and lightweighting. The metrology half of the chapter teaches dimensional accuracy, calipers, micrometers, GD&amp;T basics, calibration cubes, quality-control procedures, and repeatability — the measurement skills that prove a DfAM strategy worked.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h1 id="design-for-additive-manufacturing-and-metrology">Design for Additive Manufacturing and Metrology<a class="headerlink" href="#design-for-additive-manufacturing-and-metrology" title="Permanent link">¶</a></h1>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Welcome to Chapter 11</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello"></a>
+This chapter is about making the design process work with the printer instead of against it. Most beginners download models and print them as-is. DfAM practitioners design specifically for how additive processes build parts — and the result is stronger, faster-printing, lower-waste parts. The metrology section closes the loop: designing well means nothing if you can't measure whether the result actually meets your requirements.</p>
+</div>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
+<p>This chapter teaches Design for Additive Manufacturing (DfAM) — the design rules that emerge from how AM processes actually build parts: overhangs, bridging, part-orientation strategy, support minimization, wall thickness rules, hole and slot tolerances, self-supporting angles, lattice structures, topology optimization, generative design, and lightweighting. The metrology half teaches dimensional accuracy, calipers, micrometers, GD&amp;T basics, calibration cubes, quality-control procedures, and repeatability.</p>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 20 concepts from the learning graph:</p>
 <ol>
 <li>DfAM Principles (Concept 155)</li>
@@ -1287,7 +1678,7 @@
 <li>Quality Control Procedures (Concept 173)</li>
 <li>Repeatability And Reproducibility (Concept 174)</li>
 </ol>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../01-foundations-and-history/">Chapter 1: Foundations and History of Additive Manufacturing</a></li>
@@ -1296,14 +1687,261 @@
 <li><a href="../07-slicing-and-toolpaths/">Chapter 7: Slicing, G-code, and Toolpaths</a></li>
 <li><a href="../08-fdm-printer-hardware/">Chapter 8: FDM Printer Hardware and Operation</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<h2 id="what-is-dfam-and-why-does-it-matter">What Is DfAM — and Why Does It Matter?<a class="headerlink" href="#what-is-dfam-and-why-does-it-matter" title="Permanent link">¶</a></h2>
+<p><strong>Design for Additive Manufacturing (DfAM)</strong> is the practice of designing parts with additive processes in mind — exploiting what AM does well and avoiding what it does poorly. It's not a separate discipline from engineering design; it's how engineering design applies to a specific manufacturing method.</p>
+<p>Subtractive manufacturing (CNC milling, turning) produces parts by cutting material away. The design rules for those processes center on tool access — you can only cut what a tool can reach. AM builds parts layer by layer, which creates an entirely different set of design rules:</p>
+<ul>
+<li>Internal complexity is nearly free — a hollow lattice structure is no harder to print than a solid block.</li>
+<li>Overhanging geometry requires support material or a specific orientation choice.</li>
+<li>Surface quality depends on orientation relative to the layer direction.</li>
+<li>Tolerances and shrinkage must be anticipated in the design stage to get dimensions right.</li>
+</ul>
+<p>Understanding these rules turns you from a person who adapts existing designs to a person who engineers parts from the beginning for the process that will make them.</p>
+<hr>
+<h2 id="overhangs-and-self-supporting-angles">Overhangs and Self-Supporting Angles<a class="headerlink" href="#overhangs-and-self-supporting-angles" title="Permanent link">¶</a></h2>
+<p>An <strong>overhang</strong> is any geometry that extends horizontally outward beyond the layer below it. When an FDM nozzle deposits a bead of plastic, that bead needs something beneath it to support it as it cools. If there's nothing below — or if the previous layer is too far offset — the material droops, curls, or fails to bond properly.</p>
+<p>The rule of thumb most practitioners use is the <strong>45-degree guideline</strong>: any surface at 45° or more from horizontal (measured from the vertical, not the horizontal) can usually print without support in FDM. Surfaces at angles less than 45° from horizontal — meaning they overhang more than 45° — need either a support structure or a redesign.</p>
+<p>This threshold angle is sometimes called the <strong>self-supporting angle</strong>. It's not a hard physical constant: it depends on layer height, print speed, material, cooling fan effectiveness, and even ambient temperature. A well-tuned printer with a fast-spinning cooling fan can often handle 55–60° overhangs. A slower printer running ABS (which needs less cooling to avoid warping) may struggle above 40°. The 45° rule is a starting point for designing, not an absolute guarantee.</p>
+<p><strong>Bridging</strong> is the related concept: printing a horizontal span between two support points with no material below. Think of printing the top of a doorway arch. Most printers handle bridges remarkably well if the bridge is short (under ~60 mm for most setups) because the plastic extrudes as a continuous strand that cools before gravity pulls it down. Longer bridges sag in the middle; the solution is either to limit bridge spans in the design, use supports, or orient the part so the bridge becomes a shorter span.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Overhangs Are a Gravity Problem</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks carefully"></a>
+Here's a way to think about the 45° rule that makes it stick: you're essentially asking whether a bead of plastic has enough contact with the layer below it to not sag before it solidifies. At 45°, each layer only steps outward by one layer height for every layer height of vertical travel — so about half the bead is still supported. Steeper than 45°, and you're hanging more plastic in the air than is supported. Gravity doesn't care about your design intent.</p>
+</div>
+<hr>
+<h2 id="part-orientation-strategy">Part Orientation Strategy<a class="headerlink" href="#part-orientation-strategy" title="Permanent link">¶</a></h2>
+<p>Choosing how to orient a part in the build volume is one of the most consequential DfAM decisions — it affects support volume, surface finish, mechanical strength, and print time. Before placing a model in the slicer, ask four questions:</p>
+<ol>
+<li><strong>Where are the overhangs?</strong> Orient the part to eliminate or minimize overhanging surfaces.</li>
+<li><strong>Which surface needs the best finish?</strong> The top surface of a print has the best surface quality (no layer lines visible from above); sides show layer lines; the bottom touching the build surface shows the texture of the build plate.</li>
+<li><strong>Where will the load be applied?</strong> FDM parts are anisotropic — strongest in the XY plane, weakest in Z (between layers). Orient the part so the primary load path runs in XY, not Z.</li>
+<li><strong>What's the tallest dimension?</strong> Parts that can be laid flat print faster and with less Z-axis travel variability than parts standing on end.</li>
+</ol>
+<p>These four goals frequently conflict. A part with a critical mating surface (needs best finish), complex underside geometry (needs orientation to avoid supports), and a tensile load path in one direction may not have a single "perfect" orientation. Experienced designers iterate: try several orientations in the slicer preview, evaluate the support volume and layer direction vs. load direction, and choose the best available trade-off.</p>
+<hr>
+<h2 id="support-minimization">Support Minimization<a class="headerlink" href="#support-minimization" title="Permanent link">¶</a></h2>
+<p><strong>Support structures</strong> allow you to print geometry that would otherwise fail, but they come with costs: added material, added print time, post-processing time to remove them, and surface marks where they contact the model. <strong>Support minimization</strong> is the DfAM practice of reducing required support through design choices rather than relying on the slicer to generate it automatically.</p>
+<p>Strategies for minimizing supports:</p>
+<ul>
+<li><strong>Chamfer instead of horizontal overhangs</strong> — replace a horizontal shelf (requires support) with a 45° chamfer (self-supporting).</li>
+<li><strong>Rotate holes to avoid unsupported ceilings</strong> — a hole printed horizontally has a flat ceiling that droops; rotate the hole so it's vertical, and the "ceiling" is now a dome or series of bridged arcs.</li>
+<li><strong>Design with the teardrop technique</strong> — for vertical holes, use a teardrop profile (circular cross-section with a pointed top) that eliminates the flat unsupported arc at the ceiling of the hole.</li>
+<li><strong>Segment complex parts</strong> — split a complex shape into multiple simpler printable parts that assemble after printing, each with better orientation options.</li>
+<li><strong>Increase overhang angles in the design</strong> — if a feature has a 40° overhang (just below the self-supporting threshold), redesigning it to 46° may eliminate the need for a support entirely.</li>
+</ul>
+<hr>
+<h2 id="wall-thickness-rules-and-hole-tolerances">Wall Thickness Rules and Hole Tolerances<a class="headerlink" href="#wall-thickness-rules-and-hole-tolerances" title="Permanent link">¶</a></h2>
+<p><strong>Wall thickness</strong> is not about aesthetics — it's about whether plastic can actually be deposited and whether the resulting wall has any structural integrity. The minimum printable wall thickness for FDM is approximately <strong>two extrusion widths</strong>, because a wall needs an outer and an inner perimeter to be structurally coherent. With a 0.4 mm nozzle, that's about 0.8 mm minimum — and in practice 1.2–2.0 mm is more reliable. Walls thinner than the nozzle diameter simply cannot be printed.</p>
+<p><strong>Hole and slot tolerances</strong> are where beginning designers are often surprised. A hole designed to be exactly 5.0 mm in diameter typically measures 4.6–4.8 mm when printed. Why? Two effects:</p>
+<ol>
+<li><strong>Radial shrinkage</strong> — as the plastic cools, it contracts slightly inward.</li>
+<li><strong>Chord approximation</strong> — circles in STL files are approximated as polygons; thin edges of those polygons contribute to the apparent undersizing.</li>
+</ol>
+<p>The standard compensation strategy is to add a <strong>tolerance allowance</strong>: design holes 0.2–0.5 mm larger than the intended clearance fit, depending on the material and printer. This must be determined empirically on your specific printer — print a calibration part with holes from 3.0 mm to 8.0 mm, measure each actual diameter with calipers, and calculate the consistent offset to apply in your CAD models.</p>
+<p><strong>Tolerance allowances</strong> also affect mating parts. A shaft and bearing designed for 0.1 mm clearance in the CAD model may be a press fit or may rattle, depending on your printer's dimensional accuracy. The engineering design process applies here: prototype, measure, iterate.</p>
+<p>The following table summarizes starting-point tolerance allowances for FDM with a 0.4 mm nozzle in PLA:</p>
+<table>
+<thead>
+<tr>
+<th>Feature Type</th>
+<th>Design Allowance</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clearance fit hole (shaft passes through)</td>
+<td>+0.3 to +0.5 mm</td>
+<td>Larger for longer holes</td>
+</tr>
+<tr>
+<td>Press fit hole (shaft press-fits in)</td>
+<td>+0.0 to +0.1 mm</td>
+<td>Test on your specific printer</td>
+</tr>
+<tr>
+<td>Slot width</td>
+<td>+0.2 mm</td>
+<td>Depends on slot orientation</td>
+</tr>
+<tr>
+<td>Threaded hole (tapping)</td>
+<td>Standard drill size</td>
+<td>Post-process with tap; don't print threads</td>
+</tr>
+<tr>
+<td>External feature width</td>
+<td>-0.1 to -0.2 mm</td>
+<td>Extrusion width causes over-sizing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-dfam-rules-explorer">Diagram: DfAM Rules Explorer<a class="headerlink" href="#diagram-dfam-rules-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/dfam-rules-explorer/main.html" width="100%" height="540px" scrolling="no"></iframe>
+
+<details>
+<summary>DfAM Rules Explorer</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> dfam-rules-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain
+Learning Objective: Students explain the key DfAM design rules — overhang angle, bridging, wall thickness, hole tolerance, and self-supporting geometry — by examining cross-section diagrams and reading hover explanations.</p>
+<p>Layout:
+- Grid of 6 rule cards arranged 3×2:
+  1. Overhang Angle (shows cross-sections at 30°, 45°, 60° with quality indicators)
+  2. Bridging (shows successful short bridge vs. sagging long bridge)
+  3. Wall Thickness (shows walls from 0.4 mm to 2.4 mm with printability indicators)
+  4. Hole Tolerance (shows designed vs. actual hole size with offset annotation)
+  5. Self-Supporting Arch (teardrop technique vs. flat-ceiling hole)
+  6. Support Minimization (chamfer replaces horizontal shelf)</p>
+<p>Interactive elements:
+- Click any card: Expand to full-screen view with detailed cross-section diagram and explanatory text
+- Hover any element within a card: Show tooltip with the rule name and one-sentence rationale
+- Toggle "FDM / Resin" button: Updates each card to show how the rule differs between process types
+- "Design Quiz" button: Presents a simplified cross-section of a part and asks "Does this need support?" with Yes/No buttons and feedback</p>
+<p>Visual style:
+- Each card has a header color coded to difficulty (green = easy to achieve, yellow = moderate, red = requires careful planning)
+- Cross-section diagrams use: blue = desired geometry, orange = problematic zone, green = well-designed outcome</p>
+<p>Responsive: 3×2 grid collapses to 2×3 then 1×6 on narrow screens.</p>
+</details>
+<hr>
+<h2 id="lattice-structures-topology-optimization-and-lightweighting">Lattice Structures, Topology Optimization, and Lightweighting<a class="headerlink" href="#lattice-structures-topology-optimization-and-lightweighting" title="Permanent link">¶</a></h2>
+<p>One of AM's most compelling advantages over subtractive manufacturing is the ability to create <strong>internal complexity</strong> without additional cost or machining steps. Three related techniques exploit this capability.</p>
+<p><strong>Lattice structures</strong> are repeating geometric frameworks that fill a volume with struts and voids instead of solid material. A part with a gyroid, honeycomb, or octet truss internal structure can achieve 60–80% of the stiffness of a solid part while using 20–40% of the material. Slicers like Cura and PrusaSlicer have built-in infill pattern options that are essentially lattice structures — the gyroid and honeycomb infills familiar from Chapter 7 are exactly this concept. More advanced lattice designs (graded density, conformal lattices that follow surface curvature) require CAD-level design rather than slicer settings.</p>
+<p><strong>Topology optimization</strong> is a computational technique that uses Finite Element Analysis (FEA) to find the minimum-material structure that carries a specified load while maintaining acceptable stress levels. You define the design space (maximum allowable volume), loading conditions (force magnitude and direction), boundary conditions (where the part is fixed), and performance targets (maximum deflection or stress). The algorithm iteratively removes material from low-stress regions until the target is met. The result is an organically shaped structure — looking almost biological — that couldn't be economically manufactured by any subtractive method but is straightforward to 3D print.</p>
+<p><strong>Generative design</strong> extends this concept: instead of one optimized design, generative design software (Fusion 360, nTopology) produces multiple design alternatives optimized for different manufacturing methods, material choices, or performance objectives simultaneously. You select from a gallery of algorithmically generated options based on your priorities.</p>
+<p><strong>Lightweighting</strong> is the application goal: reducing part mass while maintaining structural performance. For aerospace and automotive applications, every gram matters. For consumer products, lightweighting reduces material cost and print time. DfAM lightweighting strategies include hollow shells with ribbed internal reinforcement, lattice infill, topology-optimized geometry, and multi-material designs where stiff material is placed only where stresses are highest.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Topology Optimization Is a Starting Point, Not a Final Part</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/tip.png" data-desc-position="bottom"><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy gives practical advice"></a>
+The organic shapes that come out of topology optimization look impressive, but they often have tiny wall sections, sharp stress concentrations, and surfaces that are difficult to print cleanly. Treat the optimizer's output as a design concept, not a production file. Smooth the surfaces, thicken minimum walls to at least 2× your nozzle diameter, and check for printability before committing to a print.</p>
+</div>
+<hr>
+<h2 id="measuring-what-you-made-introduction-to-metrology">Measuring What You Made: Introduction to Metrology<a class="headerlink" href="#measuring-what-you-made-introduction-to-metrology" title="Permanent link">¶</a></h2>
+<p>You've designed with DfAM in mind. You've printed the part. Now comes the question that determines whether all that work actually produced what you intended: <strong>does it fit the specification?</strong> This is the domain of <strong>metrology</strong> — the science of measurement.</p>
+<p><strong>Dimensional accuracy</strong> is the degree to which a printed part matches the dimensions in its CAD model. In FDM, dimensional accuracy is affected by:</p>
+<ul>
+<li>Thermal shrinkage (plastic contracts as it cools)</li>
+<li>E-step calibration (incorrect extrusion multiplier)</li>
+<li>Belt tension and backlash in the motion system</li>
+<li>Elephant's foot on the first layer</li>
+<li>Layer height variation from Z-axis lead screw pitch errors</li>
+</ul>
+<p>No FDM printer is perfectly accurate. Understanding the characteristic error profile of your specific machine — which dimensions it consistently under- or over-produces, and by how much — lets you compensate in CAD before printing.</p>
+<h3 id="calipers">Calipers<a class="headerlink" href="#calipers" title="Permanent link">¶</a></h3>
+<p><strong>Calipers</strong> are the primary metrology tool for 3D printing quality control. A digital caliper can measure outside dimensions, inside dimensions (bore diameters), depth, and step heights with a resolution of 0.01 mm and typical accuracy of ±0.02 mm. Three measurement modes are used:</p>
+<ul>
+<li><strong>Outside jaws</strong> — grip the exterior of a feature (wall-to-wall distance, overall part size)</li>
+<li><strong>Inside jaws</strong> — expand into a bore or slot (hole diameter, slot width)</li>
+<li><strong>Depth rod</strong> — measures depth of a hole or step from the face</li>
+</ul>
+<p>Correct caliper technique matters: jaws must be perpendicular to the measured surface; don't tighten the jaws (they should close gently under zero force for accurate readings); zero the caliper before each measurement session (check that the jaws close to 0.00 mm before measuring).</p>
+<h3 id="micrometers">Micrometers<a class="headerlink" href="#micrometers" title="Permanent link">¶</a></h3>
+<p><strong>Micrometers</strong> provide finer resolution than calipers — typically 0.001 mm (1 µm) resolution with ±0.002 mm accuracy. An outside micrometer measures over the flat thimble and anvil faces. It's the right tool when you need to verify a critical dimension like a shaft diameter or verify that a flat surface is within tolerance.</p>
+<p>Micrometer technique: close the thimble using the ratchet stop (not the thimble barrel directly) — the ratchet ensures consistent, low clamping force that doesn't deform soft materials. Read the main scale (1 mm divisions), the thimble scale (0.01 mm divisions), and the vernier scale if present (0.001 mm).</p>
+<h3 id="gdt-basics">GD&amp;T Basics<a class="headerlink" href="#gdt-basics" title="Permanent link">¶</a></h3>
+<p><strong>Geometric Dimensioning and Tolerancing (GD&amp;T)</strong> is the engineering language for specifying not just dimensions but the allowable variation in shape, orientation, and position. A simple linear tolerance (5.0 ± 0.2 mm) tells you the allowable range for a length. GD&amp;T adds symbols for flatness, roundness, perpendicularity, position, and concentricity — geometric properties that a linear measurement can't capture.</p>
+<p>For 3D printing purposes, the most relevant GD&amp;T concepts are:</p>
+<ul>
+<li><strong>Flatness</strong> — how flat is a face? A warped PLA print may have a bottom face that's within 0.5 mm flatness — you need to know whether your application tolerates that.</li>
+<li><strong>Roundness (circularity)</strong> — how close is a hole to a true circle? FDM holes are slightly polygonal due to STL faceting and layer stacking.</li>
+<li><strong>Position</strong> — are hole centers where the CAD model says they are, relative to a datum?</li>
+</ul>
+<p>A full GD&amp;T course is beyond the scope of this textbook, but understanding that GD&amp;T exists — and that it's the formal language for specifying and communicating dimensional requirements — prepares you for engineering drawings in co-op, apprenticeship, or post-secondary manufacturing programs.</p>
+<hr>
+<h2 id="calibration-cubes-and-quality-control">Calibration Cubes and Quality Control<a class="headerlink" href="#calibration-cubes-and-quality-control" title="Permanent link">¶</a></h2>
+<p>The <strong>calibration cube</strong> is the standard diagnostic print for FDM dimensional accuracy assessment. A 20 mm × 20 mm × 20 mm cube printed from your chosen material allows you to measure:</p>
+<ul>
+<li>X dimension (width)</li>
+<li>Y dimension (depth)</li>
+<li>Z dimension (height)</li>
+</ul>
+<p>Any consistent offset from 20.00 mm indicates a calibration error in that axis. Common findings:</p>
+<ul>
+<li>X and Y slightly under-sized (e.g., 19.85 mm): extruder steps-per-mm is too low, or belt tension is off.</li>
+<li>X and Y slightly over-sized (e.g., 20.15 mm): extruder is over-extruding.</li>
+<li>Z under-sized (e.g., 19.75 mm): Z lead screw steps-per-mm is miscalibrated.</li>
+<li>X and Y are different from each other: one axis belt is at different tension than the other.</li>
+</ul>
+<p>Measuring a calibration cube is also good practice for developing caliper technique — it's a simple geometry with clearly defined measurement planes.</p>
+<p><strong>Quality control (QC) procedures</strong> for a production context (school print farm, or a student operating a printer for others) formalize the measurement and acceptance process:</p>
+<ol>
+<li>Define the inspection dimensions and tolerances for a part before printing.</li>
+<li>Print a first article and measure all critical dimensions.</li>
+<li>Compare measurements to the tolerance specification.</li>
+<li>Determine pass/fail and document results.</li>
+<li>If failing: diagnose root cause (calibration, material shrinkage, design issue) and correct before the full run.</li>
+</ol>
+<h4 id="diagram-calibration-and-measurement-microsim">Diagram: Calibration and Measurement MicroSim<a class="headerlink" href="#diagram-calibration-and-measurement-microsim" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/calibration-measurement-sim/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Calibration Cube Measurement MicroSim</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> calibration-measurement-sim<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Calculate
+Learning Objective: Students apply caliper measurement technique by reading simulated caliper displays and calculating the dimensional error and required calibration correction for a printed calibration cube.</p>
+<p>Canvas layout:
+- Left panel (300px): Isometric view of a calibration cube with highlighted measurement faces. Click a face to activate that measurement.
+- Center panel (250px): Animated digital caliper display showing a reading for the selected dimension, with the jaw gap visible
+- Right panel (150px): Data entry table — student enters the measured values for X, Y, Z dimensions</p>
+<p>Visual elements:
+- Calibration cube rendered in p5.js with distinct labeled faces (X, Y, Z)
+- Digital caliper: realistic LCD display showing mm reading with decimal point; jaws animate to show correct placement
+- Three rows in the data table: Designed (20.00), Measured (editable), Error (auto-calculated), Status (Pass/Fail at ±0.3 mm default tolerance)</p>
+<p>Interactive controls:
+- Click cube face: selects that dimension and animates caliper to measuring position
+- Input field: student types their reading; error calculates immediately
+- Slider: "Printer Accuracy Level" (Good / Average / Needs Calibration) — changes the simulated measured values to present different scenarios
+- Button: "Calculate E-step Correction" — shows formula and computed correction factor if the extruder calibration is the diagnosed root cause</p>
+<p>Data:
+- Scenario 1 (Good): X=19.97, Y=20.01, Z=19.95 — within tolerance
+- Scenario 2 (Under-extrusion): X=19.72, Y=19.74, Z=19.80 — consistent under-sizing
+- Scenario 3 (Z issue): X=19.98, Y=19.97, Z=19.60 — Z axis only out</p>
+<p>Instructional Rationale: Apply-level objective requires students to use a procedure in a given situation. Simulating calibration cube reading lets students practice the data-gathering and diagnosis steps before working with real hardware.</p>
+<p>Responsive: panels reflow to vertical stack on narrow screens.</p>
+</details>
+<h3 id="repeatability-and-reproducibility">Repeatability and Reproducibility<a class="headerlink" href="#repeatability-and-reproducibility" title="Permanent link">¶</a></h3>
+<p><strong>Repeatability</strong> is the ability to produce the same result when repeating a process under the same conditions. Print the same model three times on the same printer without changing any settings — do the dimensions agree? <strong>Reproducibility</strong> is a broader property: can the same model be printed on a different printer (or by a different operator) and still fall within the specification?</p>
+<p>In a school lab, both matter. If five printers in the room all print the same calibration cube and the X dimensions range from 19.60 mm to 20.10 mm, the process lacks reproducibility — and any part designed for assembly must account for the full range of variation, not just the average. This is why systematic QC — not just "it looks right" — matters for real engineering applications.</p>
+<hr>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">¶</a></h2>
+<ul>
+<li>DfAM means designing parts to work with additive processes, not despite them — exploiting internal complexity while respecting overhang, bridging, and wall constraints.</li>
+<li>The 45° self-supporting angle rule is a reliable starting point for FDM overhang design; the exact threshold depends on material, cooling, and speed.</li>
+<li>Bridging can span ~60 mm in well-tuned FDM setups; longer spans need supports or redesign.</li>
+<li>Part orientation controls surface finish, mechanical strength (anisotropy), and support volume — orient with the primary load in XY, not Z.</li>
+<li>Hole diameters in FDM print undersized by 0.2–0.5 mm; design with tolerance allowances and verify on your specific printer.</li>
+<li>Lattice structures, topology optimization, and generative design exploit AM's ability to produce complex internal geometry — these strategies produce lighter, often stronger parts.</li>
+<li>Dimensional accuracy measurement requires calipers (±0.02 mm) for routine QC and micrometers (±0.002 mm) for critical dimensions.</li>
+<li>A 20 mm calibration cube reveals consistent dimensional errors in X, Y, and Z; the error pattern diagnoses the root cause.</li>
+<li>GD&amp;T formalizes geometric specifications beyond linear dimensions — flatness, roundness, position — essential for engineering drawings.</li>
+<li>Repeatability (same printer, same settings) and reproducibility (different printers or operators) are distinct properties; both matter for parts used in assembly.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: Why Are FDM Parts Strongest in XY and Weakest in Z? — Click to Reveal</summary>
+<p>FDM parts are built by depositing beads of molten plastic that fuse to the layer below. Within each layer (XY), the plastic flows continuously and bonds strongly. Between layers (Z), the bond is formed by melted filament from above fusing to the cooled layer below — a partial melt bond that is weaker than the continuous intra-layer structure. When a tensile load is applied in Z (pulling layers apart), it's loading precisely this weaker inter-layer interface. This orientation-dependent strength is called anisotropy, and it's why DfAM emphasizes aligning load paths with the XY plane.</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You Can Design AND Measure</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you"></a>
+This chapter gave you two complementary skills: designing parts that work with the printer, and measuring parts to know whether the design worked. That's the full loop — design, print, measure, iterate — and it's the engineering design process applied to manufacturing. Chapter 12 awaits with troubleshooting and post-processing, where you'll put both skills to use diagnosing real print failures.</p>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1320,7 +1958,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1330,13 +1968,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../10-resin-printing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 10. Resin Printing">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1361,7 +1999,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1373,7 +2011,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1398,5 +2036,7 @@
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

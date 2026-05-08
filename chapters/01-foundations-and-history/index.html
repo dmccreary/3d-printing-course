@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -50,7 +47,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -65,7 +62,30 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chapter 1: Foundations and History of Additive Manufacturing - Introduction to 3D Printing">
+<meta property="og:description" content="Establishes the math, physics, and computer-skills foundations the rest of the course assumes, then traces the story of additive manufacturing from the Industrial Revolution through stereolithography, the FDM patent expiration, the RepRap project, and America Makes.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/01-foundations-and-history/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/01-foundations-and-history/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Chapter 1: Foundations and History of Additive Manufacturing - Introduction to 3D Printing">
+<meta property="twitter:description" content="Establishes the math, physics, and computer-skills foundations the rest of the course assumes, then traces the story of additive manufacturing from the Industrial Revolution through stereolithography, the FDM patent expiration, the RepRap project, and America Makes.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/01-foundations-and-history/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -101,12 +121,12 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -134,7 +154,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -143,20 +163,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -182,7 +202,7 @@
         <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -206,7 +226,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -218,7 +238,7 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Introduction to 3D Printing
@@ -228,7 +248,7 @@
       <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -1447,7 +1467,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1827,7 +1847,7 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
+  <nav class="md-path" aria-label="Navigation">
     <ol class="md-path__list">
       
         
@@ -1876,16 +1896,16 @@
   
     <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/01-foundations-and-history/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="foundations-and-history-of-additive-manufacturing">Foundations and History of Additive Manufacturing<a class="headerlink" href="#foundations-and-history-of-additive-manufacturing" title="Permanent link">&para;</a></h1>
+<h1 id="foundations-and-history-of-additive-manufacturing">Foundations and History of Additive Manufacturing<a class="headerlink" href="#foundations-and-history-of-additive-manufacturing" title="Permanent link">¶</a></h1>
 <div class="admonition mascot-welcome">
 <p class="admonition-title">Hi! I'm Benchy.</p>
-<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello"></a>
 Welcome to Introduction to 3D Printing! I'm <strong>Benchy</strong> — an anthropomorphic version of the classic 3DBenchy calibration tugboat that makers worldwide use to test their printers. I'll be popping up throughout this book, but only when I have a specific job to do. I have exactly <strong>six jobs</strong>, and you'll learn to recognize me by which one I'm doing:</p>
 <ol>
 <li><strong>Welcome you</strong> at the start of every chapter — that's what I'm doing right now.</li>
@@ -1897,9 +1917,9 @@ Welcome to Introduction to 3D Printing! I'm <strong>Benchy</strong> — an anthr
 </ol>
 <p>That's it. If I'm not doing one of those six things, I'm not in the chapter. Let's make something great!</p>
 </div>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter starts with the math, physics, and computer-skills foundations the rest of the course assumes, then traces the story of additive manufacturing from the Industrial Revolution through Charles Hull's invention of stereolithography, the expiration of the FDM patent, the desktop-printer revolution, the RepRap project, and the rise of America Makes. By the end you will be able to place modern 3D printing in its broader engineering and economic context, and you will be ready to learn the formal vocabulary in Chapter 2.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 18 concepts from the learning graph:</p>
 <ol>
 <li>Algebra Basics (Concept 1)</li>
@@ -1921,22 +1941,22 @@ Welcome to Introduction to 3D Printing! I'm <strong>Benchy</strong> — an anthr
 <li>AM Innovation Institutes (Concept 17)</li>
 <li>Maker Movement (Concept 18)</li>
 </ol>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>.</p>
-<hr />
-<h2 id="introduction-two-halves-of-one-chapter">Introduction: Two Halves of One Chapter<a class="headerlink" href="#introduction-two-halves-of-one-chapter" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="introduction-two-halves-of-one-chapter">Introduction: Two Halves of One Chapter<a class="headerlink" href="#introduction-two-halves-of-one-chapter" title="Permanent link">¶</a></h2>
 <p>This chapter has two goals that work together. The first goal is practical: to review the math, physics, and computer skills you already know — or will quickly pick up — so you have the tools to navigate everything that follows. The second goal is contextual: to tell the story of how additive manufacturing went from a multi-hundred-thousand-dollar industrial secret to the classroom printer sitting a few feet away. Understanding that history makes the technology less mysterious and helps you appreciate why the skills in this course carry real professional weight.</p>
 <p>We begin with foundations, then move to history.</p>
-<hr />
-<h2 id="part-one-foundational-skills">Part One: Foundational Skills<a class="headerlink" href="#part-one-foundational-skills" title="Permanent link">&para;</a></h2>
-<h3 id="algebra-and-the-language-of-parameters">Algebra and the Language of Parameters<a class="headerlink" href="#algebra-and-the-language-of-parameters" title="Permanent link">&para;</a></h3>
+<hr>
+<h2 id="part-one-foundational-skills">Part One: Foundational Skills<a class="headerlink" href="#part-one-foundational-skills" title="Permanent link">¶</a></h2>
+<h3 id="algebra-and-the-language-of-parameters">Algebra and the Language of Parameters<a class="headerlink" href="#algebra-and-the-language-of-parameters" title="Permanent link">¶</a></h3>
 <p><strong>Algebra basics</strong> — setting up equations, solving for unknown variables, and working with ratios and percentages — appear in additive manufacturing more often than you might expect. When you want to know how long a print will take at a given speed, you write a proportion. When you adjust infill density from 15% to 30%, you are doubling the fraction of the interior that is solid plastic, which changes both the print time and the final weight. When you compare the cost of two filament brands by price per kilogram, you are doing unit-rate algebra.</p>
 <p>Here is a concrete example: suppose your slicer estimates a part will use 12 grams of filament, and your spool holds 1,000 grams at a cost of $24. What does that part cost in filament?</p>
 <div class="arithmatex">\[
 \text{filament cost} = \frac{12 \text{ g}}{1{,}000 \text{ g}} \times \$24 = \$0.29
 \]</div>
 <p>That kind of quick calculation — proportion, unit rate, percentage — is the algebra level this course requires. No calculus, no quadratic formula. Just confident arithmetic with variables and units.</p>
-<h3 id="geometry-in-three-dimensions">Geometry in Three Dimensions<a class="headerlink" href="#geometry-in-three-dimensions" title="Permanent link">&para;</a></h3>
+<h3 id="geometry-in-three-dimensions">Geometry in Three Dimensions<a class="headerlink" href="#geometry-in-three-dimensions" title="Permanent link">¶</a></h3>
 <p><strong>Geometry basics</strong> — area, volume, angle measurement, and the relationships between shapes — matter the moment you open a CAD program or examine a design for printability. Calculating the volume of a cylinder tells you how much material a rod-shaped part will consume. Knowing that an interior angle of 45° is the practical threshold for printing without support structures helps you orient your part correctly before you hit "print."</p>
 <p>The two formulas you will use most often are:</p>
 <div class="arithmatex">\[
@@ -1946,7 +1966,7 @@ Welcome to Introduction to 3D Printing! I'm <strong>Benchy</strong> — an anthr
 \text{Volume of a cylinder} = \pi r^2 h
 \]</div>
 <p>where <span class="arithmatex">\(W\)</span>, <span class="arithmatex">\(D\)</span>, and <span class="arithmatex">\(H\)</span> are width, depth, and height in millimeters, and <span class="arithmatex">\(r\)</span> and <span class="arithmatex">\(h\)</span> are the cylinder's radius and height. In every case, dimensions in this course are in millimeters unless a drawing specifies otherwise.</p>
-<h3 id="units-and-measurement-the-metric-system">Units and Measurement: The Metric System<a class="headerlink" href="#units-and-measurement-the-metric-system" title="Permanent link">&para;</a></h3>
+<h3 id="units-and-measurement-the-metric-system">Units and Measurement: The Metric System<a class="headerlink" href="#units-and-measurement-the-metric-system" title="Permanent link">¶</a></h3>
 <p><strong>Units and measurement</strong> is the shared language of engineering. Additive manufacturing uses the metric system almost exclusively:</p>
 <ul>
 <li><strong>Millimeters (mm)</strong> — all part dimensions, nozzle diameters, layer heights, bed leveling gaps</li>
@@ -2017,12 +2037,12 @@ Welcome to Introduction to 3D Printing! I'm <strong>Benchy</strong> — an anthr
 </tr>
 </tbody>
 </table>
-<h4 id="diagram-unit-conversion-microsim">Diagram: Unit Conversion MicroSim<a class="headerlink" href="#diagram-unit-conversion-microsim" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-unit-conversion-microsim">Diagram: Unit Conversion MicroSim<a class="headerlink" href="#diagram-unit-conversion-microsim" title="Permanent link">¶</a></h4>
 <details>
 <summary>Interactive MicroSim: Metric ↔ Imperial Unit Converter for 3D Printing</summary>
 <p>Type: microsim
-<strong>sim-id:</strong> unit-converter-3dp<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> unit-converter-3dp<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p><strong>Learning objective:</strong> Students will <em>apply</em> (Bloom L3 — Apply) metric-to-imperial unit conversions and interpret dimensions in the context of printed part specifications.</p>
 <p><strong>Canvas size:</strong> 720 × 380 px, responsive to window resize.</p>
@@ -2046,11 +2066,11 @@ Welcome to Introduction to 3D Printing! I'm <strong>Benchy</strong> — an anthr
 - A "Reset All" button restores all sliders to defaults.</p>
 <p><strong>Responsive design:</strong> Panels stack vertically on narrow viewports (&lt;500 px); minimum font size 13 px.</p>
 </details>
-<hr />
-<h3 id="basic-physics-why-matter-behaves-the-way-it-does">Basic Physics: Why Matter Behaves the Way It Does<a class="headerlink" href="#basic-physics-why-matter-behaves-the-way-it-does" title="Permanent link">&para;</a></h3>
+<hr>
+<h3 id="basic-physics-why-matter-behaves-the-way-it-does">Basic Physics: Why Matter Behaves the Way It Does<a class="headerlink" href="#basic-physics-why-matter-behaves-the-way-it-does" title="Permanent link">¶</a></h3>
 <div class="admonition mascot-encouraging">
 <p class="admonition-title">Physics connects directly to the printer.</p>
-<p><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy gives a thumbs-up">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/encouraging.png" data-desc-position="bottom"><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy gives a thumbs-up"></a>
 The next three sections introduce basic physics — matter, force, mass, and density. Every concept here connects to something you'll do at the printer: choosing a filament, reading a temperature, or diagnosing a clog. If physics has felt abstract before, this is where it gets real.</p>
 </div>
 <p>Before we can talk sensibly about how plastic melts, flows, and solidifies in a 3D printer, we need three <strong>basic physics concepts</strong>: the nature of matter, how forces act on objects, and how energy moves between systems.</p>
@@ -2061,7 +2081,7 @@ The next three sections introduce basic physics — matter, force, mass, and den
 F = m \times a
 \]</div>
 <p>In a 3D printer, forces appear in many places: the stepper motors exert force on the gantry belts to accelerate the print head; the heated plastic exerts force on the nozzle walls as it is pushed through; and atmospheric pressure pushes down on the melted plastic as it exits the nozzle. Understanding force helps you troubleshoot — for example, a clogged nozzle increases the force required to extrude filament until the extruder gear slips or the print fails.</p>
-<h3 id="mass-and-density">Mass and Density<a class="headerlink" href="#mass-and-density" title="Permanent link">&para;</a></h3>
+<h3 id="mass-and-density">Mass and Density<a class="headerlink" href="#mass-and-density" title="Permanent link">¶</a></h3>
 <p>Two physics quantities that appear constantly in material selection and cost estimation are <strong>mass</strong> and <strong>density</strong>. Mass measures how much matter an object contains, in grams or kilograms. Density is mass per unit volume:</p>
 <div class="arithmatex">\[
 \rho = \frac{m}{V}
@@ -2117,18 +2137,18 @@ F = m \times a
 </table>
 <div class="admonition mascot-thinking">
 <p class="admonition-title">Density is the link between geometry and cost.</p>
-<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks with hand on chin">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks with hand on chin"></a>
 Here's the practical payoff of <span class="arithmatex">\(\rho = m/V\)</span>: your slicer estimates filament consumption in meters of length, but you pay for it in grams. The slicer uses your material's density to make that conversion — so switching from PLA to ABS for the same part automatically saves about 16% in material weight, which can matter for lightweight or load-bearing designs.</p>
 </div>
-<h3 id="force-and-pressure-in-am-systems">Force and Pressure in AM Systems<a class="headerlink" href="#force-and-pressure-in-am-systems" title="Permanent link">&para;</a></h3>
+<h3 id="force-and-pressure-in-am-systems">Force and Pressure in AM Systems<a class="headerlink" href="#force-and-pressure-in-am-systems" title="Permanent link">¶</a></h3>
 <p><strong>Force and pressure</strong> show up in several critical places in additive manufacturing. Pressure (<span class="arithmatex">\(P\)</span>) relates force to the area over which it is applied:</p>
 <div class="arithmatex">\[
 P = \frac{F}{A}
 \]</div>
 <p>Inside a 3D printer's hotend, the extruder motor pushes filament against the melt zone, creating pressure that forces molten plastic through the nozzle. If the nozzle is partially clogged, the area (<span class="arithmatex">\(A\)</span>) available for flow decreases, so the pressure required to maintain the same flow rate increases sharply. Eventually the back-pressure exceeds what the extruder motor can provide, and extrusion stops.</p>
 <p><strong>Bed adhesion</strong> is another force problem. A freshly deposited layer of hot plastic contracts slightly as it cools, pulling away from the print bed. The adhesive force between the plastic and bed surface (glass, PEI sheet, or adhesive) must exceed the contraction force, or the print will warp and detach. Materials like ABS shrink aggressively on cooling (one reason ABS printing requires an enclosed, heated chamber), while PLA shrinks much less and adheres reliably on a cool or mildly heated bed.</p>
-<hr />
-<h3 id="computer-file-management">Computer File Management<a class="headerlink" href="#computer-file-management" title="Permanent link">&para;</a></h3>
+<hr>
+<h3 id="computer-file-management">Computer File Management<a class="headerlink" href="#computer-file-management" title="Permanent link">¶</a></h3>
 <p><strong>Computer file management</strong> is a skill that sounds mundane until a 3D printing project spirals into a folder of identically named files. A single design project typically generates at least five distinct file types:</p>
 <ul>
 <li><strong>CAD project file</strong> (e.g., <code>.f3d</code> for Fusion 360, <code>.sldprt</code> for SolidWorks, <code>.onshape</code> for Onshape) — the parametric model you can edit</li>
@@ -2150,10 +2170,10 @@ P = \frac{F}{A}
 <p>Use descriptive, date-stamped file names rather than generic ones. A file named <code>bracket_v3_2026-05-07.stl</code> is findable six months later; a file named <code>final_FINAL_use-this-one.stl</code> is not.</p>
 <div class="admonition mascot-warning">
 <p class="admonition-title">The wrong file goes to the printer — not the right one.</p>
-<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy holds up a cautionary hand">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/warning.png" data-desc-position="bottom"><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy holds up a cautionary hand"></a>
 The most common file disaster isn't a deleted file — it's printing an outdated version because three exports share the same name. Put a version number and date on every STL or 3MF you export: you will thank yourself when you open that folder three weeks later.</p>
 </div>
-<h3 id="mouse-and-3d-navigation">Mouse and 3D Navigation<a class="headerlink" href="#mouse-and-3d-navigation" title="Permanent link">&para;</a></h3>
+<h3 id="mouse-and-3d-navigation">Mouse and 3D Navigation<a class="headerlink" href="#mouse-and-3d-navigation" title="Permanent link">¶</a></h3>
 <p><strong>Mouse and 3D navigation</strong> in CAD and slicer software follows conventions that feel awkward for the first hour and automatic within a week. Almost every 3D program supports three core operations:</p>
 <ul>
 <li><strong>Orbit</strong> (rotate the view) — middle-click drag, or Ctrl + left-click drag</li>
@@ -2169,14 +2189,14 @@ The most common file disaster isn't a deleted file — it's printing an outdated
 </ul>
 <div class="admonition mascot-tip">
 <p class="admonition-title">Remap your mouse buttons in the first session.</p>
-<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy points a helpful finger">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/tip.png" data-desc-position="bottom"><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy points a helpful finger"></a>
 Most CAD programs let you save a custom mouse-button mapping in preferences. If middle-click orbiting feels awkward, remap it to right-click on day one — spending five minutes on this setup saves hours of frustration across an entire semester.</p>
 </div>
 <p>In class we will practice 3D navigation in the first software session. After that, it becomes muscle memory.</p>
-<hr />
-<h2 id="part-two-the-history-of-additive-manufacturing">Part Two: The History of Additive Manufacturing<a class="headerlink" href="#part-two-the-history-of-additive-manufacturing" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="part-two-the-history-of-additive-manufacturing">Part Two: The History of Additive Manufacturing<a class="headerlink" href="#part-two-the-history-of-additive-manufacturing" title="Permanent link">¶</a></h2>
 <p>With foundations in place, we can turn to history. The story of additive manufacturing is, at its core, a story about what happens when a powerful technology meets an expiring patent and an open-source community.</p>
-<h3 id="the-industrial-revolution-and-the-rise-of-subtractive-manufacturing">The Industrial Revolution and the Rise of Subtractive Manufacturing<a class="headerlink" href="#the-industrial-revolution-and-the-rise-of-subtractive-manufacturing" title="Permanent link">&para;</a></h3>
+<h3 id="the-industrial-revolution-and-the-rise-of-subtractive-manufacturing">The Industrial Revolution and the Rise of Subtractive Manufacturing<a class="headerlink" href="#the-industrial-revolution-and-the-rise-of-subtractive-manufacturing" title="Permanent link">¶</a></h3>
 <p>To understand what made additive manufacturing significant, you first need to understand what it replaced — or, more precisely, what it complemented. The <strong>Industrial Revolution</strong> (roughly 1760–1840) transformed manufacturing in Europe and North America by replacing human and animal power with machines driven by steam and, later, electricity. Two ideas from this era still shape manufacturing today.</p>
 <p>First, <strong>interchangeable parts</strong>: components manufactured to such precise, standard dimensions that any unit of a given part fits any assembly of the same design. Before this, a craftsman might spend hours hand-fitting a replacement part; with interchangeable parts, a worker simply grabs a part from a bin. Second, <strong>division of labor</strong>: breaking complex work into specialized steps performed by different workers in sequence on a moving assembly line. Together, these ideas made mass production possible.</p>
 <p>The dominant manufacturing process of the Industrial Revolution — and of most of the twentieth century — was <strong>subtractive manufacturing</strong>: starting with a block of raw material (metal, wood, plastic) and removing material by cutting, drilling, milling, or grinding until the desired shape remains. Subtractive manufacturing is powerful and precise. Its limitations, however, are real:</p>
@@ -2187,12 +2207,12 @@ Most CAD programs let you save a custom mouse-button mapping in preferences. If 
 <li>Short production runs of custom parts are expensive because setup costs are spread over fewer units.</li>
 </ul>
 <p>These limitations set the stage for a fundamentally different idea.</p>
-<h4 id="diagram-subtractive-vs-additive-manufacturing-side-by-side-comparison">Diagram: Subtractive vs. Additive Manufacturing — Side-by-Side Comparison<a class="headerlink" href="#diagram-subtractive-vs-additive-manufacturing-side-by-side-comparison" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-subtractive-vs-additive-manufacturing-side-by-side-comparison">Diagram: Subtractive vs. Additive Manufacturing — Side-by-Side Comparison<a class="headerlink" href="#diagram-subtractive-vs-additive-manufacturing-side-by-side-comparison" title="Permanent link">¶</a></h4>
 <details>
 <summary>Interactive Comparison: Subtractive vs. Additive Manufacturing</summary>
 <p>Type: interactive-infographic
-<strong>sim-id:</strong> sub-vs-add-comparison<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> sub-vs-add-comparison<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p><strong>Learning objective:</strong> Students will <em>compare</em> (Bloom L2 — Understand) subtractive and additive manufacturing on the dimensions of material use, internal complexity, tooling requirements, and cost structure.</p>
 <p><strong>Canvas size:</strong> 800 × 420 px, responsive.</p>
@@ -2240,20 +2260,20 @@ Most CAD programs let you save a custom mouse-button mapping in preferences. If 
 <p><strong>Infobox:</strong> Clicking any row opens a sentence explaining the trade-off in more detail.</p>
 <p><strong>Responsive design:</strong> Panels stack vertically on viewports &lt; 600 px.</p>
 </details>
-<hr />
-<h3 id="1986-charles-hull-invents-stereolithography">1986: Charles Hull Invents Stereolithography<a class="headerlink" href="#1986-charles-hull-invents-stereolithography" title="Permanent link">&para;</a></h3>
+<hr>
+<h3 id="1986-charles-hull-invents-stereolithography">1986: Charles Hull Invents Stereolithography<a class="headerlink" href="#1986-charles-hull-invents-stereolithography" title="Permanent link">¶</a></h3>
 <p>Additive manufacturing as a commercial technology was born in a small laboratory in Valencia, California. In 1984, <strong>Charles (Chuck) Hull</strong> — an engineer who had been experimenting with UV-curable resins for coating furniture — realized that a UV laser could harden a liquid resin with great precision. If you directed the laser across the surface of a vat of liquid resin in the exact pattern of one cross-section of a 3D object, you would solidify that thin layer. Lower the build platform a fraction of a millimeter, expose a fresh surface of liquid resin, and trace the next layer. Repeat a thousand times and you have a complete three-dimensional part.</p>
 <p>Hull called this process <strong>stereolithography</strong> — from the Greek <em>stereos</em> (solid) and <em>lithos</em> (stone) plus <em>graphia</em> (writing). He filed the patent in 1984, received it in 1986, co-founded <strong>3D Systems</strong>, and shipped the first commercial stereolithography machine — the SLA-1 — in 1988. The price was approximately $300,000 (equivalent to roughly $750,000 today).</p>
 <p>At that cost, only large industrial organizations could afford stereolithography. Aerospace companies used it to build wind-tunnel test models in days rather than weeks. Automotive designers used it to check the proportions of a new body panel before committing to expensive stamping dies. The process was transformative for <strong>rapid prototyping</strong> — producing a physical model of a new design quickly and cheaply compared to machined metal prototypes — but it remained invisible to the general public.</p>
 <p>Hull's invention proved something important: a digital-to-physical workflow was commercially viable. Other researchers and companies raced to develop competing processes. By 1995, multiple distinct additive manufacturing technologies existed, each with different materials, resolution, speed, and cost. But all of them shared one characteristic: they were expensive enough that only large companies and well-funded universities could afford them.</p>
-<hr />
-<h3 id="19892009-fdm-patents-and-the-lock-in-era">1989–2009: FDM, Patents, and the Lock-In Era<a class="headerlink" href="#19892009-fdm-patents-and-the-lock-in-era" title="Permanent link">&para;</a></h3>
+<hr>
+<h3 id="19892009-fdm-patents-and-the-lock-in-era">1989–2009: FDM, Patents, and the Lock-In Era<a class="headerlink" href="#19892009-fdm-patents-and-the-lock-in-era" title="Permanent link">¶</a></h3>
 <p>One year after Hull's patent was granted, <strong>Scott Crump</strong> filed a patent for a completely different approach to additive manufacturing. While experimenting at home, Crump had modified a hot-glue gun to deposit a mixture of polyethylene and candle wax in precise paths, building up an object layer by layer. He recognized that any thermoplastic — a plastic that softens when heated and re-hardens when cooled — could be used this way. He named the process <strong>Fused Deposition Modeling (FDM)</strong>, co-founded <strong>Stratasys</strong> in 1989, and received the patent in 1992.</p>
 <p>FDM's working principle is straightforward. A spool of solid thermoplastic filament (typically 1.75 mm or 2.85 mm in diameter) feeds into a heated nozzle assembly called a <strong>hotend</strong>. The hotend melts the filament and pushes it through a small nozzle (commonly 0.4 mm diameter). A motion system moves the nozzle in the XY plane, depositing a thin bead of plastic in the pattern of one cross-section. The build plate then moves down one layer height, and the process repeats. The deposited plastic cools quickly and bonds to the layer below through thermal fusion.</p>
 <p>FDM's advantages over stereolithography were significant for many applications: the materials were standard thermoplastics (the same plastics used in injection-molded products), the machines ran in open air without vats of liquid resin, and parts were structurally robust rather than brittle. Industrial FDM machines from Stratasys sold for <span class="arithmatex">\(30,000–\)</span>300,000.</p>
 <p>For seventeen years, Stratasys's patent kept FDM out of reach for individuals and small organizations. Then, in 2009, the core FDM patent expired. That single event changed everything.</p>
-<hr />
-<h3 id="20052009-the-reprap-project">2005–2009: The RepRap Project<a class="headerlink" href="#20052009-the-reprap-project" title="Permanent link">&para;</a></h3>
+<hr>
+<h3 id="20052009-the-reprap-project">2005–2009: The RepRap Project<a class="headerlink" href="#20052009-the-reprap-project" title="Permanent link">¶</a></h3>
 <p>While the FDM patent was still active, a researcher at the University of Bath (UK) named <strong>Adrian Bowyer</strong> launched a project with an audacious goal: build a machine that could reproduce most of its own physical components — a self-replicating fabricator. He called it <strong>RepRap</strong>, short for <em>Replicating Rapid Prototyper</em>.</p>
 <p>Bowyer's key insight was that an FDM-style printer could print the plastic structural parts needed to assemble another printer of the same design. The electronic components (stepper motors, controller board, heated nozzle, power supply) were cheap, standard parts available from electronics suppliers. If you could print the plastic frame, brackets, and pulleys, you could build a capable printer for a few hundred dollars in parts.</p>
 <p>Crucially, Bowyer made the entire RepRap design <strong>open-source</strong>: blueprints, firmware, and build instructions were published freely online under open licenses. Anyone could download the files, print the parts on an existing RepRap (or have a friend with one print them), buy the electronics, and assemble a working printer. The community was invited to improve the design and share their improvements — and they did, relentlessly.</p>
@@ -2268,8 +2288,8 @@ Most CAD programs let you save a custom mouse-button mapping in preferences. If 
 <li><strong>2011</strong> — Prusa Mendel becomes the dominant design; MakerBot ships the Replicator.</li>
 <li><strong>2012</strong> — Desktop printers appear below $1,000; Formlabs launches the Form 1 (affordable SLA) on Kickstarter, raising $2.9 million.</li>
 </ul>
-<hr />
-<h3 id="2009present-the-desktop-printer-revolution">2009–Present: The Desktop Printer Revolution<a class="headerlink" href="#2009present-the-desktop-printer-revolution" title="Permanent link">&para;</a></h3>
+<hr>
+<h3 id="2009present-the-desktop-printer-revolution">2009–Present: The Desktop Printer Revolution<a class="headerlink" href="#2009present-the-desktop-printer-revolution" title="Permanent link">¶</a></h3>
 <p>When the FDM patent expired in 2009, the economics of desktop 3D printing changed practically overnight. Dozens of companies and thousands of hobbyists entered a market that Stratasys had held alone. Over the following decade, capable FDM printer prices fell from $60,000 to $3,000 to $500 to under $200. This rapid democratization is called the <strong>desktop printer revolution</strong>.</p>
 <p>Four forces drove the price collapse:</p>
 <ul>
@@ -2279,12 +2299,12 @@ Most CAD programs let you save a custom mouse-button mapping in preferences. If 
 <li><strong>Global manufacturing competition</strong> — particularly from Chinese manufacturers who could produce hardware at scale — compressed margins and forced innovation.</li>
 </ul>
 <p>The result is the landscape you see today: capable multi-filament FDM printers available for under $300, high-speed CoreXY printers that print ten times faster than first-generation machines, and resin printers sharp enough to reproduce dental crowns. Equipment that required a six-figure capital budget in 2005 sits on classroom desks in 2026.</p>
-<h4 id="diagram-fdm-printer-price-decline-20092024">Diagram: FDM Printer Price Decline (2009–2024)<a class="headerlink" href="#diagram-fdm-printer-price-decline-20092024" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-fdm-printer-price-decline-20092024">Diagram: FDM Printer Price Decline (2009–2024)<a class="headerlink" href="#diagram-fdm-printer-price-decline-20092024" title="Permanent link">¶</a></h4>
 <details>
 <summary>Interactive Chart: Desktop FDM Printer Price vs. Time</summary>
 <p>Type: chart
-<strong>sim-id:</strong> fdm-price-history<br/>
-<strong>Library:</strong> Chart.js<br/>
+<strong>sim-id:</strong> fdm-price-history<br>
+<strong>Library:</strong> Chart.js<br>
 <strong>Status:</strong> Specified</p>
 <p><strong>Learning objective:</strong> Students will <em>interpret</em> (Bloom L2 — Understand) how patent expiration and open-source development drove the price of desktop FDM printers down by more than 99% in fifteen years.</p>
 <p><strong>Chart type:</strong> Line chart with labeled data points; y-axis supports log/linear toggle.</p>
@@ -2371,8 +2391,8 @@ Most CAD programs let you save a custom mouse-button mapping in preferences. If 
 <p><strong>Colors:</strong> Line stroke #1565c0; data points #ff6600; infobox background white with #ccc border.</p>
 <p><strong>Responsive design:</strong> Canvas width follows parent container; minimum height 280 px; text minimum 12 px.</p>
 </details>
-<hr />
-<h3 id="the-maker-movement">The Maker Movement<a class="headerlink" href="#the-maker-movement" title="Permanent link">&para;</a></h3>
+<hr>
+<h3 id="the-maker-movement">The Maker Movement<a class="headerlink" href="#the-maker-movement" title="Permanent link">¶</a></h3>
 <p>The <strong>Maker Movement</strong> is the cultural and social phenomenon in which individuals and communities use digital fabrication tools — 3D printers, laser cutters, CNC routers, Arduino and Raspberry Pi electronics — to design and build physical objects outside traditional industrial settings. The movement grew from hobbyist electronics culture and was dramatically amplified by the RepRap project and the desktop printer revolution.</p>
 <p>The Maker Movement is more than a collection of tools and hobbies. It is a set of values:</p>
 <ul>
@@ -2382,8 +2402,8 @@ Most CAD programs let you save a custom mouse-button mapping in preferences. If 
 <li><strong>Everyone can make.</strong> Digital fabrication democratizes the ability to create physical objects, removing the need for expensive industrial tooling or specialized trade skills.</li>
 </ul>
 <p>Key institutions of the Maker Movement include Maker Faire (first held 2006 in San Mateo, California), community makerspaces and hackerspaces, and online platforms like Instructables, Hackaday, Thingiverse, and Printables. Many school libraries and community centers now host makerspaces equipped with 3D printers — a direct result of the price collapse described above.</p>
-<hr />
-<h3 id="america-makes-and-the-am-innovation-ecosystem">America Makes and the AM Innovation Ecosystem<a class="headerlink" href="#america-makes-and-the-am-innovation-ecosystem" title="Permanent link">&para;</a></h3>
+<hr>
+<h3 id="america-makes-and-the-am-innovation-ecosystem">America Makes and the AM Innovation Ecosystem<a class="headerlink" href="#america-makes-and-the-am-innovation-ecosystem" title="Permanent link">¶</a></h3>
 <p>Individual makers and small companies drove the desktop revolution, but scaling additive manufacturing into a competitive industrial technology required coordinated national investment. In 2012, the U.S. Department of Defense and Department of Energy co-established <strong>America Makes</strong> — the National Additive Manufacturing Innovation Institute — in Youngstown, Ohio.</p>
 <p>America Makes is a public–private partnership that connects manufacturers, universities, government agencies, and workforce-development organizations around the mission of advancing additive manufacturing in the United States. Its concrete activities include:</p>
 <ul>
@@ -2394,12 +2414,12 @@ Most CAD programs let you save a custom mouse-button mapping in preferences. If 
 </ul>
 <p><strong>AM Innovation Institutes</strong> are the broader category. The Manufacturing USA network (established by the Revitalize American Manufacturing and Innovation Act, 2014) now includes over a dozen institutes, each focused on a different advanced manufacturing technology. America Makes is the node for additive manufacturing.</p>
 <p>For you, as a student in this course, America Makes is relevant in three direct ways. First, the workforce competency frameworks it developed informed the structure of this course and the skills you will practice. Second, many community colleges with AM articulation agreements align their curricula to America Makes standards — meaning the portfolio evidence you build here is recognized beyond this classroom. Third, the certifications from organizations like <strong>NC3</strong> and <strong>NIMS</strong> that some students pursue after completing a course like this one are mapped to the same competency framework.</p>
-<h4 id="diagram-the-america-makes-ecosystem">Diagram: The America Makes Ecosystem<a class="headerlink" href="#diagram-the-america-makes-ecosystem" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-the-america-makes-ecosystem">Diagram: The America Makes Ecosystem<a class="headerlink" href="#diagram-the-america-makes-ecosystem" title="Permanent link">¶</a></h4>
 <details>
 <summary>Interactive Network: America Makes Stakeholder Map</summary>
 <p>Type: graph-data-model
-<strong>sim-id:</strong> america-makes-ecosystem<br/>
-<strong>Library:</strong> vis-network<br/>
+<strong>sim-id:</strong> america-makes-ecosystem<br>
+<strong>Library:</strong> vis-network<br>
 <strong>Status:</strong> Specified</p>
 <p><strong>Learning objective:</strong> Students will <em>identify</em> (Bloom L1 — Remember) the major stakeholders in the America Makes ecosystem and their relationships to workforce development and this course.</p>
 <p><strong>Nodes (each clickable; infobox appears below the canvas):</strong></p>
@@ -2516,13 +2536,13 @@ Most CAD programs let you save a custom mouse-button mapping in preferences. If 
 - Node 13: "This Course — aligned to America Makes workforce competency frameworks. Portfolio evidence produced here supports community-college articulation at partner institutions."</p>
 <p><strong>Canvas:</strong> 700 × 500 px, Barnes-Hut physics layout, hub node fixed at center. Responsive to window resize.</p>
 </details>
-<hr />
-<h3 id="articulation-pathways-why-this-history-matters-for-your-future">Articulation Pathways: Why This History Matters for Your Future<a class="headerlink" href="#articulation-pathways-why-this-history-matters-for-your-future" title="Permanent link">&para;</a></h3>
+<hr>
+<h3 id="articulation-pathways-why-this-history-matters-for-your-future">Articulation Pathways: Why This History Matters for Your Future<a class="headerlink" href="#articulation-pathways-why-this-history-matters-for-your-future" title="Permanent link">¶</a></h3>
 <p>The history you just read is not only interesting — it has direct implications for your education and career. <strong>Articulation</strong> is the formal agreement between a high school program and a community college or university that allows students to earn college credit for work completed in high school. When a high school course meets the standards established by industry frameworks like America Makes, students can enter community college with credits already on their transcript, saving tuition and time.</p>
 <p>In Minnesota, institutions such as Hennepin Technical College, Dakota County Technical College, and Dunwoody College of Technology offer articulated credit or dual-enrollment options aligned to additive manufacturing curricula. Similar pathways exist across the country under the Manufacturing USA umbrella. The portfolio you build in this course — engineering drawings, documented print cycles, material test data, a capstone project — constitutes evidence of competency that articulation partners can evaluate.</p>
 <p>Beyond articulation, the <strong>NC3</strong> (National Coalition of Certification Centers) and <strong>NIMS</strong> (National Institute for Metalworking Skills) organizations offer credentials that manufacturing employers recognize. You are not required to pursue certifications in this course, but you will practice the skills they test.</p>
-<hr />
-<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">¶</a></h2>
 <p>This chapter has covered two groups of ideas. The foundational skills — algebra, geometry, metric measurement, physics of matter and force, file management, and 3D navigation — are your toolkit for everything that follows. The historical narrative — from the Industrial Revolution through the patent expiration, the RepRap community, and America Makes — explains how 3D printing became accessible and why the skills you are learning carry professional currency.</p>
 <p>Carry these points forward:</p>
 <ul>
@@ -2536,12 +2556,12 @@ Most CAD programs let you save a custom mouse-button mapping in preferences. If 
 </ul>
 <div class="admonition mascot-celebration">
 <p class="admonition-title">Chapter 1 complete — you've built the foundation!</p>
-<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with arms raised">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with arms raised"></a>
 You've covered the math, physics, and computer skills this course depends on, and traced 3D printing from a $300,000 industrial machine in 1988 to a classroom tool in 2026. Chapter 2 moves from history into formal vocabulary — the seven ISO/ASTM 52900 process categories every AM professional uses. See you there!</p>
 </div>
 <p>In Chapter 2 you will learn the seven ISO/ASTM 52900 process categories — the formal vocabulary that engineers and technicians use to describe and compare all forms of additive manufacturing.</p>
-<hr />
-<h2 id="review-questions">Review Questions<a class="headerlink" href="#review-questions" title="Permanent link">&para;</a></h2>
+<hr>
+<h2 id="review-questions">Review Questions<a class="headerlink" href="#review-questions" title="Permanent link">¶</a></h2>
 <ol>
 <li>
 <p>Explain the difference between subtractive and additive manufacturing in your own words. Give one situation where subtractive manufacturing would be the better choice, and one where additive manufacturing would be preferred.</p>
@@ -2587,7 +2607,7 @@ You've covered the math, physics, and computer skills this course depends on, an
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -2597,13 +2617,13 @@ You've covered the math, physics, and computer skills this course depends on, an
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: List of Chapters">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -2628,7 +2648,7 @@ You've covered the math, physics, and computer skills this course depends on, an
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -2640,7 +2660,7 @@ You've covered the math, physics, and computer skills this course depends on, an
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -2665,5 +2685,7 @@ You've covered the math, physics, and computer skills this course depends on, an
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

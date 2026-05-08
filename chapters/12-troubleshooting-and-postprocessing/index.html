@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook with MicroSims to teach high-school students about 3D printing, designed to maximize the probability of college credit.">
+        <meta name="description" content="Structured troubleshooting workflow, common FDM and resin failure modes, and post-processing techniques including support removal, sanding, painting, annealing, chemical smoothing, and joining printed parts.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -29,7 +26,7 @@
     
     
       
-        <title>12. Troubleshooting and Post-Processing - Introduction to 3D Printing</title>
+        <title>Print Failures, Troubleshooting, and Post-Processing - Introduction to 3D Printing</title>
       
     
     
@@ -50,7 +47,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -65,7 +62,30 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Print Failures, Troubleshooting, and Post-Processing - Introduction to 3D Printing">
+<meta property="og:description" content="Structured troubleshooting workflow, common FDM and resin failure modes, and post-processing techniques including support removal, sanding, painting, annealing, chemical smoothing, and joining printed parts.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/12-troubleshooting-and-postprocessing/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/12-troubleshooting-and-postprocessing/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Print Failures, Troubleshooting, and Post-Processing - Introduction to 3D Printing">
+<meta property="twitter:description" content="Structured troubleshooting workflow, common FDM and resin failure modes, and post-processing techniques including support removal, sanding, painting, annealing, chemical smoothing, and joining printed parts.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/12-troubleshooting-and-postprocessing/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -101,12 +121,12 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -118,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              12. Troubleshooting and Post-Processing
+              Print Failures, Troubleshooting, and Post-Processing
             
           </span>
         </div>
@@ -134,7 +154,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -143,20 +163,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -182,7 +202,7 @@
         <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -206,7 +226,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -218,7 +238,7 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Introduction to 3D Printing
@@ -228,7 +248,7 @@
       <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -824,6 +844,277 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#a-troubleshooting-mindset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Troubleshooting Mindset
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fdm-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FDM Failure Modes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FDM Failure Modes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#warping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-layer-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First-Layer Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stringing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stringing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#under-extrusion-and-over-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Under-Extrusion and Over-Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-separation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Separation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elephants-foot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elephant's Foot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ringing-and-ghosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ringing and Ghosting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clogged-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clogged Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failed-adhesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Failed Adhesion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Failed Adhesion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-fdm-failure-diagnosis-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: FDM Failure Diagnosis Decision Tree
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resin-print-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resin Print Failures
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-processing-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post-Processing Techniques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post-Processing Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#support-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Removal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sanding-and-finishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sanding and Finishing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#painting-and-priming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Painting and Priming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annealing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annealing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chemical-smoothing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chemical Smoothing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uv-post-curing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Post-Curing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joining-printed-parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Joining Printed Parts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-together-diagnosing-a-real-failed-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Putting It Together: Diagnosing a Real Failed Print
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1136,7 +1427,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1187,6 +1478,277 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#a-troubleshooting-mindset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Troubleshooting Mindset
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fdm-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FDM Failure Modes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FDM Failure Modes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#warping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-layer-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First-Layer Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stringing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stringing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#under-extrusion-and-over-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Under-Extrusion and Over-Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-separation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Separation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elephants-foot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elephant's Foot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ringing-and-ghosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ringing and Ghosting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clogged-nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clogged Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failed-adhesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Failed Adhesion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Failed Adhesion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-fdm-failure-diagnosis-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: FDM Failure Diagnosis Decision Tree
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resin-print-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resin Print Failures
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-processing-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post-Processing Techniques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post-Processing Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#support-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Removal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sanding-and-finishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sanding and Finishing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#painting-and-priming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Painting and Priming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annealing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annealing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chemical-smoothing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chemical Smoothing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uv-post-curing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Post-Curing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joining-printed-parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Joining Printed Parts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-together-diagnosing-a-real-failed-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Putting It Together: Diagnosing a Real Failed Print
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1205,7 +1767,7 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
+  <nav class="md-path" aria-label="Navigation">
     <ol class="md-path__list">
       
         
@@ -1254,16 +1816,21 @@
   
     <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/12-troubleshooting-and-postprocessing/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="print-failures-troubleshooting-and-post-processing">Print Failures, Troubleshooting, and Post-Processing<a class="headerlink" href="#print-failures-troubleshooting-and-post-processing" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>This chapter teaches a structured troubleshooting workflow and the most common print failure modes (warping, first-layer failures, stringing, under- and over-extrusion, layer separation, elephant's foot, ringing/ghosting, clogged nozzles, failed adhesion, resin-specific failures). It also covers the standard post-processing techniques: support removal, sanding, painting, annealing, chemical smoothing, UV post-curing, and joining printed parts. By the end students can diagnose what went wrong and how to recover.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h1 id="print-failures-troubleshooting-and-post-processing">Print Failures, Troubleshooting, and Post-Processing<a class="headerlink" href="#print-failures-troubleshooting-and-post-processing" title="Permanent link">¶</a></h1>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Welcome to Chapter 12</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello"></a>
+I have been the subject of more troubleshooting sessions than I care to count. My hull reveals warping tendencies, my smokestack tests bridging, my cabin windows test overhang quality, and my deck highlights surface finish. In this chapter you'll learn to read a failed print the way a detective reads a crime scene — every artifact has a cause, and every cause has a fix. By the end, you'll be able to turn a bad print into a lesson rather than just a pile of plastic.</p>
+</div>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
+<p>This chapter teaches a structured troubleshooting workflow and the most common print failure modes (warping, first-layer failures, stringing, under- and over-extrusion, layer separation, elephant's foot, ringing/ghosting, clogged nozzles, failed adhesion, resin-specific failures). It also covers the standard post-processing techniques: support removal, sanding, painting, annealing, chemical smoothing, UV post-curing, and joining printed parts.</p>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 19 concepts from the learning graph:</p>
 <ol>
 <li>Troubleshooting Workflow (Concept 175)</li>
@@ -1286,7 +1853,7 @@
 <li>UV Post-Curing (Concept 192)</li>
 <li>Joining Printed Parts (Concept 193)</li>
 </ol>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../02-standards-and-process-families/">Chapter 2: AM Standards, Process Families, and Industrial AM</a></li>
@@ -1295,14 +1862,241 @@
 <li><a href="../08-fdm-printer-hardware/">Chapter 8: FDM Printer Hardware and Operation</a></li>
 <li><a href="../10-resin-printing/">Chapter 10: Resin Printing: SLA, MSLA, and DLP</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<h2 id="a-troubleshooting-mindset">A Troubleshooting Mindset<a class="headerlink" href="#a-troubleshooting-mindset" title="Permanent link">¶</a></h2>
+<p>Before diving into individual failure modes, it's worth establishing a <strong>troubleshooting workflow</strong> — a systematic approach to diagnosing problems that works whether you're looking at a new symptom or a familiar one. Jumping straight to changing slicer settings without first identifying the root cause often leads to "fixed by accident" situations that you can't reproduce, or worse, to masking one problem while creating another.</p>
+<p>A useful troubleshooting workflow for 3D printing follows four steps:</p>
+<ol>
+<li><strong>Observe</strong> — look at the failed print carefully. Note exactly what the failure looks like, where it appears (first layer, all layers, specific geometry), and when it started (immediate, partway through, after a filament color change).</li>
+<li><strong>Hypothesize</strong> — identify the most likely cause from the symptoms. Most failure modes have a characteristic "signature." The table below helps map symptoms to root causes.</li>
+<li><strong>Test one variable</strong> — change one setting, not five simultaneously. If you change temperature, retraction, speed, and bed adhesion at once and the next print succeeds, you don't know which change fixed it.</li>
+<li><strong>Verify</strong> — print again and confirm the fix works consistently, not just once.</li>
+</ol>
+<p>The habit of testing one variable at a time and verifying results is standard engineering practice — and it's the same mindset you'll use in Chapter 15 when designing experiments and in your capstone project.</p>
+<hr>
+<h2 id="fdm-failure-modes">FDM Failure Modes<a class="headerlink" href="#fdm-failure-modes" title="Permanent link">¶</a></h2>
+<h3 id="warping">Warping<a class="headerlink" href="#warping" title="Permanent link">¶</a></h3>
+<p><strong>Warping</strong> is the upward curling of a print's corners or edges away from the build surface during printing. It's caused by uneven thermal contraction: the bottom of the print has cooled and contracted while the top is still being deposited and is still hot. The differential shrinkage creates tensile stress that lifts the edges.</p>
+<p>Warping is most severe in:</p>
+<ul>
+<li>Materials with high thermal expansion coefficients (ABS, ASA, nylon)</li>
+<li>Large flat prints with minimal infill (more open area for unrestrained shrinkage)</li>
+<li>Cold ambient environments (drafts from doors, windows, HVAC)</li>
+</ul>
+<p>The mitigation strategies, in order of effectiveness:</p>
+<ol>
+<li><strong>Heated bed</strong> — slows initial cooling and reduces the thermal gradient between the first layer and subsequent layers.</li>
+<li><strong>Enclosure</strong> — maintains elevated ambient temperature throughout the print, minimizing differential shrinkage.</li>
+<li><strong>Brim or raft</strong> — increases the adhesion footprint so the print has more "grip" on the bed surface.</li>
+<li><strong>Bed adhesive</strong> — hairspray, glue stick, or specialized products (Magigoo, BuildTak) on the build surface.</li>
+<li><strong>Material choice</strong> — PLA warps far less than ABS; PETG is intermediate.</li>
+<li><strong>Fan speed reduction</strong> — for warping-prone materials, reducing or disabling the part cooling fan slows external surface cooling and reduces differential shrinkage.</li>
+</ol>
+<h3 id="first-layer-failures">First-Layer Failures<a class="headerlink" href="#first-layer-failures" title="Permanent link">¶</a></h3>
+<p><strong>First-layer failures</strong> are the most common cause of abandoned prints. If the first layer doesn't stick or doesn't look right, everything built on top of it will also be wrong. Before diagnosing first-layer issues, revisit bed leveling from Chapter 8 — the majority of first-layer failures trace back to incorrect Z offset (too far or too close) or an un-trammed bed.</p>
+<p>First-layer symptoms and their most likely causes:</p>
+<ul>
+<li><strong>Filament not sticking, peeling immediately</strong>: Z offset too high; bed surface dirty or incompatible with material.</li>
+<li><strong>Nozzle dragging through plastic, beads of material, or scratching sounds</strong>: Z offset too low.</li>
+<li><strong>First layer sticks in center but peels at corners</strong>: bed not level (corners too high); or warping due to insufficient bed temperature.</li>
+<li><strong>Gaps between first layer lines</strong>: under-extrusion on first layer; first layer extrusion width too narrow in slicer.</li>
+<li><strong>First layer lines merged into a blob</strong>: over-extrusion; Z offset too low; first layer printing too slowly with excessive flow.</li>
+</ul>
+<h3 id="stringing">Stringing<a class="headerlink" href="#stringing" title="Permanent link">¶</a></h3>
+<p><strong>Stringing</strong> (also called "hairy prints" in the community) occurs when the nozzle oozes a thin thread of plastic while traveling between print features. The molten plastic in the hotend is under pressure from the extruder; when the nozzle moves without extruding, residual pressure causes it to leak.</p>
+<p>The primary fix is <strong>retraction</strong>: the extruder reverses direction before a travel move, pulling filament backward and relieving pressure in the hotend. Too little retraction = stringing; too much retraction = grinding marks on filament, air in the nozzle, and under-extrusion after the retraction.</p>
+<p>Retraction tuning variables:</p>
+<ul>
+<li><strong>Retraction distance</strong>: 0.5–2.5 mm for direct drive; 3–7 mm for Bowden (longer tube requires more retraction)</li>
+<li><strong>Retraction speed</strong>: 25–45 mm/s typical</li>
+<li><strong>Print temperature</strong>: Lower temperature = less liquid material = less ooze. If stringing persists after retraction tuning, try reducing temperature by 5 °C.</li>
+<li><strong>Travel speed</strong>: Faster travel moves spend less time oozing; increase travel speed to reduce stringing.</li>
+</ul>
+<h3 id="under-extrusion-and-over-extrusion">Under-Extrusion and Over-Extrusion<a class="headerlink" href="#under-extrusion-and-over-extrusion" title="Permanent link">¶</a></h3>
+<p><strong>Under-extrusion</strong> means the printer is depositing less plastic than the G-code commands. The result: visible gaps between lines, rough surfaces, weak layer bonds, and parts that fail structurally. Common causes:</p>
+<ul>
+<li>Extruder gear slipping (insufficient idler tension)</li>
+<li>Partial nozzle clog</li>
+<li>Print temperature too low for the material or speed</li>
+<li>E-steps miscalibrated (too few steps per mm)</li>
+<li>Print speed too fast for the hotend to melt filament at the required rate</li>
+</ul>
+<p><strong>Over-extrusion</strong> means too much plastic is being deposited. The result: blobby surfaces, dimensional over-sizing, seams, and "zits" (small blobs where the print head starts and stops). Over-extrusion is less common than under-extrusion but usually traces back to E-steps set too high or an extrusion multiplier above 1.0 in the slicer.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">E-Step Calibration Fixes Both</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/tip.png" data-desc-position="bottom"><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy shares a practical tip"></a>
+Before reaching for temperature settings or retraction values to fix extrusion issues, calibrate your E-steps. Mark 100 mm on your filament, command 100 mm of extrusion from the menu, measure how much actually moved. If it's 95 mm, your E-steps are 5% low — dial them up. If it's 105 mm, dial them down. This single calibration step eliminates most under- and over-extrusion problems before they start.</p>
+</div>
+<h3 id="layer-separation">Layer Separation<a class="headerlink" href="#layer-separation" title="Permanent link">¶</a></h3>
+<p><strong>Layer separation</strong> (also called delamination) is where layers don't bond to each other and pull apart as a horizontal fracture. The root cause is inadequate heat: either the print temperature is too low for good inter-layer bonding, the print speed is too fast (not enough time for each bead to fuse to the previous layer), or the cooling fan is too aggressive, chilling layers before they can bond.</p>
+<p>Fixes: increase print temperature by 5–10 °C; reduce print speed by 20%; reduce fan speed (especially for ABS and ASA).</p>
+<h3 id="elephants-foot">Elephant's Foot<a class="headerlink" href="#elephants-foot" title="Permanent link">¶</a></h3>
+<p><strong>Elephant's foot</strong> is the slight outward bulge of the first few layers relative to the rest of the part. It happens when the first layer is over-squished (Z offset too low) or over-heated, causing it to spread wider than the design. The result is a part that won't fit in its recess or has inaccurate base dimensions.</p>
+<p>Fixes: increase Z offset by small increments (0.05 mm steps) until the first layer no longer bulges; reduce first-layer flow in the slicer (90–95% of normal flow rate for the first few layers).</p>
+<h3 id="ringing-and-ghosting">Ringing and Ghosting<a class="headerlink" href="#ringing-and-ghosting" title="Permanent link">¶</a></h3>
+<p><strong>Ringing</strong> (also called ghosting or echoing) appears as wavy ripples in the surface of a print, typically radiating outward from sharp corners or walls after a sudden change in print direction. It's caused by the print head's momentum: when the head decelerates sharply, the frame and the loose parts of the motion system oscillate. If the acceleration setting is too aggressive relative to the frame's stiffness, the head is still vibrating while it deposits the next few beads.</p>
+<p>Fixes: reduce acceleration in firmware (M201 command) or slicer settings; increase belt tension (loose belts amplify the oscillation); reduce print speed for outer perimeters; use Input Shaping (Klipper feature) to compensate for the resonant frequency.</p>
+<h3 id="clogged-nozzle">Clogged Nozzle<a class="headerlink" href="#clogged-nozzle" title="Permanent link">¶</a></h3>
+<p>A <strong>clogged nozzle</strong> can range from partial (extrusion is reduced, filament grinding is visible) to complete (no extrusion at all). Causes include:</p>
+<ul>
+<li>Printing too cold for the material</li>
+<li>Debris or carbonized filament in the nozzle</li>
+<li>Heat creep (see Chapter 8 — filament softens above the heat break)</li>
+<li>A foreign object in the filament</li>
+</ul>
+<p>The cold pull (atomic pull) technique described in Chapter 8 removes soft partial clogs. For harder clogs, a nozzle needle (0.3 mm acupuncture needle inserted from below while hot) can dislodge debris. If neither works, replace the nozzle — they're inexpensive.</p>
+<h3 id="failed-adhesion">Failed Adhesion<a class="headerlink" href="#failed-adhesion" title="Permanent link">¶</a></h3>
+<p><strong>Failed adhesion</strong> (print detaches from the bed mid-print) differs from a first-layer failure: the print starts fine and detaches hours into the job. Causes:</p>
+<ul>
+<li>Warping stress overcoming bed adhesion for tall, long prints</li>
+<li>Build surface contamination from fingerprints (oils reduce adhesion)</li>
+<li>Build surface worn out (PEI sheets eventually lose grip; glass loses its roughness)</li>
+<li>Ambient temperature changes during a long print (drafts, AC cycling)</li>
+</ul>
+<p>Fixes: clean the bed with IPA before each print; increase brim width; check enclosure if printing warp-prone materials; replace worn build surface.</p>
+<h4 id="diagram-fdm-failure-diagnosis-decision-tree">Diagram: FDM Failure Diagnosis Decision Tree<a class="headerlink" href="#diagram-fdm-failure-diagnosis-decision-tree" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/fdm-failure-diagnosis/main.html" width="100%" height="540px" scrolling="no"></iframe>
+
+<details>
+<summary>FDM Failure Mode Diagnosis Decision Tree</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> fdm-failure-diagnosis<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Bloom Level: Evaluate (L5)
+Bloom Verb: Judge
+Learning Objective: Students evaluate a described print failure by navigating a decision tree that identifies the most likely root cause and recommended fix.</p>
+<p>Visual layout:
+- Interactive decision tree rendered in p5.js
+- Root node: "Where does the failure appear?"
+- Branch categories: First Layer / All Layers / Specific Geometry / After Long Run
+- Each category branches into symptom nodes (e.g., "Gaps in first layer?", "Lines not bonding?", "Blobs and zits?")
+- Leaf nodes show: Failure Name, Root Cause (1–2 sentences), Recommended Fix (numbered list), Related Slicer Setting</p>
+<p>Interactive elements:
+- Click any branch node to navigate deeper into the tree; breadcrumb trail at top shows path taken
+- Each leaf node has a "See Example Photo Description" button — expands a text panel describing what this failure looks like in detail
+- "Start Over" button resets to root
+- Hover any node to see the full question/description in a tooltip</p>
+<p>Tree data covers: warping, first-layer not sticking, first-layer too squished, stringing, under-extrusion, over-extrusion, layer separation, elephant's foot, ringing/ghosting, clogged nozzle, failed mid-print adhesion</p>
+<p>Color coding:
+- Blue: question/branch nodes
+- Orange: symptom confirmation nodes
+- Green: leaf nodes (diagnosis + fix)
+- Red: safety-related fixes (thermal runaway, nozzle clog fire risk)</p>
+<p>Responsive: tree scales to container; on narrow screens, switches from graphical tree to a guided Q&amp;A form.</p>
+</details>
+<hr>
+<h2 id="resin-print-failures">Resin Print Failures<a class="headerlink" href="#resin-print-failures" title="Permanent link">¶</a></h2>
+<p>Resin printing has its own characteristic failure modes, mostly related to the peel mechanism and exposure settings rather than the thermal and extrusion issues of FDM.</p>
+<p>Common resin failure modes:</p>
+<ul>
+<li><strong>Print sticks to FEP instead of build platform</strong>: Insufficient bottom layer exposure (platform grip is weak); FEP is new and has high adhesion; build platform is dirty or not roughed up. Fix: increase bottom exposure time; lightly sand the build platform with 400-grit sandpaper.</li>
+<li><strong>Layer delamination (print separates mid-model)</strong>: Normal layer exposure too short; resin temperature too low (cold resin is viscous and doesn't flow well); FEP tension too high or too low. Fix: increase normal exposure by 0.2–0.5 s; warm the resin to 20–25 °C before printing.</li>
+<li><strong>Print detaches mid-print after several layers</strong>: Peel forces exceed support strength; too few or too thin supports; model orientation creates large cross-sections that generate high peel force. Fix: add more supports; reorient to reduce maximum cross-section area per layer; use a tilted FEP design (reduces peel force by allowing progressive separation).</li>
+<li><strong>Supports fused to model (can't remove without damage)</strong>: Over-exposure caused cured resin to bleed into support contact points. Fix: reduce normal exposure; use smaller support tip size; add a thin interface layer ("support contact Z distance" in slicer settings).</li>
+<li><strong>Cloudy or matte surface finish</strong>: Residual IPA on part during curing; incomplete wash. Fix: wash thoroughly, air dry completely before curing.</li>
+<li><strong>Dimensional over-sizing on XY</strong>: Over-exposure causes resin to cure beyond pixel boundaries (bleed). Fix: reduce normal exposure time; use a calibration test print to find the correct exposure for your resin.</li>
+</ul>
+<hr>
+<h2 id="post-processing-techniques">Post-Processing Techniques<a class="headerlink" href="#post-processing-techniques" title="Permanent link">¶</a></h2>
+<p>The part that comes off the printer is usually the beginning of the finishing process, not the end. Post-processing transforms a raw print into a finished artifact.</p>
+<h3 id="support-removal">Support Removal<a class="headerlink" href="#support-removal" title="Permanent link">¶</a></h3>
+<p><strong>Support removal</strong> is the first post-processing step for most prints. Good practice:</p>
+<ul>
+<li>For FDM: use flush-cut pliers or diagonal cutters to clip supports at their base; then use needle-nose pliers to peel remaining support material. Avoid twisting supports off by hand — the torque can break fine details near the support contact point.</li>
+<li>For resin: always remove supports after curing (not before — semi-cured parts are brittle and can snap). Use flush cutters; wet-sand the contact marks.</li>
+<li>Design to minimize support scars: place supports on less visible surfaces; use reduced-contact support tips in the slicer.</li>
+</ul>
+<h3 id="sanding-and-finishing">Sanding and Finishing<a class="headerlink" href="#sanding-and-finishing" title="Permanent link">¶</a></h3>
+<p><strong>Sanding</strong> removes layer lines and support marks, creating a smoother surface for painting or functional use. The approach:</p>
+<ol>
+<li>Start with 120–220 grit (removes layer lines and gross marks).</li>
+<li>Progress through 320, 400, 800, 1200, 2000 grit (progressively finer scratches, transitioning from matte to smooth).</li>
+<li>Wet sanding (using water as lubricant) from 600 grit upward reduces dust and produces a finer surface.</li>
+<li>A final pass with 2000–3000 grit produces a surface fine enough for paint without primer on most FDM parts.</li>
+</ol>
+<p>Limit sanding on thin walls and fine details — material removal is permanent and can distort toleranced features.</p>
+<h3 id="painting-and-priming">Painting and Priming<a class="headerlink" href="#painting-and-priming" title="Permanent link">¶</a></h3>
+<p>Bare FDM-printed parts have porous, rough surfaces that absorb paint unevenly. <strong>Priming</strong> seals the surface and provides a uniform base for paint adhesion. Options:</p>
+<ul>
+<li><strong>Spray primer</strong> (rattle can filler primer, gray or white): fills micro-scratches, adheres well to most plastics, provides good paint adhesion. Apply in thin coats; heavy coats fill sharp details.</li>
+<li><strong>Liquid epoxy primer</strong> (XTC-3D, Smooth-On): self-leveling coating that fills layer lines. Apply by brush; it self-levels over small gaps. Produces a smoother result than spray primer but requires mixing and has limited working time.</li>
+<li><strong>Brush-on primer</strong>: useful for small areas or models with complex geometry.</li>
+</ul>
+<p>After priming, sand lightly with 400–600 grit to knock down any raised nibs or dust inclusions. Then apply paint: spray paint or brush-on acrylic/enamel both work on primed FDM parts. Sealing with a clear coat (matte, satin, or gloss) protects the paint and unifies the finish.</p>
+<h3 id="annealing">Annealing<a class="headerlink" href="#annealing" title="Permanent link">¶</a></h3>
+<p><strong>Annealing</strong> is a heat-treatment process that strengthens FDM parts by allowing the polymer chains in adjacent layers to relax and more fully bond. The part is heated in an oven to just below the glass transition temperature (Tg) of the material — typically 50–60 °C for PLA, 70–80 °C for PETG, 90–100 °C for ABS — and held there for 30–60 minutes, then allowed to cool slowly.</p>
+<p>Annealing can increase the tensile strength and impact resistance of FDM parts by 10–25%. The drawback: annealing causes thermal distortion in parts that aren't fully constrained or aren't geometrically symmetric. Flat plates warp; tall narrow features lean. To anneal successfully, support the part in sand or salt to constrain it during the heat cycle.</p>
+<h3 id="chemical-smoothing">Chemical Smoothing<a class="headerlink" href="#chemical-smoothing" title="Permanent link">¶</a></h3>
+<p><strong>Chemical smoothing</strong> uses a solvent to dissolve and reflow the outermost layer of the print, eliminating layer lines and producing a nearly injection-molded surface finish. The most effective pairing is <strong>acetone vapor smoothing</strong> for ABS — acetone is a solvent for ABS; the vapors dissolve the outer surface slightly, which flows and re-solidifies smooth.</p>
+<p>The process: place the ABS print on a shelf inside a sealed container; add a small amount of acetone to an absorbent material (paper towels) at the bottom; seal and wait 5–30 minutes depending on the desired effect. The part absorbs acetone vapor and the outer surface self-levels. Allow full off-gassing (12–24 hours) before use.</p>
+<p>Important safety notes: acetone is highly flammable and narcotic in high concentrations. Chemical smoothing must be done outdoors or in a very well-ventilated space, far from ignition sources, with gloves and eye protection.</p>
+<p>Note: PLA cannot be chemically smoothed with acetone. EtOH (ethanol) has limited effect; tetrahydrofuran (THF) can dissolve PLA but is highly toxic and not recommended for school use. Mechanical finishing (sanding + priming) is the practical smoothing route for PLA.</p>
+<h3 id="uv-post-curing">UV Post-Curing<a class="headerlink" href="#uv-post-curing" title="Permanent link">¶</a></h3>
+<p>As covered in Chapter 10, <strong>UV post-curing</strong> completes the polymerization of resin prints. The post-cure step does several things: it hardens the part to full mechanical properties, it cures any residual surface tackiness, and it stabilizes color (some resins shift dramatically with under-cure vs. over-cure).</p>
+<p>Cure time depends on resin type and UV station power. Most standard resins are fully cured in 2–8 minutes in a dedicated UV station. Engineering resins (dental, castable) may require longer cure cycles at specific temperatures. Check the resin manufacturer's data sheet for exact cure times — overcuring can embrittle some resin formulations.</p>
+<h3 id="joining-printed-parts">Joining Printed Parts<a class="headerlink" href="#joining-printed-parts" title="Permanent link">¶</a></h3>
+<p>Most useful objects exceed the build volume of any single printer. <strong>Joining printed parts</strong> extends what you can make. Methods available:</p>
+<ul>
+<li><strong>Mechanical fasteners</strong> — design for M3/M4 screws with printed bosses or heat-set inserts. Heat-set brass threaded inserts pressed into slightly undersized holes (with a soldering iron) provide strong, reusable threads in thermoplastic parts.</li>
+<li><strong>Adhesives</strong> — cyanoacrylate (super glue) bonds most FDM plastics quickly but with low impact resistance; epoxy provides higher strength and some gap-filling; for ABS-to-ABS, acetone dissolved with ABS scraps makes an excellent "plastic weld" adhesive that fuses the parts chemically.</li>
+<li><strong>Snap fits</strong> — design integral snap-fit features (cantilever arms that deflect during assembly and lock in place) in CAD; these allow tool-free, reversible assembly and are one of AM's most powerful assembly features.</li>
+<li><strong>Press fits</strong> — shaft-in-hole interference fits for non-removable joints; tolerances as discussed in Chapter 11.</li>
+<li><strong>Fusion welding</strong> — drag a hot (200–220 °C) soldering iron tip along a joint seam with filament acting as filler rod; produces a mechanical bond between parts.</li>
+</ul>
+<div class="admonition mascot-encouraging">
+<p class="admonition-title">Post-Processing Is Where Patience Pays Off</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/encouraging.png" data-desc-position="bottom"><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy encourages you through the tough part"></a>
+Sanding through 120→220→400→800→1200 grit feels tedious. It is tedious. But every grit step is removing the scratches left by the previous one — skip a step and you'll see it in the final finish. The students who take the time to work through the full sanding sequence consistently produce pieces that look painted, professional, and completed. That's not luck; it's the investment of about forty minutes of patient work.</p>
+</div>
+<hr>
+<h2 id="putting-it-together-diagnosing-a-real-failed-print">Putting It Together: Diagnosing a Real Failed Print<a class="headerlink" href="#putting-it-together-diagnosing-a-real-failed-print" title="Permanent link">¶</a></h2>
+<p>Here's an exercise: a student prints a 20 mm calibration cube in PLA on a Cartesian printer, and the result has these characteristics:</p>
+<ul>
+<li>Bottom surface peels up on two opposite corners</li>
+<li>Sides show visible layer lines with one section where lines appear fused together into a blob</li>
+<li>Top surface has fine wispy strings across gaps</li>
+<li>Dimensions are X: 19.6 mm, Y: 19.7 mm, Z: 19.9 mm</li>
+</ul>
+<p>Let's work through the troubleshooting workflow:</p>
+<ol>
+<li><strong>Observe</strong>: corner lifting = warping/adhesion; blob on one side = possible over-extrusion or temperature spike; strings on top = stringing; X/Y under-sized by ~0.3 mm = systematic under-sizing.</li>
+<li><strong>Hypothesize</strong>: (1) Bed temperature slightly low or surface dirty (warping); (2) print temperature may have increased mid-print from a thermal fluctuation or the hot end cycling on and over-shooting (blob); (3) retraction needs tuning (stringing); (4) E-steps or extrusion multiplier slightly low (under-sizing).</li>
+<li><strong>Test one variable first</strong>: The most impactful fix is usually bed adhesion and E-step calibration. Clean the bed, increase bed temperature 5 °C, verify E-steps, then reprint.</li>
+<li><strong>Verify</strong>: Next print shows flat corners, X/Y at 19.95+ mm, reduced stringing. Remaining stringing addressed next iteration by reducing retraction distance or temperature.</li>
+</ol>
+<hr>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">¶</a></h2>
+<ul>
+<li>A structured troubleshooting workflow (observe → hypothesize → test one variable → verify) is more effective than guessing or changing multiple settings at once.</li>
+<li>Warping results from differential thermal contraction; heated bed, enclosure, and brim are the primary fixes.</li>
+<li>First-layer failures mostly trace back to Z offset and bed leveling — solve those before adjusting slicer settings.</li>
+<li>Stringing is controlled by retraction distance and speed, print temperature, and travel speed.</li>
+<li>Under-extrusion can result from clogs, incorrect temperature, too-fast printing, or miscalibrated E-steps; always calibrate E-steps before other diagnosis.</li>
+<li>Elephant's foot on FDM is fixed by adjusting Z offset and first-layer flow; on resin it's fixed by reducing bottom exposure time.</li>
+<li>Ringing/ghosting is a motion system resonance issue; fix with reduced acceleration, increased belt tension, or Input Shaping.</li>
+<li>Resin failures are primarily peel-related (support strategy, orientation) or exposure-related (over-/under-cure).</li>
+<li>Post-processing stages — support removal, sanding, priming, painting, annealing, chemical smoothing, UV curing — each have specific techniques and material requirements.</li>
+<li>Joining methods include adhesives, mechanical fasteners, heat-set inserts, snap fits, press fits, and fusion welding — the right choice depends on required strength, reversibility, and material.</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: A Print Looks Great for the First 20 Layers, Then the Corners Begin to Lift. What Is the Most Likely Cause? — Click to Reveal</summary>
+<p>This is a classic warping signature. The print adheres well initially (the heated bed prevents immediate lifting) but as the part gains height, accumulated differential thermal contraction between the cooled lower layers and the still-hot upper layers builds enough stress to lift the corners away from the build surface. Solutions include increasing bed temperature, adding a brim, reducing fan speed (for ABS), or enclosing the printer to maintain a warm ambient environment throughout the print.</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You Can Diagnose and Finish a Print</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates with you"></a>
+Troubleshooting is the skill that separates a person who can follow a recipe from a person who understands the process. You now have both: the systematic workflow to diagnose any failure, and the post-processing toolkit to finish what comes out well. Chapter 13 moves us forward in time to modern printer hardware — the machines that have raised the bar for what a consumer 3D printer can do.</p>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1319,7 +2113,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1329,13 +2123,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../11-dfam-and-metrology/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 11. DfAM and Metrology">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1360,7 +2154,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1372,7 +2166,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1397,5 +2191,7 @@
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

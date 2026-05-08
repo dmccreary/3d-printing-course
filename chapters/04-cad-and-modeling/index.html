@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -50,7 +47,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -65,7 +62,30 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Computer-Aided Design and Modeling - Introduction to 3D Printing">
+<meta property="og:description" content="Parametric, feature-based CAD — 2D sketching, constraints, core feature operations, reference geometry, assemblies, three major CAD tools, and AI-assisted design.">
+<meta property="og:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/04-cad-and-modeling/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/3d-printing-course/chapters/04-cad-and-modeling/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Computer-Aided Design and Modeling - Introduction to 3D Printing">
+<meta property="twitter:description" content="Parametric, feature-based CAD — 2D sketching, constraints, core feature operations, reference geometry, assemblies, three major CAD tools, and AI-assisted design.">
+<meta property="twitter:image" content="https://dmccreary.github.io/3d-printing-course/assets/images/social/chapters/04-cad-and-modeling/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -101,12 +121,12 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -134,7 +154,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -143,20 +163,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -182,7 +202,7 @@
         <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -206,7 +226,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -218,7 +238,7 @@
     <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Introduction to 3D Printing
@@ -228,7 +248,7 @@
       <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -1452,7 +1472,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1837,7 +1857,7 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
+  <nav class="md-path" aria-label="Navigation">
     <ol class="md-path__list">
       
         
@@ -1886,16 +1906,16 @@
   
     <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/04-cad-and-modeling/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="computer-aided-design-and-modeling">Computer-Aided Design and Modeling<a class="headerlink" href="#computer-aided-design-and-modeling" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="computer-aided-design-and-modeling">Computer-Aided Design and Modeling<a class="headerlink" href="#computer-aided-design-and-modeling" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter teaches parametric, feature-based CAD: 2D sketching with constraints, the core feature operations (extrude, revolve, sweep/loft, fillet, shell, pattern, boolean), reference geometry, assemblies and mate constraints, and three named CAD tools (Onshape, Fusion 360, FreeCAD). It also introduces AI-assisted CAD, which is increasingly part of how modern designers work. By the end, students can build a functional parametric model that can be exported for printing.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 19 concepts from the learning graph:</p>
 <ol>
 <li>CAD Software Overview (Concept 56)</li>
@@ -1918,22 +1938,22 @@
 <li>FreeCAD Workflow (Concept 73)</li>
 <li>AI-Assisted CAD (Concept 210)</li>
 </ol>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../01-foundations-and-history/">Chapter 1: Foundations and History of Additive Manufacturing</a></li>
 </ul>
-<hr />
+<hr>
 <div class="admonition mascot-welcome">
 <p class="admonition-title">Welcome to Chapter 4</p>
-<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello"></a>
 This is the chapter where ideas become geometry. You're going to learn parametric, feature-based CAD — the same modeling approach used by professional mechanical engineers — starting from a blank sketch and building up to a fully constrained, exportable 3D model. By the end, you'll have the skills to design something original and send it to a printer with confidence.</p>
 </div>
-<h2 id="what-is-cad">What Is CAD?<a class="headerlink" href="#what-is-cad" title="Permanent link">&para;</a></h2>
+<h2 id="what-is-cad">What Is CAD?<a class="headerlink" href="#what-is-cad" title="Permanent link">¶</a></h2>
 <p><strong>Computer-Aided Design (CAD)</strong> is software that allows you to create precise 2D and 3D geometry on a computer, with exact dimensions, relationships, and constraints that a physical drawing on paper cannot enforce. CAD replaced paper drafting in professional engineering starting in the 1980s, and today it is the universal medium through which designed objects move from idea to manufacturing.</p>
 <p>For additive manufacturing, CAD is the starting point of everything. Before a printer can make a part, that part must exist as a 3D digital model. Every STL file, every G-code toolpath, every slicer setting is downstream of a CAD model. Learning to work in CAD is learning to speak the native language of digital fabrication.</p>
 <p>Modern CAD software for mechanical design shares a core set of capabilities, even though the interfaces and specific workflows differ. The three you'll most likely encounter in a school makerspace or early engineering career are <strong>Onshape</strong>, <strong>Fusion 360</strong>, and <strong>FreeCAD</strong> — all of which will be covered later in this chapter. First, though, you need to understand the fundamental concepts that underlie all of them: sketching, constraints, and features.</p>
-<h2 id="starting-in-2d-the-sketch">Starting in 2D: The Sketch<a class="headerlink" href="#starting-in-2d-the-sketch" title="Permanent link">&para;</a></h2>
+<h2 id="starting-in-2d-the-sketch">Starting in 2D: The Sketch<a class="headerlink" href="#starting-in-2d-the-sketch" title="Permanent link">¶</a></h2>
 <p>Every 3D feature in parametric CAD begins as a <strong>2D sketch</strong> — a flat, dimensioned drawing on a plane. Think of a sketch the way you think of a blueprint cross-section: it defines the profile that the software will then turn into a solid shape.</p>
 <p>A sketch lives on a <strong>sketch plane</strong>, which is any flat surface — the default XY, YZ, or XZ reference planes of the model space, or the flat face of an existing solid. You activate the sketch tool, click the plane, and you enter a 2D drawing environment where the X and Y axes are your canvas.</p>
 <p>Inside a sketch, you work with <strong>sketch entities</strong> — the geometric primitives that define the shape:</p>
@@ -1946,7 +1966,7 @@ This is the chapter where ideas become geometry. You're going to learn parametri
 <li><strong>Polygons:</strong> Regular multi-sided shapes (hexagons for bolt heads, for example)</li>
 </ul>
 <p>You draw sketch entities approximately at first — their size and position will be made precise by dimensions and constraints in the next step. Sketching is not about precision at the drawing stage; it's about capturing the topology (the connectivity and shape type) of your profile.</p>
-<h2 id="sketch-constraints-making-geometry-fully-defined">Sketch Constraints: Making Geometry Fully Defined<a class="headerlink" href="#sketch-constraints-making-geometry-fully-defined" title="Permanent link">&para;</a></h2>
+<h2 id="sketch-constraints-making-geometry-fully-defined">Sketch Constraints: Making Geometry Fully Defined<a class="headerlink" href="#sketch-constraints-making-geometry-fully-defined" title="Permanent link">¶</a></h2>
 <p>A raw sketch with just geometry drawn is <strong>under-constrained</strong>: the entities can slide, rotate, and scale freely, like shapes drawn on a whiteboard that you could push around with your finger. Before you can build a solid feature from a sketch, you need to lock it down completely using <strong>sketch constraints</strong>.</p>
 <p>There are two types of constraints:</p>
 <p><strong>Geometric constraints</strong> define relationships between sketch entities without specifying exact values:</p>
@@ -1963,16 +1983,16 @@ This is the chapter where ideas become geometry. You're going to learn parametri
 <p><strong>Dimensional constraints</strong> specify exact numeric values — lengths, angles, radii, and distances. You place a dimension on a line, arc, or pair of entities, type in the value, and the geometry snaps to that size.</p>
 <div class="admonition mascot-thinking">
 <p class="admonition-title">Fully Defined Is the Goal — Every Time</p>
-<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks carefully">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks carefully"></a>
 A sketch has three possible states: <strong>under-constrained</strong> (blue entities in most CAD tools — still free to move), <strong>fully constrained</strong> (black entities — locked in place), and <strong>over-constrained</strong> (red entities — conflicting constraints that can't all be satisfied simultaneously). Your goal is always fully constrained. An under-constrained sketch can drift when features are added later, producing unpredictable geometry. Over-constrained sketches tell you something is redundant or contradictory and must be resolved. Black is the color you're aiming for.</p>
 </div>
 <p>When all sketch entities are black (or the software displays "Fully Defined"), your sketch is ready. Every point has a fixed position, every line has a fixed length and angle, and the sketch will produce exactly the same geometry every time it is regenerated — which is what makes parametric modeling possible.</p>
-<h4 id="diagram-sketch-constraint-states-explorer">Diagram: Sketch Constraint States Explorer<a class="headerlink" href="#diagram-sketch-constraint-states-explorer" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-sketch-constraint-states-explorer">Diagram: Sketch Constraint States Explorer<a class="headerlink" href="#diagram-sketch-constraint-states-explorer" title="Permanent link">¶</a></h4>
 <details>
 <summary>Sketch Constraint States Explorer</summary>
 <p>Type: MicroSim
-<strong>sim-id:</strong> sketch-constraint-explorer<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> sketch-constraint-explorer<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p><strong>Learning objective:</strong> Identify the three sketch constraint states (under-constrained, fully constrained, over-constrained) and apply geometric and dimensional constraints to reach the fully constrained state (Bloom L1–L3: identify, explain, apply).</p>
 <p><strong>Description:</strong> An interactive p5.js canvas showing a simple L-shaped sketch profile made of five line segments. The student adds constraints and dimensions to move the sketch from under-constrained to fully constrained, experiencing the state transitions directly.</p>
@@ -1995,12 +2015,12 @@ A sketch has three possible states: <strong>under-constrained</strong> (blue ent
 - Hovering any constraint button shows a tooltip explaining what relationship it enforces</p>
 <p><strong>Responsive behavior:</strong> On narrow screens (&lt; 600 px), the right panel moves below the sketch canvas.</p>
 </details>
-<h2 id="parametric-modeling">Parametric Modeling<a class="headerlink" href="#parametric-modeling" title="Permanent link">&para;</a></h2>
+<h2 id="parametric-modeling">Parametric Modeling<a class="headerlink" href="#parametric-modeling" title="Permanent link">¶</a></h2>
 <p>The word <strong>parametric</strong> in CAD means that dimensions and relationships are stored as <strong>parameters</strong> — named, editable values — rather than hard-coded geometry. When you change a parameter, the entire model updates automatically to reflect the new value.</p>
 <p>Consider a simple bracket modeled with a base width parameter of 40 mm and two mounting holes spaced 30 mm apart. In a non-parametric system, changing the bracket to 60 mm wide would require manually moving the holes and redrawing the edges. In a parametric system, you change the base-width parameter to 60 mm, and the software recomputes every feature that depends on it — hole positions, wall lengths, total volume — in seconds.</p>
 <p>This is why professional engineers use parametric CAD. Design is iterative (as you learned in Chapter 3), and iteration means changing dimensions repeatedly. Parametric models absorb those changes gracefully. Fixed, non-parametric models fight you at every revision.</p>
 <p>Parameters can also be linked by <strong>equations</strong>. You can specify that the hole diameter equals the wall thickness divided by two, or that the pattern spacing equals the total length divided by the number of instances. When one value changes, all linked values update — the model is not just a shape, it's a system of design intent captured in math.</p>
-<h2 id="feature-based-modeling">Feature-Based Modeling<a class="headerlink" href="#feature-based-modeling" title="Permanent link">&para;</a></h2>
+<h2 id="feature-based-modeling">Feature-Based Modeling<a class="headerlink" href="#feature-based-modeling" title="Permanent link">¶</a></h2>
 <p><strong>Feature-based modeling</strong> is the method by which a 3D solid is built up from a sequence of discrete operations called <strong>features</strong>. Each feature — an extrude, a cut, a fillet, a pattern — modifies the solid and is recorded in a <strong>feature tree</strong> (also called a model tree or history tree), which appears as a vertical list in the CAD interface.</p>
 <p>The feature tree is the timeline of your model. Features are applied in order from top to bottom. You can:</p>
 <ul>
@@ -2010,9 +2030,9 @@ A sketch has three possible states: <strong>under-constrained</strong> (blue ent
 <li><strong>Insert</strong> new features at any point in the history</li>
 </ul>
 <p>The combination of parametric dimensions and a feature tree creates a model that carries its own design intent. Another engineer opening your file six months later can read the feature tree and understand exactly how the part was built and how to modify it. This is not just organizational tidiness — it is what makes professional CAD collaboration possible.</p>
-<h2 id="the-core-feature-operations">The Core Feature Operations<a class="headerlink" href="#the-core-feature-operations" title="Permanent link">&para;</a></h2>
+<h2 id="the-core-feature-operations">The Core Feature Operations<a class="headerlink" href="#the-core-feature-operations" title="Permanent link">¶</a></h2>
 <p>With the sketch and parametric groundwork in place, here are the principal feature operations you'll use to build solid geometry. These operations are the vocabulary of 3D modeling — you need all of them, and most models use several in combination.</p>
-<h3 id="extrude">Extrude<a class="headerlink" href="#extrude" title="Permanent link">&para;</a></h3>
+<h3 id="extrude">Extrude<a class="headerlink" href="#extrude" title="Permanent link">¶</a></h3>
 <p>The <strong>extrude feature</strong> takes a closed 2D sketch profile and pushes it a specified distance along an axis perpendicular to the sketch plane, creating a 3D solid. It is the most common feature in mechanical CAD by a wide margin.</p>
 <p>Extrudes can add material (<strong>boss/extrude</strong>) or remove it (<strong>cut/extrude</strong>). A rectangular sketch extruded 20 mm creates a box. The same rectangle extruded as a cut into an existing solid creates a rectangular pocket or slot. Extrude depth can be:</p>
 <ul>
@@ -2021,33 +2041,33 @@ A sketch has three possible states: <strong>under-constrained</strong> (blue ent
 <li><strong>Up to surface/face:</strong> Stops at a specified surface</li>
 <li><strong>Symmetric:</strong> Grows equally in both directions from the sketch plane</li>
 </ul>
-<h3 id="revolve">Revolve<a class="headerlink" href="#revolve" title="Permanent link">&para;</a></h3>
+<h3 id="revolve">Revolve<a class="headerlink" href="#revolve" title="Permanent link">¶</a></h3>
 <p>The <strong>revolve feature</strong> rotates a 2D sketch profile around an axis by a specified angle (typically 360° for a complete solid of revolution, but any angle works). If extrude is for prismatic shapes, revolve is for cylindrical and rotationally symmetric shapes.</p>
 <p>A circle profile revolved 360° around an external axis produces a torus (donut). A profile of a bottle cross-section revolved 360° around its centerline produces the bottle body. A semicircle revolved 360° around its diameter produces a sphere. Revolve cuts work the same way — a profile spun around an axis to remove material creates grooves, threads, and undercuts.</p>
-<h3 id="sweep-and-loft">Sweep and Loft<a class="headerlink" href="#sweep-and-loft" title="Permanent link">&para;</a></h3>
+<h3 id="sweep-and-loft">Sweep and Loft<a class="headerlink" href="#sweep-and-loft" title="Permanent link">¶</a></h3>
 <p><strong>Sweep</strong> and <strong>loft</strong> are the two feature types that handle non-prismatic, non-rotationally symmetric geometry.</p>
 <p>A <strong>sweep</strong> moves a profile sketch along a path sketch, creating a solid that follows the path's curvature. The cross-section remains constant (or can taper with optional scaling). Uses include pipes, tubes, cable guides, handrails, and any part that has the same cross-section shape along its length but follows a curve.</p>
 <p>A <strong>loft</strong> blends between two or more profile sketches on different sketch planes, creating a smooth solid transition. The profiles can have different shapes — a rectangle at the base blending into a circle at the top, for example. Lofts are used for aerodynamic shapes, ergonomic handles, and any geometry that transitions smoothly between distinct cross-sections.</p>
-<h3 id="fillet-and-chamfer">Fillet and Chamfer<a class="headerlink" href="#fillet-and-chamfer" title="Permanent link">&para;</a></h3>
+<h3 id="fillet-and-chamfer">Fillet and Chamfer<a class="headerlink" href="#fillet-and-chamfer" title="Permanent link">¶</a></h3>
 <p><strong>Fillet</strong> and <strong>chamfer</strong> are edge-modification features that replace sharp corners.</p>
 <p>A <strong>fillet</strong> rounds an edge with a constant or variable radius, producing a smooth curved transition between two faces. Fillets serve functional and aesthetic purposes: they reduce stress concentrations at corners (sharp internal corners are where cracks initiate under load), improve aerodynamics, make parts safer to handle, and often improve printability by eliminating overhanging sharp corners.</p>
 <p>A <strong>chamfer</strong> cuts a flat angled bevel at an edge, defined by distance and angle or two distances. Chamfers are faster to produce than fillets in machining contexts; in AM they're used primarily for aesthetic style or lead-in edges that help parts mate.</p>
 <div class="admonition mascot-tip">
 <p class="admonition-title">Add Fillets Last — Almost Always</p>
-<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy gives a thumbs up">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/tip.png" data-desc-position="bottom"><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy gives a thumbs up"></a>
 Here's a workflow move that will save you frustration: add fillets at the very end of your feature tree, after all cuts, patterns, and other geometry is finalized. Fillets applied early in the tree can create reference edges that downstream features depend on — then when you change an earlier feature, those fillet references break and the model fails to rebuild. Keep fillets at the bottom of the tree as "finishing touches" and your models will rebuild cleanly almost every time.</p>
 </div>
-<h3 id="shell">Shell<a class="headerlink" href="#shell" title="Permanent link">&para;</a></h3>
+<h3 id="shell">Shell<a class="headerlink" href="#shell" title="Permanent link">¶</a></h3>
 <p>The <strong>shell feature</strong> hollows out a solid, leaving walls of a specified thickness. Select one or more faces to "open" (those become the openings), specify wall thickness, and the software removes the interior material while maintaining uniform walls on all remaining faces.</p>
 <p>Shell is invaluable for AM: most FDM parts are already hollowed by the slicer's infill settings, but shell in CAD gives you explicit control over wall geometry for parts where the hollow interior is part of the design — enclosures, containers, thin-walled structures. Combining shell with specific opening faces lets you design boxes, cups, tubes, and hollow sculptural forms.</p>
-<h3 id="pattern-features">Pattern Features<a class="headerlink" href="#pattern-features" title="Permanent link">&para;</a></h3>
+<h3 id="pattern-features">Pattern Features<a class="headerlink" href="#pattern-features" title="Permanent link">¶</a></h3>
 <p><strong>Pattern features</strong> replicate a feature (or a set of features) in a regular geometric arrangement without manually rebuilding each instance. Two types are common:</p>
 <ul>
 <li><strong>Linear pattern:</strong> Replicates features in one or two directions, spaced at equal intervals. Use for mounting holes along a rail, ventilation slots across a panel, or fins along a heat sink.</li>
 <li><strong>Circular pattern:</strong> Replicates features around an axis at equal angular spacing. Use for bolt-circle patterns, gear teeth, radially symmetric features.</li>
 </ul>
 <p>Patterns are parametric — the count and spacing are parameters you can change. A 6-hole bolt pattern can become an 8-hole pattern by editing one number.</p>
-<h3 id="boolean-operations">Boolean Operations<a class="headerlink" href="#boolean-operations" title="Permanent link">&para;</a></h3>
+<h3 id="boolean-operations">Boolean Operations<a class="headerlink" href="#boolean-operations" title="Permanent link">¶</a></h3>
 <p><strong>Boolean operations</strong> are logical combinations of two or more solid bodies:</p>
 <ul>
 <li><strong>Union (Add/Join):</strong> Combines two bodies into a single solid, merging their volumes</li>
@@ -2127,12 +2147,12 @@ Here's a workflow move that will save you frustration: add fillets at the very e
 </tr>
 </tbody>
 </table>
-<h4 id="diagram-feature-tree-builder">Diagram: Feature Tree Builder<a class="headerlink" href="#diagram-feature-tree-builder" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-feature-tree-builder">Diagram: Feature Tree Builder<a class="headerlink" href="#diagram-feature-tree-builder" title="Permanent link">¶</a></h4>
 <details>
 <summary>Feature Tree Builder</summary>
 <p>Type: MicroSim
-<strong>sim-id:</strong> feature-tree-builder<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> feature-tree-builder<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p><strong>Learning objective:</strong> Apply feature-based modeling by sequencing feature operations to produce a target part, understanding how the feature tree order affects the final geometry (Bloom L3–L4: apply, analyze).</p>
 <p><strong>Description:</strong> An interactive p5.js simulation showing a simplified 3D isometric view of a part (rendered as colored block geometry, not full 3D — pseudo-3D using isometric projection) that updates in real time as the student adds features to a feature tree panel.</p>
@@ -2154,7 +2174,7 @@ Here's a workflow move that will save you frustration: add fillets at the very e
 - "Compare to Target" button shows a split view comparing student's part to the target</p>
 <p><strong>Responsive behavior:</strong> On narrow screens, the tree panel stacks above the 3D view.</p>
 </details>
-<h2 id="reference-geometry">Reference Geometry<a class="headerlink" href="#reference-geometry" title="Permanent link">&para;</a></h2>
+<h2 id="reference-geometry">Reference Geometry<a class="headerlink" href="#reference-geometry" title="Permanent link">¶</a></h2>
 <p><strong>Reference geometry</strong> consists of construction elements that help you position and orient features without adding material to the model. The three primary types are:</p>
 <ul>
 <li><strong>Reference planes:</strong> Infinite flat planes used as sketch planes for features that don't naturally land on an existing face. You can create a reference plane offset from an existing face by a distance, at an angle through an edge, or through three points.</li>
@@ -2162,16 +2182,16 @@ Here's a workflow move that will save you frustration: add fillets at the very e
 <li><strong>Reference points:</strong> Specific locations in model space, useful for anchoring mate constraints in assemblies or as control points for complex features.</li>
 </ul>
 <p>Reference geometry is invisible in the final model — it is scaffolding. But without it, many features are impossible to place correctly. When a part needs a feature on an angled surface that doesn't exist yet, you create a reference plane at that angle first, then sketch on it.</p>
-<h2 id="assemblies">Assemblies<a class="headerlink" href="#assemblies" title="Permanent link">&para;</a></h2>
+<h2 id="assemblies">Assemblies<a class="headerlink" href="#assemblies" title="Permanent link">¶</a></h2>
 <p>A <strong>CAD assembly</strong> is a file that brings together two or more individual part models (each in its own file) and positions them relative to each other to form a complete product. Assemblies let you model complex products as collections of manageable parts, check whether parts fit together correctly, detect collisions, and simulate motion.</p>
 <p>In an AM context, assemblies are essential when you're designing multi-component products — a two-part snap-fit enclosure, a mechanism with moving parts, a bracket and bolt combination. Each component is modeled as a separate part file; the assembly file references all of them and defines how they relate.</p>
 <p>Part positions in an assembly are controlled by <strong>degrees of freedom (DOF)</strong>. A rigid body in free space has 6 degrees of freedom: translation in X, Y, Z and rotation about X, Y, Z. As you add mate constraints, degrees of freedom are removed until the part is fully positioned.</p>
 <div class="admonition mascot-warning">
 <p class="admonition-title">Over-Constraining an Assembly Causes Rebuilds to Fail</p>
-<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy looks concerned">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/warning.png" data-desc-position="bottom"><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy looks concerned"></a>
 The most common assembly mistake is adding more mate constraints than needed, creating conflicting position requirements the solver can't satisfy simultaneously. A shaft that is fully defined with one coincident axis mate and one face mate does NOT need a second face mate — that third constraint will fight the first two and the assembly will fail or produce unpredictable positions. Add constraints one at a time and check the DOF count after each one. When the part stops moving the way you want, stop adding constraints.</p>
 </div>
-<h2 id="mate-constraints">Mate Constraints<a class="headerlink" href="#mate-constraints" title="Permanent link">&para;</a></h2>
+<h2 id="mate-constraints">Mate Constraints<a class="headerlink" href="#mate-constraints" title="Permanent link">¶</a></h2>
 <p><strong>Mate constraints</strong> (called "mates" in SolidWorks/Onshape, "joints" in Fusion 360) are the rules that position one part relative to another in an assembly. Each mate type removes a specific number of degrees of freedom:</p>
 <ul>
 <li><strong>Coincident:</strong> Forces two faces to be coplanar (flush) or two points to share the same location. Removes up to 3 DOF.</li>
@@ -2182,12 +2202,12 @@ The most common assembly mistake is adding more mate constraints than needed, cr
 <li><strong>Fixed:</strong> Locks a part completely in place with no movement. Removes all 6 DOF. Typically applied to the first part added to an assembly.</li>
 </ul>
 <p>A fully constrained part has 0 remaining DOF in all six directions. A part with 0 DOF does not wiggle. An intentionally under-constrained part (1 rotational DOF) can spin around its axis — useful for modeling hinges, knobs, and rotating mechanisms.</p>
-<h4 id="diagram-assembly-mate-constraints-visualizer">Diagram: Assembly Mate Constraints Visualizer<a class="headerlink" href="#diagram-assembly-mate-constraints-visualizer" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-assembly-mate-constraints-visualizer">Diagram: Assembly Mate Constraints Visualizer<a class="headerlink" href="#diagram-assembly-mate-constraints-visualizer" title="Permanent link">¶</a></h4>
 <details>
 <summary>Assembly Mate Constraints Visualizer</summary>
 <p>Type: interactive-infographic
-<strong>sim-id:</strong> assembly-mate-visualizer<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>sim-id:</strong> assembly-mate-visualizer<br>
+<strong>Library:</strong> p5.js<br>
 <strong>Status:</strong> Specified</p>
 <p><strong>Learning objective:</strong> Identify common mate constraint types, explain what degrees of freedom each removes, and analyze how combinations of mates fully constrain a part in an assembly (Bloom L1–L4: identify, explain, analyze).</p>
 <p><strong>Description:</strong> An interactive p5.js diagram showing two simple block-shaped parts in isometric view. The student selects mates from a palette and applies them between the parts, watching the DOF counter decrease and the parts snap into their constrained positions.</p>
@@ -2207,14 +2227,14 @@ The most common assembly mistake is adding more mate constraints than needed, cr
 - "Reset" button clears all mates</p>
 <p><strong>Responsive behavior:</strong> Scales to container width; DOF counter and status badge remain prominent at all sizes.</p>
 </details>
-<h2 id="cad-tools-onshape-fusion-360-and-freecad">CAD Tools: Onshape, Fusion 360, and FreeCAD<a class="headerlink" href="#cad-tools-onshape-fusion-360-and-freecad" title="Permanent link">&para;</a></h2>
+<h2 id="cad-tools-onshape-fusion-360-and-freecad">CAD Tools: Onshape, Fusion 360, and FreeCAD<a class="headerlink" href="#cad-tools-onshape-fusion-360-and-freecad" title="Permanent link">¶</a></h2>
 <p>Three CAD tools dominate educational and entry-level professional AM workflows. They all implement parametric, feature-based modeling, but they differ in delivery model, pricing, ecosystem, and specific workflow conventions.</p>
 <div class="admonition mascot-encouraging">
 <p class="admonition-title">Which Tool You Pick Matters Less Than You Think</p>
-<p><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy cheers you on">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/encouraging.png" data-desc-position="bottom"><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy cheers you on"></a>
 Students sometimes freeze up trying to choose the "right" CAD tool, worried that picking the wrong one will put them behind. Here's the reality: the concepts you learn in this chapter — sketching, constraints, features, assemblies — transfer directly between all three. Professionals switch between CAD packages regularly throughout their careers. Get fluent in one, and the others will feel familiar within a few weeks. Pick whichever one your school has available, or whichever runs on your computer. The skills are what matter.</p>
 </div>
-<h3 id="onshape">Onshape<a class="headerlink" href="#onshape" title="Permanent link">&para;</a></h3>
+<h3 id="onshape">Onshape<a class="headerlink" href="#onshape" title="Permanent link">¶</a></h3>
 <p><strong>Onshape</strong> is a fully cloud-based parametric CAD platform developed by the original SolidWorks team and launched in 2015. Because it runs entirely in a web browser, it requires no installation, works on any device including Chromebooks, and stores all files in the cloud with automatic version history. There is no local file to lose or corrupt.</p>
 <p>Key Onshape characteristics:</p>
 <ul>
@@ -2226,7 +2246,7 @@ Students sometimes freeze up trying to choose the "right" CAD tool, worried that
 <li><strong>Learning resources:</strong> Extensive free learning center at learn.onshape.com</li>
 </ul>
 <p>Onshape's biggest limitation is that file access requires an internet connection, which can be a constraint in poor-connectivity environments.</p>
-<h3 id="fusion-360">Fusion 360<a class="headerlink" href="#fusion-360" title="Permanent link">&para;</a></h3>
+<h3 id="fusion-360">Fusion 360<a class="headerlink" href="#fusion-360" title="Permanent link">¶</a></h3>
 <p><strong>Fusion 360</strong> is Autodesk's cloud-connected parametric CAD/CAM/simulation platform, launched in 2013. Unlike Onshape, Fusion 360 installs as a desktop application (with cloud syncing), offering offline capability with cloud collaboration when connected.</p>
 <p>Key Fusion 360 characteristics:</p>
 <ul>
@@ -2238,7 +2258,7 @@ Students sometimes freeze up trying to choose the "right" CAD tool, worried that
 <li><strong>Assembly environment:</strong> Uses "Joints" rather than traditional mate constraints, with joint types (rigid, revolute, slider, planar, etc.) that define motion type directly</li>
 </ul>
 <p>Fusion 360 is the industry standard for small manufacturing businesses and a strong preparation for college-level engineering programs.</p>
-<h3 id="freecad">FreeCAD<a class="headerlink" href="#freecad" title="Permanent link">&para;</a></h3>
+<h3 id="freecad">FreeCAD<a class="headerlink" href="#freecad" title="Permanent link">¶</a></h3>
 <p><strong>FreeCAD</strong> is a free, open-source, cross-platform parametric CAD application. It installs on Mac, Windows, and Linux and stores all data locally — no account, no internet connection, no subscription required.</p>
 <p>Key FreeCAD characteristics:</p>
 <ul>
@@ -2310,7 +2330,7 @@ Students sometimes freeze up trying to choose the "right" CAD tool, worried that
 </tr>
 </tbody>
 </table>
-<h3 id="workflow-comparison-the-same-part-in-three-tools">Workflow Comparison: The Same Part in Three Tools<a class="headerlink" href="#workflow-comparison-the-same-part-in-three-tools" title="Permanent link">&para;</a></h3>
+<h3 id="workflow-comparison-the-same-part-in-three-tools">Workflow Comparison: The Same Part in Three Tools<a class="headerlink" href="#workflow-comparison-the-same-part-in-three-tools" title="Permanent link">¶</a></h3>
 <p>The core workflow for building a simple bracket — sketch → extrude boss → extrude cut (holes) → fillet — follows the same logical sequence in all three tools. The command names and keyboard shortcuts differ, but the thinking process is identical:</p>
 <ol>
 <li><strong>Create a new part / part studio / body</strong></li>
@@ -2323,7 +2343,7 @@ Students sometimes freeze up trying to choose the "right" CAD tool, worried that
 <li><strong>Export as STL or 3MF for the slicer</strong></li>
 </ol>
 <p>This sequence is the template you'll repeat hundreds of times. The tool you're in changes the menu path; the sequence stays constant.</p>
-<h2 id="ai-assisted-cad">AI-Assisted CAD<a class="headerlink" href="#ai-assisted-cad" title="Permanent link">&para;</a></h2>
+<h2 id="ai-assisted-cad">AI-Assisted CAD<a class="headerlink" href="#ai-assisted-cad" title="Permanent link">¶</a></h2>
 <p><strong>AI-assisted CAD</strong> is an emerging category of tools that use artificial intelligence to accelerate or automate parts of the modeling process that traditionally required manual effort. As of 2025, AI-assisted CAD capabilities appear in several forms:</p>
 <ul>
 <li><strong>Text-to-geometry:</strong> Experimental tools (including integrations in Fusion 360 and third-party plugins) that accept a natural-language description ("a bracket with two M4 holes, 40 mm apart, 3 mm wall thickness") and generate a 3D model or sketch. Results still require significant cleanup and verification, but the speed of iteration is improving rapidly.</li>
@@ -2333,7 +2353,7 @@ Students sometimes freeze up trying to choose the "right" CAD tool, worried that
 <li><strong>Automated parametric optimization:</strong> Given a range of parameter values and a performance target (minimize material, maximize stiffness, fit within a build volume), AI optimization loops can test thousands of parameter combinations and report which combinations best meet the target.</li>
 </ul>
 <p>AI-assisted CAD does not replace the need to understand sketching, constraints, and features — quite the opposite. To evaluate, edit, and trust AI-generated geometry, you need to understand the underlying modeling concepts deeply. The students who benefit most from AI tools are those who could build the model manually and use AI to go faster, not those who expect AI to do the thinking for them.</p>
-<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">¶</a></h2>
 <p>This chapter has covered the complete foundation of parametric, feature-based CAD modeling. Here is what you now know:</p>
 <ul>
 <li><strong>CAD software</strong> translates design intent into precise 3D digital geometry that can be exported for printing, simulation, and manufacturing.</li>
@@ -2349,7 +2369,7 @@ Students sometimes freeze up trying to choose the "right" CAD tool, worried that
 </ul>
 <div class="admonition mascot-celebration">
 <p class="admonition-title">Chapter 4 Complete — You Can Model Now</p>
-<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates">
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates"></a>
 You've just covered every concept a working mechanical designer uses every day: sketches, constraints, features, assemblies, and the tools to put it all together. That's not a small thing — parametric CAD is one of the most transferable skills in modern engineering. In Chapter 5, you'll take the models you can now build and learn exactly how to get them out of the CAD environment and into a format the printer can use. Mesh files, STL, 3MF — the bridge from digital to physical is next.</p>
 </div>
 
@@ -2377,7 +2397,7 @@ You've just covered every concept a working mechanical designer uses every day: 
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -2387,13 +2407,13 @@ You've just covered every concept a working mechanical designer uses every day: 
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../03-engineering-design-process/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Engineering Design Process">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -2418,7 +2438,7 @@ You've just covered every concept a working mechanical designer uses every day: 
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -2430,7 +2450,7 @@ You've just covered every concept a working mechanical designer uses every day: 
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -2455,5 +2475,7 @@ You've just covered every concept a working mechanical designer uses every day: 
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
