@@ -3,124 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Layer Height Cross-Section Explorer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0; padding: 0; background: #f8f9fa; }
+        main { display: block; width: 100%; }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Layer Height Cross-Section Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> layer-height-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Students can predict how changing layer height affects layer count, surface finish, and relative print time for a given part height.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** layer-height-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Bloom Level: Apply (L3)
-    Bloom Verb: Use
-    Learning Objective: Students can predict how changing layer height affects layer count, surface finish, and relative print time for a given part height.
-    
-    Instructional Rationale: An interactive slider with live visual feedback is appropriate for an Apply-level objective — students are not just recalling a fact but actively manipulating a parameter and observing consequential changes, which builds the intuition needed to choose layer heights in practice.
-    
-    Canvas layout:
-    - Left panel (60% width): Side-view cross-section of a 20 mm tall rectangular block, rendered as a stack of visible layer lines. Layer lines drawn as alternating bands in two shades of blue to make individual layers visible. Layers scale in thickness proportionally to the selected layer height.
-    - Right panel (40% width): Data readout showing:
-      - Selected Layer Height (mm)
-      - Total Layers (20 mm ÷ layer height, rounded up)
-      - Relative Print Time (normalized: 0.20 mm = 1.0×)
-      - Surface Smoothness rating (qualitative scale: Coarse / Draft / Standard / Fine / Very Fine)
-    
-    Controls (below the panels):
-    - Horizontal slider: Layer Height — range 0.08 mm to 0.36 mm, step 0.04 mm
-    - Default: 0.20 mm
-    
-    Interaction:
-    - Moving the slider immediately updates the cross-section drawing and all four data readout values.
-    - Hovering the cross-section reveals a tooltip with the exact layer height and layer count at that resolution.
-    - A thin red line on the cross-section marks the 0.4 mm nozzle diameter for reference (labeled "Nozzle diameter").
-    
-    Data:
-    - Layer count = ceil(20 / layer_height)
-    - Relative print time = 0.20 / layer_height (simplified, assumes speed constant)
-    - Surface smoothness: 0.08–0.12 → "Very Fine", 0.16–0.20 → "Standard", 0.24–0.28 → "Draft", 0.32–0.36 → "Coarse"
-    
-    Color scheme: Layer bands in two shades of navy blue; control panel in light gray; red reference line for nozzle diameter.
-    Responsive: Canvas fills iframe width; panels stack vertically on screens narrower than 600px.
-    -->
+    <main></main>
+    <script src="layer-height-explorer.js"></script>
 </body>
 </html>

@@ -1,16 +1,12 @@
 ---
 title: Layer Height Cross-Section Explorer
 description: Students can predict how changing layer height affects layer count, surface finish, and relative print time for a given part height.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Apply (L3)
 ---
 
 # Layer Height Cross-Section Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students can predict how changing layer height affects layer count, surface fini
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="562" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
