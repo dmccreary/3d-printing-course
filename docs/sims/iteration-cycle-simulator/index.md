@@ -1,9 +1,9 @@
 ---
 title: Iteration Cycle Simulator
-description: Analyze how repeated prototype-test-revise cycles converge on a design that meets specifications (Bloom L4: examine relationships, analyze patterns).
-status: scaffold
+description: "Analyze how repeated prototype-test-revise cycles converge on a design that meets specifications (Bloom L4: examine relationships, analyze patterns)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Analyze
 ---
 
 # Iteration Cycle Simulator
@@ -22,7 +22,7 @@ Analyze how repeated prototype-test-revise cycles converge on a design that meet
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

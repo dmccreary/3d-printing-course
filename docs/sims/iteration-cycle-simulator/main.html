@@ -3,114 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Iteration Cycle Simulator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        body { margin: 0; padding: 0; background: #f8f9fa; }
+        main { display: block; width: 100%; }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Iteration Cycle Simulator</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> iteration-cycle-simulator</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> TBD</p>
-            <p><strong>Learning Objective:</strong> Analyze how repeated prototype-test-revise cycles converge on a design that meets specifications (Bloom L4: examine relationships, analyze patterns).</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: MicroSim
-    **sim-id:** iteration-cycle-simulator<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    **Learning objective:** Analyze how repeated prototype-test-revise cycles converge on a design that meets specifications (Bloom L4: examine relationships, analyze patterns).
-    
-    **Description:** An animated p5.js simulation showing an abstract design metric (e.g., "load capacity" or "dimensional accuracy") improving over successive iterations. The student controls how much effort goes into each phase of the cycle and observes how the design metric evolves.
-    
-    **Canvas layout (680 × 460 px, responsive):**
-    - Top: A horizontal "Design Quality" gauge (0–100 %), starting at 30–40 %, increasing with iterations
-    - Middle: Three sliders labeled "Research depth," "Prototype fidelity," and "Test rigor" (each 1–5)
-    - Center: A circular animation showing the three-phase loop: Prototype → Test → Revise, with a glowing bead cycling around
-    - Right panel: A live line chart showing Design Quality vs. Iteration Number (X-axis 1–10, Y-axis 0–100 %)
-    - Bottom: "Run Next Iteration" button; "Reset" button
-    
-    **Simulation logic (simplified, pedagogically calibrated):**
-    - Each iteration increases Design Quality by a random amount within a range influenced by the three sliders (higher values = larger potential improvement)
-    - Diminishing returns are modeled: improvements shrink as quality approaches 100 %
-    - A "Specification Target" horizontal line at 80 % (user-draggable between 60–95 %) shows when the design would be accepted
-    - At each iteration, a brief text log entry appears (e.g., "Iteration 3: Tab thickness increased 0.4 mm → load capacity improved 12 %")
-    
-    **Interactions:** All sliders update simulation parameters for the next iteration. Clicking "Run Next Iteration" advances one loop and updates the chart and gauge. Hovering any chart point shows that iteration's log entry in a tooltip.
-    
-    **Responsive behavior:** On narrow screens, the chart and left panel stack vertically.
-    -->
+    <main></main>
+    <script src="iteration-cycle-simulator.js"></script>
 </body>
 </html>
