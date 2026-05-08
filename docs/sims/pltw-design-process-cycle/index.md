@@ -1,9 +1,9 @@
 ---
 title: The PLTW Engineering Design Process Cycle
-description: Recall and sequence the seven steps of the PLTW engineering design process and explain how they connect in an iterative loop (Bloom L1–L2: recall, sequence, explain).
-status: scaffold
+description: "Recall and sequence the seven steps of the PLTW engineering design process and explain how they connect in an iterative loop (Bloom L1–L2: recall, sequence, explain)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Remember-Understand
 ---
 
 # The PLTW Engineering Design Process Cycle
@@ -22,7 +22,7 @@ Recall and sequence the seven steps of the PLTW engineering design process and e
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
