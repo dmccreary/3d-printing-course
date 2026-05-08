@@ -1,16 +1,12 @@
 ---
 title: Resin Family Property Comparison
 description: Students can distinguish the three resin families (standard, tough/flexible, engineering) by their mechanical and thermal properties and match each to appropriate applications.
-status: scaffold
+status: implemented
 library: Chart.js
 bloom_level: Understand (L2)
 ---
 
 # Resin Family Property Comparison
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students can distinguish the three resin families (standard, tough/flexible, eng
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="522" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
