@@ -96,6 +96,7 @@ Layout:
 - A detail panel (right side or below) populates when a stage is clicked
 
 Stages and detail content:
+
 1. **CAD Model** (icon: cube wireframe)
    Arrow label: "STL / 3MF"
    Detail: "A mathematical description of a closed 3D surface — triangles in STL, richer geometry in 3MF. The model has no layer information, no toolpath, and no material settings. It is just a shape."
