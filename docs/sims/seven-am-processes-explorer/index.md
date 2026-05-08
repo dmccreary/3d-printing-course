@@ -1,9 +1,9 @@
 ---
 title: Seven Process Families Explorer
-description: Identify and explain each of the seven ISO/ASTM 52900 AM process categories by feedstock type, energy source, and representative technology (Bloom L1–L2: recall, classify).
-status: scaffold
+description: "Identify and explain each of the seven ISO/ASTM 52900 AM process categories by feedstock type, energy source, and representative technology (Bloom L1–L2: recall, classify)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Remember-Understand
 ---
 
 # Seven Process Families Explorer
@@ -22,7 +22,7 @@ Identify and explain each of the seven ISO/ASTM 52900 AM process categories by f
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="642" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
