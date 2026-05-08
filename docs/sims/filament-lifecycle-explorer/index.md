@@ -1,16 +1,12 @@
 ---
 title: Filament Lifecycle Explorer
 description: Students examine the full lifecycle of a 3D-printed filament part — from raw material to end-of-life — and identify where waste and environmental impact occur.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Analyze (L4)
 ---
 
 # Filament Lifecycle Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students examine the full lifecycle of a 3D-printed filament part — from raw m
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
