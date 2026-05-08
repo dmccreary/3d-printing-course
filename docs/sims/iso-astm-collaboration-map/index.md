@@ -1,9 +1,9 @@
 ---
 title: ISO and ASTM Collaboration Map
-description: Recall and explain the roles of ISO and ASTM as standards bodies in additive manufacturing (Bloom L1–L2: identify, explain).
-status: scaffold
+description: "Recall and explain the roles of ISO and ASTM as standards bodies in additive manufacturing (Bloom L1–L2: identify, explain)."
+status: implemented
 library: vis-network
-bloom_level: TBD
+bloom_level: Remember-Understand
 ---
 
 # ISO and ASTM Collaboration Map
@@ -22,7 +22,7 @@ Recall and explain the roles of ISO and ASTM as standards bodies in additive man
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="522" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

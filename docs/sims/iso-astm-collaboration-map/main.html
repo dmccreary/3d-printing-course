@@ -3,106 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISO and ASTM Collaboration Map</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>ISO & ASTM Collaboration Map</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f4f8; }
+        #title {
             text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a3a6c;
+            background: #e8f0fe;
+            border-bottom: 1px solid #c5d5f5;
+        }
+        #layout {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            height: 430px;
+        }
+        #network {
+            flex: 1;
+            background: #f8fbff;
+        }
+        #info-panel {
+            width: 260px;
+            background: #fff;
+            border-left: 1px solid #dce8f8;
+            padding: 14px;
+            overflow-y: auto;
+            font-size: 13px;
+        }
+        #info-panel h3 {
+            font-size: 15px;
+            color: #1a3a6c;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #1565C0;
+            padding-bottom: 4px;
+        }
+        .info-row { margin: 6px 0; line-height: 1.4; }
+        .info-label { font-weight: 600; color: #555; }
+        #legend {
+            display: flex;
+            gap: 16px;
+            padding: 6px 14px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
             align-items: center;
         }
-        .placeholder .badge {
+        .leg-dot {
             display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
+            width: 12px; height: 12px;
+            border-radius: 50%;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        #toggle-btn {
+            margin-left: auto;
+            padding: 4px 10px;
+            background: #1565C0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
             font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
         }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
+        #toggle-btn:hover { background: #0d47a1; }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>ISO and ASTM Collaboration Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> iso-astm-collaboration-map</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> TBD</p>
-            <p><strong>Learning Objective:</strong> Recall and explain the roles of ISO and ASTM as standards bodies in additive manufacturing (Bloom L1–L2: identify, explain).</p>
+    <div id="title">ISO / ASTM AM Standards Collaboration Map</div>
+    <div id="layout">
+        <div id="network"></div>
+        <div id="info-panel">
+            <h3>Node Details</h3>
+            <p style="color:#777; font-size:12px;">Click any node to see details about that organization or standard.</p>
         </div>
     </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: interactive-infographic
-    **sim-id:** iso-astm-collaboration-map<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    
-    **Learning objective:** Recall and explain the roles of ISO and ASTM as standards bodies in additive manufacturing (Bloom L1–L2: identify, explain).
-    
-    **Description:** A vis-network node-link diagram showing the relationship between ISO/TC 261 and ASTM F42, their collaboration agreement, and the resulting ISO/ASTM joint standards. The network has three layers:
-    - Layer 1 (top): Two large anchor nodes — "ISO / TC 261" (blue, Geneva icon) and "ASTM F42" (red, Pennsylvania icon)
-    - Layer 2 (middle): A shared node labeled "Joint Standards Agreement (2011)" connected to both anchors with bidirectional arrows
-    - Layer 3 (bottom): Three outcome nodes branching from the agreement node — "ISO/ASTM 52900 (Terminology)", "ISO/ASTM 52910 (Design)", and "ISO/ASTM 52921 (Coordinate Systems)"
-    
-    **Interactions:** Clicking any node opens a right-side infobox with: organization name, founding year, headquarters, primary focus, and a one-sentence description of their role in AM standardization. Hovering highlights connected edges. A toggle button switches between "Focus: Terminology" and "Focus: All Standards" to filter visible nodes.
-    
-    **Canvas size:** 700 × 400 px, responsive.
-    **Layout:** Hierarchical top-to-bottom.
-    **Colors:** ISO nodes in blue (#1565C0), ASTM nodes in red (#C62828), shared/joint nodes in purple (#6A1B9A), text in white on node backgrounds.
-    -->
+    <div id="legend">
+        <span><span class="leg-dot" style="background:#1565C0;"></span>ISO TC 261</span>
+        <span><span class="leg-dot" style="background:#C62828;"></span>ASTM F42</span>
+        <span><span class="leg-dot" style="background:#6A1B9A;"></span>Joint Agreement / Standard</span>
+        <button id="toggle-btn">Focus: Terminology</button>
+    </div>
+    <script src="iso-astm-collaboration-map.js"></script>
 </body>
 </html>
