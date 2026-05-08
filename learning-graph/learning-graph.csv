@@ -97,7 +97,7 @@ ConceptID,ConceptLabel,Dependencies,TaxonomyID
 96,Cooling Fan Settings,83|122,SLIC
 97,Adhesion Type,83|87,SLIC
 98,Skirt Brim Raft,97,SLIC
-99,Support Structures,83|156,SLIC
+99,Support Structures,83,SLIC
 100,Tree Supports,99,SLIC
 101,Support Interface,99,SLIC
 102,Slicer Profiles,83|86|89|94,SLIC
@@ -138,8 +138,8 @@ ConceptID,ConceptLabel,Dependencies,TaxonomyID
 137,Standard Resin,126|136,MAT
 138,Tough And Flexible Resins,126|136,MAT
 139,Engineering Resins,126|136,MAT
-140,Bio-Based Filaments,122|200,MAT
-141,Recycled Filaments,122|199,MAT
+140,Bio-Based Filaments,122,MAT
+141,Recycled Filaments,122,MAT
 142,Resin Printer Anatomy,37|38,RESN
 143,LCD And Light Source,142,RESN
 144,Resin Vat And FEP,142,RESN
@@ -229,7 +229,7 @@ ConceptID,ConceptLabel,Dependencies,TaxonomyID
 228,IDEX Dual Extrusion,108|224,HARD
 229,Toolchanger Printers,108|224,HARD
 230,Filament Splicing,224,HARD
-231,Multi-Material Waste,200|224,SAFE
+231,Multi-Material Waste,224,SAFE
 232,CoreXY Motion System,109|110,HARD
 233,Bed Slinger Design,109|110,HARD
 234,Klipper Firmware,113,HARD
@@ -259,7 +259,7 @@ ConceptID,ConceptLabel,Dependencies,TaxonomyID
 258,OctoPrint Server,113|255,HARD
 259,Mainsail Web Interface,234|255,HARD
 260,Heated Chamber,95|122,HARD
-261,Enclosed Printer,197|260,HARD
+261,Enclosed Printer,260,HARD
 262,Bambu Lab Printers,36|226|232|234,HARD
 263,Prusa Printers,36|14|227,HARD
 264,Creality Printers,36|233,HARD
@@ -288,6 +288,6 @@ ConceptID,ConceptLabel,Dependencies,TaxonomyID
 287,LLM Tutoring For Students,271,AIAM
 288,Synthetic Training Data,273,AIAM
 289,Edge AI On Printers,113|271,AIAM
-290,AI Ethics In Manufacturing,204|271,AIAM
+290,AI Ethics In Manufacturing,271,AIAM
 291,AI Hallucination Risks,287|290,AIAM
 292,Snapmaker Printers,11|36,HARD

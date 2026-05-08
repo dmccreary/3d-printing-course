@@ -1,0 +1,2222 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The PLTW iterative design loop — problem definition, research, ideation, specifications, prototyping, testing, and communication — and how engineering notebooks and portfolios document the journey.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/3d-printing-course/chapters/03-engineering-design-process/">
+      
+      
+        <link rel="prev" href="../02-standards-and-process-families/">
+      
+      
+        <link rel="next" href="../04-cad-and-modeling/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>The Engineering Design Process - Introduction to 3D Printing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-engineering-design-process" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction to 3D Printing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Engineering Design Process
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introduction to 3D Printing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Description
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapters
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-foundations-and-history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Foundations and History
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-standards-and-process-families/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Standards and Process Families
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Engineering Design Process
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Engineering Design Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concepts Covered
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-engineers-need-a-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Engineers Need a Process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Engineers Need a Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-the-pltw-engineering-design-process-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: The PLTW Engineering Design Process Cycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-define-the-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Define the Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Research
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-ideation-and-sketching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Ideation and Sketching
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Ideation and Sketching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ideation-sketch-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Ideation Sketch Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-design-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Design Specifications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-concept-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Concept Selection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Concept Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-concept-selection-decision-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Concept Selection Decision Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-prototyping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Prototyping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-iteration-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Iteration Cycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Iteration Cycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-iteration-cycle-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Iteration Cycle Simulator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing and Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engineering-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Engineering Communication
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-engineering-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Engineering Notebook
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Engineering Notebook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-engineering-notebook-page-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Engineering Notebook Page Anatomy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portfolio-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Portfolio Development
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-cad-and-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. CAD and Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-file-formats-and-mesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. File Formats and Mesh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-materials-science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Materials Science
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-slicing-and-toolpaths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Slicing and Toolpaths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-fdm-printer-hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. FDM Printer Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-safety-ethics-sustainability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Safety, Ethics, Sustainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-resin-printing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Resin Printing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-dfam-and-metrology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. DfAM and Metrology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-troubleshooting-and-postprocessing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Troubleshooting and Post-Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-modern-hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Modern Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-modern-ecosystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Modern Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-ai-and-machine-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. AI and Machine Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-careers-and-capstone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Careers and Capstone
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Graph
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MicroSims
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concepts Covered
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-engineers-need-a-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Engineers Need a Process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Engineers Need a Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-the-pltw-engineering-design-process-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: The PLTW Engineering Design Process Cycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-define-the-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Define the Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Research
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-ideation-and-sketching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Ideation and Sketching
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Ideation and Sketching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ideation-sketch-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Ideation Sketch Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-design-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Design Specifications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-concept-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Concept Selection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Concept Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-concept-selection-decision-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Concept Selection Decision Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-prototyping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Prototyping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-iteration-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Iteration Cycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Iteration Cycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-iteration-cycle-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Iteration Cycle Simulator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing and Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engineering-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Engineering Communication
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-engineering-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Engineering Notebook
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Engineering Notebook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-engineering-notebook-page-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Engineering Notebook Page Anatomy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portfolio-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Portfolio Development
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/03-engineering-design-process/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="the-engineering-design-process">The Engineering Design Process<a class="headerlink" href="#the-engineering-design-process" title="Permanent link">&para;</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>This chapter teaches the PLTW engineering design process — the iterative loop of problem definition, research, ideation, specifications, prototyping, testing, and communication — that every subsequent project in this course will follow. Students learn how engineering notebooks and portfolios document the journey, why iteration is non-negotiable in additive manufacturing, and how the design process aligns with both ABET outcomes and community-college engineering curricula.</p>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<p>This chapter covers the following 12 concepts from the learning graph:</p>
+<ol>
+<li>PLTW Design Process (Concept 44)</li>
+<li>Problem Definition (Concept 45)</li>
+<li>Research Phase (Concept 46)</li>
+<li>Ideation And Sketching (Concept 47)</li>
+<li>Design Specifications (Concept 48)</li>
+<li>Concept Selection (Concept 49)</li>
+<li>Prototyping (Concept 50)</li>
+<li>Iteration Cycle (Concept 51)</li>
+<li>Testing And Validation (Concept 52)</li>
+<li>Engineering Communication (Concept 53)</li>
+<li>Engineering Notebook (Concept 54)</li>
+<li>Portfolio Development (Concept 55)</li>
+</ol>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-foundations-and-history/">Chapter 1: Foundations and History of Additive Manufacturing</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Welcome to Chapter 3</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello">
+This chapter is the one that turns "I have an idea" into "I have a plan." You're going to learn the PLTW engineering design process — the structured loop that professional engineers use to move from a fuzzy problem to a tested, documented solution. Every project you build from here on follows this loop, so understanding it deeply is worth every page.</p>
+</div>
+<h2 id="why-engineers-need-a-process">Why Engineers Need a Process<a class="headerlink" href="#why-engineers-need-a-process" title="Permanent link">&para;</a></h2>
+<p>Imagine you've been asked to design a replacement bracket for a piece of lab equipment. You could dive straight into CAD, model something, print it, and discover three hours later that it doesn't fit. You could try again, still guessing. Or you could spend twenty minutes defining the problem precisely, sketching three options, picking the best one on paper, and then modeling and printing with confidence.</p>
+<p>The second approach is not slower — it's faster. It just feels slower at first because you're doing work that doesn't immediately look like making something. That upfront thinking is exactly what the <strong>engineering design process</strong> provides: a structured sequence of activities that converts a problem into a solution with the fewest wasted prototypes.</p>
+<p>The specific version you'll use in this course is the <strong>PLTW Engineering Design Process</strong>, developed by Project Lead The Way as part of their nationwide pre-engineering curriculum. It is closely aligned with the engineering design loops used in college engineering programs and industry settings, making it a transferable skill that extends well beyond this class.</p>
+<h4 id="diagram-the-pltw-engineering-design-process-cycle">Diagram: The PLTW Engineering Design Process Cycle<a class="headerlink" href="#diagram-the-pltw-engineering-design-process-cycle" title="Permanent link">&para;</a></h4>
+<details>
+<summary>The PLTW Engineering Design Process Cycle</summary>
+<p>Type: interactive-infographic
+<strong>sim-id:</strong> pltw-design-process-cycle<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Recall and sequence the seven steps of the PLTW engineering design process and explain how they connect in an iterative loop (Bloom L1–L2: recall, sequence, explain).</p>
+<p><strong>Description:</strong> A circular p5.js diagram showing the PLTW design process as a ring of seven labeled nodes connected by curved directional arrows forming a clockwise loop. A center label reads "PLTW Engineering Design Process."</p>
+<p><strong>Node labels and colors (clockwise from top):</strong>
+1. Define the Problem — blue (#1565C0)
+2. Research — teal (#00695C)
+3. Ideate — green (#388E3C)
+4. Specify — yellow (#F57F17)
+5. Prototype — orange (#E64A19)
+6. Test &amp; Validate — red (#C62828)
+7. Communicate — purple (#6A1B9A)</p>
+<p><strong>Canvas:</strong> 650 × 500 px, responsive.</p>
+<p><strong>Interactions:</strong>
+- Clicking any node highlights it with a pulsing glow and opens a detail panel below the diagram showing:
+  - Step name and one-sentence description
+  - Key questions asked at this step (bulleted list, 3–4 items)
+  - Typical deliverables (e.g., "problem statement," "sketch sheet," "CAD model")
+  - AM-specific note: how this step plays out in a 3D printing project
+  - A "Next Step →" button that advances to the next node in the cycle
+- Arrows between non-adjacent nodes (e.g., Test back to Ideate) are shown as lighter dashed arcs to indicate that iteration can jump back to earlier steps; hovering these arcs shows a tooltip: "Iteration: test results revealed a flaw — return here to redesign."
+- A "Full Cycle" button animates a glowing bead traveling around the ring in sequence with a 0.8 s pause at each node.</p>
+<p><strong>Layout:</strong> Nodes evenly spaced on a circle of radius 200 px. Node circles are 60 px diameter with white text. Arrows are curved SVG paths with arrowheads.</p>
+</details>
+<h2 id="step-1-define-the-problem">Step 1: Define the Problem<a class="headerlink" href="#step-1-define-the-problem" title="Permanent link">&para;</a></h2>
+<p>Every design process begins with a problem — but a vague problem produces a vague solution. <strong>Problem definition</strong> is the discipline of transforming a fuzzy situation into a precise, solvable statement before any design work begins.</p>
+<p>A well-written problem statement does four things:</p>
+<ul>
+<li>Identifies the <strong>user or stakeholder</strong> whose need is being addressed</li>
+<li>Describes the <strong>current situation</strong> that is unsatisfactory</li>
+<li>States the <strong>goal</strong> without prescribing the solution</li>
+<li>Notes any <strong>key constraints</strong> (physical limits, available materials, budget, time)</li>
+</ul>
+<p>Compare these two versions:</p>
+<blockquote>
+<p><strong>Weak:</strong> "We need a better phone stand."</p>
+<p><strong>Strong:</strong> "Students in the school makerspace need a phone stand that holds a phone at 60–75° from horizontal for hands-free video recording, fits phones 60–90 mm wide, and can be assembled and disassembled without tools so it can be shared between users."</p>
+</blockquote>
+<p>The strong version tells you exactly who you're designing for, what the physical requirements are, and what "better" actually means. It does not say "print a folding stand" — that would be specifying a solution before understanding the problem. Solution-jumping at this stage is one of the most common mistakes in student engineering projects, and it almost always results in a product that solves the wrong problem elegantly.</p>
+<p>In additive manufacturing projects specifically, problem definition is especially valuable because printing time is real — you cannot prototype your way out of a misunderstood problem without wasting hours of machine time and material.</p>
+<h2 id="step-2-research">Step 2: Research<a class="headerlink" href="#step-2-research" title="Permanent link">&para;</a></h2>
+<p>Once you have a clear problem statement, the next step is to learn everything relevant before generating solutions. The <strong>research phase</strong> serves three purposes: it reveals existing solutions you can learn from, surfaces constraints you might not have anticipated, and builds the vocabulary and domain knowledge you'll need to make good design decisions.</p>
+<p>Research for an engineering design project typically draws from several source types:</p>
+<table>
+<thead>
+<tr>
+<th>Source Type</th>
+<th>Examples</th>
+<th>What You're Looking For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Existing products</td>
+<td>Commercial solutions, Thingiverse models</td>
+<td>What approaches have been tried? What works and what doesn't?</td>
+</tr>
+<tr>
+<td>Standards and specifications</td>
+<td>ASTM material datasheets, dimensional standards</td>
+<td>What are the accepted values, limits, or test methods?</td>
+</tr>
+<tr>
+<td>User interviews</td>
+<td>Conversations with your target user</td>
+<td>What does the person actually need, not just what they say they want?</td>
+</tr>
+<tr>
+<td>Technical literature</td>
+<td>Engineering textbooks, manufacturer application notes</td>
+<td>What physics, materials science, or process knowledge applies?</td>
+</tr>
+<tr>
+<td>Prior prototypes and test data</td>
+<td>Your own or a predecessor's prints, test results</td>
+<td>What has already been tried in your specific context?</td>
+</tr>
+</tbody>
+</table>
+<p>One research skill that trips up many students: knowing when to stop. Research can expand indefinitely. The practical rule is to stop when you can answer the key questions raised by your problem statement and when additional research would no longer change your design decisions. In a semester-long project, two to three focused research sessions is usually appropriate.</p>
+<h2 id="step-3-ideation-and-sketching">Step 3: Ideation and Sketching<a class="headerlink" href="#step-3-ideation-and-sketching" title="Permanent link">&para;</a></h2>
+<p>With a well-defined problem and solid research in hand, you're ready to generate ideas. <strong>Ideation</strong> is the creative phase of the design process — the goal is to produce as many candidate solutions as possible before evaluating any of them.</p>
+<p>The cardinal rule of ideation is <strong>defer judgment</strong>. During idea generation, no idea is bad enough to reject on the spot. Wild ideas are welcome because they stretch the possibility space and often contain the seed of a practical innovation. The time for critical evaluation comes in the next step.</p>
+<p><strong>Sketching</strong> is the primary tool of ideation in engineering design. You don't need artistic skill — you need to communicate shapes, relationships, and mechanisms clearly enough that another person (or your future self) can understand what you were thinking. Engineering sketches follow loose conventions:</p>
+<ul>
+<li>Draw in pencil; expect to revise</li>
+<li>Show multiple views if needed (front, side, top, isometric)</li>
+<li>Label key dimensions, even approximately</li>
+<li>Add short notes explaining non-obvious features</li>
+<li>Number and date each sketch for your engineering notebook</li>
+</ul>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Constraints Are the Fuel of Creativity</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks carefully">
+It might feel like having fewer constraints would make ideation easier. In practice, the opposite is often true. "Design anything" produces paralysis. "Design something that holds a phone, must be printed flat, uses no supports, and snaps together" produces a flood of ideas — because the constraints give your creativity something to push against. Constraints are not the enemy of design. They're the puzzle that makes it interesting.</p>
+</div>
+<p>Aim to generate at least five to eight distinct concepts during ideation — not variations on the same theme, but genuinely different approaches. A phone stand that folds, a phone stand that uses a slot-and-tab joint, a phone stand that clips to a desk edge, a stand with an adjustable-angle hinge: these are distinct concepts, not iterations. Variety at the ideation stage means you'll have real options to compare in the next step.</p>
+<h4 id="diagram-ideation-sketch-canvas">Diagram: Ideation Sketch Canvas<a class="headerlink" href="#diagram-ideation-sketch-canvas" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Ideation Sketch Canvas</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> ideation-sketch-canvas<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Apply ideation principles by generating multiple distinct design concepts for a given constraint set (Bloom L3: apply, practice, demonstrate).</p>
+<p><strong>Description:</strong> An interactive p5.js canvas that simulates a structured ideation session. The student is given a randomly selected engineering challenge (from a set of five AM-relevant prompts, e.g., "Design a phone stand with no supports," "Design a cable organizer for a desk," "Design a modular hook system for a pegboard") and a 5-minute countdown timer. The canvas is divided into six equal cells, each with a faint "Concept #N" label, simulating a 6-concept ideation sheet.</p>
+<p><strong>Canvas layout (700 × 520 px, responsive):</strong>
+- Top bar: Challenge description card (yellow), timer display, and "New Challenge" button
+- Main area: 2 × 3 grid of sketch cells (each ~210 × 140 px), each with a "Concept #N" header and a free-draw area (mouse/touch drawing with a light pencil stroke style)
+- Bottom bar: "Done — Review My Concepts" button + constraint checklist (checkboxes for the key constraints of the current challenge)</p>
+<p><strong>Interactions:</strong>
+- Drawing: click/drag to draw freehand strokes in any cell; right-click or double-tap to erase last stroke
+- "New Challenge" randomizes the challenge prompt and clears the canvas (with a confirm dialog to prevent accidental erasure)
+- Timer counts down from 5:00; at 0:00 it flashes orange and shows "Time's up — review your concepts"
+- "Done — Review My Concepts" opens an overlay with the constraint checklist: student checks which constraints each concept addresses
+- "Clear Cell" button (appears on hover of each cell) clears only that cell's strokes</p>
+<p><strong>Responsive behavior:</strong> On narrow screens, the grid collapses to 1 × 6 (single column). Drawing still works via touch.
+<strong>Note:</strong> This is a low-fidelity practice tool, not a submission system. Its value is in structured time-pressure ideation, not in the quality of the drawings.</p>
+</details>
+<h2 id="step-4-design-specifications">Step 4: Design Specifications<a class="headerlink" href="#step-4-design-specifications" title="Permanent link">&para;</a></h2>
+<p>Ideation produces possibilities; <strong>design specifications</strong> convert those possibilities into measurable targets. A specification is a precise, testable statement of what the final design must achieve. The difference between a vague wish and a specification is testability: you must be able to measure whether the specification is met.</p>
+<p>Specifications typically fall into two categories:</p>
+<ul>
+<li><strong>Requirements</strong> (must-haves): The design must meet these to be acceptable. Failure on a requirement means the design is rejected. Example: "The bracket must support a 500 g load without deflecting more than 1 mm."</li>
+<li><strong>Desires</strong> (nice-to-haves): The design should achieve these if possible, but failure does not disqualify it. Example: "The stand should be printable in under three hours."</li>
+</ul>
+<p>Well-written specifications always include:</p>
+<ul>
+<li>The <strong>parameter</strong> being specified (load, dimension, print time, assembly time, etc.)</li>
+<li>The <strong>target value</strong> (with units)</li>
+<li>The <strong>acceptable range</strong> or tolerance (e.g., ± 0.5 mm, ≥ 80 % of target)</li>
+<li>The <strong>test method</strong> (how you will measure it)</li>
+</ul>
+<p>One powerful tool for organizing specifications is the <strong>engineering specification table</strong> — a simple document that lists every requirement and desire alongside its test method and acceptance criterion. You'll build one for your own design project later in this course.</p>
+<p>Before we look at the concept selection process that follows, the table below summarizes what distinguishes a well-formed specification from a vague goal. Each row shows the same design intent written two ways — notice how the specification version makes testing straightforward:</p>
+<table>
+<thead>
+<tr>
+<th>Design Intent</th>
+<th>Vague Goal</th>
+<th>Testable Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>It should be strong</td>
+<td>"Won't break easily"</td>
+<td>Supports 50 N lateral force with &lt; 2 mm deflection (measured with calibrated weights)</td>
+</tr>
+<tr>
+<td>It needs to fit my phone</td>
+<td>"Works with most phones"</td>
+<td>Accommodates devices 62–90 mm wide, confirmed with calipers</td>
+</tr>
+<tr>
+<td>Should print fast</td>
+<td>"Doesn't take too long"</td>
+<td>Prints in ≤ 2 hours at 0.2 mm layer height on an FDM printer</td>
+</tr>
+<tr>
+<td>Easy to assemble</td>
+<td>"Simple to put together"</td>
+<td>Assembled by a first-time user in &lt; 3 minutes with no tools</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-5-concept-selection">Step 5: Concept Selection<a class="headerlink" href="#step-5-concept-selection" title="Permanent link">&para;</a></h2>
+<p>You now have a set of candidate concepts from ideation and a list of specifications to evaluate them against. <strong>Concept selection</strong> is the structured process of picking the concept most likely to meet your specifications and constraints before committing to a full prototype.</p>
+<p>The most common tool for concept selection in engineering education is the <strong>decision matrix</strong> (also called a Pugh matrix or weighted criteria matrix). The matrix lists your candidate concepts as columns and your specifications (criteria) as rows. Each cell gets a score for how well that concept meets that criterion. Weights can be assigned to criteria that matter more than others.</p>
+<p>Before examining the interactive decision matrix below, here are the three steps to filling one out:</p>
+<ol>
+<li><strong>Identify criteria:</strong> Pull the key requirements and desires from your specification table. Use 4–8 criteria — too few gives you no discrimination, too many dilutes the signal.</li>
+<li><strong>Weight the criteria:</strong> Assign each criterion a weight (1–5 or 1–10) based on how critical it is. A structural load requirement for a bracket might get a weight of 5; aesthetic preference for color might get a 1.</li>
+<li><strong>Score each concept:</strong> For each concept-criterion combination, score from 1 (fails to meet) to 5 (exceeds). Multiply score × weight for a weighted score. Sum weighted scores per concept.</li>
+</ol>
+<p>The concept with the highest total weighted score is usually the best starting point for prototyping — but the matrix is a decision aid, not a decision maker. If the highest-scoring concept has a fatal flaw not captured by the matrix, trust your engineering judgment over the arithmetic.</p>
+<h4 id="diagram-concept-selection-decision-matrix">Diagram: Concept Selection Decision Matrix<a class="headerlink" href="#diagram-concept-selection-decision-matrix" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Concept Selection Decision Matrix</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> concept-selection-matrix<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Apply a weighted decision matrix to select the best design concept from a set of alternatives (Bloom L3–L5: apply, analyze, evaluate).</p>
+<p><strong>Description:</strong> An interactive p5.js decision matrix tool. The student can enter up to 5 concepts (columns) and up to 6 criteria (rows), assign weights (1–5) to each criterion, and score each concept on each criterion (1–5). The matrix auto-calculates weighted scores, totals per concept, and highlights the winning concept.</p>
+<p><strong>Canvas layout (700 × 500 px, responsive):</strong>
+- Top area: Matrix table with editable cells
+  - Column headers: "Criterion", "Weight", then "Concept 1" through "Concept N" (up to 5)
+  - Row entries: up to 6 criteria (user-editable text)
+  - Weight column: number spinners 1–5
+  - Score cells: number spinners 1–5 for each concept × criterion
+  - Bottom row: "Weighted Total" — auto-calculated, displayed as a bold number
+- The winning concept column is highlighted in green; second-place in yellow
+- Controls below the matrix:
+  - "Add Concept" button (up to 5)
+  - "Add Criterion" button (up to 6)
+  - "Reset Matrix" button
+  - "Download as CSV" button (generates a comma-separated download of the matrix)
+- A bar chart below the matrix shows weighted totals per concept, updating in real time as scores change</p>
+<p><strong>Pre-loaded example:</strong> Phone stand design with 3 concepts (fold-flat, slot-tab, desk-clip) and 5 criteria (structural strength, ease of assembly, print time, no supports needed, adjustable angle). Student can modify or clear to enter their own project.</p>
+<p><strong>Interactions:</strong> All cells are editable. Matrix recalculates and chart updates on every change. Hovering a concept column highlights the entire column. Clicking a concept name opens a text field to rename it.</p>
+<p><strong>Responsive behavior:</strong> On narrow screens, the matrix scrolls horizontally. The bar chart stacks below.</p>
+</details>
+<h2 id="step-6-prototyping">Step 6: Prototyping<a class="headerlink" href="#step-6-prototyping" title="Permanent link">&para;</a></h2>
+<p>A prototype is a physical or digital realization of your design concept, built for the purpose of learning — not for the purpose of producing a finished product. <strong>Prototyping</strong> is where additive manufacturing becomes a genuine superpower in the engineering design process: you can go from a CAD file to a physical object in hours rather than days or weeks.</p>
+<p>Prototypes exist on a spectrum from low-fidelity to high-fidelity:</p>
+<ul>
+<li><strong>Sketch models:</strong> Foam, cardboard, or tape assemblies built in minutes to check overall size and form. Answer questions like "Does this feel right in the hand?" or "Is this roughly the right scale?"</li>
+<li><strong>Appearance prototypes:</strong> 3D-printed parts optimized for visual accuracy but not structural performance. Used to evaluate aesthetics, color, labeling, and ergonomics.</li>
+<li><strong>Functional prototypes:</strong> 3D-printed or machined parts built to test specific mechanical performance — load capacity, fit, range of motion, assembly sequence.</li>
+<li><strong>Production-intent prototypes:</strong> Parts made with the actual production process and material, intended to verify that manufacturing is feasible and that the final design meets all specifications.</li>
+</ul>
+<p>In a high-school AM course, you will work most with sketch models and functional prototypes. The key insight is to build the prototype that answers the specific question you currently have — not the most impressive prototype you can make. Printing a fully detailed appearance model when you're still uncertain whether the joint mechanism works is a waste of print time.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Prototype What You Don't Know</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy gives a thumbs up">
+Here's the move that saves hours: before you print a full model, identify the single riskiest assumption in your design and build the smallest possible prototype that tests only that. Does the snap-fit joint actually snap? Print just the joint — not the whole part. Does the phone actually fit? Print just the slot — not the whole stand. This approach (sometimes called a "critical-parameter prototype") lets you iterate fast on what matters and print the full design only once you're confident.</p>
+</div>
+<h2 id="the-iteration-cycle">The Iteration Cycle<a class="headerlink" href="#the-iteration-cycle" title="Permanent link">&para;</a></h2>
+<p>The PLTW design process is often shown as a neat linear sequence of steps, but that diagram is slightly misleading. In practice, design is <strong>iterative</strong>: you move forward, encounter new information, and loop back to an earlier step. This looping is not a failure — it is the mechanism by which designs improve.</p>
+<p>The <strong>iteration cycle</strong> in additive manufacturing looks something like this: you prototype a design, test it, discover that the snap-fit tabs break at lower loads than specified, return to your CAD model, revise the tab geometry, reprint, and test again. Each loop through prototype → test → revise produces a part that better meets its specifications. Professional products routinely go through dozens of iterations before reaching production; in a class project, three to five iterations is a solid target.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Skipping Iteration Is How Parts Get Reprinted Anyway</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy looks concerned">
+The most common temptation in a time-pressured project is to print the first prototype, decide it's "good enough," and submit without iterating. This almost never actually saves time — it just moves the rework to a later, more stressful moment (like the day before the deadline, when the teacher points out that the joint doesn't actually hold). Planned iteration is faster than panicked rework. Build iteration time into your project schedule from the beginning.</p>
+</div>
+<p>The iteration cycle is also where your engineering notebook earns its value. Every loop through the cycle produces new information: test data, failure modes, revised dimensions, before-and-after photos. That record is what allows you to explain, months later, exactly why your final design looks the way it does.</p>
+<h4 id="diagram-iteration-cycle-simulator">Diagram: Iteration Cycle Simulator<a class="headerlink" href="#diagram-iteration-cycle-simulator" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Iteration Cycle Simulator</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> iteration-cycle-simulator<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Analyze how repeated prototype-test-revise cycles converge on a design that meets specifications (Bloom L4: examine relationships, analyze patterns).</p>
+<p><strong>Description:</strong> An animated p5.js simulation showing an abstract design metric (e.g., "load capacity" or "dimensional accuracy") improving over successive iterations. The student controls how much effort goes into each phase of the cycle and observes how the design metric evolves.</p>
+<p><strong>Canvas layout (680 × 460 px, responsive):</strong>
+- Top: A horizontal "Design Quality" gauge (0–100 %), starting at 30–40 %, increasing with iterations
+- Middle: Three sliders labeled "Research depth," "Prototype fidelity," and "Test rigor" (each 1–5)
+- Center: A circular animation showing the three-phase loop: Prototype → Test → Revise, with a glowing bead cycling around
+- Right panel: A live line chart showing Design Quality vs. Iteration Number (X-axis 1–10, Y-axis 0–100 %)
+- Bottom: "Run Next Iteration" button; "Reset" button</p>
+<p><strong>Simulation logic (simplified, pedagogically calibrated):</strong>
+- Each iteration increases Design Quality by a random amount within a range influenced by the three sliders (higher values = larger potential improvement)
+- Diminishing returns are modeled: improvements shrink as quality approaches 100 %
+- A "Specification Target" horizontal line at 80 % (user-draggable between 60–95 %) shows when the design would be accepted
+- At each iteration, a brief text log entry appears (e.g., "Iteration 3: Tab thickness increased 0.4 mm → load capacity improved 12 %")</p>
+<p><strong>Interactions:</strong> All sliders update simulation parameters for the next iteration. Clicking "Run Next Iteration" advances one loop and updates the chart and gauge. Hovering any chart point shows that iteration's log entry in a tooltip.</p>
+<p><strong>Responsive behavior:</strong> On narrow screens, the chart and left panel stack vertically.</p>
+</details>
+<h2 id="testing-and-validation">Testing and Validation<a class="headerlink" href="#testing-and-validation" title="Permanent link">&para;</a></h2>
+<p><strong>Testing and validation</strong> is the phase where you find out whether your prototype actually meets your specifications — and, crucially, which specifications it falls short on and by how much. This is not the scary part of the design process; it is the most informative part.</p>
+<p>Testing in an AM course takes many forms depending on what you're evaluating:</p>
+<ul>
+<li><strong>Dimensional testing:</strong> Measure critical dimensions with calipers or a ruler. Compare to specified dimensions. Record the difference (error) and check it against your tolerance specification.</li>
+<li><strong>Functional testing:</strong> Does the part do what it's supposed to do? Does the hinge articulate through its full range of motion? Does the snap-fit close and open repeatedly without cracking?</li>
+<li><strong>Load testing:</strong> Apply measured forces (known weights, a spring scale, or calibrated loads) to structural parts and record deflection, yield point, or failure mode.</li>
+<li><strong>User testing:</strong> Have a person who didn't design the part try to use it. Observe where they struggle, what questions they ask, and what they find intuitive.</li>
+</ul>
+<p>Each test should be planned before you run it — define what you're measuring, how you're measuring it, and what constitutes a pass. Record raw data, not just conclusions. "The bracket held 500 g" is a conclusion; "we hung calibrated 100 g masses, one at a time, from the hook and measured deflection with a ruler at each increment: 100 g → 0.2 mm, 200 g → 0.5 mm, 300 g → 0.9 mm, 400 g → 1.6 mm, 500 g → 2.4 mm" is data. Data gives you information to act on; conclusions give you only a pass/fail.</p>
+<p>Validation means comparing your test results against your specifications to decide whether the design is complete. If all requirements are met and most desires are satisfied, the design is validated and ready for communication. If one or more requirements are not met, you loop back to redesign — this is the iteration cycle in action.</p>
+<h2 id="engineering-communication">Engineering Communication<a class="headerlink" href="#engineering-communication" title="Permanent link">&para;</a></h2>
+<p>A design that cannot be communicated is a design that cannot be built by anyone else, cannot be evaluated by anyone else, and cannot be improved by anyone else. <strong>Engineering communication</strong> is the set of skills and conventions that make your design work visible, understandable, and usable beyond your own notebook.</p>
+<p>Engineering communication in a 3D printing context includes several forms:</p>
+<ul>
+<li><strong>Engineering drawings:</strong> Dimensioned orthographic views (front, top, side) that specify exactly what the part looks like, with tolerances on critical dimensions. Even if you're designing for additive manufacturing, being able to read and produce engineering drawings is a fundamental professional skill.</li>
+<li><strong>Technical documentation:</strong> Written descriptions of design decisions — why you chose one concept over another, what iteration revealed, what the final specifications are.</li>
+<li><strong>Presentations:</strong> Oral or slide-based communication of your design process and results to an audience that didn't follow the project day to day.</li>
+<li><strong>CAD models and annotated screenshots:</strong> Shared files that allow others to view, analyze, or modify your design.</li>
+<li><strong>Photos and video:</strong> Documentation of prototypes, assembly processes, and tests — especially important in AM where the printing process itself is part of the story.</li>
+</ul>
+<div class="admonition mascot-encouraging">
+<p class="admonition-title">Communication Is a Skill, Not a Talent</p>
+<p><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy cheers you on">
+Many students dread the "communicate" step because they feel their writing or presentation skills aren't strong enough. Here's the truth: engineering communication is a learnable craft, not an innate gift. The engineers who communicate well do so because they practice — every project, every notebook entry, every slide deck. Start now, even if your first attempts feel clumsy. The ability to explain your design clearly is, in many workplaces, as valued as the ability to create it.</p>
+</div>
+<h2 id="the-engineering-notebook">The Engineering Notebook<a class="headerlink" href="#the-engineering-notebook" title="Permanent link">&para;</a></h2>
+<p>The <strong>engineering notebook</strong> is the running record of your design process — every observation, decision, sketch, measurement, and result, recorded in sequence as the project unfolds. It is not a polished report written after the fact; it is a living document that captures the actual history of your thinking.</p>
+<p>Professional engineers maintain engineering notebooks for several practical reasons:</p>
+<ul>
+<li><strong>Patent and IP documentation:</strong> A dated, witnessed engineering notebook is legal evidence of when an invention was conceived and how it was developed.</li>
+<li><strong>Debugging and traceability:</strong> When a design fails six months later, the notebook shows exactly what was done and when, making root cause analysis possible.</li>
+<li><strong>Knowledge transfer:</strong> A new team member can read the notebook and understand what has been tried, what worked, and what was abandoned and why.</li>
+</ul>
+<p>In an educational setting, your engineering notebook serves the same functions at smaller scale: it documents that you followed a design process, it provides evidence for portfolio assessment, and it becomes your primary resource when you write your final report.</p>
+<p>Good notebook practice follows a few simple rules:</p>
+<ul>
+<li><strong>Write in ink</strong> (or date-stamped digital entries if you use a digital format). Pencil entries look like they can be erased and back-dated.</li>
+<li><strong>Date every page</strong> at the top. If you make multiple entries in one day, note the time.</li>
+<li><strong>Never tear out pages</strong> or skip pages. If you make an error, draw a single line through it and initial it — don't obliterate it.</li>
+<li><strong>Paste in printed elements</strong> (slicer screenshots, test data tables, photos) and initial and date the paste-in so it's clear it belongs to that day's entry.</li>
+<li><strong>Write for a reader six months in the future</strong> — probably yourself — who has forgotten everything about this project. "Printed part" is not enough. "Printed phone-stand v2 in PLA, 0.2 mm layers, 20 % infill, on Printer A. Print time 1 hr 22 min. Part came out slightly warped on the back left corner — bed adhesion issue suspected" is a notebook entry.</li>
+</ul>
+<h4 id="diagram-engineering-notebook-page-anatomy">Diagram: Engineering Notebook Page Anatomy<a class="headerlink" href="#diagram-engineering-notebook-page-anatomy" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Engineering Notebook Page Anatomy</summary>
+<p>Type: interactive-infographic
+<strong>sim-id:</strong> notebook-page-anatomy<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Identify the required elements of a proper engineering notebook entry and explain why each element matters (Bloom L1–L2: identify, explain).</p>
+<p><strong>Description:</strong> An interactive p5.js rendering of a sample engineering notebook page spread (left and right pages). Labeled callout arrows point to each key element of good notebook practice. Clicking a callout opens an explanation panel.</p>
+<p><strong>Canvas layout (700 × 480 px, responsive):</strong>
+- Background: Cream/off-white grid-paper texture filling both pages
+- Left page sample content (rendered as faint "handwriting-style" text and sketches):
+  - Date and time at top
+  - Project name and page number
+  - A hand-drawn sketch of a phone stand bracket with dimension annotations
+  - A short prose entry describing the design decision made that day
+  - A paste-in label area (gray rectangle) with "Photo: v2 print, front view"
+  - Author initials at bottom right
+- Right page sample content:
+  - Test data table (load vs. deflection)
+  - A short "Next Steps" bullet list
+  - A second sketch showing a proposed revision
+- Callout markers (numbered circles in orange) pointing to: date, project name, sketch with dimensions, prose rationale, paste-in label, initials, data table, revision sketch, next steps</p>
+<p><strong>Interactions:</strong> Clicking any numbered callout circle opens a side panel (or modal overlay) with:
+- Element name
+- Why it's required (1–2 sentences)
+- Common mistake to avoid
+- Example of good vs. poor practice for this element
+- "Got it" button to dismiss</p>
+<p>A "Quiz Me" button at bottom cycles through the callout markers in random order, hiding the labels and asking the student to click the correct element when given its name.</p>
+<p><strong>Responsive behavior:</strong> On narrow screens, both pages render in a single-column scroll; callouts appear as expandable accordion items below the illustration.</p>
+</details>
+<h2 id="portfolio-development">Portfolio Development<a class="headerlink" href="#portfolio-development" title="Permanent link">&para;</a></h2>
+<p>Where the engineering notebook is a raw, unedited record of the process, the <strong>portfolio</strong> is a curated, polished presentation of your best work. Developing a portfolio is the final form of engineering communication — you are selecting, organizing, and presenting evidence that you can apply the engineering design process, use AM tools, and produce functional results.</p>
+<p>A strong engineering portfolio for a high-school AM course typically includes:</p>
+<ul>
+<li><strong>Problem statements:</strong> Clear, concise descriptions of what each project was trying to solve, written for a reader who has no prior context</li>
+<li><strong>Process documentation:</strong> Selected notebook entries, photos, and key decision points that show how you worked through the design process</li>
+<li><strong>Specification tables:</strong> Evidence that you set measurable targets before building</li>
+<li><strong>CAD screenshots and drawings:</strong> Rendered views of your models, with dimensions on critical features</li>
+<li><strong>Prototype photos:</strong> Before-and-after photos showing iteration — "v1 failed here; v2 fixed it by..."</li>
+<li><strong>Test data summaries:</strong> Tables or charts showing measured performance versus specifications</li>
+<li><strong>Reflection:</strong> An honest, specific assessment of what worked, what you'd change, and what you learned</li>
+</ul>
+<p>The portfolio format can vary — a bound physical document, a PDF, a Google Sites website, or a platform like Behance or a GitHub Pages site. What matters more than format is specificity: the weakest portfolios say "I designed a phone stand and it worked"; the strongest say "I defined the problem, generated eight concepts, selected one using a decision matrix, printed and tested three iterations, discovered and fixed a joint failure mode, and ended up with a part that met five of six specifications."</p>
+<p>A well-built portfolio from this course can serve multiple purposes: evidence for community-college articulation credit, support for scholarship applications, and demonstration of your capabilities in a technical job interview. These are real, near-term stakes — the habit of documenting your work carefully pays dividends faster than most students expect.</p>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
+<p>The PLTW engineering design process provides a repeatable, learnable framework for turning problems into tested solutions. Here is the core of what you now understand:</p>
+<ul>
+<li><strong>PLTW Design Process</strong> is a seven-step iterative loop: define → research → ideate → specify → prototype → test → communicate. The loop can (and should) be re-entered from any step when new information demands it.</li>
+<li><strong>Problem definition</strong> precedes all design. A precise, testable problem statement prevents the most common student engineering mistake: designing an elegant solution to the wrong problem.</li>
+<li><strong>Research</strong> fills in the knowledge gaps between your problem and your design. Know when to stop: research until additional information would no longer change your decisions.</li>
+<li><strong>Ideation</strong> is a quantity game first. Generate many distinct concepts before evaluating any. Constraints are not obstacles to creativity — they are the prompt.</li>
+<li><strong>Design specifications</strong> turn vague intentions into measurable, testable targets. Every specification needs a parameter, a target value, an acceptable range, and a test method.</li>
+<li><strong>Concept selection</strong> uses structured tools — decision matrices, weighted criteria — to pick the most promising concept before committing to fabrication.</li>
+<li><strong>Prototyping</strong> in AM means building the lowest-fidelity prototype that answers your current riskiest question. Don't print the whole design when a partial prototype will do.</li>
+<li><strong>Iteration</strong> is planned, not accidental. Build three to five revision cycles into your project schedule from day one.</li>
+<li><strong>Testing and validation</strong> generate data, not just conclusions. Compare test results to specifications to determine pass/fail and to guide the next revision.</li>
+<li><strong>Engineering communication</strong> makes your work visible and useful to others: drawings, documentation, presentations, and shared files.</li>
+<li><strong>Engineering notebooks</strong> capture the unedited history of your design process in real time.</li>
+<li><strong>Portfolios</strong> curate the best of that history into polished, audience-ready evidence of your skills.</li>
+</ul>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Chapter 3 Complete — You Have a Process Now</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates">
+That's the full PLTW loop in your hands — define, research, ideate, specify, prototype, test, communicate. You just built the mental scaffolding that every project in this course will hang on. Chapter 4 is where things get tangible: you'll start working in CAD, turning the ideas you can now sketch and specify into the 3D models you'll send to a printer. Let's make something.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../02-standards-and-process-families/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. Standards and Process Families">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                2. Standards and Process Families
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../04-cad-and-modeling/" class="md-footer__link md-footer__link--next" aria-label="Next: 4. CAD and Modeling">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                4. CAD and Modeling
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

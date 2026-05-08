@@ -2,66 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/about/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/contact/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/course-description/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/license/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/chapters/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/01-foundations-and-history/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/02-standards-and-process-families/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/03-engineering-design-process/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/04-cad-and-modeling/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/05-file-formats-and-mesh/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/06-materials-science/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/07-slicing-and-toolpaths/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/08-fdm-printer-hardware/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/09-safety-ethics-sustainability/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/10-resin-printing/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/11-dfam-and-metrology/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/12-troubleshooting-and-postprocessing/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/13-modern-hardware/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/14-modern-ecosystem/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/15-ai-and-machine-learning/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters/16-careers-and-capstone/</loc>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/chapters-v1/01-history-and-context/</loc>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/3d-printing-orgs/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/concept-list/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/concept-taxonomy/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/course-description-assessment/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/index-template/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/quality-metrics/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/taxonomy-distribution/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/learning-graph/vis-network-json-format/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/3d-printing-course/sims/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/3d-printing-course/sims/graph-viewer/</loc>
+         <lastmod>2026-05-08</lastmod>
     </url>
 </urlset>

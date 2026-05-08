@@ -1,0 +1,2617 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ISO and ASTM standards bodies, the ISO/ASTM 52900 terminology standard, the seven AM process categories, and industrial powder-bed fusion technologies.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/3d-printing-course/chapters/02-standards-and-process-families/">
+      
+      
+        <link rel="prev" href="../01-foundations-and-history/">
+      
+      
+        <link rel="next" href="../03-engineering-design-process/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>AM Standards, Process Families, and Industrial AM - Introduction to 3D Printing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#am-standards-process-families-and-industrial-am" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Introduction to 3D Printing" class="md-header__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction to 3D Printing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AM Standards, Process Families, and Industrial AM
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Introduction to 3D Printing" class="md-nav__button md-logo" aria-label="Introduction to 3D Printing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introduction to 3D Printing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/3d-printing-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Description
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapters
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-foundations-and-history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Foundations and History
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Standards and Process Families
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Standards and Process Families
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concepts Covered
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-writes-the-rules-the-standards-bodies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Who Writes the Rules? The Standards Bodies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Who Writes the Rules? The Standards Bodies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iso-the-global-standards-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO: The Global Standards Body
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#astm-international-standards-for-materials-and-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ASTM International: Standards for Materials and Testing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ASTM International: Standards for Materials and Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-iso-and-astm-collaboration-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: ISO and ASTM Collaboration Map
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isoastm-52900-the-am-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO/ASTM 52900: The AM Dictionary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ISO/ASTM 52900: The AM Dictionary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-am-vocabulary-glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The AM Vocabulary Glossary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-building-blocks-universal-am-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Building Blocks: Universal AM Geometry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Building Blocks: Universal AM Geometry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer-by-layer-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer-by-Layer Principle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-volume-build-plate-and-the-z-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Volume, Build Plate, and the Z Axis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anisotropy-why-direction-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anisotropy: Why Direction Matters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anisotropy: Why Direction Matters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-anisotropy-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Anisotropy Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-seven-am-process-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Seven AM Process Categories
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Seven AM Process Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#material-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vat-photopolymerization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vat Photopolymerization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#powder-bed-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Powder Bed Fusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-jetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material Jetting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binder-jetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Binder Jetting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directed-energy-deposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Directed Energy Deposition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sheet-lamination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sheet Lamination
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sheet Lamination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-seven-process-families-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Seven Process Families Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#industrial-powder-bed-fusion-sls-mjf-dmls-and-ebm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Industrial Powder Bed Fusion: SLS, MJF, DMLS, and EBM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Industrial Powder Bed Fusion: SLS, MJF, DMLS, and EBM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sls-selective-laser-sintering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SLS: Selective Laser Sintering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mjf-multi-jet-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MJF: Multi Jet Fusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dmls-direct-metal-laser-sintering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DMLS: Direct Metal Laser Sintering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ebm-electron-beam-melting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EBM: Electron Beam Melting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EBM: Electron Beam Melting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-industrial-pbf-process-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Industrial PBF Process Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#industrial-am-context-atmosphere-systems-and-heat-treatment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Industrial AM Context: Atmosphere, Systems, and Heat Treatment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Industrial AM Context: Atmosphere, Systems, and Heat Treatment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#industrial-vs-hobby-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Industrial vs. Hobby Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-chamber-atmosphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Chamber Atmosphere
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metal-am-overview-and-post-build-heat-treatment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metal AM Overview and Post-Build Heat Treatment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metal AM Overview and Post-Build Heat Treatment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-metal-am-build-to-part-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Metal AM Build-to-Part Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-engineering-design-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Engineering Design Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-cad-and-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. CAD and Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-file-formats-and-mesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. File Formats and Mesh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-materials-science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Materials Science
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-slicing-and-toolpaths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Slicing and Toolpaths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-fdm-printer-hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. FDM Printer Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-safety-ethics-sustainability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Safety, Ethics, Sustainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-resin-printing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Resin Printing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-dfam-and-metrology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. DfAM and Metrology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-troubleshooting-and-postprocessing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Troubleshooting and Post-Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-modern-hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Modern Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-modern-ecosystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Modern Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-ai-and-machine-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. AI and Machine Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-careers-and-capstone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Careers and Capstone
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Graph
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MicroSims
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concepts Covered
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-writes-the-rules-the-standards-bodies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Who Writes the Rules? The Standards Bodies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Who Writes the Rules? The Standards Bodies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iso-the-global-standards-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO: The Global Standards Body
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#astm-international-standards-for-materials-and-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ASTM International: Standards for Materials and Testing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ASTM International: Standards for Materials and Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-iso-and-astm-collaboration-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: ISO and ASTM Collaboration Map
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isoastm-52900-the-am-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO/ASTM 52900: The AM Dictionary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ISO/ASTM 52900: The AM Dictionary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-am-vocabulary-glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The AM Vocabulary Glossary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-building-blocks-universal-am-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Building Blocks: Universal AM Geometry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Building Blocks: Universal AM Geometry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer-by-layer-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer-by-Layer Principle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-volume-build-plate-and-the-z-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Volume, Build Plate, and the Z Axis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anisotropy-why-direction-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anisotropy: Why Direction Matters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anisotropy: Why Direction Matters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-anisotropy-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Anisotropy Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-seven-am-process-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Seven AM Process Categories
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Seven AM Process Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#material-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vat-photopolymerization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vat Photopolymerization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#powder-bed-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Powder Bed Fusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-jetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material Jetting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binder-jetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Binder Jetting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directed-energy-deposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Directed Energy Deposition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sheet-lamination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sheet Lamination
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sheet Lamination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-seven-process-families-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Seven Process Families Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#industrial-powder-bed-fusion-sls-mjf-dmls-and-ebm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Industrial Powder Bed Fusion: SLS, MJF, DMLS, and EBM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Industrial Powder Bed Fusion: SLS, MJF, DMLS, and EBM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sls-selective-laser-sintering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SLS: Selective Laser Sintering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mjf-multi-jet-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MJF: Multi Jet Fusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dmls-direct-metal-laser-sintering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DMLS: Direct Metal Laser Sintering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ebm-electron-beam-melting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EBM: Electron Beam Melting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EBM: Electron Beam Melting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-industrial-pbf-process-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Industrial PBF Process Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#industrial-am-context-atmosphere-systems-and-heat-treatment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Industrial AM Context: Atmosphere, Systems, and Heat Treatment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Industrial AM Context: Atmosphere, Systems, and Heat Treatment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#industrial-vs-hobby-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Industrial vs. Hobby Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-chamber-atmosphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Chamber Atmosphere
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metal-am-overview-and-post-build-heat-treatment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metal AM Overview and Post-Build Heat Treatment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metal AM Overview and Post-Build Heat Treatment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-metal-am-build-to-part-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram: Metal AM Build-to-Part Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/3d-printing-course/blob/main/docs/chapters/02-standards-and-process-families/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="am-standards-process-families-and-industrial-am">AM Standards, Process Families, and Industrial AM<a class="headerlink" href="#am-standards-process-families-and-industrial-am" title="Permanent link">&para;</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>This chapter introduces the formal vocabulary of additive manufacturing: ISO and ASTM as standards bodies, the foundational ISO/ASTM 52900 terminology standard, and the seven AM process categories that organize every printing technology you will encounter. It also covers the industrial implementations of powder-bed fusion (SLS, MJF, DMLS, EBM) and the surrounding industrial AM context (build chamber atmosphere, post-build heat treatment, industrial vs. hobby systems), so that students understand how desktop printing relates to the metal-AM and production environments described by America Makes.</p>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<p>This chapter covers the following 25 concepts from the learning graph:</p>
+<ol>
+<li>ISO Standards Body (Concept 19)</li>
+<li>ASTM International (Concept 20)</li>
+<li>ISO ASTM 52900 Standard (Concept 21)</li>
+<li>AM Process Categories (Concept 22)</li>
+<li>AM Vocabulary Glossary (Concept 23)</li>
+<li>Layer-By-Layer Principle (Concept 24)</li>
+<li>Build Volume (Concept 25)</li>
+<li>Build Plate (Concept 26)</li>
+<li>Z Axis Direction (Concept 27)</li>
+<li>Anisotropy (Concept 28)</li>
+<li>Material Extrusion (Concept 29)</li>
+<li>Vat Photopolymerization (Concept 30)</li>
+<li>Powder Bed Fusion (Concept 31)</li>
+<li>Material Jetting (Concept 32)</li>
+<li>Binder Jetting (Concept 33)</li>
+<li>Directed Energy Deposition (Concept 34)</li>
+<li>Sheet Lamination (Concept 35)</li>
+<li>SLS Process (Concept 40)</li>
+<li>MJF Process (Concept 41)</li>
+<li>DMLS Process (Concept 42)</li>
+<li>EBM Process (Concept 43)</li>
+<li>Industrial Vs Hobby Systems (Concept 150)</li>
+<li>Metal AM Overview (Concept 152)</li>
+<li>Build Chamber Atmosphere (Concept 153)</li>
+<li>Post-Build Heat Treatment (Concept 154)</li>
+</ol>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-foundations-and-history/">Chapter 1: Foundations and History of Additive Manufacturing</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Welcome to Chapter 2</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Benchy waves hello">
+Welcome to the chapter where 3D printing gets its official vocabulary. You're about to learn the language that engineers, researchers, and manufacturers use worldwide — the ISO/ASTM 52900 standard — plus the seven process families that organize every AM technology you'll ever encounter. By the end, you'll be able to read a technical AM document without feeling like you wandered into the wrong country without a phrasebook.</p>
+</div>
+<h2 id="who-writes-the-rules-the-standards-bodies">Who Writes the Rules? The Standards Bodies<a class="headerlink" href="#who-writes-the-rules-the-standards-bodies" title="Permanent link">&para;</a></h2>
+<p>Before you can speak a language fluently, you need to know who wrote the dictionary. In the world of additive manufacturing, two organizations share that responsibility: <strong>ISO</strong> and <strong>ASTM International</strong>. Neither of them makes printers. Both of them make sure that when an engineer in Minnesota writes "layer height" and an engineer in Japan writes "layer thickness," they mean exactly the same thing.</p>
+<h3 id="iso-the-global-standards-body">ISO: The Global Standards Body<a class="headerlink" href="#iso-the-global-standards-body" title="Permanent link">&para;</a></h3>
+<p>The <strong>International Organization for Standardization</strong> — better known as <strong>ISO</strong> — is a Geneva-based non-governmental organization that develops and publishes international standards across nearly every field of technology and commerce. Founded in 1947 and now representing 167 national member bodies, ISO operates on a simple idea: when all countries agree on what words and measurements mean, products and technologies can cross borders and work together reliably.</p>
+<p>ISO standards carry a distinctive numbering format: "ISO" followed by a number and often a year (for example, ISO 9001:2015 for quality management systems). You will encounter ISO numbers throughout your career in manufacturing, engineering, and design. ISO does not mandate that companies follow its standards — it defines them. Governments, customers, and contracts are what make compliance practical.</p>
+<h3 id="astm-international-standards-for-materials-and-testing">ASTM International: Standards for Materials and Testing<a class="headerlink" href="#astm-international-standards-for-materials-and-testing" title="Permanent link">&para;</a></h3>
+<p><strong>ASTM International</strong> (formerly the American Society for Testing and Materials) plays a complementary role. Where ISO tends toward broad international consensus, ASTM has historically specialized in materials testing, performance standards, and manufacturing processes — exactly the domain that additive manufacturing occupies.</p>
+<p>Founded in 1898 and headquartered in West Conshohocken, Pennsylvania, ASTM organizes its work into technical committees. Committee F42 — formally the "Committee on Additive Manufacturing Technologies" — develops all of ASTM's AM-specific standards. If you read a research paper that cites "ASTM F3091" or "ASTM F2924," that work came out of F42.</p>
+<p>The relationship between ISO and ASTM matters for AM because the two organizations chose to collaborate rather than compete. Beginning in 2011, ISO Technical Committee 261 (ISO/TC 261) and ASTM Committee F42 agreed to jointly develop a unified set of AM standards, publishing them under the shared "ISO/ASTM" designation. The result is a family of documents that carry both organizations' authority worldwide.</p>
+<h4 id="diagram-iso-and-astm-collaboration-map">Diagram: ISO and ASTM Collaboration Map<a class="headerlink" href="#diagram-iso-and-astm-collaboration-map" title="Permanent link">&para;</a></h4>
+<details>
+<summary>ISO and ASTM Collaboration Map</summary>
+<p>Type: interactive-infographic
+<strong>sim-id:</strong> iso-astm-collaboration-map<br/>
+<strong>Library:</strong> vis-network<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Recall and explain the roles of ISO and ASTM as standards bodies in additive manufacturing (Bloom L1–L2: identify, explain).</p>
+<p><strong>Description:</strong> A vis-network node-link diagram showing the relationship between ISO/TC 261 and ASTM F42, their collaboration agreement, and the resulting ISO/ASTM joint standards. The network has three layers:
+- Layer 1 (top): Two large anchor nodes — "ISO / TC 261" (blue, Geneva icon) and "ASTM F42" (red, Pennsylvania icon)
+- Layer 2 (middle): A shared node labeled "Joint Standards Agreement (2011)" connected to both anchors with bidirectional arrows
+- Layer 3 (bottom): Three outcome nodes branching from the agreement node — "ISO/ASTM 52900 (Terminology)", "ISO/ASTM 52910 (Design)", and "ISO/ASTM 52921 (Coordinate Systems)"</p>
+<p><strong>Interactions:</strong> Clicking any node opens a right-side infobox with: organization name, founding year, headquarters, primary focus, and a one-sentence description of their role in AM standardization. Hovering highlights connected edges. A toggle button switches between "Focus: Terminology" and "Focus: All Standards" to filter visible nodes.</p>
+<p><strong>Canvas size:</strong> 700 × 400 px, responsive.
+<strong>Layout:</strong> Hierarchical top-to-bottom.
+<strong>Colors:</strong> ISO nodes in blue (#1565C0), ASTM nodes in red (#C62828), shared/joint nodes in purple (#6A1B9A), text in white on node backgrounds.</p>
+</details>
+<h2 id="isoastm-52900-the-am-dictionary">ISO/ASTM 52900: The AM Dictionary<a class="headerlink" href="#isoastm-52900-the-am-dictionary" title="Permanent link">&para;</a></h2>
+<p>The most important document you'll encounter in this course is <strong>ISO/ASTM 52900</strong>, titled <em>Additive Manufacturing — General Principles — Fundamentals and Vocabulary</em>. Think of it as the official dictionary for all of additive manufacturing. First published in 2015 and updated in 2021, it defines the terms and categories that every other AM standard — and this textbook — builds on.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">The Standard That Standardized Everything</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Benchy thinks carefully">
+ISO/ASTM 52900 is one of those documents that seems dry until you realize what it actually does: it ended years of competing vocabularies. Before 2015, one company called it "fused deposition modeling," another called it "fused filament fabrication," and a third called it "material extrusion." ISO/ASTM 52900 said: they're all the same thing, and the official category name is <em>material extrusion</em>. That's the kind of clarity that lets engineers collaborate across companies and countries.</p>
+</div>
+<p>The standard's most consequential contribution is establishing the <strong>seven additive manufacturing process categories</strong> — a framework that organizes every AM technology into one of seven families based on how the technology joins material together. You'll use this framework for the rest of the course and likely for the rest of your career.</p>
+<h3 id="the-am-vocabulary-glossary">The AM Vocabulary Glossary<a class="headerlink" href="#the-am-vocabulary-glossary" title="Permanent link">&para;</a></h3>
+<p>ISO/ASTM 52900 does more than categorize processes. It provides precise definitions for the core terms that show up in every AM conversation. A few foundational ones are worth defining now, because you'll see them in every chapter that follows:</p>
+<ul>
+<li><strong>Additive manufacturing (AM):</strong> The process of joining materials to make parts from 3D model data, usually layer upon layer, as opposed to subtractive and formative manufacturing methodologies.</li>
+<li><strong>Build:</strong> A single production run of an AM system — the act of fabricating one or more parts.</li>
+<li><strong>Layer:</strong> A thin cross-sectional slice of material deposited or solidified during a single pass of the AM system.</li>
+<li><strong>Part:</strong> The object being fabricated; may be a single geometry or multiple nested geometries in a single build.</li>
+<li><strong>Feedstock:</strong> The raw material input to an AM process (filament, resin, powder, wire, sheets, etc.).</li>
+<li><strong>Support structure:</strong> Material added to a build to support overhanging geometry; usually removed after fabrication.</li>
+</ul>
+<p>These definitions matter because precision matters. When a print shop quotes you a "build" with five "parts," you need to know whether you're paying for one machine run or five.</p>
+<h2 id="the-building-blocks-universal-am-geometry">The Building Blocks: Universal AM Geometry<a class="headerlink" href="#the-building-blocks-universal-am-geometry" title="Permanent link">&para;</a></h2>
+<p>Regardless of which of the seven process categories you are using, all additive manufacturing shares a set of geometric fundamentals. Understanding these is like understanding the grammar of a language — once you have it, every process makes more sense.</p>
+<h3 id="layer-by-layer-principle">Layer-by-Layer Principle<a class="headerlink" href="#layer-by-layer-principle" title="Permanent link">&para;</a></h3>
+<p>Every AM process, without exception, builds a part by adding thin cross-sections of material one on top of the next. This <strong>layer-by-layer principle</strong> is what makes AM "additive" — you begin with nothing and accumulate material until the shape is complete. The computer slices your 3D model into hundreds or thousands of horizontal planes, and the machine executes each slice in sequence.</p>
+<p>The thickness of each layer (called <strong>layer height</strong> in most slicer software) is one of the most powerful variables you control. Thinner layers produce smoother surfaces and finer detail but take longer to print. Thicker layers print faster but leave visible steps on curved surfaces. Most FDM printers operate between 0.05 mm and 0.35 mm per layer. Industrial metal AM systems commonly work at 0.02–0.10 mm.</p>
+<h3 id="build-volume-build-plate-and-the-z-axis">Build Volume, Build Plate, and the Z Axis<a class="headerlink" href="#build-volume-build-plate-and-the-z-axis" title="Permanent link">&para;</a></h3>
+<p>Three closely related terms define the physical space in which your printer works:</p>
+<p><strong>Build volume</strong> is the maximum three-dimensional envelope of space in which an AM system can fabricate — the answer to the question "how big a part can this machine make?" It is typically expressed as X × Y × Z dimensions in millimeters. A desktop FDM printer might have a build volume of 220 × 220 × 250 mm. An industrial polymer SLS machine might offer 380 × 380 × 600 mm. Understanding build volume helps you decide whether a part needs to be printed whole or split into segments.</p>
+<p><strong>Build plate</strong> (also called the build platform or print bed) is the physical surface on which printing begins. In FDM, the first layer adheres directly to the build plate. In SLS and other powder-bed processes, the build plate indexes downward after each layer, allowing fresh powder to be spread across the top. The build plate is one of the most calibration-sensitive components in any printer — its flatness and temperature directly affect whether your first layer succeeds.</p>
+<p><strong>Z axis direction</strong> refers to the vertical direction in which a part grows during the build. In standard orientation, Z is up. Each new layer is added at a slightly higher Z position than the one before it. This direction is not arbitrary — it determines the orientation of your part in the machine, and orientation is one of the most consequential design decisions in AM.</p>
+<h3 id="anisotropy-why-direction-matters">Anisotropy: Why Direction Matters<a class="headerlink" href="#anisotropy-why-direction-matters" title="Permanent link">&para;</a></h3>
+<p>Here is one of the most important insights in all of additive manufacturing, and one that catches beginners off guard:</p>
+<p><strong>Parts built with AM processes are not equally strong in all directions.</strong> This property — where mechanical behavior differs depending on the direction of applied load — is called <strong>anisotropy</strong>. The word comes from Greek: <em>an-</em> (not) + <em>isos</em> (equal) + <em>tropos</em> (direction).</p>
+<p>In an FDM part, the bonds between adjacent layers are the weakest links in the structure. A force applied parallel to the layers (the XY plane) breaks fewer inter-layer bonds than a force applied perpendicular to them (the Z direction). This means a printed hook oriented with its critical load running horizontally through many layers is significantly stronger than the same hook printed vertically, where the load must travel across layer-to-layer interfaces.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Z-Direction Loads Will Surprise You</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Benchy looks concerned">
+The most common strength-related mistake beginners make is forgetting anisotropy when choosing print orientation. If your part needs to resist a bending or tensile force, make sure that force runs through the layers, not across them. A part that looks right on the build plate can be dangerously weak if it's oriented so the critical load pulls layers apart. I've been tested at every angle — trust me on this one.</p>
+</div>
+<p>Anisotropy affects powder-bed processes too, though often less severely than FDM. SLS nylon parts are notably more isotropic than FDM parts because powder fusion creates a more continuous matrix. Metal AM parts (DMLS, EBM) typically require post-build heat treatment partly to relieve the residual stress anisotropy introduced by rapid layer-by-layer solidification.</p>
+<h4 id="diagram-anisotropy-explorer">Diagram: Anisotropy Explorer<a class="headerlink" href="#diagram-anisotropy-explorer" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Anisotropy Explorer</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> anisotropy-explorer<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Analyze how build orientation affects mechanical strength in FDM parts by applying tensile and bending loads in different orientations (Bloom L4: examine relationships, distinguish).</p>
+<p><strong>Description:</strong> An interactive p5.js simulation showing a rectangular test bar printed in FDM. The student can select build orientation (flat/XY, on-edge, upright/Z) using radio buttons, then apply either a tensile pull or a bending moment using buttons.</p>
+<p><strong>Canvas layout (600 × 420 px, responsive):</strong>
+- Top third: The test bar rendered as a 3D-perspective isometric box, with layer lines drawn horizontally in the current orientation. Layer lines are color-coded (blue = XY, green = on-edge, orange = vertical/Z).
+- Middle section: A strength bar gauge (0–100 %, green to red gradient) showing relative strength in the selected load direction. Values are approximate but pedagogically accurate (XY tensile ≈ 90 %, on-edge tensile ≈ 75 %, Z tensile ≈ 45 % for typical PLA).
+- Bottom section: A one-sentence explanation that updates to describe why the strength is high or low for the current combination.</p>
+<p><strong>Controls:</strong>
+- Radio group "Build Orientation": Flat (XY), On-Edge, Upright (Z)
+- Radio group "Load Direction": Tensile (pull apart), Bending (snap across layers), Shear (slide layers)
+- Button "Apply Load" — triggers an animated bar deformation and snapping effect on weak combinations; a subtle flex on strong combinations</p>
+<p><strong>Interactions:</strong> All controls update the display immediately. The strength gauge animates smoothly when parameters change. When a combination results in &lt; 50 % strength, the test bar shows a red crack line across the weakest layer interface.</p>
+<p><strong>Responsive behavior:</strong> Canvas scales to fit window width while maintaining aspect ratio.</p>
+</details>
+<h2 id="the-seven-am-process-categories">The Seven AM Process Categories<a class="headerlink" href="#the-seven-am-process-categories" title="Permanent link">&para;</a></h2>
+<p>With the geometric fundamentals established, you're ready for the framework at the heart of ISO/ASTM 52900: the <strong>seven additive manufacturing process categories</strong>. Every printing technology in existence — from the desktop FDM printer in your classroom to the million-dollar industrial metal printer at an aerospace facility — belongs to one of these seven families.</p>
+<p>The categories are defined by <em>how the process joins material</em>, not by what material it uses or what machine brand produces it. This makes the framework durable: even as new machines emerge, they slot into one of the seven categories. Learning these seven families gives you a mental map of the entire AM landscape.</p>
+<p>Here is a brief overview of each category before we look at them in depth:</p>
+<table>
+<thead>
+<tr>
+<th>Process Category</th>
+<th>How Material Is Joined</th>
+<th>Common Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Material Extrusion</td>
+<td>Melting and depositing through a nozzle</td>
+<td>FDM/FFF desktop printers</td>
+</tr>
+<tr>
+<td>Vat Photopolymerization</td>
+<td>Light curing liquid resin layer by layer</td>
+<td>SLA, MSLA, DLP resin printers</td>
+</tr>
+<tr>
+<td>Powder Bed Fusion</td>
+<td>Heat-fusing a powder bed with laser or electron beam</td>
+<td>SLS, MJF, DMLS, EBM</td>
+</tr>
+<tr>
+<td>Material Jetting</td>
+<td>Jetting droplets of material and curing</td>
+<td>Stratasys PolyJet, inkjet-style</td>
+</tr>
+<tr>
+<td>Binder Jetting</td>
+<td>Jetting a liquid binder onto a powder bed</td>
+<td>Desktop metal and full-color sand printers</td>
+</tr>
+<tr>
+<td>Directed Energy Deposition</td>
+<td>Melting material as it is deposited with focused energy</td>
+<td>Wire-arc, laser-blown powder</td>
+</tr>
+<tr>
+<td>Sheet Lamination</td>
+<td>Bonding and cutting sheets of material</td>
+<td>LOM, UAM (ultrasonic AM)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="material-extrusion">Material Extrusion<a class="headerlink" href="#material-extrusion" title="Permanent link">&para;</a></h3>
+<p><strong>Material extrusion</strong> is the process category you're most likely to use first. A continuous strand of feedstock material — almost always a thermoplastic filament — is fed into a heated nozzle. The heat softens the material past its glass transition temperature, and the printer moves the nozzle in precise XY paths while depositing a thin road of molten plastic. Each new layer fuses to the one below it as it cools.</p>
+<p>The familiar name for this technology is <strong>FDM</strong> (Fused Deposition Modeling, the original Stratasys trademark) or <strong>FFF</strong> (Fused Filament Fabrication, the open-source equivalent). Both terms describe the same process category. Under ISO/ASTM 52900, the formal category name is "material extrusion."</p>
+<p>Material extrusion dominates the desktop printer market because it is mechanically simple, uses widely available filaments, and produces functional parts quickly. Its limitations — visible layer lines, anisotropy, and limited resolution — are the trade-offs you accept for cost and accessibility.</p>
+<h3 id="vat-photopolymerization">Vat Photopolymerization<a class="headerlink" href="#vat-photopolymerization" title="Permanent link">&para;</a></h3>
+<p><strong>Vat photopolymerization</strong> works on a fundamentally different principle. Instead of depositing solid material, the process starts with a vat of liquid <strong>photopolymer resin</strong> — a monomer mixture that solidifies when exposed to specific wavelengths of light (typically UV or near-UV). A light source traces each layer's cross-section on the resin surface (or bottom), solidifying a thin slice. The build platform then indexes vertically, a new layer of liquid resin flows in, and the next cross-section is cured.</p>
+<p>Three technologies fall under this category:</p>
+<ul>
+<li><strong>SLA</strong> (Stereolithography): Uses a UV laser on a point-by-point path. Historically the first AM technology (patented by Chuck Hull in 1986, as covered in Chapter 1). Produces extremely fine detail and smooth surfaces.</li>
+<li><strong>MSLA</strong> (Masked SLA): Uses an LCD panel as a photomask, curing an entire layer at once with a UV LED array. The dominant technology in affordable desktop resin printers today (Elegoo, Phrozen, etc.).</li>
+<li><strong>DLP</strong> (Digital Light Processing): Uses a digital micromirror device (DMD chip) to project the entire layer cross-section at once. Common in professional and dental printers.</li>
+</ul>
+<p>Vat photopolymerization produces the highest surface resolution of any common AM process — layer heights of 0.025–0.05 mm are normal. The trade-off is that photopolymer resins require careful handling (UV protection, gloves, ventilation) and post-processing (washing in IPA, UV curing station).</p>
+<h3 id="powder-bed-fusion">Powder Bed Fusion<a class="headerlink" href="#powder-bed-fusion" title="Permanent link">&para;</a></h3>
+<p><strong>Powder bed fusion (PBF)</strong> uses thermal energy — from a laser or an electron beam — to selectively fuse regions of a powder bed. The machine spreads a thin layer of fine powder across the build area, then a scanning heat source traces the cross-section for that layer, fusing the powder grains together. The build platform descends by one layer thickness, fresh powder is spread, and the process repeats. Unfused powder supports the part during the build, eliminating the need for separate support structures in most cases.</p>
+<p>PBF is commercially significant because it can process an enormous range of materials: nylon, polypropylene, thermoplastic elastomers, aluminum, titanium, stainless steel, cobalt-chrome, Inconel, and more. The industrial sub-processes within this category — SLS, MJF, DMLS, EBM — are covered in detail in the next section.</p>
+<h3 id="material-jetting">Material Jetting<a class="headerlink" href="#material-jetting" title="Permanent link">&para;</a></h3>
+<p><strong>Material jetting</strong> works much like an inkjet document printer, scaled up to three dimensions. Hundreds or thousands of tiny nozzles jet microscopic droplets of photopolymer material onto the build surface, which are immediately cured by UV lamps carried alongside the printheads. The process can deposit multiple materials simultaneously — different colors, different mechanical properties, soluble support materials — in a single build, achieving exceptional detail and surface finish.</p>
+<p>Material jetting systems (Stratasys PolyJet is the leading brand; 3D Systems MultiJet is another) are expensive to buy and operate and require dedicated support material that must be dissolved or blasted away. They are used heavily for visual prototypes, dental models, and multi-material functional parts where surface quality is paramount.</p>
+<h3 id="binder-jetting">Binder Jetting<a class="headerlink" href="#binder-jetting" title="Permanent link">&para;</a></h3>
+<p><strong>Binder jetting</strong> separates the deposition and sintering steps. Like PBF, a powder bed is spread layer by layer. Unlike PBF, a liquid <strong>binder</strong> (think: a sophisticated adhesive) is jetted selectively onto the powder where each cross-section needs to be formed. The binder holds the powder particles together, but does not melt them. After the build, the "green part" (a fragile binder-held assembly) must be cured and then — for metal parts — sintered in a furnace to burn off the binder and fuse the metal powder into a dense solid.</p>
+<p>Binder jetting has two major application spaces: full-color sand printing (for architectural models and art objects) and metal printing. Desktop Metal and ExOne (now owned by Desktop Metal) are major commercial players. Binder jetting can be faster and cheaper than laser PBF for metals, but dimensional shrinkage during sintering (typically 15–20 %) requires careful compensation.</p>
+<h3 id="directed-energy-deposition">Directed Energy Deposition<a class="headerlink" href="#directed-energy-deposition" title="Permanent link">&para;</a></h3>
+<p><strong>Directed energy deposition (DED)</strong> deposits material and melts it simultaneously with a focused heat source. Two common feedstock types define the sub-variants:</p>
+<ul>
+<li><strong>Laser powder-fed DED:</strong> A nozzle delivers metal powder into a laser beam focus point. As the deposition head moves, it builds up dense metal geometry. Used for repair, cladding, and building near-net-shape parts.</li>
+<li><strong>Wire-arc additive manufacturing (WAAM):</strong> An electric arc (like welding) melts wire feedstock into a deposited bead. Excellent for large metal structures; lower resolution than laser DED.</li>
+</ul>
+<p>DED systems excel at repairing high-value metal parts (turbine blades, mold inserts), adding features to existing components, and producing large-scale metal structures faster than powder-bed processes. Resolution is typically lower than DMLS or EBM.</p>
+<h3 id="sheet-lamination">Sheet Lamination<a class="headerlink" href="#sheet-lamination" title="Permanent link">&para;</a></h3>
+<p><strong>Sheet lamination</strong> — the oldest and simplest process category conceptually — builds parts by bonding thin sheets of material and then cutting the cross-section profile from each sheet, or by bonding pre-cut sheets. The two main technologies are:</p>
+<ul>
+<li><strong>LOM (Laminated Object Manufacturing):</strong> Bonds and laser-cuts paper, plastic, or composite sheets layer by layer. Produces large, wood-like parts inexpensively; inner geometry is difficult to remove.</li>
+<li><strong>UAM (Ultrasonic Additive Manufacturing):</strong> Uses ultrasonic vibration to bond thin metal foils layer by layer, with a CNC mill cutting the cross-section between layers. Produces fully dense metal parts and can embed sensors or electronics inside solid metal structures.</li>
+</ul>
+<p>Sheet lamination is the least common process category in typical school settings but appears in specialized applications — embedded electronics, large architectural prototypes, and metal matrix composites — where other processes fall short.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Match the Category to the Job</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Benchy gives a thumbs up">
+Here's the move that saves you from reprinting (or from buying the wrong machine): before you ask "how do I print this," ask "which process category fits this part?" Material, required surface finish, size, mechanical demands, and budget each point toward different categories. Resin for dental precision. FDM for quick functional prototypes. SLS for complex nylon assemblies with no support waste. Getting the category right first means the rest of the decisions get a lot easier.</p>
+</div>
+<h4 id="diagram-seven-process-families-explorer">Diagram: Seven Process Families Explorer<a class="headerlink" href="#diagram-seven-process-families-explorer" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Seven Process Families Explorer</summary>
+<p>Type: interactive-infographic
+<strong>sim-id:</strong> seven-am-processes-explorer<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Identify and explain each of the seven ISO/ASTM 52900 AM process categories by feedstock type, energy source, and representative technology (Bloom L1–L2: recall, classify).</p>
+<p><strong>Description:</strong> A radial hub-and-spoke infographic centered on a "ISO/ASTM 52900" hub node. Seven labeled spokes radiate outward to category nodes, each containing the category name and a small icon representing the feedstock type (filament spool, resin vat, powder bed, droplets, powder + binder, wire/powder nozzle, sheets stack).</p>
+<p><strong>Layout (700 × 600 px, responsive):</strong>
+- Center hub: Dark circle labeled "AM Process Categories" (ISO/ASTM 52900)
+- 7 category nodes arranged in a ring at radius ~220 px, evenly spaced
+- Each node: Rounded rectangle with category name (bold), feedstock icon below
+- Color coding: Each category has a distinct hue (Material Extrusion = blue, Vat Photo = purple, PBF = orange, Material Jetting = teal, Binder Jetting = green, DED = red, Sheet Lamination = brown)</p>
+<p><strong>Interactions:</strong>
+- Clicking any category node expands a detail panel below the diagram (or to the right on wide screens) showing:
+  - Category name and formal ISO/ASTM 52900 definition
+  - How material is joined (one sentence)
+  - Two representative technologies/machines
+  - Typical materials
+  - One-line description of best use case
+- The selected node glows with a halo effect. Previous selection dims.
+- A "Compare Two" mode: click one node, then shift-click another to view a side-by-side comparison of the two categories.</p>
+<p><strong>Responsive behavior:</strong> On narrow screens (&lt; 500 px), the radial layout collapses to a vertical list with the same clickable detail panels.</p>
+<p><strong>Color scheme:</strong> Soft pastel node backgrounds with dark text; white center hub on dark background.</p>
+</details>
+<h2 id="industrial-powder-bed-fusion-sls-mjf-dmls-and-ebm">Industrial Powder Bed Fusion: SLS, MJF, DMLS, and EBM<a class="headerlink" href="#industrial-powder-bed-fusion-sls-mjf-dmls-and-ebm" title="Permanent link">&para;</a></h2>
+<p>Among the seven process categories, <strong>powder bed fusion</strong> has given rise to the most significant industrial AM technologies. You'll encounter four industrial PBF sub-processes repeatedly in AM literature: SLS, MJF, DMLS, and EBM. Each occupies a specific niche in the industrial landscape.</p>
+<div class="admonition mascot-encouraging">
+<p class="admonition-title">This Section Gets Technical — You've Got This</p>
+<p><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Benchy cheers you on">
+The next few pages cover industrial processes that most students won't operate hands-on in a high-school class. That's fine — understanding what these machines do and why they matter is exactly the kind of knowledge that sets you apart in a college engineering course or a technical job interview. Read it like you're building a map of a territory you'll explore later in your career.</p>
+</div>
+<h3 id="sls-selective-laser-sintering">SLS: Selective Laser Sintering<a class="headerlink" href="#sls-selective-laser-sintering" title="Permanent link">&para;</a></h3>
+<p><strong>Selective Laser Sintering (SLS)</strong> uses a CO₂ laser to sinter (partially fuse) polymer powder — most commonly nylon (PA 12 or PA 11) but also polypropylene, TPU, and composite-filled variants — in a controlled bed. The term "sintering" is technically imprecise for polymer SLS (the material actually melts rather than sinters in the metallurgical sense), but the name has stuck from the process's 1980s origins at the University of Texas.</p>
+<p>SLS machines operate at elevated bed temperatures just below the polymer's melting point, which dramatically reduces the energy the laser needs to deliver to complete fusion. Unfused powder from surrounding regions acts as a natural support, making SLS ideal for complex geometries — undercuts, internal channels, living hinges, and interlocking assemblies — that would require extensive support structures in FDM. SLS nylon parts exhibit near-isotropic mechanical properties, making them popular for functional end-use parts.</p>
+<p>Industrial SLS machines from EOS, Farsoon, Sinterit, and Formlabs (Fuse 1+) range from desktop scale to large production systems. A typical industrial SLS build chamber is 340 × 340 × 600 mm or larger.</p>
+<h3 id="mjf-multi-jet-fusion">MJF: Multi Jet Fusion<a class="headerlink" href="#mjf-multi-jet-fusion" title="Permanent link">&para;</a></h3>
+<p><strong>Multi Jet Fusion (MJF)</strong> is HP's industrial AM process, introduced in 2016. It is technically a powder bed process, but it does not use a laser. Instead, a printhead array jets two agents across a nylon powder bed: a <strong>fusing agent</strong> on the regions to be solidified, and a <strong>detailing agent</strong> on the boundary between fused and unfused powder to sharpen edges. An infrared lamp then passes over the bed, heating the fusing-agent-coated powder to fusion while the detailing agent inhibits fusion at boundaries, producing crisp, smooth edges.</p>
+<p>MJF's key advantages are speed (the entire layer is fused in a single IR pass), part accuracy, and cost-effectiveness for medium-to-high production volumes. Gray and black nylon are standard; full-color capability (HP Jet Fusion 5200 series) enables color-functional parts. MJF competes directly with SLS for industrial polymer AM, often winning on production throughput.</p>
+<h3 id="dmls-direct-metal-laser-sintering">DMLS: Direct Metal Laser Sintering<a class="headerlink" href="#dmls-direct-metal-laser-sintering" title="Permanent link">&para;</a></h3>
+<p><strong>Direct Metal Laser Sintering (DMLS)</strong> is the leading industrial process for metal AM. Originally an EOS GmbH trademark (now used generically), DMLS uses a fiber laser — typically 200–1000 W — to selectively melt (not merely sinter) fine metal powder in a bed. Common materials include titanium alloys (Ti-6Al-4V), aluminum (AlSi10Mg), stainless steels (316L, 17-4 PH), tool steels, cobalt-chrome, and nickel superalloys like Inconel 625 and 718.</p>
+<p>Because metal powder beds require precise atmospheric control (more on this below), DMLS systems are complex and expensive — industrial machines range from $300,000 to well over $1,000,000. The parts they produce, however, are fully dense metal components with mechanical properties comparable to or exceeding wrought stock. Aerospace, medical implants, and motorsport are the dominant end markets.</p>
+<p>The related term <strong>SLM (Selective Laser Melting)</strong> describes the same process but emphasizes that the powder is fully melted rather than sintered. The distinction is largely semantic in practice; the technical community is converging on "Laser Powder Bed Fusion" (LPBF) as the preferred umbrella term.</p>
+<h3 id="ebm-electron-beam-melting">EBM: Electron Beam Melting<a class="headerlink" href="#ebm-electron-beam-melting" title="Permanent link">&para;</a></h3>
+<p><strong>Electron Beam Melting (EBM)</strong>, commercialized by Arcam AB (now GE Additive), uses a focused electron beam rather than a laser to melt metal powder. This creates important differences from DMLS:</p>
+<ul>
+<li><strong>Vacuum atmosphere:</strong> EBM must operate in a high-vacuum chamber because electrons scatter in air. The vacuum also eliminates oxidation, beneficial for reactive metals like titanium.</li>
+<li><strong>Elevated bed temperature:</strong> The electron beam preheats the entire powder bed to near-sintering temperature before the melt scan, reducing residual stress and distortion — a significant advantage over laser PBF.</li>
+<li><strong>Scan speed:</strong> Electron beams are deflected magnetically, with no moving mechanical parts, enabling very high scan speeds.</li>
+<li><strong>Materials:</strong> EBM is particularly suited to titanium (Ti-6Al-4V, Ti-6Al-2Sn-4Zr-2Mo) and cobalt-chrome. It is the dominant process for orthopedic implants — hip cups, spinal fusion cages, and knee components with porous lattice structures that promote bone ingrowth.</li>
+</ul>
+<p>EBM parts typically require less post-build support removal than DMLS because the preheated bed reduces distortion, and parts are often embedded in sintered powder that holds them in place.</p>
+<h4 id="diagram-industrial-pbf-process-comparison">Diagram: Industrial PBF Process Comparison<a class="headerlink" href="#diagram-industrial-pbf-process-comparison" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Industrial PBF Process Comparison</summary>
+<p>Type: interactive-infographic
+<strong>sim-id:</strong> industrial-pbf-comparison<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Compare SLS, MJF, DMLS, and EBM on energy source, material, atmosphere, and application (Bloom L4: differentiate, compare, contrast).</p>
+<p><strong>Description:</strong> A 2 × 2 interactive grid displaying SLS, MJF, DMLS, and EBM as four equal quadrant panels. Each panel shows:
+- Process acronym (large, bold) and full name (smaller)
+- Energy source icon (laser = yellow beam, IR lamp array = orange wave, electron beam = blue lightning)
+- Material icon (polymer powder = yellow granules, metal powder = gray granules)
+- Atmosphere icon (inert gas = cloud, vacuum = empty ring)
+- One key application example (text)</p>
+<p><strong>Canvas size:</strong> 700 × 480 px, responsive (2 × 2 on wide screens, stacked 1-column on narrow screens).</p>
+<p><strong>Interactions:</strong>
+- Clicking any quadrant panel expands it to full-width detail view showing:
+  - Full process description (3–4 sentences)
+  - Energy source with wattage range
+  - Typical materials (bulleted list)
+  - Atmosphere requirement
+  - Build volume range (example machine)
+  - Key advantage and key limitation
+  - Representative end-use applications
+  - "Back" button to return to grid
+- A "Compare Mode" toggle at top: when active, clicking a second panel places both detail views side-by-side for direct comparison.
+- Hovering any panel highlights it with a bright border and shows a tooltip with the process's one-sentence definition.</p>
+<p><strong>Color coding:</strong> SLS = green-toned, MJF = blue-toned, DMLS = orange-toned, EBM = purple-toned.</p>
+</details>
+<h2 id="industrial-am-context-atmosphere-systems-and-heat-treatment">Industrial AM Context: Atmosphere, Systems, and Heat Treatment<a class="headerlink" href="#industrial-am-context-atmosphere-systems-and-heat-treatment" title="Permanent link">&para;</a></h2>
+<p>Running a metal AM system — whether DMLS or EBM — demands more infrastructure than plugging in a desktop printer. Three concepts define that industrial context.</p>
+<h3 id="industrial-vs-hobby-systems">Industrial vs. Hobby Systems<a class="headerlink" href="#industrial-vs-hobby-systems" title="Permanent link">&para;</a></h3>
+<p>The gap between a desktop FDM printer and an industrial SLS or metal AM system is not just price — it is a fundamentally different relationship with the manufacturing environment.</p>
+<p><strong>Desktop / hobby AM systems</strong> (sub-<span class="arithmatex">\(10,000, sometimes sub-\)</span>500 for entry-level FDM) are designed to be self-contained and forgiving. They use pre-packaged materials (filament spools, pre-bottled resins), require minimal facility infrastructure, and operate in open rooms. Their process parameters are largely pre-tuned by the manufacturer. Trade-offs include lower precision, limited materials, and smaller build volumes.</p>
+<p><strong>Industrial AM systems</strong> (<span class="arithmatex">\(100,000–\)</span>5,000,000+) require dedicated facility space with controlled temperature and humidity, material handling infrastructure (powder loading/unloading systems, powder recycling stations), process gas supply (argon or nitrogen for DMLS), high-voltage power supplies (EBM), and post-processing equipment (HIP, heat treatment furnaces, CNC machining for finishing). They provide far tighter process control, validated material databases, in-process monitoring sensors, and quality documentation that meet aerospace and medical certification requirements.</p>
+<p>The conceptual boundary is not sharp — mid-range industrial-grade desktop systems (EOS Formiga, Formlabs Fuse) occupy a middle ground. But understanding the spectrum helps you read a machine spec sheet intelligently.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Hobby/Desktop</th>
+<th>Industrial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purchase price</td>
+<td>&lt; $10 K</td>
+<td>$100 K – $5 M+</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Pre-packaged, limited</td>
+<td>Broad; open parameter sets</td>
+</tr>
+<tr>
+<td>Facility needs</td>
+<td>Standard outlet, table</td>
+<td>Dedicated room, gas, power</td>
+</tr>
+<tr>
+<td>Part accuracy</td>
+<td>± 0.3–0.5 mm typical</td>
+<td>± 0.05–0.1 mm typical</td>
+</tr>
+<tr>
+<td>Certification</td>
+<td>None required</td>
+<td>AS9100D, ISO 13485 for regulated markets</td>
+</tr>
+<tr>
+<td>Annual volume</td>
+<td>Dozens to hundreds of parts</td>
+<td>Thousands to millions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="build-chamber-atmosphere">Build Chamber Atmosphere<a class="headerlink" href="#build-chamber-atmosphere" title="Permanent link">&para;</a></h3>
+<p>For metal PBF processes (DMLS and related technologies), the build chamber atmosphere is not optional — it is critical to part quality and safety. When fine metal powders (titanium, aluminum, stainless steel) are heated to melting temperatures, they react aggressively with oxygen and nitrogen in air. Oxidized metal powder produces parts with porosity, inclusions, and reduced mechanical properties.</p>
+<p>The solution is to purge the build chamber with an <strong>inert gas</strong> — almost always <strong>argon</strong> (Ar) for laser PBF, or a <strong>high vacuum</strong> (&lt; 10⁻⁴ mbar) for EBM. Before a build begins, the chamber is evacuated or flooded with inert gas until oxygen levels drop below 0.1 % (100 ppm) or lower for reactive metals. A constant gas flow during the build sweeps away metal fume and condensate ("spatter") that would otherwise re-deposit on the powder bed and contaminate the part.</p>
+<p>Chamber atmosphere monitoring is part of every industrial DMLS machine's standard instrumentation. Oxygen sensor readings are logged and form part of the build quality record.</p>
+<h3 id="metal-am-overview-and-post-build-heat-treatment">Metal AM Overview and Post-Build Heat Treatment<a class="headerlink" href="#metal-am-overview-and-post-build-heat-treatment" title="Permanent link">&para;</a></h3>
+<p>Metal AM parts produced by DMLS or EBM are not ready for use when they come out of the machine. The rapid, localized melting and solidification during the build creates significant <strong>residual stresses</strong> within the part — internal forces locked in by the steep thermal gradients of layer-by-layer processing. Without treatment, these residual stresses can cause:</p>
+<ul>
+<li>Distortion or warping of the part after removal from the build plate</li>
+<li>Reduced fatigue life under cyclic loading</li>
+<li>Risk of cracking in high-strength alloys</li>
+</ul>
+<p><strong>Post-build heat treatment</strong> addresses these issues through controlled heating and cooling cycles. The specific treatment depends on the alloy and the intended application, but common steps include:</p>
+<ol>
+<li><strong>Stress relief anneal:</strong> Heating the part (while still attached to the build plate) to a temperature below the alloy's aging or solution temperature, holding for 1–4 hours, then slow-cooling. This relaxes residual stresses without significantly changing the microstructure.</li>
+<li><strong>Solution annealing and aging (precipitation hardening alloys):</strong> For alloys like Ti-6Al-4V and Inconel 718, a full solution treatment and aging cycle transforms the as-built microstructure into the desired phase structure and achieves target mechanical properties.</li>
+<li><strong>Hot Isostatic Pressing (HIP):</strong> A process that applies both high temperature (1000–1200 °C) and high pressure (100–200 MPa argon) simultaneously to close any residual porosity and further homogenize the microstructure. HIP is required for fatigue-critical aerospace and medical applications.</li>
+</ol>
+<p>After heat treatment, metal AM parts typically receive CNC machining on critical surfaces (interfaces, holes, threads) to achieve final dimensional tolerances, since heat treatment itself introduces small distortions.</p>
+<h4 id="diagram-metal-am-build-to-part-workflow">Diagram: Metal AM Build-to-Part Workflow<a class="headerlink" href="#diagram-metal-am-build-to-part-workflow" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Metal AM Build-to-Part Workflow</summary>
+<p>Type: interactive-infographic
+<strong>sim-id:</strong> metal-am-workflow<br/>
+<strong>Library:</strong> vis-network<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Learning objective:</strong> Recall and sequence the steps from metal powder to finished metal part in industrial AM (Bloom L1–L2: recall, sequence, summarize).</p>
+<p><strong>Description:</strong> A horizontal left-to-right workflow diagram using vis-network showing the complete production sequence for a DMLS metal part. Seven sequential nodes connected by directional arrows:</p>
+<ol>
+<li><strong>Powder Preparation</strong> — Sieving, moisture control, recycling assessment</li>
+<li><strong>Build Setup</strong> — Support design, orientation, slicing, atmosphere purge</li>
+<li><strong>DMLS Build</strong> — Layer-by-layer laser melting in inert atmosphere</li>
+<li><strong>Build Plate Removal</strong> — Wire EDM or band saw separation</li>
+<li><strong>Stress Relief</strong> — Furnace anneal cycle with temperature/time profile</li>
+<li><strong>Support Removal + Machining</strong> — CNC finishing of critical surfaces</li>
+<li><strong>Quality Inspection</strong> — CT scanning, dimensional metrology, surface roughness</li>
+</ol>
+<p><strong>Interactions:</strong> Clicking any node opens a detail panel showing:
+- Step name and description (2–3 sentences)
+- Typical equipment used
+- Key quality control check at this step
+- Typical duration or processing time
+- "What goes wrong here?" — one common failure mode and its remedy</p>
+<p>Hovering any arrow shows a tooltip describing what changes between the two steps (e.g., "Part separates from build plate but residual stress remains").</p>
+<p><strong>Layout:</strong> Horizontal chain with nodes at equal spacing; detail panel appears below the diagram.
+<strong>Canvas:</strong> 750 × 200 px for diagram + 200 px for detail panel = 400 px total height, responsive.
+<strong>Colors:</strong> Each step node in a sequential warm-to-cool gradient (orange → yellow → green → teal → blue → indigo → violet) to reinforce the concept of progression.</p>
+</details>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
+<p>This chapter has covered a lot of ground — from the organizations that write the standards to the furnaces that finish a metal part after it leaves the printer. Here is the core of what you now know:</p>
+<ul>
+<li><strong>ISO and ASTM International</strong> jointly develop AM standards, with ISO/TC 261 and ASTM F42 collaborating since 2011 to produce unified ISO/ASTM documents accepted worldwide.</li>
+<li><strong>ISO/ASTM 52900</strong> is the foundational AM vocabulary and process-classification standard. Every other AM standard builds on its definitions.</li>
+<li>All AM processes share the <strong>layer-by-layer principle</strong>: slicing a 3D model and joining cross-sections sequentially. The Z axis direction determines how layers stack.</li>
+<li><strong>Build volume</strong> and <strong>build plate</strong> define the physical limits and starting surface of any AM system.</li>
+<li><strong>Anisotropy</strong> — direction-dependent mechanical properties — is an inherent consequence of layer-by-layer construction and a critical design variable.</li>
+<li>The <strong>seven AM process categories</strong> (material extrusion, vat photopolymerization, powder bed fusion, material jetting, binder jetting, directed energy deposition, sheet lamination) provide a framework for understanding every printing technology.</li>
+<li><strong>SLS</strong> (laser-sintered polymer), <strong>MJF</strong> (HP's agent-based polymer process), <strong>DMLS</strong> (laser-melted metal), and <strong>EBM</strong> (electron-beam-melted metal) are the dominant industrial PBF sub-processes.</li>
+<li><strong>Industrial AM systems</strong> differ from hobby systems in precision, materials, facility requirements, and certification context.</li>
+<li>Metal AM parts require <strong>inert or vacuum chamber atmospheres</strong> during the build and <strong>post-build heat treatment</strong> to relieve residual stress and achieve target mechanical properties.</li>
+</ul>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Chapter 2 Complete — You Speak AM Now</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Benchy celebrates">
+You just built the vocabulary that the entire rest of this course runs on. Seven process categories, two standards bodies, a universal glossary, and a clear-eyed picture of how the desktop printer in your classroom relates to the million-dollar machine making titanium hip implants. That is not a small thing — most people working in manufacturing never get a clear map of the whole landscape. In Chapter 3, you'll start applying this vocabulary to the engineering design process, the systematic method that turns ideas into real, testable objects.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01-foundations-and-history/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Foundations and History">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                1. Foundations and History
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03-engineering-design-process/" class="md-footer__link md-footer__link--next" aria-label="Next: 3. Engineering Design Process">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                3. Engineering Design Process
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
