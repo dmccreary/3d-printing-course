@@ -1,28 +1,24 @@
 ---
 title: Non-Manifold Error Types
 description: Students can identify open edges, T-junctions, inverted normals, and overlapping faces in mesh geometry and explain why each causes slicing failures.
-status: scaffold
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Understand
 ---
 
 # Non-Manifold Error Types
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
 Students can identify open edges, T-junctions, inverted normals, and overlapping faces in mesh geometry and explain why each causes slicing failures.
 
-- **Bloom Level:** TBD
-- **Bloom Verb:** TBD
+- **Bloom Level:** Understand
+- **Bloom Verb:** identify, explain
 - **Library:** p5.js
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
