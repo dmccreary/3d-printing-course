@@ -1,9 +1,9 @@
 ---
 title: Metal AM Build-to-Part Workflow
-description: Recall and sequence the steps from metal powder to finished metal part in industrial AM (Bloom L1–L2: recall, sequence, summarize).
-status: scaffold
+description: "Recall and sequence the steps from metal powder to finished metal part in industrial AM (Bloom L1–L2: recall, sequence, summarize)."
+status: implemented
 library: vis-network
-bloom_level: TBD
+bloom_level: Remember-Understand
 ---
 
 # Metal AM Build-to-Part Workflow
@@ -22,7 +22,7 @@ Recall and sequence the steps from metal powder to finished metal part in indust
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="462" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
