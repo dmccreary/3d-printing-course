@@ -1,16 +1,12 @@
 ---
 title: Motion System Explainer
 description: Students explain how stepper motors, belts, and lead screws translate G-code motion commands into physical print-head movement.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Understand (L2)
 ---
 
 # Motion System Explainer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students explain how stepper motors, belts, and lead screws translate G-code mot
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="582" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
