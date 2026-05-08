@@ -1,16 +1,12 @@
 ---
 title: Exposure Setting Explorer
 description: Students demonstrate the relationship between exposure time and layer cure depth/bleed by adjusting a slider and observing cross-section changes in a simulated layer.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Apply (L3)
 ---
 
 # Exposure Setting Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students demonstrate the relationship between exposure time and layer cure depth
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="562" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
