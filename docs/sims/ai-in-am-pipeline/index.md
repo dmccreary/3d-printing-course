@@ -1,16 +1,12 @@
 ---
 title: AI in AM Pipeline Explorer
 description: Students organize AI applications in additive manufacturing by their stage in the production pipeline and analyze what data each system needs and what output it provides.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Analyze (L4)
 ---
 
 # AI in AM Pipeline Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students organize AI applications in additive manufacturing by their stage in th
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="602" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
