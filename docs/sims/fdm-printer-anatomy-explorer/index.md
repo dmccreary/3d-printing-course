@@ -1,16 +1,12 @@
 ---
 title: FDM Printer Anatomy Explorer
 description: Students identify and name the major components of an FDM printer and understand how the four subsystems are organized.
-status: scaffold
+status: implemented
 library: p5.js
 bloom_level: Remember (L1)
 ---
 
 # FDM Printer Anatomy Explorer
-
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
 
 ## Learning Objective
 
@@ -22,7 +18,7 @@ Students identify and name the major components of an FDM printer and understand
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
