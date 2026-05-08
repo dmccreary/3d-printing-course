@@ -1,9 +1,9 @@
 ---
 title: Engineering Notebook Page Anatomy
-description: Identify the required elements of a proper engineering notebook entry and explain why each element matters (Bloom L1–L2: identify, explain).
-status: scaffold
+description: "Identify the required elements of a proper engineering notebook entry and explain why each element matters (Bloom L1–L2: identify, explain)."
+status: implemented
 library: p5.js
-bloom_level: TBD
+bloom_level: Remember-Understand
 ---
 
 # Engineering Notebook Page Anatomy
@@ -22,7 +22,7 @@ Identify the required elements of a proper engineering notebook entry and explai
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="602" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
