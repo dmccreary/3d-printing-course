@@ -7,6 +7,7 @@ twitter:image: /sims/fdm-price-history/fdm-price-history.png
 social:
    cards: false
 quality_score: 0
+status: instrumented
 ---
 
 # FDM Printer Price Decline (2009–2024)
