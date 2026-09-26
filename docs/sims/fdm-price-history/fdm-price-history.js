@@ -162,4 +162,100 @@ document.addEventListener('DOMContentLoaded', function () {
     chart.update();
   });
 
+  // ── xAPI evidence ─────────────────────────────────────────────────────────
+  // Reports what the student does through the book's shared runtime (docs/js/lrs-sim.js).
+  // It only listens: it wraps the chart's onClick and adds a listener beside the toggle's,
+  // so the chart behaves exactly as above. Without the runtime it does nothing.
+  // Full vs. Compact and the teaching log come from config (docs/js/lrs-config.js, then this
+  // sim's metadata.json `xapi` block), never from this file.
+
+  if (window.LRSSim) instrumentXapi();
+
+  function instrumentXapi() {
+    // Learning-graph concepts (metadata.json `xapi` records the same map, as full ids).
+    const PAGE_CONCEPT = LRS.conceptId(14);              // Desktop Printer Revolution
+    const YEAR_CONCEPT = { 2009: LRS.conceptId(13) };    // its event IS FDM Patent Expiration
+
+    const lrs = LRSSim.create({
+      name: 'FDM Printer Price Decline (2009–2024)',
+      concept: PAGE_CONCEPT,
+      source: 'the FDM Printer Price Decline MicroSim',
+      pageDwell: true,            // no Run control: time on the chart is the dwell
+      mount: 'main'               // after the info box, outside the chart's sized wrapper
+    });
+
+    // One inspection handle per year, keyed by the year (stable if prices or captions change).
+    const years = DATA.map(d => lrs.item('year-' + d.year, {
+      name: d.year + ': ' + d.event,
+      concept: YEAR_CONCEPT[d.year] || PAGE_CONCEPT
+    }));
+    const scaleToggle = lrs.button('scale-toggle', {
+      name: 'Log/Linear Scale Toggle', concept: PAGE_CONCEPT
+    });
+
+    // A "visit" lasts while the tooltip shows one year. Each visit is ONE engagement: a click
+    // (the designed act: it opens the info box) wins, and otherwise a hover counts once the
+    // pointer has rested on the point itself for LRSSim.HOVER_MS. With intersect:false the
+    // tooltip shows wherever the pointer is in the chart area, so time merely spent over the
+    // chart (resting, scrolling past) is not evidence; only time on the dot is.
+    let visit = null;             // { i, onDotSince, ms, clicked }
+
+    function endVisit() {
+      if (!visit) return;
+      if (visit.onDotSince !== null) visit.ms += Date.now() - visit.onDotSince;
+      if (!visit.clicked && visit.ms >= LRSSim.HOVER_MS) years[visit.i].study('hover', visit.ms);
+      visit = null;
+    }
+
+    function visitYear(i) {
+      if (visit && visit.i === i) return;
+      endVisit();
+      if (i !== null) visit = { i, onDotSince: null, ms: 0, clicked: false };
+    }
+
+    // Report from the SAME element the chart's own onClick acts on, so the statement names
+    // the year the student saw revealed. A second click on the same visit reveals nothing new.
+    const origClick = chart.options.onClick;
+    chart.options.onClick = function (evt, elements, c) {
+      if (origClick) origClick.call(this, evt, elements, c);
+      if (!elements.length) return;
+      visitYear(elements[0].index);
+      if (visit.clicked) return;
+      visit.clicked = true;
+      years[visit.i].study('click');
+    };
+
+    // afterEvent sees every chart event (moves, mouseout, touches) after the tooltip has
+    // updated; options.onHover does not fire outside the chart area or on mouseout.
+    chart.config.plugins.push({
+      id: 'xapiEvidence',
+      afterEvent(c, args) {
+        const e = args.event;
+        const active = c.tooltip ? c.tooltip.getActiveElements() : [];
+        const i = active.length && e.type !== 'mouseout' ? active[0].index : null;
+        visitYear(i);
+        if (!visit) return;
+        const onDot = e.x !== null && active[0].element.inRange(e.x, e.y);
+        if (onDot && visit.onDotSince === null) visit.onDotSince = Date.now();
+        else if (!onDot && visit.onDotSince !== null) {
+          visit.ms += Date.now() - visit.onDotSince;
+          visit.onDotSince = null;
+        }
+      }
+    });
+    chart.update('none');
+
+    // Leaving the page closes an open visit BEFORE the runtime ends the session (capture on
+    // window runs ahead of its document listener), so the hover lands in this session and the
+    // hidden time is never counted as dwell.
+    window.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') endVisit();
+    }, true);
+    window.addEventListener('pagehide', endVisit, true);
+
+    // Registered after the chart's own listener, so isLogScale is already the scale the
+    // student chose to see.
+    toggleBtn.addEventListener('click', () => scaleToggle.press(isLogScale ? 'log' : 'linear'));
+  }
+
 });
