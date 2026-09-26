@@ -41,5 +41,23 @@
     "commonMisconceptions": [],
     "assessmentOpportunities": []
   },
-  "chapter": "01-foundations-and-history"
+  "chapter": "01-foundations-and-history",
+  "xapi": {
+    "concept": "3d-printing-course-14",
+    "objects": {
+      "year-2009": "3d-printing-course-13",
+      "year-2010": "3d-printing-course-14",
+      "year-2011": "3d-printing-course-14",
+      "year-2012": "3d-printing-course-14",
+      "year-2013": "3d-printing-course-14",
+      "year-2014": "3d-printing-course-14",
+      "year-2015": "3d-printing-course-14",
+      "year-2017": "3d-printing-course-14",
+      "year-2018": "3d-printing-course-14",
+      "year-2020": "3d-printing-course-14",
+      "year-2022": "3d-printing-course-14",
+      "year-2024": "3d-printing-course-14",
+      "scale-toggle": "3d-printing-course-14"
+    }
+  }
 }

@@ -8,7 +8,20 @@
     <style>
         body { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; }
     </style>
+    <!-- The xAPI panel's look, shared with every sim and site page. -->
+    <link rel="stylesheet" href="../../css/lrs-xapi.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <!-- xAPI runtime (docs/js). The chart still runs without it; it just records nothing.
+         lrs-config.js        this textbook's identity and default xAPI policy; loads first
+         lrs-xapi.js          builds every contract-v1 statement
+         lrs-lite-sim.js      compact (LRS-Lite) sessions and focus-loss detection
+         lrs-sim.js           the API the sim calls: evidence classes, statement log, teaching UI
+         xapi-json-viewer.js  opens a statement, formatted, in a new tab -->
+    <script src="../../js/lrs-config.js"></script>
+    <script src="../../js/lrs-xapi.js"></script>
+    <script src="../../js/lrs-lite-sim.js"></script>
+    <script src="../../js/lrs-sim.js"></script>
+    <script src="../../js/xapi-json-viewer.js"></script>
     <script src="fdm-price-history.js"></script>
 </head>
 <body>
